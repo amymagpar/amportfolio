@@ -49,13 +49,13 @@
 
 @layer components {
   .btn-tag {
-    @apply bg-white/20 hover:bg-white transition py-1 px-3 rounded border border-stone-300 cursor-pointer;
+    @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 rounded border border-stone-300 cursor-pointer;
   }
   .btn-collapse {
-    @apply bg-white/20 hover:bg-white transition py-1 px-3 cursor-pointer border-b;
+    @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 cursor-pointer drop-shadow;
   }
   .div-collapse {
-    @apply overflow-hidden transition-all max-h-0;
+    @apply bg-white/50 shadow-inner overflow-hidden transition-all my-4 max-h-0;
   }
 }
 

@@ -1,0 +1,38 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+  <title>{% block title %}Welcome{% endblock %} — amyparness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="h-screen flex flex-col font-sans">
+  <header class="p-4 w-full fixed pb-16 top-0 z-50 bg-gradient-to-t from-transparent to-white">
+    <div class="max-w-screen-md mx-auto flex justify-between items-center">
+      <h1 class="font-bold text-lg">Amy Parness</h1>
+      <nav class="">
+        <ul class="flex gap-4 m-0 list-none">
+          <li{% if this._path=='/' %} class="active" {% endif %}><a href="{{ '/'|url }}">Welcome</a></li>
+            {% for href, title in [
+            ['/projects', 'Projects'],
+            ['/about', 'About'],
+            ['/cv', 'CV']
+            ] %}
+            <li{% if this.is_child_of(href) %} class="active" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+              {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+    {% block body %}{% endblock %}
+  <footer class="bg-gray-100 text-xs p-4 text-stone-700">
+    <div class="mx-auto max-w-screen-md">
+      &copy; Copyright 2024 by Amy Parness.
+    </div>
+  </footer>
+  <script src="{{ '/static/myscript.js'|url }}"></script>
+</body>

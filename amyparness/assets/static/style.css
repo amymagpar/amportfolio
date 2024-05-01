@@ -30,7 +30,7 @@
     @apply decoration-dashed;
   }
   li {
-    @apply mb-2 ml-4;
+    @apply mb-6 ml-4;
   }
   ul {
     @apply list-disc;
@@ -49,7 +49,7 @@
 
 @layer components {
   .btn-tag {
-    @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 rounded border border-stone-300 cursor-pointer;
+    @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 rounded border border-stone-300 cursor-pointer drop-shadow no-underline;
   }
   .btn-collapse {
     @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 cursor-pointer drop-shadow;

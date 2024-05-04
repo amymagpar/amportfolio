@@ -1,0 +1,41 @@
+<!doctype html>
+<html data-theme="winter">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+  <title>A. Parness | {% block title %}{% endblock %}</title>
+</head>
+
+<body class="min-h-screen flex flex-col  bg-slate-100">
+  <!-- component -->
+  <header class="w-full fixed top-0 z-50 bg-gradient-to-t from-transparent to-white">
+    <div class="container mx-auto navbar">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="{{ '/'|url }}">Amy Parness</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li{% if this._path=='/' %} class="active" {% endif %}><a href="{{ '/projects'|url }}">Projects</a></li>
+            {% for href, title in [
+            ['/about', 'About']
+            ] %}
+            <li{% if this.is_child_of(href) %} class="active" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+              {% endfor %}
+              <li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="flex flex-grow justify-center">
+    {% block body %}{% endblock %}
+    </div>
+  <footer class="container mx-auto px-4">
+    &copy; Copyright 2024 by Amy Parness.
+  </footer>
+</body>
+
+</html>

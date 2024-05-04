@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ['./**/*.html'],
   theme: {
-    extend: {
-      fontFamily: {
-        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
-      },
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
+      body: ["Roboto", "sans-serif"],
+      mono: ["ui-monospace", "monospace"],
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  corePlugins: {
+    preflight: false,
+  },
+};

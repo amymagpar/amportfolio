@@ -1,69 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  h3 {
-    @apply mt-10 mb-4;
-    @apply text-lg;
-    @apply text-pink-600;
-    @apply font-bold;
-    @apply border-t border-black;
-    @apply border-dotted;
-  }
-  h4 {
-    @apply font-bold;
-  }
-  p, ul, ol, li {
-    @apply mb-4;
-    /* @apply marker:text-purple-700; */
-  }
-  a {
-    @apply text-cyan-800;
-    @apply underline;
-    @apply decoration-dashed;
-  }
-  li {
-    @apply mb-6 ml-4;
-  }
-  ul {
-    @apply list-disc;
-  }
-  ol {
-    @apply list-decimal;
-  }
-  nav li {
-    @apply m-0;
-  }
-  nav a {
-    /* no underline */
-    @apply no-underline;
-  }
 }
 
 @layer components {
-  .btn-tag {
-    @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 rounded border border-stone-300 cursor-pointer drop-shadow no-underline;
-  }
-  .btn-collapse {
-    @apply bg-white/60 hover:bg-white/40 transition py-1 px-3 cursor-pointer drop-shadow;
-  }
-  .div-collapse {
-    @apply bg-white/50 shadow-inner overflow-hidden transition-all my-4 max-h-0;
-  }
 }
 
 @layer utilities {
-  .filter-none {
-    filter: none;
-  }
-  .filter-grayscale {
-    filter: grayscale(100%);
-  }
 }

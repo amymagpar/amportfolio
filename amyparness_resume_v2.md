@@ -1,22 +1,6 @@
-> **AMY PARNESS**
-
-<amy@sparklelabs.com> \| 646.220.7498
-
-[[http://amyparness.sparklelabs.com]{.underline}](http://amyparness.sparklelabs.com)
-user: portfolio / password: highland
-
-> S U M M A R Y
->
-> My ability to learn quickly and research has allowed me to jump into
-> different industries and tackle complicated projects. I strive to
-> design solutions where the needs and interests of society, business
-> and design overlap. I am currently studying data visualization at
-> Parsons to improve my data skills and literacy.
->
-
 ### Experience
 
-#### UX LEAD \| CISCO MERAKI \| MAY 2023-Present\
+#### UX LEAD | CISCO MERAKI | MAY 2023-Present
 
 -   Lead efforts in supporting the merger of Cisco and Meraki networking
     teams, focusing on enterprise SaaS products to prioritize a unified
@@ -41,13 +25,13 @@ user: portfolio / password: highland
 -   Co-leading a redesign of datasheets, the most viewed asset by
     customers.
 
-#### PRODUCT STRATEGY, DESIGN & GROWTH \| SR CONSULTANT \| MOXXII CONSULTING \| 2018-2023
+#### PRODUCT STRATEGY, DESIGN & GROWTH | SR CONSULTANT | MOXXII CONSULTING | 2018-2023
 
 Clients include: Bokksu, Juice Beauty, Fusion Beads, Discount Low Voltage, Lana Jewelry and Oscar de la Renta
 
 Created more than 500M in revenue for medium and large sized B2B and D2C clients through personalization and segmentation. Presented recommendations to C-level management.
 
--   Generated over \$500M in revenue for medium and large-sized B2B and
+-   Generated over $500M in revenue for medium and large-sized B2B and
     D2C clients through datastack improvements, personalization and
     segmentation strategies.
 
@@ -58,10 +42,10 @@ Created more than 500M in revenue for medium and large sized B2B and D2C clients
 -   Conducted user research activities to uncover insights and guide
     product development strategies.
 
--   Collaborated with clients\' teams to align on overall strategy,
+-   Collaborated with clients' teams to align on overall strategy,
     including product lines, new customers, and content strategy.
 
-#### PRODUCT DIRECTOR / PARTNER \| SPARKLE LABS \| 2004-Present\
+#### PRODUCT DIRECTOR / PARTNER | SPARKLE LABS | 2004-Present
 
 -   Designed, developed, and marketed seven accessible educational
     electronics kits used in STEM learning across educational
@@ -78,7 +62,7 @@ Created more than 500M in revenue for medium and large sized B2B and D2C clients
 -   Create climate education for NJ schools and teach professional
     development
 
-#### UX/UI DESIGN MANAGER \| ASCENA RETAIL \| AnnTaylor & Loft Replatform \| 2022
+#### UX/UI DESIGN MANAGER | ASCENA RETAIL | AnnTaylor & Loft Replatform | 2022
 
 Managed a team of UX designers, off-shore developers, PMs and business
 stakeholders in the
@@ -87,7 +71,7 @@ digital transformation of Ascena's large e-commerce sites, AnnTaylor and
 Loft with minimal negative impact on their 600M online revenue.
 
 -   Managed digital transformation of e-commerce sites, optimizing user
-    experience and maintaining \$600M online revenue.
+    experience and maintaining $600M online revenue.
 
 -   Prioritized ADA accessibility and developed atomic design system to
     enhance overall UX/UI consistency.
@@ -96,11 +80,11 @@ Loft with minimal negative impact on their 600M online revenue.
     eliminated recurring meetings and resulted in faster delivery of
     designs to the development team.
 
-#### PRINCIPAL PRODUCT DESIGN / OWNER \| CUSTOMER PORTAL (SaaS), LUCID MOTORS \| 2021
+#### PRINCIPAL PRODUCT DESIGN / OWNER | CUSTOMER PORTAL (SaaS), LUCID MOTORS | 2021
 
 Released a uniquely personalized customer portal at scale in a short
 time period using existing materials, ML and an Omnichannel approach for
-the \$12.34 billion EV start-up. Helped define go-to-market strategy.
+the $12.34 billion EV start-up. Helped define go-to-market strategy.
 
 -   Produced multimodal research: competitor research, stakeholder and
     customer interviews, and user testing to define needs and identify
@@ -120,17 +104,17 @@ the \$12.34 billion EV start-up. Helped define go-to-market strategy.
     publications departments to align with stakeholder's roadmaps and
     breakdown silos and ensure customer first experience.
 
-#### INNOVATION & UX STRATEGIST \| SAMSUNG \| 2019**
+#### INNOVATION & UX STRATEGIST | SAMSUNG | 2019**
 
-#### UX DIRECTOR \| ONE ROCKWELL 2014- 2018**
+#### UX DIRECTOR | ONE ROCKWELL 2014- 2018**
 
 ##### Client: ALEX + ANI 
 
 re-positioned their philanthropy product line,
-Charity by Design, which resulted in its growth from \$30 million to
-\$500 million in the two years after launch.\
+Charity by Design, which resulted in its growth from $30 million to
+$500 million in the two years after launch.
 
-#### UX DIRECTOR \| CREATETHEGROUP 2010-2014
+#### UX DIRECTOR | CREATETHEGROUP 2010-2014
 
 ##### Client: PENINSULA HOTELS
 Increased AOV by 30% by adding the ability to
@@ -145,13 +129,13 @@ customers.
 
 ### EDUCATION
 
-##### MASTERS \| NYU INTERACTIVE TELECOMMUNICATIONS PROGRAM
+##### MASTERS | NYU INTERACTIVE TELECOMMUNICATIONS PROGRAM
 HCI and Product Design
 
-##### BACHELORS \| BOSTON UNIVERSITY
+##### BACHELORS | BOSTON UNIVERSITY
 International Relations, Communication Design
 
-##### YEAR ABROAD \| UNIVERSIDAD DE BUENOS AIRES, ARGENTINA
+##### YEAR ABROAD | UNIVERSIDAD DE BUENOS AIRES, ARGENTINA
 South American Politics, Economics & Literature
 
 ##### THE NEW SCHOOL
@@ -193,5 +177,5 @@ Climate Standards.
 
 ### R E C O G N I T I O N
 - GREATER AUSTIN SCIENCE & ENGINEERING FAIR JUDGE, 2024
-- NYC HACKATHON JUDGE Emoticon \| 2018, 2019, 2021
-- GALLERY HANAHOU Sparkle Labs Solo Exhibition \| SOHO 2010
+- NYC HACKATHON JUDGE Emoticon | 2018, 2019, 2021
+- GALLERY HANAHOU Sparkle Labs Solo Exhibition | SOHO 2010

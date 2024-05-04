@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="container mx-auto px-4 min-h-96 flex flex-col justify-center">
+  <h2 class="">{{ this.title }}</h2>
+</div>
+<img class="w-full" src="{{this.mainimage}}"/>
+<div class="container mx-auto px-4 my-24 prose">
+  {{ this.body }}
+</div>
+{% endblock %}

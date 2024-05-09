@@ -3,10 +3,10 @@
 {% block body %}
 <div class="flex flex-col w-full justify-center my-40">
   <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {% for child in this.children %}
       <a href="{{ child|url }}">
-        <div class="card rounded-btn w-full bg-base-100 shadow-xl h-full max-w-96 mx-auto">
+        <div class="card rounded-btn w-full bg-base-100 h-full max-w-96 mx-auto card-bordered shadow-sm card-compact">
           <figure class=""><img class="object-cover h-48 w-96" src="{{ child|url }}{{ child.mainimage }}" alt="" />
           </figure>
           <div class="card-body">

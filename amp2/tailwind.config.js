@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.html'],
+  content: ['./**/*.{html,js}', './**/*.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -47,7 +47,7 @@ module.exports = {
     ],
   },
   plugins: [
-    require("@tailwindcss/typography"), require('daisyui'),
+    require("@tailwindcss/typography"), require('daisyui'), require('tailwindcss-animated')
 
   ],
 }

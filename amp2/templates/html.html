@@ -1,55 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-<div class="container mx-auto px-4 min-h-96 flex flex-col justify-center">
-  <div class="flex flex-col xl:flex-row my-40">
-    <div class="mb-8 grow">
-      <h2 class="mb-2 text-6xl font-extralight">{{ this.title }}</h2>
-      <span class="badge badge-ghost badge-sm">Design system</span>
-      <span class="badge badge-ghost badge-sm">AI</span>
-      <span class="badge badge-ghost badge-sm">Susntainability</span>
-      <span class="badge badge-ghost badge-sm">Process refinement</span>
-    </div>
-
-    <div class="grid grid-cols-2 gap-4 max-w-4xl">
-    <!-- <div class="grid grid-cols-[150px_minmax(auto,_1fr)] gap-4 max-w-4xl"> -->
-      <div class="text-right font-semibold w-max">
-          <p>Business Goals</p>
-        </div>
-        <div>
-          <p>Maintain competitive edge in networking. Provide seamless transitions between Cisco and acquired offerings (Meraki, Thousand Eyes, Skylight). </p>
-        </div>
-        <div class="text-right font-semibold w-max">
-          <p>Challenges</p>
-        </div>
-        <div>
-          <p>Limited UX involvement in planning. Silos between UX teams. Disjointed user journeys. Missing sustainability messaging.</p>
-        </div>
-        <div class="text-right font-semibold w-max">
-          <p>Solutions</p>
-        </div>
-        <div>
-          <p>Adopted a scientific design approach. Emphasized goal alignment. Fostered cross-team collaboration. Established consistent .com locations for critical information. </p>
-        </div>
-        <div class="text-right font-semibold w-max">
-          <p>Role</p>
-        </div>
-        <div>
-          <p>
-            As UX Lead/Manager for Cisco, Meraki, and app marketplace, I drive strategy, process, and design for complex solutions.
-            Collaborate with cross-functional teams.
-            Manage stakeholders.
-            Represent UX in sustainability efforts across Cisco's diverse product range.
-          </p>
-        </div>
-      </div>
-  </div>
+<div class="min-h-96 flex flex-col justify-center">
+  {% include this.body %}
 </div>
-<img class="w-full" src="{{this.mainimage}}"/>
-
-
-
-<!-- <div class="container mx-auto px-4 my-24 prose"> -->
-  <!-- {{ this.body }} -->
-<!-- </div> -->
 {% endblock %}

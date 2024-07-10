@@ -1,0 +1,75 @@
+_model: splash
+---
+title: The Datasheet Program
+---
+client: Cisco Systems
+---
+body: datasheets.html
+---
+challenges:
+
+- Inconsistent information architecture
+- Datasheets are complex documents covering various product types.
+- Involvement of multiple departments.
+- Acquisitions like <em>Meraki</em>, <em>Thousand Eyes</em>, and <em>Splunk</em> need to use the new template.
+
+---
+goals:
+
+- Move datasheets onto the cloud.
+- Create a template aligned with the new design system.
+---
+role:
+
+As UX Lead, I drove strategy, requirements gathering, process design, and cross-functional collaboration to create the best resource for customers. I was able to take my work with the Sustainability Tiger team and apply it here making sure products with a sustainability story were highlighted.
+
+---
+solutions:
+
+#### Evaluate and collaborate:
+- Analyze the most popular datasheets.
+- Collaborate with all groups involved to prototype proof-of-concept datasheets for the most popular variations.
+
+#### Validate:
+- Conduct live validation on <a href="https://cisco.com">Cisco.com</a> using a research plan with a simple survey.
+- Implement a phased release based on data from product teams and types.
+---
+tags: <span class="badge badge-neutral bg-neutral border-neutral">badge</span>
+---
+description:
+
+</div>  
+<div class="lg:grid xl:grid-cols-3 gap-48 mb-48">
+    <div class="prose-xl leading-snug text-lime-700">
+      <P>
+        <h3 class="text-7xl font-black mb-4">450,000</h3>
+        Technical Assistance Center (TAC) cases could be closed with <em>documentation</em> and <em>customer education</em>.
+      </p>
+    </div>
+    <div class="prose-xl leading-snug text-emerald-700">
+      <P>
+        <h3 class="text-7xl font-black mb-4">37</h3>
+        Different job titles access the datasheets.
+      </p>
+    </div>
+    <div class="prose-xl leading-snug text-cyan-700">
+      <P>
+        <h3 class="text-7xl font-black mb-4">12,087</h3>
+        unique page views per month.
+      </p>
+    </div>
+  </div>
+<div class="xl:w-1/2 prose-xl md:prose-2xl">
+
+<p>
+<strong>One sheet to bring it all together</strong>
+</p>
+<p>
+I asked to join the newly prioritized datasheet redesign project,  they are critical assets used by customers to understand the capabilities and benefits of our products. I use datasheets in my work with hardware <em>at Sparkle Labs</em> and I knew how to improve them. I joined as <strong>UX lead</strong> to help set the vision and drive the project.&nbsp;The existing datasheets, while informative, lacked the user-centric design necessary to effectively communicate complex information and facilitate decision-making.
+</p>
+    </div>
+
+---
+mainimage: prototype_main.jpg
+---
+mainimageborder: yes

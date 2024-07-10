@@ -1,0 +1,28 @@
+_model: splash
+---
+title: Educational Electronics
+---
+mainimage: discovercover.jpg
+---
+client: Sparkle Labs
+---
+table:
+
+
+
+---
+description:
+<p>
+<strong>Sparkle Labs</strong> grew out of a sketchbook full of interactive toy ideas and prototypes created during graduate school. We started by pitching our ideas and inventing products for toy companies like <em>Mattel</em>, <em>KidRobot</em>, and <em>Hasbro</em>. After writing a few articles for <em>Make Magazine</em>, we realized readers did not understand the basics of electronics. We decided to create a hands-on user-friendly course in a box.
+</p>
+<p>
+We now have seven kits that teach both kids and adults how to prototype and understand electronics. Working with electronic circuits grows problem-solving skills, enables the ability to prototype your own ideas and repair the electronics that surround us.
+</p>
+---
+body: sparklelabs.html
+---
+tags:
+
+ <span class="badge badge-neutral bg-[#ECCC94] border-[#ECCC94]">badge</span>
+---
+showtable: no

@@ -1,11 +1,54 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-<div class="container mx-auto px-4 min-h-96 flex flex-col justify-center">
-  <h2 class="">{{ this.title }}</h2>
+<div class="container mx-auto px-4 mb-24 lg:mb-48 ">
+  <div class="pt-12 h-[50vh] flex flex-col justify-center">
+    <div class="font-black uppercase">
+      {{ this.client }}
+    </div>
+    <h2 class="mb-4 text-6xl lg:text-9xl font-extralight ">
+      {{ this.title }}
+    </h2>
+    <div>
+    {{ this.tags}}
+    </div>
+  </div>
+
+    <div class="xl:w-1/2 prose-xl md:prose-2xl">
+      {{ this.description }}
+    </div>
 </div>
-<img class="w-full" src="{{this.mainimage}}"/>
-<div class="container mx-auto px-4 my-24 prose">
-  {{ this.body }}
+
+<div class="2xl:container mx-auto mb-24 lg:mb-48">
+  <img class="w-full 2xl:rounded-md {% if this.mainimageshadow %}shadow-xl {% endif %} {% if this.mainimageborder %} border border-base-200{% endif %}" src="{{this.mainimage}}"/>
 </div>
+
+<div class="container mx-auto px-4 mb-48 lg:mb-64">
+  {% if this.showtable %}
+    <div class="grid lg:grid-cols-2 gap-8 w-3/4">
+
+      <div class="prose">
+      	<h3 class="font-extrabold uppercase whitespace-nowrap">Business Goals</h3>
+        {{ this.goals }}
+      </div>
+
+      <div class="prose">
+      	<h3 class="font-extrabold uppercase whitespace-nowrap"> Challenges </h3>
+        {{this.challenges}}
+      </div>
+
+      <div class="prose">
+      	<h3 class="font-extrabold uppercase whitespace-nowrap">Solutions</h3>
+        {{this.solutions}}
+      </div>
+
+      <div class="prose">
+      	<h3 class="font-extrabold uppercase whitespace-nowrap">Role</h3>
+        {{ this.role}}
+      </div>
+
+    </div>
+  {% endif %}
+</div>
+{% include this.body %}
 {% endblock %}

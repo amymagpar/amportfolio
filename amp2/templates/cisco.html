@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="container mx-auto px-4 min-h-96 flex flex-col justify-center">
+  <div class="flex flex-col xl:flex-row mt-40 mb-24">
+    <div class="grow mb-24">
+      <h2 class="mb-2 text-6xl font-extralight whitespace-nowrap">{{ this.title }}</h2>
+      {{ this.tags}}
+    </div>
+    <div class="">
+    <div class="grid sm:grid-cols-[min-content_1fr] sm:gap-4 max-w-2xl xl:mx-0 xl:float-right">
+    {{ this.table }}
+    </div>
+    </div>
+  </div>
+</div>
+<img class="w-full" src="{{this.mainimage}}"/>
+
+<div class="container mx-auto px-4 min-h-96 flex justify-center items-end">
+  <div class="mx-auto flex flex-col lg:flex-row max-w-6xl my-24 gap-12">
+    <div class="">
+      <h3>Sustainability UX Enhancements</h3>
+      <p><strong>Challenge:</strong> Fragmented placement of sustainability information throughout the user journey.</p>
+      <p> <strong>Objectives Achieved:</strong> Streamlined sustainability messaging, enhanced user journey, and created a more informed and positive interaction for Cisco's customers.</p>
+      <h3>Sustainability UX Enhancements</h3>
+        <p><strong>Challenge:</strong> Fragmented placement of sustainability information throughout the user journey.</p>
+        <p> <strong>Objectives Achieved:</strong> Streamlined sustainability messaging, enhanced user journey, and created a more informed and positive interaction for Cisco's customers.</p>
+      <h3>Sustainability UX Enhancements</h3>
+        <p><strong>Challenge:</strong> Fragmented placement of sustainability information throughout the user journey.</p>
+        <p class="mb-12"> <strong>Objectives Achieved:</strong> Streamlined sustainability messaging, enhanced user journey, and created a more informed and positive interaction for Cisco's customers.</p>
+      <img src="frame1954.png" class="shadow">
+    </div>
+    <div class="">
+      <img src="cisco_campaign.jpg" class="shadow">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

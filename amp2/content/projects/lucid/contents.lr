@@ -1,0 +1,53 @@
+_model: splash
+---
+title: On Boarding Experience
+---
+client: Lucid Group
+---
+body: lucid.html
+---
+mainimage: Lucid_home_b.jpg
+---
+tags:
+
+<span class="badge badge-neutral bg-primary border-primary">SaaS</span>
+<span class="badge badge-neutral bg-primary border-primary">Product</span>
+<span class="badge badge-neutral bg-primary border-primary">Start-up</span>
+<span class="badge badge-neutral bg-primary border-primary">Electric Vehicle</span>
+
+---
+description:
+<p>
+My journey with <em>Lucid Motors</em> centered on creating a seamless, informative, and engaging customer portal designed to <strong>educate</strong> and <strong>support</strong> users at every stage of their ownership journey— from the initial design phase, through the anticipation of delivery, and into their experiences as both new and seasoned owners. 
+</p>
+<p>
+Electric vehicles represent a transformative shift in the automotive industry, not only in terms of technology but also in how customers engage with their vehicles. An informed and engaged customer is more likely to appreciate and fully utilize the advanced features of their EV. I envisioned the customer portal as a comprehensive, user-centered digital platform that would cater to the unique needs and questions of EV owners at each stage of their journey.
+</p>
+
+---
+mainimageshadow: no
+---
+challenges: 
+
+- Portal lacked user-centered content/context.
+- Understanding diverse PM teams' roadmaps for departmental needs.
+- Ongoing negotiations for short and long-term business solutions.
+- APIs for critical portal info not ready for launch.
+---
+goals:
+Build a top-tier customer portal for initial 1,000 vehicles, scalable for 10,000. Ensure a white-glove experience by launch.
+---
+role:
+#### Product Owner/UX Lead
+
+- Managed a team of UX designers, a copywriter, and art directors.
+- Presented solutions for C-suite buy-in.
+- Led workshops with service, delivery, and finance teams.
+- Created a roadmap for a 3 year vision.
+- Contributed to user story creation for development.
+---
+solutions:
+
+- Personalize portal for user groups.
+- Adopt a crawl, walk, run approach.
+- Embrace agile processes for frequent updates.

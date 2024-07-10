@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tmp</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>Delivered-To: ariel.churi@gmail.com Received: by
+2002:ab3:1112:0:b0:26d:ea96:ba40 with SMTP id j18csp3788107lta; Wed, 19
+Jun 2024 14:14:04 -0700 (PDT) X-Received: by
+2002:a0c:9c83:0:b0:6b0:313:3602 with SMTP id
+6a1803df08f44-6b501ed5bc3mr38794696d6.60.1718831643896; Wed, 19 Jun 2024
+14:14:03 -0700 (PDT) ARC-Seal: i=1; a=rsa-sha256; t=1718831643; cv=none;
+d=google.com; s=arc-20160816;
+b=b8VI8RoNc8Qj6l/aD+egtUrMBjwfqWoq84sWRsaxS1kDEGxREkcP+Y9WZ/zTs6B0YU
+vVLj63TfzVf0499PxPBxCt64HX+sS51nJVC6rPJiLROdRguwbmGoGiCcWQlG9hvDugVy
+cDMMc/qeG8ur6hgC9TBsVol5qAud2jFe/4NIpL9ACMmaHDna7b1fP+2J3jQWPz4RbHNw
+cckQ522NGi4iZVNV3Pfy0cQ88H1msXgAyHr85ZJIrZnJ+aDJeJO4P9a92SirCXRtJ3X7
+ZskNY82vM9T42ekmh+Aq9W4QNwcnKaTVYFBuudag4CABHrWiXZW9JTBCZMf/7vWrdaLN
+nSQQ== ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+d=google.com; s=arc-20160816;
+h=to:date:message-id:subject:mime-version:from:dkim-signature;
+bh=FIUsU12hdIlGkvg8YpSaCTwPrKlnzdP0+0YWQxIEi30=;
+fh=wMjmT4W6Xs+QlU9plfbiywrPlAwW9SiZkGJlU2uPhKU=;
+b=kPjPa0yCZJ51IajZIjFCHljvvGHR2ns++9o2RVmDdP74z2xrJi0SmLGqH+f1dMR1QA
++N/I5sBIXvPiwioZQp4oEANe2BR8ucsuSXFG6sfbo6JHbJDJDm/DTVabYIjky2A2gkY8
+kQb6vWnSBseqcNN58t6cM/G/u7MOZ9UHzQqeFcI7sQS6kDV4pMoi8zfOPGqQsL3dW2dw
+2ByDH4MQ+XlRmNbj951S7Fp/qWBoPmuHUF8CXGNq2XoWblWGMBydJSAwM59kzDccPdNf
+cTzttZAeRH83EteIDT/cnO+xjqIccCxdlqnvUKHMHN7jPD4ALYpuJ7aGFs8fIX5pQs+l
+V4Aw==; dara=google.com ARC-Authentication-Results: i=1; mx.google.com;
+dkim=pass header.i=<span class="citation"
+data-cites="gmail.com">@gmail.com</span> header.s=20230601
+header.b=HZlIz5cb; spf=pass (google.com: domain of amy.parness@gmail.com
+designates 209.85.220.41 as permitted sender)
+smtp.mailfrom=amy.parness@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE
+dis=NONE) header.from=gmail.com Return-Path: <a
+href="mailto:amy.parness@gmail.com"
+class="email">amy.parness@gmail.com</a> Received: from
+mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41]) by
+mx.google.com with SMTPS id
+6a1803df08f44-6b508a559fbsor8515836d6.6.2024.06.19.14.14.03 for <a
+href="mailto:ariel.churi@gmail.com"
+class="email">ariel.churi@gmail.com</a> (Google Transport Security);
+Wed, 19 Jun 2024 14:14:03 -0700 (PDT) Received-SPF: pass (google.com:
+domain of amy.parness@gmail.com designates 209.85.220.41 as permitted
+sender) client-ip=209.85.220.41; Authentication-Results: mx.google.com;
+dkim=pass header.i=<span class="citation"
+data-cites="gmail.com">@gmail.com</span> header.s=20230601
+header.b=HZlIz5cb; spf=pass (google.com: domain of amy.parness@gmail.com
+designates 209.85.220.41 as permitted sender)
+smtp.mailfrom=amy.parness@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE
+dis=NONE) header.from=gmail.com DKIM-Signature: v=1; a=rsa-sha256;
+c=relaxed/relaxed; d=gmail.com; s=20230601; t=1718831643; x=1719436443;
+dara=google.com;
+h=to:date:message-id:subject:mime-version:from:from:to:cc:subject
+:date:message-id:reply-to;
+bh=FIUsU12hdIlGkvg8YpSaCTwPrKlnzdP0+0YWQxIEi30=;
+b=HZlIz5cbwfDrgUm5mgUEPNq7mJTbn/+rznXaMcEkP/CT8EqJ20hzj3Yq1fyXzVfyUX
+PX1Moz5Y+vKEyEqmX+uhh2gdD4dqIk+3bVQBWal/uJLaM6Kw7r9Wu9nncCRaFicrACUX
+uvC8P5U0KkyRUFzdN+OoL1U8UWUbvTagI76APcH8rbNxt3UuVoIKk0nDhUJO+/IROw5K
+laN+rtzB8MI7ENGdtutMiBSb0AsBjIhRTJdynEkt2ANY+plirIV+eNTt3rLjbGZXQbc3
+rvDhuHOHwvk8ZA7U1WZ6ywmNtitTpa4pcnWr0U5VVLFs7rK83hyG3FTGAOgdvzNt7NtL
+h9RQ== X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+d=1e100.net; s=20230601; t=1718831643; x=1719436443;
+h=to:date:message-id:subject:mime-version:from:x-gm-message-state
+:from:to:cc:subject:date:message-id:reply-to;
+bh=FIUsU12hdIlGkvg8YpSaCTwPrKlnzdP0+0YWQxIEi30=;
+b=pKVs6AqeDWgEnWCV6cl5wH8l5Dwm/Q9P/iu0PIQFwRFkEu2gKDPq90jfUX1YM+ZOIf
+1lML7bbsTX4IT4UCXSGPYmT8TkTb9rPeyOqVLxLIKU99076bGq2YcmRGrKaF9I8oErv6
+7kZSdGNc/YE6RFwRq+vcWQkPiWFrrDiAylJKi7UXL2PGOIrHM8GGcMFlR7DuOt+dqwhs
+Z+Tjiu1n75/TqLkAVlntCwRPJ/viXrZp/5r0CMIILf9mCLM3LwyRtKz86AtQooJarz80
+QvYIk1fgR4rEUkKOUMr5t1foJL34Jud3qUnFWFa7H18M+3+zLNTKg6/yw2jhzjK1D5FE
+/LVQ== X-Gm-Message-State:
+AOJu0YwO9O+P9QdXaN08Z5W9nmWcRhk3SAeNvTFHWT5ztBdjOzsqejQs
+rrm2xLk2H4UasQBtwdZeDHQkBVLQkfDs5FgsczQL4ZqhIVerPIP6Vu+Zkw==
+X-Google-Smtp-Source:
+AGHT+IEDlIkGWy2KcCW6fJI/6s9Ci2KbBbeSS+UkHV3B0XFsqeXS75Py0Vk4m7Xbd7u66cQiKLnl5w==
+X-Received: by 2002:a0c:db83:0:b0:6b0:4542:e42e with SMTP id
+6a1803df08f44-6b501e3f5a3mr42355406d6.28.1718831642937; Wed, 19 Jun 2024
+14:14:02 -0700 (PDT) Return-Path: <a href="mailto:amy.parness@gmail.com"
+class="email">amy.parness@gmail.com</a> Received: from smtpclient.apple
+(pool-108-53-237-45.nwrknj.fios.verizon.net. [108.53.237.45]) by
+smtp.gmail.com with ESMTPSA id
+6a1803df08f44-6b2a5edbc7csm80185136d6.109.2024.06.19.14.14.02 for <a
+href="mailto:ariel.churi@gmail.com"
+class="email">ariel.churi@gmail.com</a> (version=TLS1_2
+cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128); Wed, 19 Jun 2024
+14:14:02 -0700 (PDT) From: Amy Parness <a
+href="mailto:amy.parness@gmail.com"
+class="email">amy.parness@gmail.com</a> Content-Type:
+multipart/alternative;
+boundary=“Apple-Mail=_D6FC94C0-23ED-4E32-83A9-E38C3F58D451”
+Mime-Version: 1.0 (Mac OS X Mail 16.0 (3696.120.41.1.1)) Subject:
+Sustainability Message-Id: <a
+href="mailto:C2B81297-C385-42AF-8307-B065D2D7A579@gmail.com"
+class="email">C2B81297-C385-42AF-8307-B065D2D7A579@gmail.com</a> Date:
+Wed, 19 Jun 2024 17:14:01 -0400 To: Ariel Churi <a
+href="mailto:ariel.churi@gmail.com"
+class="email">ariel.churi@gmail.com</a> X-Mailer: Apple Mail
+(2.3696.120.41.1.1)</p>
+<p>–Apple-Mail=_D6FC94C0-23ED-4E32-83A9-E38C3F58D451
+Content-Transfer-Encoding: quoted-printable Content-Type: text/plain;
+charset=utf-8</p>
+<p>Business Goals Improve sustainability messaging and program
+awareness. Challenges Many departments need to approve messaging and
+design including legal = team. Solutions Show, don=E2=80=99t tell
+approach. Focus on what customers care about = like energy management
+and power consumption. Place this information = within different user
+journeys to tell a story. Role As UX Lead on Global Sustainability Tiger
+team. I drive strategy, = process, and design for complex solutions.
+Collaborate with = cross-functional teams. Manage stakeholders.
+Represent UX in = sustainability efforts across Cisco’s diverse product
+range. =20</p>
+<p>Lack of requirements call for actionable research Spearheaded a
+comprehensive data analysis project to review user = journeys of
+sustainability-focused users. Directed the analysis of UX research data,
+including interviews, = surveys, and usability testing, to gain deep
+insights into user = preferences and behavior. Results:=20 Identified
+critical barriers, such as fragmented information placements = and the
+absence of energy data, which hindered user engagement. Recognized that
+high-level sustainability information while engaging for = Press and
+people researching Cisco, failed to drive users to product and =
+solution pages, necessitating a strategic overhaul.</p>
+<p>Images to add UCS-XSeries- eco cert Datasheet sustainability info</p>
+<p>Add in three up opportunity blade Show, Don=E2=80=99t tell Enhance
+the visibility of product and solutions’ energy certifications = and
+power management capabilities. Design visually compelling elements and
+strategically place them = throughout the customer journey Consistency
+Integrate energy certifications and energy data points into product =
+pages, marketing materials, and user interfaces to reinforce this =
+information throughout the user journey. Transform critical
+sustainability information from being buried and = difficult to find to
+prominent and easily accessible. Governance Organization changes were
+recommended to keep data sheet authoring = consistent.=20 Oversight is
+required to maintain brand consistency in tone and = visually.=20
+Highlighting Key Features: Prioritizes which features and benefits to =
+highlight based on research and customer feedback to better meet user =
+needs and drive sales. Competitive Edge: Ensures that the data sheets
+effectively communicate = the company=E2=80=99s competitive advantages
+and unique selling points.</p>
+<hr />
+<p>Scalable Pattern Integration A lifecycle program pattern I designed
+is being used on hardware product = pages and in end-of-life notices to
+raise awareness of Cisco’s = commitments to the environment and a
+circular economy model.</p>
+<p>Recognizing the need for a versatile approach, I implemented a
+scalable = pattern that could accommodate between one and six key
+sustainability = facts. This pattern was seamlessly integrated into
+various touchpoints, = from product pages to marketing collateral,
+ensuring a cohesive user = experience. By working with the design team,
+I created visually distinct = elements that highlighted sustainability
+features, which led to a more = informed and empowered customer base.
+The scalable nature of this = pattern allowed for consistent application
+across different product = lines without compromising user
+experience.</p>
+<p>Outcomes Led cross-functional teams in redesigning the content
+strategy based on = actionable insights from data analysis. Pioneered
+the development and implementation of a pattern to effectively = promote
+lifecycle programs for hardware products and end-of-life = information.
+Established a visually distinctive scalable pattern for consistent =
+sustainability messaging across the site. Integrated certifications like
+Energy Star and Titanium into the = redesigned content, ensuring they
+were prominently featured. Significantly improved the user experience by
+making critical = sustainability information easily accessible,
+engaging, and seamlessly = integrated into the user journey.</p>
+<pre><code>    =20</code></pre>
+<p>–Apple-Mail=_D6FC94C0-23ED-4E32-83A9-E38C3F58D451
+Content-Transfer-Encoding: quoted-printable Content-Type: text/html;
+charset=utf-8</p>
+<html>
+<head>
+&lt;meta http-equiv=3D”Content-Type” content=3D”text/html; =
+charset=3Dutf-8”&gt;
+</head>
+<body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><div =
+class=3D"xl:mx-0 sm:grid-cols-[min-content_1fr] xl:float-right max-w-2xl =
+grid sm:gap-4">
+                <div class=3D"whitespace-nowrap font-semibold =
+sm:text-right"><div style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Business =
+Goals</span></div><div style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Improve =
+sustainability messaging and program awareness.</span></div><p =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""></p><div style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">Challenges</span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Many departments need to approve messaging and design =
+</span><span data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D"">including</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> </span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">legal</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""> =
+team.</span></div><p style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""></p><div style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Solutions</span></div><div style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Show, don=E2=80=99t tell approach. Focus on what =
+customers care about </span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">like</span><span=
+ data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> energy management and power consumption. Place this =
+information within different user journeys to tell a =
+story.</span></div><p style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""></p><div style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Role</span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">As&nbsp;</span><strong style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><em style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">UX Lead on =
+</span><span data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D"">Global</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> Sustainability Tiger team</span></em></strong><em =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">.&nbsp;</em><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">I drive =
+strategy, process, and design for complex solutions. Collaborate with =
+cross-functional teams. Manage stakeholders. Represent UX in =
+sustainability efforts across&nbsp;</span><strong style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Cisco</strong><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">'s diverse product =
+range.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><h3 style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""></h3><h3=
+ style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D""><br class=3D""></span></h3><h3 =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D""><br class=3D""></span></h3><h3 =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Lack of requirements call for =
+actionable research</span></h3><ul style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><li style=3D"margin-top: =
+0pt; margin-bottom: 0pt; list-style-type: disc;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Spearheaded a comprehensive data analysis project to =
+review user journeys of sustainability-focused users.</span></li><li =
+style=3D"margin-top: 0pt; margin-bottom: 0pt; list-style-type: disc;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Directed the analysis of UX =
+research data, including interviews, surveys, and usability testing, to =
+gain deep insights into user preferences and =
+behavior.</span></li></ul><h3 style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">   Results:&nbsp;</span></h3><ul style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><li =
+style=3D"margin-top: 0pt; margin-bottom: 0pt; list-style-type: disc;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Identified</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> critical barriers, such as fragmented information =
+placements and the absence of energy data, </span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">which</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""> hindered user =
+engagement.</span></li><li style=3D"margin-top: 0pt; margin-bottom: 0pt; =
+list-style-type: disc;" class=3D""><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Recognized =
+that high-level sustainability information while engaging for Press and =
+people researching </span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">Cisco,</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""> failed to =
+drive users to product and solution pages, necessitating a strategic =
+overhaul.</span></li></ul><p style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""></p><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""><b class=3D""><u class=3D""><br =
+class=3D""></u></b></span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""><b class=3D""><u class=3D""><br =
+class=3D""></u></b></span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""><b class=3D""><u class=3D"">Images to =
+add</u></b></span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">UCS-XSeries- eco cert</span></div><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Datasheet sustainability info</span></div><p =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""></p><div style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""><br =
+class=3D""></span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""><br class=3D""></span></div><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Add in </span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">three</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""> =
+up</span><span data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""> opportunity </span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">blade</span></div><p style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""></p><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Show, Don=E2=80=99=
+t tell</strong></div><p style=3D"color: rgb(14, 16, 26); margin-top: =
+0pt; margin-bottom: 0pt;" class=3D""></p><div style=3D"color: rgb(14, =
+16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Enhance the visibility of product and solutions' energy =
+certifications and power management capabilities.</span></div><div =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Design visually compelling elements =
+and strategically place them throughout the customer =
+journey</span></div><p style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""></p><div style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">Consistency</strong></div><div style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Integrate energy certifications and energy data points =
+into product pages, marketing materials, and user interfaces to =
+reinforce this information throughout the user journey.</span></div><div =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><strong style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">T</strong><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">ransform =
+critical sustainability information from </span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">being</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""> buried and =
+difficult to find to prominent and easily accessible.</span></div><p =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""></p><div style=3D"color: rgb(14, 16, 26); margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D""><strong style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D"">Governance</strong></div><div =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><strong style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">Organization changes</strong><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">&nbsp;were recommended</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> to keep data sheet authoring =
+consistent.&nbsp;</span></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Oversight is required to maintain&nbsp;b</span><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">rand =
+consistency in tone and visually</strong><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">.</span><strong style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D"">&nbsp;</strong></div><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Highlighting =
+Key Features:</strong><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">&nbsp;Prioritizes which features and benefits to highlight =
+based on research and customer feedback </span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">to better meet user needs</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> and drive sales.</span></div><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Competitive =
+Edge:</strong><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">&nbsp;Ensures that the data sheets =
+effectively communicate the company=E2=80=99s competitive advantages and =
+unique selling points.</span></div><p style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""></p><div style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""><br =
+class=3D""></strong></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""><br =
+class=3D""></strong></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""><br =
+class=3D""></strong></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D"">------------</strong></div><div style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><strong =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">Scalable =
+Pattern Integration</strong></div><div style=3D"color: rgb(14, 16, 26); =
+margin-top: 0pt; margin-bottom: 0pt;" class=3D"">A lifecycle program =
+pattern I designed is being used on hardware product pages and in =
+end-of-life notices to raise awareness of Cisco's commitments to the =
+environment and a circular economy model.</div><p style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""></p><h3 =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D""><br class=3D""></span></h3><h3 =
+style=3D"color: rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D""><span style=3D"font-size: 12px; =
+font-weight: 400;" class=3D"">Recognizing the need for a versatile =
+approach, I implemented a scalable pattern that could accommodate =
+between one and six key sustainability facts. This pattern was =
+seamlessly integrated into various touchpoints, from product pages to =
+marketing collateral, ensuring a cohesive user experience. By working =
+with the design team, I created visually distinct elements that =
+highlighted sustainability features, which led to a more informed and =
+empowered customer base. The scalable nature of this pattern allowed for =
+consistent application across different product lines without =
+compromising user experience.</span></span></h3><h3 style=3D"color: =
+rgb(14, 16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""><br class=3D""></span></h3><h3 style=3D"color: rgb(14, =
+16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""><br class=3D""></span></h3><h3 style=3D"color: rgb(14, =
+16, 26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Outcomes</span></h3><ul style=3D"color: rgb(14, 16, =
+26); margin-top: 0pt; margin-bottom: 0pt;" class=3D""><li =
+style=3D"margin-top: 0pt; margin-bottom: 0pt; list-style-type: disc;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Led</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> cross-functional teams in redesigning the content =
+strategy based on actionable insights from data analysis.</span></li><li =
+style=3D"margin-top: 0pt; margin-bottom: 0pt; list-style-type: disc;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Pioneered</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> </span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">the =
+development and implementation of</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> a pattern </span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">to effectively =
+promote lifecycle programs for hardware products and end-of-life =
+information</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D"">.</span></li><li=
+ style=3D"margin-top: 0pt; margin-bottom: 0pt; list-style-type: disc;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Established</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> a visually distinctive scalable pattern for consistent =
+sustainability messaging across the site.</span></li><li =
+style=3D"margin-top: 0pt; margin-bottom: 0pt; list-style-type: disc;" =
+class=3D""><span data-preserver-spaces=3D"true" style=3D"margin-top: =
+0pt; margin-bottom: 0pt;" class=3D"">Integrated certifications like =
+Energy Star and Titanium into the redesigned content, ensuring they were =
+prominently featured.</span></li><li style=3D"margin-top: 0pt; =
+margin-bottom: 0pt; list-style-type: disc;" class=3D""><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D"">Significantly</span><span data-preserver-spaces=3D"true" =
+style=3D"margin-top: 0pt; margin-bottom: 0pt;" class=3D""> improved the =
+user experience by making critical sustainability information =
+</span><span data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; =
+margin-bottom: 0pt;" class=3D"">easily</span><span =
+data-preserver-spaces=3D"true" style=3D"margin-top: 0pt; margin-bottom: =
+0pt;" class=3D""> accessible, engaging, and seamlessly integrated into =
+the user journey.</span></li></ul><div class=3D""><br =
+class=3D""></div></div><div class=3D"xl:text-justify mb-4"><div =
+class=3D""><div class=3D""><div class=3D""><h3 class=3D"font-medium =
+mb-3"><br class=3D""></h3></div></div><p class=3D"">&nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;</p></div><div class=3D""><br class=3D""></div><div =
+class=3D""><br class=3D""></div>
+      </div></div>
+<br class=3D""></body>
+</html>
+<p>=</p>
+<p>–Apple-Mail=_D6FC94C0-23ED-4E32-83A9-E38C3F58D451–</p>
+</body>
+</html>

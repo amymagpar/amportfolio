@@ -9,8 +9,11 @@ body: sustainability.html
 mainimage: yoursmartspace-s.jpg
 ---
 description:
+
 <p>
-As the <em>UX Lead</em> of the <strong>Global Sustainability Messaging Tiger Team</strong> at <em>Cisco Meraki</em>, I spearheaded the development of a compelling sustainability narrative designed to engage and inform our customers. By working with the <strong>ESO</strong> and <strong>CSO</strong> teams and studying customer research, we crafted a powerful story that highlights sustainability throughout the user journey, real-world impact stories, and future goals. I designed <strong>interactive elements</strong>, and clickable infographics to create an engaging and immersive experience. 
+As the <em>UX Lead</em> of the <strong>Global Sustainability Messaging Tiger Team</strong> at <em>Cisco Meraki</em>, I spearheaded the development of a compelling sustainability narrative designed to engage and inform our customers. 
+<p></p>
+By working with the <strong>ESO</strong> and <strong>CSO</strong> teams and studying customer research, we crafted a powerful story that highlights sustainability throughout the user journey, real-world impact stories, and future goals. I designed <strong>interactive elements</strong>, and clickable infographics to create an engaging and immersive experience. 
 </p>
 ---
 challenges: Multiple departments and legal were required to approve all messaging.
@@ -24,6 +27,6 @@ solutions: Show, don’t tell approach. Focus on what customers care about like 
 tags:
 
 <span class="badge badge-neutral bg-accent border-accent">sustainability</span>
-<span class="badge badge-neutral bg-accent border-accent">user journeys</span>
+<span class="badge badge-neutral bg-accent border-accent text-nowrap">user journeys</span>
 <span class="badge badge-neutral bg-accent border-accent">design</span>
 <span class="badge badge-neutral bg-accent border-accent">collaboration</span>

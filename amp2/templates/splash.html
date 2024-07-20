@@ -1,22 +1,22 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-<div class="container mx-auto px-4 mb-24 lg:mb-48 ">
-  <div class="pt-12 h-[50vh] flex flex-col justify-center">
-    <div class="font-black uppercase">
+<div class="container mx-auto px-4 mb-24 lg:mb-48 flex flex-col items-center">
+  <div class="mt-48 flex flex-col justify-center items-center">
+    <div class="mb-2 font-black uppercase">
       {{ this.client }}
     </div>
-    <h2 class="mb-4 text-6xl lg:text-9xl font-extralight ">
+    <h2 class="mb-6 md:mb-8 lg:mb-10 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extralight text-center">
       {{ this.title }}
     </h2>
-    <div>
+    <hr class="mb-6 md:mb-8 border-b border-base-content-300 w-4/6"/>
+    <div class="flex flex-wrap gap-3 justify-center">
     {{ this.tags}}
     </div>
   </div>
-
-    <div class="xl:w-1/2 prose-xl md:prose-2xl">
-      {{ this.description }}
-    </div>
+  <div class="mt-10 prose md:prose-lg lg:prose-xl text-left sm:text-center leading-snug">
+    {{ this.description }}
+  </div>
 </div>
 
 <div class="2xl:container mx-auto mb-24 lg:mb-48">

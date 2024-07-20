@@ -34,12 +34,18 @@ solutions:
 - Conduct live validation on <a href="https://cisco.com">Cisco.com</a> using a research plan with a simple survey.
 - Implement a phased release based on data from product teams and types.
 ---
-tags: <span class="badge badge-neutral bg-neutral border-neutral">badge</span>
+tags:
+
+<span class="badge badge-neutral bg-neutral border-neutral">information architecture</span>
+<span class="badge badge-neutral bg-neutral border-neutral">product management</span>
+<span class="badge badge-neutral bg-neutral border-neutral">responsive design</span>
+<span class="badge badge-neutral bg-neutral border-neutral">accessibility</span>
+
 ---
 description:
 
 </div>  
-<div class="lg:grid xl:grid-cols-3 gap-48 mb-48">
+<div class="lg:grid lg:grid-cols-3 gap-36 mb-24">
     <div class="prose-xl leading-snug text-lime-700">
       <P>
         <h3 class="text-7xl font-black mb-4">450,000</h3>
@@ -49,23 +55,24 @@ description:
     <div class="prose-xl leading-snug text-emerald-700">
       <P>
         <h3 class="text-7xl font-black mb-4">37</h3>
-        Different job titles access the datasheets.
+        Different users access the datasheets. Cyber Security Advisor, IT Manager, Systems Administrator...
       </p>
     </div>
     <div class="prose-xl leading-snug text-cyan-700">
       <P>
-        <h3 class="text-7xl font-black mb-4">12,087</h3>
-        unique page views per month.
+        <h3 class="text-7xl font-black mb-4">363,000</h3>
+       Datasheet views per month. Cisco System's second most popular asset.
       </p>
     </div>
   </div>
-<div class="xl:w-1/2 prose-xl md:prose-2xl">
+<div class="prose md:prose-lg lg:prose-xl text-left sm:text-center leading-snug">
 
-<p>
+<h3 class="">
 <strong>One sheet to bring it all together</strong>
-</p>
-<p>
-I asked to join the newly prioritized datasheet redesign project,  they are critical assets used by customers to understand the capabilities and benefits of our products. I use datasheets in my work with hardware <em>at Sparkle Labs</em> and I knew how to improve them. I joined as <strong>UX lead</strong> to help set the vision and drive the project.&nbsp;The existing datasheets, while informative, lacked the user-centric design necessary to effectively communicate complex information and facilitate decision-making.
+</h3>
+<p class="">
+
+I asked to lead the newly prioritized datasheet redesign project. Datasheets are critical assets used by customers to understand the capabilities and benefits of Cisco products. I use datasheets in my work with hardware at <em>Sparkle Labs</em> and I knew how to improve them. I joined as <strong>UX lead</strong> to help set the vision and drive the project.&nbsp;The existing datasheets, while informative, lacked the user-centric design necessary to effectively communicate complex information and facilitate decision-making.
 </p>
     </div>
 

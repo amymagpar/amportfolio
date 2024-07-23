@@ -46,21 +46,21 @@ description:
 
 </div>  
 <div class="lg:grid lg:grid-cols-3 gap-36 mb-24">
-    <div class="prose-xl leading-snug text-lime-700">
+    <div class="prose-xl leading-snug text-[#2A629A]">
       <P>
-        <h3 class="text-7xl font-black mb-4">450,000</h3>
+        <h3 class="text-7xl font-black mb-4">450k</h3>
         Technical Assistance Center (TAC) cases could be closed with <em>documentation</em> and <em>customer education</em>.
       </p>
     </div>
-    <div class="prose-xl leading-snug text-emerald-700">
+    <div class="prose-xl leading-snug text-[#FF7F3E]">
       <P>
         <h3 class="text-7xl font-black mb-4">37</h3>
         Different users access the datasheets. Cyber Security Advisor, IT Manager, Systems Administrator...
       </p>
     </div>
-    <div class="prose-xl leading-snug text-cyan-700">
+    <div class="prose-xl leading-snug text-[#003285]">
       <P>
-        <h3 class="text-7xl font-black mb-4">363,000</h3>
+        <h3 class="text-7xl font-black mb-4">363k</h3>
        Datasheet views per month. Cisco System's second most popular asset.
       </p>
     </div>

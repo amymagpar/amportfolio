@@ -1,0 +1,233 @@
+MERCEDES CASTILLO
+
+The Camuto group wanted to showcase Mercedes
+Castillo, Camuto had been her mentor. This was a
+passion project for the group.
+We focused on innovation to differentiate the experience
+on the site from the crowded hi-end designer market.
+
+Horizontal cart
+A horizontal cart is unexpected and creates a sense of playfulness. Large images in the
+cart create a luxurious feeling even in a mundane process.
+
+Film like animations makes the visuals of browsing even more appealing.
+
+Sale Stopwatch
+The stopwatch was created for the site to give
+some urgency to purchasing the items during
+infrequent sales.
+Sales would only happen biannually. This
+stopwatch could countdown to sale time or
+countdown until the sale ends.
+
+Organic Search Content
+Content layout for the brand pages would be
+curated by Mercedes. The strategy was to drive
+organic search and create content that goes
+along with the customer's other interests like
+travel, art, and design. This content was shopable
+and presented visually by color scheme and
+style.
+
+Store finder
+The store finder was more heavy hitting than most. Mercedes Castillo's various product lines could be found in some stores and
+not others. This was also very important as they decided to move to a purely wholesale model in the end.
+
+One Page Checkout
+Checkout was designed to offer all of the information customers needed on one page to curb abandonment.
+This checkout was fast and easy.
+
+PENINSULA HOTELS
+Creating a Legend of Luxury
+I was in charge of the strategy, booking flow design from
+creating a widget on the homepage to follow through after
+checkout. I created user personas with the Hong Kong
+management and marketing teams. I redesigned the
+Peninsula.com sitemap.
+
+Design challenges
+10 different locations with unique offerings
+Multiple languages
+Multiple currencies
+Use cases- Booking agents, current clients with accounts and
+new customers
+
+Booking widget
+Peninsula booking was very complex. I solved this by making
+a widget that allowed users to book multiple rooms at the
+same time. The widget went through many iterations.
+Customers could choose adjacent or stand alone rooms and
+filter by accessible options. Booking agents could enter
+booking codes right in the widget and get correct pricing.
+
+Multiple ways to book
+Some people like to book by dates and others who are taking a leisure
+trip often like to chose their room first and then secure dates. The
+Room detail page offered several approaches. Users may checkout by
+choosing dates, specific suites or even by offers.
+
+Widget as persistent cart
+The widget follows the customer all the way through checkout. This streamlined programming
+of the booking process and at the same time helps users stay on task.
+Bed sizes were able to be chosen on the same room as well as offers.
+
+Design challenges
+The room comparison feature highlighted differences in rooms
+and showed all details in an organized way that could be
+scanned quickly. This page could be saved as a PDF or
+emaiedl directly to someone.
+
+Peninsula is truly an
+international website. I worked
+with the design team to
+incorporate multiple languages
+as well as currencies.
+
+Perfection in the details
+Peninsula wants customers to see them as a luxury
+destination not just an accommodation.
+A section in checkout called Perfection is in the
+Details was created to add value to the experience
+and increase cart value. Customers could add on
+luxury items like chocolates, champagne in the
+room, fragrances, personalize newspapers and
+schedule airport transfers in luxury vehicles.
+
+Peninsula has a lot of repeat customers that have
+accounts with the company. It was important to
+remember these "members" preferences and offer
+them unique service.
+
+Confirmation Details
+Users were given another chance to customize their stay after making a
+reservation. They were also given the weather for their destination.
+Ethos Footer
+The footer represented the four pillars of the Peninsula Experience instead
+of being just a utility.
+
+Follow Through
+The user experience does not end after checkout.
+We offered ideas and experiences upon
+cancellation We were able to showcase the other
+locations here which impressed how grand the
+hotels are all over Asia and the US.
+
+Enhance the Experience after checkout
+Peninsula has world class restaurants and spas as
+well as tours. These experiences were shown on
+the confirmation page and could be added and
+booked online.
+
+BALLY OF SWITZERLAND
+Bally went through a rebranding to express the luxury of the Alps, heritage of the brand and craftsman of the
+shoes.
+Scribe Novo handmade shoes.
+Bally had updated the Scribe brand to Scribe Novo and it was our job to raise the Bally brand awareness with a
+younger generation. Bally items are an investment that last a lifetime.
+
+The layout for the women was different
+than the men’s collection.This helped
+differentiate them visually. Scribe was
+interwoven throughout the men’s pages
+to raise awareness of the made to order
+option.
+Visual Footer
+A nontraditional footer was created for
+Bally. It gave us the opportunity to
+showcase special content or collections
+without putting promos in the listings.
+
+Bally's history is interesting and
+the timeline showed Bally’s influence on
+men's luxury through the decades.
+
+GODIVA
+Godiva sees itself a s a luxury brand but felt they had lost
+some of their reputation. I was in charge of strategy, design
+and user experience. I worked with all of their departments to
+help create an online experience that would help relieve
+work in other departments and expedite fulfillment.
+Bringing back the luxury
+I created new content sections to elevate the brand. A
+Glossary of Chocolate, chocolate chefs feature and recipes
+section were added to help customers get to know the real
+Godiva. These sections showed the European roots of the
+company and the creative process of the chefs. These
+sections increased customers arriving by organic search
+significantly.
+
+What’s in the box?
+Before I redesigned the Godiva website, customers
+could not see what was inside the box of chocolates. I
+created a What’s Inside feature on the product details
+pages where users can see the chocolates in detail with
+a cross section view of each piece. This created a more
+visceral shopping experience.
+Filtering was added for allergies or favorite types of
+chocolate which helped customers find the perfect gift.
+
+Content is king
+The Chocolate Glossary was added to educate the
+customers on the different kinds of chocolates and link
+from the PDP where the pieces are shown in the What’s
+inside area.
+The customers could also find information items that
+were boutique only in order to drive customers into the
+stores.
+
+Corporate gifting PDP
+Godiva has large corporate gifting customers. I created a
+unique experience for these clients.
+
+The whole experience
+I met with customer service and fulfillment
+teams to solve issues that would make their
+job more efficient without sacrificing the
+user experience.
+We figured out a new way to do
+personalized ribbons and solved
+customer service issues like delivery times
+with the new checkout design. I had wanted
+more integration with the retail stores but
+this was to be implemented in later phases.
+
+ALEX +ANI
+I did competitive research, a site evaluation, new site map,
+redesign of the entire web and mobile site and strategy.
+I created a gift guide and the ability to shop by charity and
+meaning. I created a mini site for the Charity by Design
+giving aspect of the company.
+This mobile homepage shows all of the optional modules we
+created for them to use in order to create an updated site
+throughout the year.
+
+Emphasize philanthropy- Charity by Design
+When I started working with Alex + Ani, Charity by Design where they create designs that give 20% to that particular charity, was not
+prominent on the site. It had raised 30million at the time I started working with them. When the company changed management in
+2018, Charity by Design had raised 500 million.
+I made Charity by Design its own distinct sub-brand, with its own voice, tag line, logo, look and
+feel, blog, etc. It was an option in the main site navigation and items on PLPs and PDPs had a CBD badge. Charity by Design page
+was given a dynamic editorial-style blog with real stories, and not just a summary about philanthropy. During checkout, we used this
+space to show the charities to people who have not noticed them and let them choose who they would like to donate to or add
+additional support.
+
+Shopping by symbols and meaning
+My job was to show Carolyn’s vision of the Alex and Ani
+brand. “They are unique statements that speak volumes
+about those who wear them. They are symbols marking
+individual paths of life.”
+I focused on shopping by meaning and symbols while
+giving more information on the history of the meaning or
+symbol.
+Videos were added to increase SEO and movement on
+the site. Videos were added to the product images, care
+and cleaning as well as how to wear promo/tutorials.
+The mobile image here shows a Shop the look page I
+designed to allow users to shop one item or all on the
+same page.
+
+THANK YOU
+amy@sparklelabs.com
+(646) 382-6522
+
+

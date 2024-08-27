@@ -9,7 +9,7 @@ client: Multiple Clients
 description:
 
 <p> Multiple examples of eCommerce work </p>
-<p><strong>Role:</strong> User Experience Team Lead</p>
+<p><strong>Role:</strong> User Experience Director, Team Lead</p>
 ---
 goals: 
 ---
@@ -19,7 +19,7 @@ solutions: Solutions
 ---
 body: ecommerce.html
 ---
-mainimage: bally-hero.jpg
+mainimage: samsung_main.png
 ---
 showtable: no
 ---
@@ -27,3 +27,9 @@ tags:
 
 <span class="badge badge-neutral border-rose-600 bg-rose-600 text-white">eCommerce</span>
 <span class="badge badge-neutral border-cyan-600 bg-cyan-600 text-white">luxury</span>
+<span class="badge badge-neutral border-cyan-600 bg-cyan-600 text-white">consumer goods</span>
+<span class="badge badge-neutral border-cyan-600 bg-cyan-600 text-white">hospitality</span> 
+---
+mainimageborder: no
+---
+mainimageshadow: no

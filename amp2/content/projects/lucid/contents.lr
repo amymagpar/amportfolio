@@ -17,6 +17,7 @@ tags:
 
 ---
 description:
+
 <p>
 My journey with <em>Lucid Motors</em> centered on creating a seamless, informative, and engaging customer portal designed to <strong>educate</strong> and <strong>support</strong> users at every stage of their ownership journey— from the initial design phase, through the anticipation of delivery, and into their experiences as both new and seasoned owners. 
 </p>
@@ -27,17 +28,17 @@ Electric vehicles represent a transformative shift in the automotive industry, n
 ---
 mainimageshadow: no
 ---
-challenges: 
+challenges:
 
 - Portal lacked user-centered content/context.
 - Understanding diverse PM teams' roadmaps for departmental needs.
 - Ongoing negotiations for short and long-term business solutions.
 - APIs for critical portal info not ready for launch.
 ---
-goals:
-Build a top-tier customer portal for initial 1,000 vehicles, scalable for 10,000. Ensure a white-glove experience by launch.
+goals: Build a top-tier customer portal for initial 1,000 vehicles, scalable for 10,000. Ensure a white-glove experience by launch.
 ---
 role:
+
 #### Product Owner/UX Lead
 
 - Managed a team of UX designers, a copywriter, and art directors.
@@ -51,3 +52,21 @@ solutions:
 - Personalize portal for user groups.
 - Adopt a crawl, walk, run approach.
 - Embrace agile processes for frequent updates.
+---
+impact:
+
+      <div>
+             There was a direct correlation between the changes to <strong>portal experience</strong> and the <strong>user to owner</strong> conversion rate.
+      </div>
+      <div class="divider"></div>
+      <div>
+               Customer feedback for financing, rebates, and payment was <strong>shifted to positive</strong>.
+      </div>
+      <div class="divider"></div>
+      <div>
+                 <em>Lucid</em> has a <strong>top-rated delivery experience</strong> due to the implemented <strong>service design</strong> changes.
+      </div>
+
+
+---
+showimpact: yes

@@ -1,0 +1,23 @@
+_model: splash
+---
+title: AI and Data
+---
+mainimage:
+
+ gauges.png
+---
+showtable: no
+---
+tags:
+
+ 
+---
+body: aiandchat.html
+---
+mainimageborder: no
+---
+mainimageshadow: no
+---
+client: Cisco Meraki
+---
+description: AI chat and search explorations for Networking marketplace.

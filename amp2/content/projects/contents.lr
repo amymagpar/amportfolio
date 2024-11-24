@@ -3,3 +3,5 @@ _model: gallery
 title: Projects
 ---
 body: 
+---
+_template: projects.html

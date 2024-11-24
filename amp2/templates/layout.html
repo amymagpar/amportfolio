@@ -19,15 +19,15 @@
   <!-- component -->
   <header class="w-full fixed top-0 z-50 bg-gradient-to-t from-transparent to-white">
     <div class="container mx-auto navbar">
-      <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="{{ '/'|url }}">Amy Parness</a>
-      </div>
+      <!-- <div class="flex-1"> -->
+        <!-- <a class="btn btn-ghost text-xl" href="{{ '/'|url }}">Amy Parness</a> -->
+      <!-- </div> -->
       <div class="flex-none">
         <ul class="menu menu-horizontal px-1">
           <li{% if this._path=='/' %} class="text-primary underline " {% endif %}>
-          <a href="{{ '/'|url }}">Projects</a></li>
-          <!-- <a href="{{ '/projects'|url }}">Projects</a></li> -->
+          <a href="{{ '/'|url }}">Home</a></li>
             {% for href, title in [
+            ['/projects', 'Projects'],
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}

@@ -31,7 +31,7 @@
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}
-            <li{% if this.is_child_of(href) %} class="text-primary underline " {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li{% if this.is_child_of(href) %} class="text-primary underline !m-0" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
               <li>
         </ul>

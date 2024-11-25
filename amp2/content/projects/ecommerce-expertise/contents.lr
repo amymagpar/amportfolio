@@ -25,10 +25,10 @@ showtable: no
 ---
 tags:
 
-<span class="badge badge-neutral border-rose-600 bg-rose-600 text-white">eCommerce</span>
-<span class="badge badge-neutral border-cyan-600 bg-cyan-600 text-white">luxury</span>
-<span class="badge badge-neutral border-cyan-600 bg-cyan-600 text-white">consumer goods</span>
-<span class="badge badge-neutral border-cyan-600 bg-cyan-600 text-white">hospitality</span> 
+<span class="badge badge-[#eccc94] border-[#eccc94] bg-[#eccc94] text-white">eCommerce</span>
+<span class="badge badge-[#eccc94] border-[#eccc94] bg-[#eccc94] text-white">luxury</span>
+<span class="badge badge-[#eccc94] border-[#eccc94] bg-[#eccc94] text-white">consumer goods</span>
+<span class="badge badge-[#eccc94] border-[#eccc94] bg-[#eccc94] text-white">hospitality</span> 
 ---
 mainimageborder: no
 ---

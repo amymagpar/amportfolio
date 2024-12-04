@@ -11,7 +11,7 @@ mainimage: Lucid_home_b.jpg
 tags:
 
 <span class="badge badge-neutral bg-primary border-primary">SaaS</span>
-<span class="badge badge-neutral bg-primary border-primary">Product</span>
+<span class="badge badge-neutral bg-primary border-primary">0 to 1 Dashboard</span>
 <span class="badge badge-neutral bg-primary border-primary">Start-up</span>
 <span class="badge badge-neutral bg-primary border-primary">Electric Vehicle</span>
 
@@ -21,10 +21,6 @@ description:
 <p>
 My journey with <em>Lucid Motors</em> centered on creating a seamless, informative, and engaging customer portal designed to <strong>educate</strong> and <strong>support</strong> users at every stage of their ownership journey— from the initial design phase, through the anticipation of delivery, and into their experiences as both new and seasoned owners. 
 </p>
-<p>
-Electric vehicles represent a transformative shift in the automotive industry, not only in terms of technology but also in how customers engage with their vehicles. An informed and engaged customer is more likely to appreciate and fully utilize the advanced features of their EV. I envisioned the customer portal as a comprehensive, user-centered digital platform that would cater to the unique needs and questions of EV owners at each stage of their journey.
-</p>
-
 ---
 mainimageshadow: no
 ---
@@ -70,3 +66,5 @@ impact:
 
 ---
 showimpact: no
+---
+showtable: no

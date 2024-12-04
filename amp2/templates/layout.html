@@ -20,12 +20,12 @@
   <header class="w-full fixed top-0 z-50 bg-gradient-to-t from-transparent to-white">
     <div class="container mx-auto navbar">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="{{ '/'|url }}">Amy Parness</a>
+        <!-- <a class="btn btn-ghost text-xl" href="{{ '/'|url }}">Amy Parness</a> -->
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-1">
           <li{% if this._path=='/' %} class="text-primary underline " {% endif %}>
-          <!-- <a href="{{ '/'|url }}">Home</a></li> -->
+          <a href="{{ '/'|url }}">Amy Parness</a></li>
             {% for href, title in [
             ['/projects', 'Projects'],
             ['/cv', 'CV'],

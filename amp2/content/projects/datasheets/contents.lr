@@ -78,6 +78,10 @@ They are essential tools for the sales and marketing teams, enabling them to pre
     </div>
 
 ---
-mainimage: prototype_main.jpg
+mainimage: 
 ---
-mainimageborder: yes
+mainimageborder: no
+---
+showtable: no
+---
+mainimageshadow: no

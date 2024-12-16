@@ -6,7 +6,8 @@ body: bokksu.html
 ---
 client: Bokksu
 ---
-description: 
+description:
+
 <p>
 <em>Bokksu</em> embarked on a journey to enhance customer retention and increase lifetime value amidst a competitive market landscape, aiming to reach a valuation milestone by year-end. As <strong>Senior Consultant for Growth</strong>, I collaborated closely with C-suite executives to prioritize strategic roadmaps grounded in robust data and extensive user research.
 </p>
@@ -19,17 +20,15 @@ tags:
 ---
 mainimage: hero.png
 ---
-challenges: 
-Differentiating themselves in a crowded market. Transitioning customers from subscriber to other offerings.
+challenges: Differentiating themselves in a crowded market. Transitioning customers from subscriber to other offerings.
 ---
-goals:
-Customer retention/Decrease churn. Increase LTV. Reach valuation of 100 million by EOY.
+goals: Customer retention/Decrease churn. Increase LTV. Reach valuation of 100 million by EOY.
 ---
 role:
+
 I led product team in research and worked with the C-suite managers to ruthlessly prioritize roadmaps based on data and research.                         
 ---
-solutions:
-Create personas to get the company speaking the same language and focusing efforts on the customers types with the highest LTV. Create a priority list for the various teams to act upon.
+solutions: Create personas to get the company speaking the same language and focusing efforts on the customers types with the highest LTV. Create a priority list for the various teams to act upon.
 ---
 impact:
 
@@ -49,4 +48,6 @@ Between 2022 and 2023 <em>Bokksu</em> grew more than any of its competitors as a
 
 
 ---
-showimpact: yes
+showimpact: no
+---
+showtable: no

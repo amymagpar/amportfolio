@@ -13,6 +13,34 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
   <title>A. Parness | {% block title %}{% endblock %}</title>
+
+
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="portfolioai-447818"
+  agent-id="d0a7ab7b-25b4-4e41-bc38-dfec2409bc38"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="Ask about Amy.">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-font-family: Inter Var;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+
 </head>
 
 <body class="min-h-screen flex flex-col">
@@ -37,6 +65,7 @@
       </div>
     </div>
   </header>
+
   <div class="flex flex-grow flex-col justify-center">
     {% block body %}{% endblock %}
   </div>
@@ -47,9 +76,9 @@
   </footer>
   <!-- Back to top button -->
 <button
-  class="!fixed bottom-5 end-5 hidden rounded-full bg-base-300 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md hover:bg-gray-500 hover:shadow-lg focus:bg-primary-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg
+  class="!fixed bottom-5 start-5 hidden rounded-full bg-base-300 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md hover:bg-gray-500 hover:shadow-lg focus:bg-primary-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg
   animate-fade-up animate-once animate-duration-[250ms] animate-ease-in
-mix-blend-multiply  "
+mix-blend-multiply"
   id="btn-back-to-top">
   <span class="[&>svg]:w-4">
     <svg

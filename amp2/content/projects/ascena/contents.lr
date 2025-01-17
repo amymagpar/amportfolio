@@ -4,7 +4,7 @@ title: Multi-brand Design Systems
 ---
 client: AnnTaylor & Loft
 ---
-body: lucid.html
+body: ascena.html
 ---
 mainimage: BOPIS.mp4
 ---
@@ -17,7 +17,7 @@ tags:
 description:
 
 <p>
-My journey with <em>Lucid Motors</em> centered on creating a seamless, informative, and engaging customer dashboard designed to <strong>educate</strong> and <strong>support</strong> users at every stage of their ownership journey— from the initial design phase, through the anticipation of delivery, and into their experiences as both new and seasoned owners. 
+Designing and implementing a multi-brand accessible design system unified the brand identities and expanded the user base while ensuring consistency and efficiency across platforms. The new system streamlined collaboration across product, marketing, and engineering teams, reduced design redundancies by <strong>55%</strong>, and accelerated feature rollouts by <strong>30%</strong>, improving customer satisfaction and saving budgets.
 </p>
 ---
 mainimageshadow: no
@@ -50,6 +50,27 @@ impact:
 
 
 ---
-showimpact: yes
+showimpact: no
 ---
 showtable: yes
+---
+htmlblock:
+
+<div class="m-auto flex items-center">
+<div></div>
+<div class="mockup-phone border-primary">
+  <div class="camera"></div>
+  <div class="display">
+    <div class="artboard artboard-demo phone-1 !h-[691.9px]">
+<video controls autoplay muted width=100%>Your browser does not support the &lt;video&gt; tag.
+ <source src="BOPIS.mp4"/>
+  </video>
+</div>
+  </div>
+</div>
+</div>
+</div>
+---
+showHTMLblock: yes
+---
+showmainimage: no

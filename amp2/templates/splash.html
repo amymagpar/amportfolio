@@ -18,16 +18,18 @@ block body %}
   </div>
 </div>
 
+{% if this.showHTMLblock %}
+<div class="2xl:container mx-auto">{{ this.htmlblock }}</div>
+{% endif %} {% if this.showmainimage %}
 <div class="2xl:container mx-auto">
   <img
     class="w-full 2xl:rounded-md {% if this.mainimageshadow %}shadow-xl {% endif %} {% if this.mainimageborder %} border border-base-200{% endif %}"
     src="{{this.mainimage}}"
   />
 </div>
-
-{% if this.showtable %}
-<div class="container mx-auto px-4 mt-24 lg:mt-64">
-  <div class="grid lg:grid-cols-2 gap-8 sm:w-3/4">
+{% endif %} {% if this.showtable %}
+<div class="container mx-auto px-4 mt-12 lg:mt-64">
+  <div class="mx-auto grid lg:grid-cols-2 gap-8 sm:w-3/4">
     <div class="prose">
       <h3 class="font-extrabold uppercase whitespace-nowrap">Business Goals</h3>
       {{ this.goals }}
@@ -51,11 +53,11 @@ block body %}
 </div>
 {% endif %} {% if this.showimpact %}
 <div class="container mx-auto px-4 mt-16 lg:mt-48">
-  <div class="flex flex-col gap-8 sm:w-3/4">
+  <div class="mx-auto flex flex-col gap-8 sm:w-3/4">
     <div class="prose max-w-none">
       <h3 class="w-min font-extrabold uppercase whitespace-nowrap">Impact</h3>
     </div>
-    <div>{{ this.impact }}</div>
+    <div class="prose">{{ this.impact }}</div>
   </div>
 </div>
 {% endif %} {% include this.body %} {% endblock %}

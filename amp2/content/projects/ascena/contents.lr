@@ -1,0 +1,55 @@
+_model: splash
+---
+title: Multi-brand Design Systems
+---
+client: AnnTaylor & Loft
+---
+body: lucid.html
+---
+mainimage: BOPIS.mp4
+---
+tags:
+
+<span class="badge badge-neutral bg-primary border-primary">design system</span>
+<span class="badge badge-neutral bg-primary border-primary">e-commerce</span>
+<span class="badge badge-neutral bg-primary border-primary">omnichannel</span>
+---
+description:
+
+<p>
+My journey with <em>Lucid Motors</em> centered on creating a seamless, informative, and engaging customer dashboard designed to <strong>educate</strong> and <strong>support</strong> users at every stage of their ownership journey— from the initial design phase, through the anticipation of delivery, and into their experiences as both new and seasoned owners. 
+</p>
+---
+mainimageshadow: no
+---
+challenges:
+
+Two very large e-commerce sites needed to be redesigned to make them more modern and user-friendly without losing much revenue. How to prioritize what to improve and what can wait for post launch? 
+---
+goals: Replatform two highly trafficked sites with the least impact. Create user-friendly ADA-compliant responsive designs for both e-commerce sites.
+---
+role: UX Manager- Design management governance. Managed a team of UX/UI designers and off shore front-end development. Worked collaboratively with Product Managers.
+---
+solutions:
+
+Used a LeanUX process to prioritize designs. My team worked directly with the off-shore dev team and business-side PMs in order to focus tasks and improve the process. UX took a collaborative role instead of just delivering every few weeks. Created an ADA compliant Design System. 
+---
+impact:
+
+      <div>
+             There was a direct correlation between the changes to <strong>portal experience</strong> and the <strong>user to owner</strong> conversion rate.
+      </div>
+      <div class="divider"></div>
+      <div>
+               Customer feedback for financing, rebates, and payment was <strong>shifted to positive</strong>.
+      </div>
+      <div class="divider"></div>
+      <div>
+                 <em>Lucid</em> has a <strong>top-rated delivery experience</strong> due to the implemented <strong>service design</strong> changes.
+      </div>
+
+
+---
+showimpact: yes
+---
+showtable: yes

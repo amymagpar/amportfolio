@@ -1,81 +1,81 @@
 _model: splash
 ---
-title: The Datasheet Program
+title: the datasheet program
 ---
-client: Cisco Systems
+client: cisco systems
 ---
 body: datasheets.html
 ---
 challenges:
 
-- Inconsistent information architecture
-- Datasheets are complex documents covering various product types.
-- Involvement of multiple departments.
-- Acquisitions like <em>Meraki</em>, <em>Thousand Eyes</em>, and <em>Splunk</em> need to use the new template.
+- inconsistent information architecture
+- datasheets are complex documents covering various product types.
+- involvement of multiple departments.
+- acquisitions like <em>meraki</em>, <em>thousand eyes</em>, and <em>splunk</em> need to use the new template.
 
 ---
 goals:
 
-- Move datasheets onto the cloud.
-- Create a template aligned with the new design system.
+- move datasheets onto the cloud.
+- create a template aligned with the new design system.
 ---
 role:
 
-As UX Lead, I drove strategy, requirements gathering, process design, and cross-functional collaboration to create the best resource for customers. I was able to take my work with the Sustainability Tiger team and apply it here making sure products with a sustainability story were highlighted.
+as ux lead, i drove strategy, requirements gathering, process design, and cross-functional collaboration to create the best resource for customers. i was able to take my work with the sustainability tiger team and apply it here making sure products with a sustainability story were highlighted.
 
 ---
 solutions:
 
-#### Evaluate and collaborate:
-- Analyze the most popular datasheets.
-- Collaborate with all groups involved to prototype proof-of-concept datasheets for the most popular variations.
+#### evaluate and collaborate:
+- analyze the most popular datasheets.
+- collaborate with all groups involved to prototype proof-of-concept datasheets for the most popular variations.
 
-#### Validate:
-- Conduct live validation on <a href="https://cisco.com">Cisco.com</a> using a research plan with a simple survey.
-- Implement a phased release based on data from product teams and types.
+#### validate:
+- conduct live validation on <a href="https://cisco.com">cisco.com</a> using a research plan with a simple survey.
+- implement a phased release based on data from product teams and types.
 ---
 tags:
 
-<span class="badge badge-neutral bg-neutral border-neutral">design system</span>
-<span class="badge badge-neutral bg-neutral border-neutral">information architecture</span>
-<span class="badge badge-neutral bg-neutral border-neutral">product management</span>
-<span class="badge badge-neutral bg-neutral border-neutral">responsive design</span>
-<span class="badge badge-neutral bg-neutral border-neutral">accessibility</span>
+<span class="badge badge-blue-300 bg-blue-300 border-blue-300">design system</span>
+<span class="badge badge-blue-300 bg-blue-300 border-blue-300">information architecture</span>
+<span class="badge badge-blue-300 bg-blue-300 border-blue-300">product management</span>
+<span class="badge badge-blue-300 bg-blue-300 border-blue-300">responsive design</span>
+<span class="badge badge-blue-300 bg-blue-300 border-blue-300">accessibility</span>
 
 ---
 description:
 
 </div>  
 <div class="lg:grid lg:grid-cols-3 gap-36 mb-24">
-    <div class="prose-xl leading-snug text-neutral">
-      <P>
+    <div class="prose-xl leading-snug text-blue-500">
+      <p>
         <h3 class="text-7xl font-black mb-4">450k</h3>
-        Technical Assistance Center (TAC) cases could be closed with <em>documentation</em> and <em>customer education</em>.
+        technical assistance center (tac) cases could be closed with <em>documentation</em> and <em>customer education</em>.
       </p>
     </div>
-    <div class="prose-xl leading-snug text-neutral">
-      <P>
+    <div class="prose-xl leading-snug text-blue-500">
+      <p>
         <h3 class="text-7xl font-black mb-4">37</h3>
-        Different users access the datasheets. Cyber Security Advisor, IT Manager, Systems Administrator...
+        different users access the datasheets. cyber security advisor, it manager, systems administrator...
       </p>
     </div>
-    <div class="prose-xl leading-snug text-neutral">
-      <P>
+    <div class="prose-xl leading-snug text-blue-500">
+      <p>
         <h3 class="text-7xl font-black mb-4">363k</h3>
-       Datasheet views per month. Cisco System's second most popular asset.
+       datasheet views per month. cisco system's second most popular asset.
       </p>
     </div>
   </div>
 <div class="prose md:prose-lg lg:prose-xl text-left sm:text-center leading-snug">
 
 <h3 class="">
-One sheet to bring it all together
+one sheet to bring it all together
 </h3>
 <p class="">
-Data sheets provide detailed technical specifications, features, and benefits, helping potential customers and partners understand product capabilities and applications. They inform industry standards and regulatory requirements for global shipping. 
+data sheets provide detailed technical specifications, features, and benefits, helping potential customers and partners understand product capabilities and applications. they inform industry standards and regulatory requirements for global shipping. 
 </p>
 <p>
-They are essential tools for the sales and marketing teams, enabling them to present key information effectively to prospective clients and inform decision-making. They highlight the unique selling points of Cisco's offerings, differentiating them from competitors and showcasing the company's innovations and solutions. 
+they are essential tools for the sales and marketing teams, enabling them to present key information effectively to prospective clients and inform decision-making. they highlight the unique selling points of cisco's offerings, differentiating them from competitors and showcasing the company's innovations and solutions. 
 </p>
     </div>
 

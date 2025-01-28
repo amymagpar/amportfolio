@@ -1,8 +1,8 @@
 <!doctype html>
-<!-- <html data-theme="nord"> -->
+<html data-theme="nord">
 <!-- <html data-theme="emerald"> -->
 <!-- <html data-theme="cupcake"> -->
-<html data-theme="pastel">
+<!-- <html data-theme="light"> -->
 <!-- <html data-theme="corporate"> -->
 
 <head>
@@ -35,29 +35,46 @@
     --df-messenger-chat-background: #f3f6fc;
     --df-messenger-message-user-background: #d3e3fd;
     --df-messenger-message-bot-background: #fff;
+    --df-messenger-chat-bubble-icon-color: #eceff4;
+    --df-messenger-chat-bubble-background: #5d80ab;
     bottom: 16px;
     right: 16px;
   }
-</style>
 
+
+.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:-300px;opacity: 0;animation:animateright 0.4s forwards;animation-delay: 150ms;}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-left-1{position:relative;opacity: 0;animation:animateleft-1 0.4s forwards;animation-delay: 300ms;}@keyframes animateleft-1{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right-1{position:-300px;opacity: 0;animation:animateright-1 0.4s forwards;animation-delay: 450ms;}@keyframes animateright-1{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-left-2{position:relative;opacity:0;animation:animateleft-2 0.4s forwards;animation-delay: 600ms}@keyframes animateleft-2{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right-2{position:-300px;opacity: 0;animation:animateright-2 0.4s forwards;animation-delay: 750ms;}@keyframes animateright-2{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-left-3{position:relative;opacity:0;animation:animateleft-3 0.4s forwards;animation-delay: 900ms}@keyframes animateleft-3{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right-3{position:-300px;opacity: 0;animation:animateright-3 0.4s forwards;animation-delay: 1050ms;}@keyframes animateright-3{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+</style>
 </head>
 
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col bg-white">
   <!-- component -->
-  <header class="w-full fixed top-0 z-50 bg-gradient-to-t from-transparent to-white">
-    <div class="container mx-auto navbar">
-      <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="{{ '/'|url }}">Amy Parness</a>
+  <header id="navbar" class="w-full fixed top-0 z-50 bg-white border-0 border-b border-accent drop-shadow-md">
+    <div class="container mx-auto navbar p-0" style="min-height: 2rem;">
+      <div class="navbar-start uppercase">
+        <ul class="list-none">
+        <li>
+        <a class="font-extrabold" href="{{ '/'|url }}">Amy Parness</a>
+        </li>
+        </ul>
       </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-          <li{% if this._path=='/' %} class="text-primary underline " {% endif %}>
+      <div class="navbar-center">
+      </div>
+      <div class="navbar-end">
+        <ul class="font-light list-none flex flex-wrap">
+          <li {% if this._path=='/' %} class="text-primary underline px-2" {% else %} class="px-2" {% endif %}">
             {% for href, title in [
             ['/projects', 'Projects'],
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}
-            <li{% if this.is_child_of(href) %} class="text-primary underline !m-0" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li {% if this.is_child_of(href) %} class="text-primary underline !m-0 px-2" {% else %} class="px-2" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
               <li>
         </ul>

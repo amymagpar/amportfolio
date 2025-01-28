@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html,js,lr}', './**/*.html'],
+  content: ["./**/*.{html,js,lr}", "./**/*.html"],
   theme: {
     extend: {
       borderRadius: {
-        'big': '42px',
-        'huge': '128px',
+        big: "42px",
+        huge: "128px",
       },
       fontFamily: {
         sans: ["Inter var", "sans-serif"],
@@ -51,7 +51,8 @@ module.exports = {
     ],
   },
   plugins: [
-    require("@tailwindcss/typography"), require('daisyui'), require('tailwindcss-animated')
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("tailwindcss-animated"),
   ],
-}
-
+};

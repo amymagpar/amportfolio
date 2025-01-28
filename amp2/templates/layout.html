@@ -50,6 +50,11 @@
 .animate-right-2{position:-300px;opacity: 0;animation:animateright-2 0.4s forwards;animation-delay: 750ms;}@keyframes animateright-2{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 .animate-left-3{position:relative;opacity:0;animation:animateleft-3 0.4s forwards;animation-delay: 900ms}@keyframes animateleft-3{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 .animate-right-3{position:-300px;opacity: 0;animation:animateright-3 0.4s forwards;animation-delay: 1050ms;}@keyframes animateright-3{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.animate-opacity{opacity:0;animation:opac 0.8s forwards}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+html{scroll-behavior: smooth;}
+
 </style>
 </head>
 
@@ -67,7 +72,7 @@
       <div class="navbar-center">
       </div>
       <div class="navbar-end">
-        <ul class="font-light list-none flex flex-wrap">
+        <ul class="font-medium list-none flex flex-wrap">
           <li {% if this._path=='/' %} class="text-primary underline px-2" {% else %} class="px-2" {% endif %}">
             {% for href, title in [
             ['/projects', 'Projects'],

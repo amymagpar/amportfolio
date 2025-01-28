@@ -1,10 +1,10 @@
 {% extends "layout.html" %} {% block title %}{{ this.title }}{% endblock %} {%
 block body %}
-<div class="flex flex-col w-full mx-auto justify-center my-24">
+<div class="flex flex-col w-full mx-auto justify-center mb-24">
   <div class="container mx-auto px-4">
     <div class="flex flex-col place-content-center mb-20 sm:mb-24">
       <div
-        class="mx-auto max-width-prose font-extralight text-lg leading-normal sm:text-xl sm:leading-normal sm:max-w-lg md:text-2xl md:leading-relaxed md:max-w-xl lg:text-2xl lg:leading-relaxed lg:max-w-3xl xl:text-3xl xl:leading-relaxed xl:max-w-4xl 2xl:text-4xl 2xl:leading-normal 2xl:max-w-5xl"
+        class="animate-opacity place-content-center h-screen mx-auto max-width-prose font-extralight text-lg leading-normal sm:text-xl sm:leading-normal sm:max-w-lg md:text-2xl md:leading-relaxed md:max-w-xl lg:text-2xl lg:leading-relaxed lg:max-w-3xl xl:text-3xl xl:leading-relaxed xl:max-w-4xl 2xl:text-4xl 2xl:leading-normal 2xl:max-w-5xl"
       >
         <p class="mb-7">
           Most recently, Amy was a <strong>UX Leader</strong> at
@@ -28,14 +28,16 @@ block body %}
           exhibitions throughout Asia and the USA. She speaks on making, right
           to repair, and mentors in STEM.
         </p>
+        <a href="#more">
+        <div class="btn btn-outline btn-primary btn-sm mt-8">Find out more.</div>
+        </a>
       </div>
 
 
-      <div
+      <div id="more"
         class="mx-auto sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl"
       >
-        <hr class="mt-48 mb-12" />
-      <div class="grid xl:grid-cols-5 gap-12">
+      <div class="grid xl:grid-cols-5 gap-12 mt-48">
         <div class="prose xl:col-span-2 leading-snug">
           <h2 class="font-medium ">Revenue growth</h2>
           <p>
@@ -68,8 +70,7 @@ block body %}
           <img src="revenueg.png">
         </div>
         </div>
-        <hr class="mt-48 mb-12" />
-       <div class="grid xl:grid-cols-5 gap-12">
+       <div class="grid xl:grid-cols-5 gap-12 mt-48">
         <div class="xl:col-span-3 order-last">
           <img src="Pmanagement.png">
           </div>
@@ -123,8 +124,7 @@ block body %}
           </p>
           -->
         </div>
-        <hr class="mt-48 mb-12" />
-        <div class="grid xl:grid-cols-5 gap-12">
+        <div class="grid xl:grid-cols-5 gap-12 mt-48">
         <div class="prose xl:col-span-2 leading-snug">
           <h2 class="font-medium"> Strategic Leadership </h2>
           <p>
@@ -141,8 +141,7 @@ block body %}
           <img src="leadership.png">
         </div>
         </div>
-        <hr class="mt-48 mb-12" />
-        <div class="grid xl:grid-cols-5 gap-12">
+        <div class="grid xl:grid-cols-5 gap-12 mt-48">
         <div class="xl:col-span-3 order-last">
           <img src="crossfunctionalcollab.png">
         </div>

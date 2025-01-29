@@ -42,6 +42,9 @@ let lastScrollPosition = 0;
 
 const navbar = document.getElementById("navbar");
 
+// start mobile menu hide
+const mobileMenu = document.getElementById("myTopnav");
+
 function onScroll() {
   const currentScrollPosition =
     window.pageYOffset || document.documentElement.scrollTop;
@@ -58,6 +61,8 @@ function onScroll() {
     position = "absolute";
   } else {
     if (currentScrollPosition > lastScrollPosition) {
+      mobileMenu.classList.add("hidden", "topnav");
+
       if (position !== "absolute") {
         transition = true;
       } else {
@@ -93,12 +98,10 @@ window.addEventListener("scroll", onScrollThrottled, { passive: true });
 function responsiveNav() {
   var x = document.getElementById("myTopnav");
   if (x.classList.contains("topnav")) {
-    x.classList.add("flex", "flex-col");
-    x.classList.remove("hidden", "topnav", "flex-row");
+    x.classList.remove("hidden", "topnav");
     console.log("kaching");
   } else {
-    x.classList.remove("flex", "flex-col");
-    x.classList.add("hidden", "topnav", "flex-row");
+    x.classList.add("hidden", "topnav");
     console.log("kachong");
   }
 }

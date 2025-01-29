@@ -36,8 +36,8 @@
     --df-messenger-chat-background: #f3f6fc;
     --df-messenger-message-user-background: #d3e3fd;
     --df-messenger-message-bot-background: #fff;
-    --df-messenger-chat-bubble-icon-color: #eceff4;
-    --df-messenger-chat-bubble-background: #5d80ab;
+    --df-messenger-chat-bubble-icon-color: #fff;
+    --df-messenger-chat-bubble-background: #88bfcf;
     bottom: 16px;
     right: 16px;
   }
@@ -59,28 +59,56 @@ html{scroll-behavior: smooth;}
 </style>
 </head>
 
-<body class="min-h-screen flex flex-col bg-white">
+<body class="min-h-screen flex flex-col bg-white ">
   <!-- component -->
-  <header id="navbar" class="w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm">
+  <header id="navbar" class=" w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide">
     <div class="container px-4 mx-auto navbar p-0" style="min-height: 2rem;">
-      <div class="navbar-start uppercase">
+      <div class="navbar-start uppercase left-0">
         <ul class="list-none">
         <li>
         <a class="font-extrabold" href="{{ '/'|url }}">Amy Parness</a>
         </li>
         </ul>
       </div>
-      <div class="navbar-center">
+      <div class="navbar-center flex-grow">
       </div>
       <div class="navbar-end">
-        <ul id="myTopnav" class="topnav font-medium list-none hidden sm:flex sm:flex-wrap ">
-          <li {% if this._path=='/' %} class="text-primary underline px-2" {% else %} class="px-2" {% endif %}">
+
+        <ul id="myTopnav" class="
+        topnav
+        hidden
+        sm:flex
+        shadow-md
+        sm:shadow-none
+        text-3xl
+        sm:text-base
+        font-medium
+        list-none
+        flex-col
+        sm:flex-row
+        absolute
+        sm:relative
+        top-[32px]
+        sm:top-0
+        right-0
+        p-4
+        pb-10
+        sm:p-0
+        border
+        sm:border-0
+        border-accent
+        w-full
+        sm:w-auto
+        bg-white
+        ease-in-out
+        ">
+          <li {% if this._path=='/' %} class="text-primary underline p-2" {% else %} class="p-2" {% endif %}">
             {% for href, title in [
             ['/projects', 'Projects'],
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}
-            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 px-2" {% else %} class="px-2" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 p-4" {% else %} class="p-4" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
               <li>
          </ul>
@@ -88,7 +116,7 @@ html{scroll-behavior: smooth;}
               <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                 <i class="fa fa-bars"></i>
               </a>
-            </div>
+           </div>
       </div>
     </div>
   </header>

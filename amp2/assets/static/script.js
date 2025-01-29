@@ -88,3 +88,17 @@ function onScroll() {
 }
 
 window.addEventListener("scroll", onScrollThrottled, { passive: true });
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responsiveNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.classList.contains("topnav")) {
+    x.classList.add("flex", "flex-col");
+    x.classList.remove("hidden", "topnav", "flex-row");
+    console.log("kaching");
+  } else {
+    x.classList.remove("flex", "flex-col");
+    x.classList.add("hidden", "topnav", "flex-row");
+    console.log("kachong");
+  }
+}

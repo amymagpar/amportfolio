@@ -15,6 +15,7 @@
 
 
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
   project-id="portfolioai-447818"
@@ -60,8 +61,8 @@ html{scroll-behavior: smooth;}
 
 <body class="min-h-screen flex flex-col bg-white">
   <!-- component -->
-  <header id="navbar" class="w-full fixed top-0 z-50 bg-white border-0 border-b border-accent drop-shadow-md">
-    <div class="container mx-auto navbar p-0" style="min-height: 2rem;">
+  <header id="navbar" class="w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm">
+    <div class="container px-4 mx-auto navbar p-0" style="min-height: 2rem;">
       <div class="navbar-start uppercase">
         <ul class="list-none">
         <li>
@@ -72,17 +73,22 @@ html{scroll-behavior: smooth;}
       <div class="navbar-center">
       </div>
       <div class="navbar-end">
-        <ul class="font-medium list-none flex flex-wrap">
+        <ul id="myTopnav" class="topnav font-medium list-none hidden sm:flex sm:flex-wrap ">
           <li {% if this._path=='/' %} class="text-primary underline px-2" {% else %} class="px-2" {% endif %}">
             {% for href, title in [
             ['/projects', 'Projects'],
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}
-            <li {% if this.is_child_of(href) %} class="text-primary underline !m-0 px-2" {% else %} class="px-2" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 px-2" {% else %} class="px-2" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
               <li>
-        </ul>
+         </ul>
+            <div class="block sm:hidden">
+              <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
       </div>
     </div>
   </header>

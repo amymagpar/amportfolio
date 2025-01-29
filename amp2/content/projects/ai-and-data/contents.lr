@@ -1,6 +1,6 @@
 _model: splash
 ---
-title: AI and Data
+title: AI and Marketplace
 ---
 mainimage:
 
@@ -10,7 +10,11 @@ showtable: no
 ---
 tags:
 
- 
+ <span class="badge badge-neutral bg-primary border-primary text-white">AI</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">convesational</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">chat</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">search</span>
+
 ---
 body: aiandchat.html
 ---
@@ -20,6 +24,6 @@ mainimageshadow: no
 ---
 client: Cisco Meraki
 ---
-description: AI chat and search explorations for Networking marketplace.
+description: Developing intuitive, user-focused AI tools.
 ---
 showmainimage: no

@@ -32,7 +32,7 @@ solutions: Show, don’t tell approach. Focus on what customers care about like 
 ---
 tags:
 
-<span class="badge badge-neutral bg-accent border-accent">sustainability</span>
-<span class="badge badge-neutral bg-accent border-accent text-nowrap">user journeys</span>
-<span class="badge badge-neutral bg-accent border-accent">design</span>
-<span class="badge badge-neutral bg-accent border-accent">collaboration</span>
+<span class="badge badge-neutral bg-accent border-accent text-white">sustainability</span>
+<span class="badge badge-neutral bg-accent border-accent text-nowrap text-white">user journeys</span>
+<span class="badge badge-neutral bg-accent border-accent text-white">design</span>
+<span class="badge badge-neutral bg-accent border-accent text-white">collaboration</span>

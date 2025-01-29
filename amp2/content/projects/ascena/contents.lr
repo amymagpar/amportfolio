@@ -10,9 +10,9 @@ mainimage: BOPIS.mp4
 ---
 tags:
 
-<span class="badge badge-neutral bg-primary border-primary">design system</span>
-<span class="badge badge-neutral bg-primary border-primary">e-commerce</span>
-<span class="badge badge-neutral bg-primary border-primary">omnichannel</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">design system</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">e-commerce</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">omnichannel</span>
 ---
 description:
 

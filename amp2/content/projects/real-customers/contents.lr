@@ -14,9 +14,9 @@ description:
 ---
 tags:
 
-<span class="badge badge-neutral bg-[#d7cfe6] border-[#d7cfe6]">subscription</span>
-<span class="badge badge-neutral bg-[#d7cfe6] border-[#d7cfe6]">e-commerce</span>
-<span class="badge badge-neutral bg-[#d7cfe6] border-[#d7cfe6]">start-up</span>
+<span class="badge badge-neutral bg-[#d7cfe6] border-[#d7cfe6] text-white">subscription</span>
+<span class="badge badge-neutral bg-[#d7cfe6] border-[#d7cfe6] text-white">e-commerce</span>
+<span class="badge badge-neutral bg-[#d7cfe6] border-[#d7cfe6] text-white">start-up</span>
 ---
 mainimage: hero.png
 ---

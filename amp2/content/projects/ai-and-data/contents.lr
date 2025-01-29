@@ -21,3 +21,5 @@ mainimageshadow: no
 client: Cisco Meraki
 ---
 description: AI chat and search explorations for Networking marketplace.
+---
+showmainimage: no

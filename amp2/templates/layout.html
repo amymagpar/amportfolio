@@ -56,6 +56,17 @@
 
 html{scroll-behavior: smooth;}
 
+img {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+img.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 </style>
 </head>
 

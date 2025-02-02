@@ -11,7 +11,7 @@ showtable: no
 tags:
 
  <span class="badge badge-neutral bg-primary border-primary text-white">AI</span>
-<span class="badge badge-neutral bg-primary border-primary text-white">convesational</span>
+<span class="badge badge-neutral bg-primary border-primary text-white">conversational</span>
 <span class="badge badge-neutral bg-primary border-primary text-white">chat</span>
 <span class="badge badge-neutral bg-primary border-primary text-white">search</span>
 
@@ -24,6 +24,6 @@ mainimageshadow: no
 ---
 client: Cisco Meraki
 ---
-description: Developing intuitive, user-focused AI tools.
+description: AI-Powered API Discovery: Enhancing Developer Efficiency at Cisco Meraki
 ---
 showmainimage: no

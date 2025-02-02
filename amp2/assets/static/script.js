@@ -99,12 +99,23 @@ function responsiveNav() {
   var x = document.getElementById("myTopnav");
   if (x.classList.contains("topnav")) {
     x.classList.remove("hidden", "topnav");
-    console.log("kaching");
   } else {
     x.classList.add("hidden", "topnav");
-    console.log("kachong");
   }
 }
+
+// check scroll to bottom
+window.onscroll = function (ev) {
+  backtotop = document.getElementById("btn-back-to-top");
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    console.log("bottom");
+    backtotop.classList.add("!animate-bounce");
+    backtotop.classList.add("!bg-accent");
+  } else {
+    backtotop.classList.remove("!animate-bounce");
+    backtotop.classList.remove("!bg-accent");
+  }
+};
 
 // scroll animation https://alvarotrigo.com/blog/css-animations-scroll/
 function reveal() {
@@ -117,13 +128,12 @@ function reveal() {
       reveals[i].classList.add("active");
     } else {
       // reveals[i].classList.remove("active");
-      console.log("ping");
     }
   }
 }
 
 window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
 reveal();
+// To check the scroll position on page load
 // END scroll animation https://alvarotrigo.com/blog/css-animations-scroll/

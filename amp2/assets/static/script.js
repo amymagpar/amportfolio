@@ -119,7 +119,7 @@ window.onscroll = function (ev) {
 
 // scroll animation https://alvarotrigo.com/blog/css-animations-scroll/
 function reveal() {
-  var reveals = document.querySelectorAll("img");
+  var reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;

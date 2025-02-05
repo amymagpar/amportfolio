@@ -7,7 +7,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
@@ -59,12 +59,14 @@ html{scroll-behavior: smooth;}
 img {
   position: relative;
   transform: translateY(0px);
-  opacity: 0;
   transition: 1s all ease;
 }
 img.active {
   transform: translateY(0);
   opacity: 1;
+}
+.reveal {
+  opacity: 0;
 }
 
 </style>
@@ -73,11 +75,11 @@ img.active {
 <body class="min-h-screen flex flex-col bg-white ">
   <!-- component -->
   <header id="navbar" class=" w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide">
-    <div class="container px-4 mx-auto navbar p-0" style="min-height: 2rem;">
+    <div class="container px-4 mx-auto navbar p-0 h-6">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
         <li>
-        <a class="font-bold" href="{{ '/'|url }}">Amy Parness</a>
+        <a class="font-light" href="{{ '/'|url }}">Amy Parness</a>
         </li>
         </ul>
       </div>
@@ -93,7 +95,7 @@ img.active {
         sm:shadow-none
         text-lg
         sm:text-base
-        font-normal
+        font-light
         list-none
         flex-col
         sm:flex-row
@@ -113,13 +115,13 @@ img.active {
         bg-white
         ease-in-out
         ">
-          <li {% if this._path=='/' %} class="text-primary underline p-2" {% else %} class="p-2" {% endif %}">
+          <li {% if this._path=='/' %} class="text-primary underline px-2" {% else %} class="px-2" {% endif %}">
             {% for href, title in [
             ['/projects', 'Projects'],
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}
-            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 p-4" {% else %} class="p-4" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 px-4" {% else %} class="px-4" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
               <li>
          </ul>

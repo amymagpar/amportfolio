@@ -58,7 +58,7 @@ htmlblock:
 
 <div class="m-auto flex items-center">
 <div></div>
-<div class="mockup-phone border-primary">
+<div class="mockup-phone border-primary shadow-lg">
   <div class="camera"></div>
   <div class="display">
     <div class="artboard artboard-demo phone-1 !h-[691.9px]">

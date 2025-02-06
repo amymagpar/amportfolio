@@ -1,3 +1,4 @@
+{% from "macros/next_project.html" import next_project %}
 <div class="bg-base-100 py-24">
   <div class="container mx-auto mb-24 px-4">
     <div class="grid gap-12">
@@ -61,10 +62,16 @@
       </div>
       <div class="grid gap-12">
         <a href="merakiai_01.jpg">
-          <img src="merakiai_01.jpg" class="reveal drop-shadow-lg rounded mb-4" />
+          <img
+            src="merakiai_01.jpg"
+            class="reveal drop-shadow-lg rounded mb-4"
+          />
         </a>
         <a href="merakiai_02.jpg">
-          <img src="merakiai_02.jpg" class="reveal drop-shadow-lg rounded mb-4" />
+          <img
+            src="merakiai_02.jpg"
+            class="reveal drop-shadow-lg rounded mb-4"
+          />
         </a>
       </div>
     </div>
@@ -205,3 +212,5 @@
     </div>
   </div>
 </div>
+
+{{ next_project('ai-and-data') }}

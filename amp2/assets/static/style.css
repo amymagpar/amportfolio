@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .navbar {
+        min-height: unset;
+    }
+}
+
 @layer base {
     h2 {
         @apply text-3xl;

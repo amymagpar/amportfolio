@@ -1,15 +1,35 @@
 // Get the button
 const mybutton = document.getElementById("btn-back-to-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
-
+// When the user scrolls, handle button visibility and animation
 const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.classList.remove("animate-reverse");
-    mybutton.classList.remove("hidden");
-  } else {
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+  const totalHeight = document.documentElement.scrollHeight;
+  const viewportHeight = window.innerHeight;
+  const scrolledHeight = window.scrollY;
+  const scrolledToBottom = viewportHeight + scrolledHeight >= totalHeight - 50;
+
+  // At the top (first 20px)
+  if (scrollTop <= 20) {
     mybutton.classList.add("animate-reverse");
     mybutton.classList.add("hidden");
+    mybutton.classList.remove("!animate-bounce");
+    mybutton.classList.remove("!bg-accent");
+  }
+  // At the bottom
+  else if (scrolledToBottom) {
+    mybutton.classList.remove("animate-reverse");
+    mybutton.classList.remove("hidden");
+    mybutton.classList.add("!animate-bounce");
+    mybutton.classList.add("!bg-accent");
+  }
+  // In between
+  else {
+    mybutton.classList.remove("animate-reverse");
+    mybutton.classList.remove("hidden");
+    mybutton.classList.remove("!animate-bounce");
+    mybutton.classList.remove("!bg-accent");
   }
 };
 const backToTop = () => {
@@ -104,19 +124,6 @@ function responsiveNav() {
   }
 }
 
-// check scroll to bottom
-window.onscroll = function (ev) {
-  backtotop = document.getElementById("btn-back-to-top");
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-    console.log("bottom");
-    backtotop.classList.add("!animate-bounce");
-    backtotop.classList.add("!bg-accent");
-  } else {
-    backtotop.classList.remove("!animate-bounce");
-    backtotop.classList.remove("!bg-accent");
-  }
-};
-
 // scroll animation https://alvarotrigo.com/blog/css-animations-scroll/
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -127,7 +134,7 @@ function reveal() {
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
-      // reveals[i].classList.remove("active");
+      reveals[i].classList.remove("active");
     }
   }
 }

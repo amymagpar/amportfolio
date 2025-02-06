@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="nord">
+<html data-theme="nord" class="h-full">
 <!-- <html data-theme="emerald"> -->
 <!-- <html data-theme="cupcake"> -->
 <!-- <html data-theme="light"> -->
@@ -72,10 +72,10 @@ img.active {
 </style>
 </head>
 
-<body class="min-h-screen flex flex-col bg-white ">
+<body class="min-h-screen flex flex-col bg-white">
   <!-- component -->
   <header id="navbar" class=" w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide">
-    <div class="container px-4 mx-auto navbar p-0 h-6">
+    <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
         <li>
@@ -101,11 +101,10 @@ img.active {
         sm:flex-row
         absolute
         sm:relative
-        top-[32px]
+        top-[40px]
         sm:top-0
         right-0
         p-4
-        pb-10
         sm:p-0
         border
         sm:border-0
@@ -121,7 +120,7 @@ img.active {
             ['/cv', 'CV'],
             ['/writing', 'Writing']
             ] %}
-            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 px-4" {% else %} class="px-4" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li id="" {% if this.is_child_of(href) %} class="text-primary underline !m-0 py-3 sm:px-4" {% else %} class="py-3 sm:px-4" {% endif %}><a href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
               <li>
          </ul>
@@ -142,7 +141,7 @@ img.active {
        &copy; 2024 Amy Parness 
       </div>
   </footer>
-  <!-- Back to top button -->
+  <!-- Back  to top button -->
 <button
   class="!fixed bottom-5 start-5 hidden rounded-full bg-base-300 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md hover:bg-gray-500 hover:shadow-lg focus:bg-primary-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg
   animate-fade-up animate-once animate-duration-[250ms] animate-ease-in

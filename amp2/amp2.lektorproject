@@ -2,4 +2,5 @@
 name = amp2
 
 [packages]
+tailwind = 3.1.5b0
 lektor-tailwind = 0.2.0

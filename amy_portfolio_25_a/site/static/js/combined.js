@@ -88,7 +88,6 @@ function insertNavigation() {
       </div>
       <div class="navbar-end">
       <ul id="myTopnav" class="
-        topnav
         transition-all
         ease-in-out
         overflow-hidden
@@ -246,10 +245,14 @@ window.addEventListener("scroll", onScrollThrottled, { passive: true });
 
 function responsiveNav() {
   const x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+  if (x.classList.contains("max-h-0")) {
+    console.log("true");
+    x.classList.remove("max-h-0");
+    x.classList.add("max-h-screen");
   } else {
-    x.className = "topnav";
+    console.log("false");
+    x.classList.add("max-h-0");
+    x.classList.remove("max-h-screen");
   }
 }
 

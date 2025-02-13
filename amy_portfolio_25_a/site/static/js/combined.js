@@ -108,7 +108,7 @@ function insertNavigation() {
         sm:flex-row
         absolute
         sm:relative
-        top-[64px]
+        top-[40px]
         sm:top-0
         right-0
         sm:p-0
@@ -118,10 +118,13 @@ function insertNavigation() {
         sm:w-auto
         bg-white
         ease-in-out
+        border
+        sm:border-0
+        border-accent
         ">
             <li id=""  class="py-3 px-4" ><a href="/projects/">Projects</a></li>
             <li id=""  class="py-3 px-4" ><a href="/cv/">CV</a></li>
-            <li id=""  class="py-3 px-4 sm:pl-4" ><a href="/writing/">Writing</a></li>
+            <li id=""  class="py-3 px-4 pb-6 sm:pb-3 sm:pl-4" ><a href="/writing/">Writing</a></li>
          </ul>
             <div class="block sm:hidden">
               <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">

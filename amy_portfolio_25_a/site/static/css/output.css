@@ -4669,6 +4669,10 @@ details.collapse summary::-webkit-details-marker {
   top: 64px;
 }
 
+.top-\[40px\] {
+  top: 40px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -6287,6 +6291,10 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .sm\:pb-3 {
+    padding-bottom: 0.75rem;
   }
 
   .sm\:text-left {

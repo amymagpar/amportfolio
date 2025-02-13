@@ -5,33 +5,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const headContent = `
   <title>A. Parness | Home</title>
 
+
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  project-id="portfolioai-447818"
-  agent-id="d0a7ab7b-25b4-4e41-bc38-dfec2409bc38"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-   chat-title="Ask me about Amy">
-  </df-messenger-chat-bubble>
-</df-messenger>
 <style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-font-family: Inter Var;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
-    --df-messenger-chat-bubble-icon-color: #fff;
-    --df-messenger-chat-bubble-background: #88bfcf;
-    bottom: 16px;
-    right: 16px;
-  }
+
+df-messenger {
+  z-index: 999;
+  position: fixed;
+  --df-messenger-fomt-color: #000;
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-font-family: Inter Var;
+  --df-messenger-chat-background: #f3f6fc;
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  --df-messenger-chat-bubble-icon-color: #fff;
+  --df-messenger-chat-bubble-background: #88bfcf;
+  bottom: 16px;
+  right: 16px;
+}
+
+
 
 .animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 .animate-right{position:-300px;opacity: 0;animation:animateright 0.4s forwards;animation-delay: 150ms;}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
@@ -67,15 +64,15 @@ img.active {
 // Components (from components.js)
 // Head component
 function insertHead() {
-    const nav = `<script>console.log("head");</script>`;
+  const nav = `<script>console.log("head");</script>`;
 
-    // Insert the navigation at the start of the body
-    document.body.insertAdjacentHTML('afterbegin', head);
+  // Insert the navigation at the start of the body
+  document.body.insertAdjacentHTML('afterbegin', head);
 }
 
 // Navigation component
 function insertNavigation() {
-    const nav = `<header id="navbar" class=" w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide">
     <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
@@ -128,19 +125,24 @@ function insertNavigation() {
          </ul>
             <div class="block sm:hidden">
               <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-                <i class="fa fa-bars"></i>
               </a>
            </div>
+           <div class="block sm:hidden">
+      <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+              <img id="icon-closed" src="/static/images/ellipsis.svg" alt="hamburger menu" class="w-6 h-6">
+              <img id="icon-open" src="/static/images/ellipsis-closed.svg" alt="hamburger menu" class="hidden w-6 h-6">
+      </a>
+    </div>
       </div>
     </div>
   </header>`;
 
-    // Insert the navigation at the start of the body
-    document.body.insertAdjacentHTML('afterbegin', nav);
+  // Insert the navigation at the start of the body
+  document.body.insertAdjacentHTML('afterbegin', nav);
 }
 
 function insertFooter() {
-    const footer = `<footer class="bg-white w-full text-center text-sm lg:text-base 2xl:text-lg">
+  const footer = `<footer class="bg-white w-full text-center text-sm lg:text-base 2xl:text-lg">
     <div class="container mx-auto flex px-4 py-2 flex-col sm:flex-row justify-between items-center">
       <div class="text-center sm:text-left ">
         <p class="font-light text-xs text-primary mb-0">&copy; 2025 Amy Parness</p>
@@ -158,8 +160,8 @@ function insertFooter() {
     </div>
   </footer>`;
 
-    // Insert the footer at the end of the body
-    document.body.insertAdjacentHTML('beforeend', footer);
+  // Insert the footer at the end of the body
+  document.body.insertAdjacentHTML('beforeend', footer);
 }
 
 // Execute when the DOM is fully loaded
@@ -250,14 +252,21 @@ window.addEventListener("scroll", onScrollThrottled, { passive: true });
 
 function responsiveNav() {
   const x = document.getElementById("myTopnav");
+    const iconClosed = document.getElementById("icon-closed");
+  const iconOpen = document.getElementById("icon-open");
+
   if (x.classList.contains("max-h-0")) {
     console.log("true");
     x.classList.remove("max-h-0");
     x.classList.add("max-h-screen");
+        iconClosed.classList.add("hidden");
+    iconOpen.classList.remove("hidden");
   } else {
     console.log("false");
     x.classList.add("max-h-0");
     x.classList.remove("max-h-screen");
+        iconClosed.classList.remove("hidden");
+    iconOpen.classList.add("hidden");
   }
 }
 

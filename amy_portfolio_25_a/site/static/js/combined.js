@@ -140,11 +140,12 @@ function insertNavigation() {
 }
 
 function insertFooter() {
-    const footer = `<footer class="bg-white border-0 border-t border-accent w-full p-4 text-center text-sm lg:text-base 2xl:text-lg">
-    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-      <div class="text-center sm:text-left mb-2 sm:mb-0">
-        <p class="font-light">&copy; 2024 Amy Parness. All rights reserved.</p>
+    const footer = `<footer class="bg-white w-full text-center text-sm lg:text-base 2xl:text-lg">
+    <div class="container mx-auto flex px-4 py-2 flex-col sm:flex-row justify-between items-center">
+      <div class="text-center sm:text-left ">
+        <p class="font-light text-xs text-primary mb-0">&copy; 2025 Amy Parness</p>
       </div>
+      <!--
       <div class="flex space-x-4">
         <a href="https://github.com/amyparness" target="_blank" class="text-gray-600 hover:text-accent">
           <i class="fa fa-github"></i>
@@ -152,6 +153,7 @@ function insertFooter() {
         <a href="https://www.linkedin.com/in/amyparness" target="_blank" class="text-gray-600 hover:text-accent">
           <i class="fa fa-linkedin"></i>
         </a>
+        -->
       </div>
     </div>
   </footer>`;
@@ -277,4 +279,4 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 reveal();
-// To check the scroll position on page load
+// To check the scroll position on page loa

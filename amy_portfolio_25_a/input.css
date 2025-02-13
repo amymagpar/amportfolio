@@ -1,0 +1,28 @@
+/* filepath: /home/arielc/Documents/work/amyparness_portfolio_24/amy_portfolio_25_a/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar {
+        min-height: unset;
+    }
+}
+
+@layer base {
+    h2 {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-2xl;
+    }
+    h4 {
+        @apply font-bold;
+    }
+    p {
+        @apply mb-2;
+    }
+    ul {
+        @apply list-disc;
+    }
+}

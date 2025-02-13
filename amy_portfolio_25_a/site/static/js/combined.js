@@ -1,5 +1,5 @@
 // Combined JavaScript file
-
+console.log("Combined JavaScript file loaded");
 // Head Component (from head.js)
 document.addEventListener("DOMContentLoaded", () => {
   const headContent = `

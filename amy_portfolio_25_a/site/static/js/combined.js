@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const headContent = `
   <title>A. Parness | Home</title>
 
-
-
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <style>
 
@@ -24,7 +22,6 @@ df-messenger {
   bottom: 16px;
   right: 16px;
 }
-
 
 
 .animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}

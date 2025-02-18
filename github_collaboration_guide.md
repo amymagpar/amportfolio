@@ -1,7 +1,10 @@
-1. Initial Setup (First Person)
+# Git/Github Collaboration Guide
+
+## 1. Initial Setup (First Person)
 
 (Assume Person A creates the project and Person B joins later.)
-A. Person A: Create a Repository on GitHub
+
+Person A: Create a Repository on GitHub
 
 Install GitHub CLI if you haven't:
 
@@ -25,7 +28,7 @@ Add Person B as a collaborator:
 
 Person B will receive an invitation via GitHub.
 
-2. Person B: Clone the Repository
+## 2. Person B: Clone the Repository
 
 Accept the invite:
 
@@ -39,10 +42,11 @@ Verify the remote repo is set up:
 
     git remote -v
 
-3. Working Together on a Feature
+## 3. Working Together on a Feature
 
 Each person should work in a separate branch to avoid conflicts.
-A. Create a New Branch
+
+Create a New Branch
 
 Create and switch to a new branch:
 
@@ -57,7 +61,7 @@ Push the branch to GitHub:
 
     git push origin feature-branch
 
-4. Create a Pull Request (PR)
+## 4. Create a Pull Request (PR)
 
 Create a PR from the terminal:
 
@@ -71,8 +75,9 @@ Merge the PR when ready:
 
     gh pr merge --squash --delete-branch
 
-5. Keeping Local Repo Updated
-   A. Sync with Main Branch
+## 5. Keeping Local Repo Updated
+
+A. Sync with Main Branch
 
 Before starting new work, update your local repository:
 
@@ -92,16 +97,16 @@ Resolve conflicts manually, then:
     git commit -m "Resolved conflicts"
     git push origin feature-branch
 
-6. Delete Old Branches (Cleanup)
+## 6. Delete Old Branches (Cleanup)
 
 After merging, delete the local and remote branch:
 
     git branch -d feature-branch
     gh pr delete feature-branch
 
-7. Additional Tips
+## 7. Additional Tips
 
-   View active PRs:
+View active PRs:
 
     gh pr list
 

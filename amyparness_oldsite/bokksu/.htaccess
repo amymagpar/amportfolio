@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Access to /amyparness/bokksu"
-AuthUserFile /kunden/homepages/44/d214987632/htpasswd
-Require user portfolio

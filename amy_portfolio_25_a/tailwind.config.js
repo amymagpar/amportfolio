@@ -20,7 +20,23 @@ module.exports = {
     require("tailwindcss-animate"),
   ],
   daisyui: {
-    themes: true,
     logs: true,
+    themes: false,
+    themes: [
+      {
+        mytheme: {
+          "primary": "#003f5c",
+          "secondary": "#58508d",
+          "accent": "#bc5090",
+          "neutral": "#58508d",
+          "base-100": "#ffffff",
+          "info": "#5a6fb6",
+          "success": "#84cc16",
+          "warning": "#ffa600",
+          "error": "#ff6e54",
+          },
+        },
+        "corporate",
+      ],
   },
 };

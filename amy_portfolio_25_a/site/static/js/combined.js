@@ -37,16 +37,16 @@ df-messenger {
 
 html{scroll-behavior: smooth;}
 
-img {
+.reveal {
   position: relative;
   transform: translateY(0px);
   transition: 1s all ease;
 }
-img.active {
+.active {
   transform: translateY(0);
   opacity: 1;
 }
-.reveal {
+.inactive {
   opacity: 0;
 }
 
@@ -66,7 +66,7 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-50 bg-white border-0 border-b border-accent shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-50 bg-white/15 backdrop-blur-lg border border-white/20 shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
     <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
@@ -104,10 +104,9 @@ function insertNavigation() {
         right-0
         sm:p-0
         sm:border-0
-        border-accent
+        border-primary
         w-full
         sm:w-auto
-        bg-white
         ease-in-out
         border
         sm:border-0
@@ -273,8 +272,10 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
+      reveals[i].classList.remove("inactive");
     } else {
       reveals[i].classList.remove("active");
+      reveals[i].classList.add("inactive");
     }
   }
 }

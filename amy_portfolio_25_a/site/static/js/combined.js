@@ -66,7 +66,7 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-50 bg-white/15 backdrop-blur-lg border border-white/20 shadow-md text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 bg-white/15 backdrop-blur-lg border-b border-white/50 shdow-md text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
     <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
@@ -85,14 +85,9 @@ function insertNavigation() {
         max-h-0
         sm:max-h-full
         sm:flex
-        shadow-md
-        sm:shadow-none
         text-sm
         pb-0
         sm:text-base
-        border-t-0
-        border-l-0
-        border-r-0
         font-light
         list-none
         flex-col
@@ -103,14 +98,12 @@ function insertNavigation() {
         sm:top-0
         right-0
         sm:p-0
-        sm:border-0
-        border-primary
         w-full
         sm:w-auto
         ease-in-out
-        border
         sm:border-0
-        border-accent
+border-b border-white/50
+bg-white/15 backdrop-blur-lg 
         ">
             <li id=""  class="py-3 px-4" ><a href="/projects/">Projects</a></li>
             <li id=""  class="py-3 px-4" ><a href="/cv/">CV</a></li>
@@ -227,11 +220,16 @@ let lastScrollPosition = 0;
 function onScroll() {
   const currentScrollPosition = window.pageYOffset;
   const navbar = document.getElementById("navbar");
+  const n = document.getElementById("myTopnav");
 
   if (currentScrollPosition > lastScrollPosition) {
     // Scrolling down
     navbar.style.transform = "translateY(-100%)";
     navbar.style.transition = transition ? "transform 0.3s ease-in-out" : "none";
+  if (n.classList.contains("max-h-screen")) {
+    n.classList.add("max-h-0");
+    n.classList.remove("max-h-screen");
+    }
   } else {
     // Scrolling up
     navbar.style.transform = "translateY(0)";
@@ -248,6 +246,7 @@ function responsiveNav() {
     const iconClosed = document.getElementById("icon-closed");
   const iconOpen = document.getElementById("icon-open");
 
+    console.log("go");
   if (x.classList.contains("max-h-0")) {
     console.log("true");
     x.classList.remove("max-h-0");

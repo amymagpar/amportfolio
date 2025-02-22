@@ -4,6 +4,6 @@ Tech: html css javascript nodejs tailwindcss daisyui
 - Run the command ```npm run build:css``` # This runs a script that waits for changes you save as you work and generates the css for the [tailwind](https://tailwindcss.com/) classes you use.
 - Open a new terminal.
 - Navigate into the _site_ folder. ```cd site```
-- Run the command ```npx http-server```. This will create a local server.
+- Run the command ```python -m http.server```. This will create a local server.
 - In your web browser, go to this address: ```0.0.0.0:8080``` to view the site.
 - When you make changes, you will have to refresh the browser to see them.

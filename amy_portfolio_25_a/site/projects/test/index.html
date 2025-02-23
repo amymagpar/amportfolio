@@ -12,21 +12,24 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
   <body>
-    <main>
-<section class="flex flex-col h-screen justify-center">
-<grid class="absolute w-screen h-full pointer-events-none z-50"> <div class="container mx-auto border-x h-screen"> </div> </grid>
-  <div class="container mx-auto p-4">
+    <main style="
+  background-image: linear-gradient(135deg, #ffffff 42%, #f4f4f5 42%, #f4f4f5 48%, #ffffff 48%, #ffffff 92%, #f4f4f5 92%, #f4f4f5 100%); background-size: 16px 16px; background-attachment: fixed;
+     ">
+<!-- <grid class="absolute w-screen h-full pointer-events-none z-50"> <div class="container mx-auto sm:border-x h-full"> </div> </grid> -->
+<!--1-->
+<section class="h-screen">
+  <div class="container mx-auto flex flex-col h-full justify-center bg-white sm:border-x p-4">
           <div class="flex flex-wrap gap-3">
             <span
-              class="badge badge-neutral bg-white border-red-400 text-red-400 items-end"
+              class="badge badge-xs sm:badge-sm lg:badge-md 2xl:badge-lg bg-white border-red-400 text-red-400 items-end"
               >subscription</span
             >
             <span
-              class="badge badge-neutral bg-white border-red-400 text-red-400 items-end"
+              class="badge badge-xs sm:badge-sm lg:badge-md 2xl:badge-lg bg-white border-red-400 text-red-400 items-end"
               >e-commerce</span
             >
             <span
-              class="badge badge-neutral bg-white border-red-400 text-red-400 items-end"
+              class="badge badge-xs sm:badge-sm lg:badge-md 2xl:badge-lg bg-white border-red-400 text-red-400 items-end"
               >start-up</span
             >
           </div>
@@ -47,10 +50,10 @@ Growth Strategy
         <!-- Get a demo</button> -->
         <input type="checkbox" id="toggle" class="peer hidden">
         <label for="toggle"
-        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-light ring-offset-background transition-colors transition-1000 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-zinc-50 hover:bg-zinc-100 hover:text-zinc-500 h-9 rounded-md px-8 w-full md:w-auto tracking-wider text-neutral-400">
+        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-light ring-offset-background transition-colors transition-1000 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input border-zinc-200 bg-white hover:bg-zinc-50 hover:text-zinc-300 hover:border-zinc-300  h-9 rounded-md px-8 w-full md:w-auto tracking-wider text-zinc-400">
         TLDR
         </label>
-    <p class="max-h-0 peer-checked:max-h-[200px] opacity-0 peer-checked:opacity-100 transition-all duration-500 ease-out overflow-hidden max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl">
+    <p class="max-h-0 peer-checked:max-h-[200px] opacity-0 peer-checked:opacity-100 transition-all duration-200 ease-out overflow-hidden max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl">
             <em>Bokksu</em> embarked on a journey to enhance customer retention
             and increase lifetime value amidst a competitive market landscape,
             aiming to reach a valuation milestone by year-end. As
@@ -58,12 +61,73 @@ Growth Strategy
             closely with C-suite executives to prioritize strategic roadmaps
             grounded in robust data and extensive user research.
     </p>
+        <button
+        class="scrollToNext inline-flex items-center justify-center whitespace-nowrap text-sm font-light ring-offset-background transition-colors transition-1000 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input border-zinc-200 bg-white hover:bg-zinc-50 hover:text-zinc-300 hover:border-zinc-300  h-9 rounded-md px-8 w-full md:w-auto tracking-wider text-zinc-400">
+      SCROLL
+      </button>
       </div>
   </div>
 </section>
-<section class="flex flex-col h-screen justify-center border border-y">
-<grid class="absolute w-screen h-full z-50"> <div class="container mx-auto border-xl pointer-events-none h-screen"> </div> </grid>
-  <div class="container mx-auto p-4">
+
+<!--2-->
+<section class="h-screen">
+  <div class="container mx-auto flex flex-col h-full justify-center bg-white sm:border-x sm:p-4">
+  <img src="../real-customers/hero.png" class="sm:rounded-lg reveal">
+  </div>
+  </section>
+<section class="h-screen">
+  <div class="container mx-auto flex flex-col h-full justify-center bg-white sm:border-x px-4">
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="badge badge-xs sm:badge-sm lg:badge-md 2xl:badge-lg bg-white border-red-400 text-red-400 items-end"
+              >subscription</span
+            >
+            <span
+              class="badge badge-xs sm:badge-sm lg:badge-md 2xl:badge-lg bg-white border-red-400 text-red-400 items-end"
+              >e-commerce</span
+            >
+            <span
+              class="badge badge-xs sm:badge-sm lg:badge-md 2xl:badge-lg bg-white border-red-400 text-red-400 items-end"
+              >start-up</span
+            >
+          </div>
+    <h1 class="mb-6 text-4xl font-bold leading-none tracking-tighter md:text-[7vw] lg:text-8xl">
+Growth Strategy
+    </h1>
+    <p class="max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl">
+            <em>Bokksu</em> embarked on a journey to enhance customer retention
+            and increase lifetime value amidst a competitive market landscape,
+            aiming to reach a valuation milestone by year-end. As
+            <strong>Senior Consultant for Growth</strong>, I collaborated
+            closely with C-suite executives to prioritize strategic roadmaps
+            grounded in robust data and extensive user research.
+    </p>
+    <div class="mt-6 flex flex-col gap-4 sm:flex-row lg:mt-10">
+      <!-- <button -->
+        <!-- class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-11 rounded-md px-8 w-full md:w-auto"> -->
+        <!-- Get a demo</button> -->
+        <input type="checkbox" id="toggle" class="peer hidden">
+        <label for="toggle"
+        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-light ring-offset-background transition-colors transition-1000 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input border-zinc-200 bg-white hover:bg-zinc-50 hover:text-zinc-300 hover:border-zinc-300  h-9 rounded-md px-8 w-full md:w-auto tracking-wider text-zinc-400">
+        TLDR
+        </label>
+    <p class="max-h-0 peer-checked:max-h-[200px] opacity-0 peer-checked:opacity-100 transition-all duration-200 ease-out overflow-hidden max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl">
+            <em>Bokksu</em> embarked on a journey to enhance customer retention
+            and increase lifetime value amidst a competitive market landscape,
+            aiming to reach a valuation milestone by year-end. As
+            <strong>Senior Consultant for Growth</strong>, I collaborated
+            closely with C-suite executives to prioritize strategic roadmaps
+            grounded in robust data and extensive user research.
+    </p>
+        <button
+        class="scrollToNext inline-flex items-center justify-center whitespace-nowrap text-sm font-light ring-offset-background transition-colors transition-1000 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input border-zinc-200 bg-white hover:bg-zinc-50 hover:text-zinc-300 hover:border-zinc-300  h-9 rounded-md px-8 w-full md:w-auto tracking-wider text-zinc-400">
+      SCROLL
+      </button>
+      </div>
+  </div>
+</section>
+<section class="h-screen">
+  <div class="container mx-auto flex flex-col h-full justify-center bg-white sm:border-x p-4">
           <div class="flex flex-wrap gap-3">
             <span
               class="badge badge-neutral bg-white border-red-400 text-red-400 items-end"
@@ -93,10 +157,10 @@ Growth Strategy
       <!-- <button -->
         <!-- class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-11 rounded-md px-8 w-full md:w-auto"> -->
         <!-- Get a demo</button> -->
-        <div
+        <button
         class="inline-flex items-center justify-center whitespace-nowrap text-sm font-light ring-offset-background transition-colors transition-1000 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-zinc-50 hover:bg-zinc-100 hover:text-zinc-500 h-11 rounded-md px-8 w-full md:w-auto tracking-wider text-neutral-400">
         TLDR
-      </div>
+      </button>
   </div>
   </section>
 
@@ -132,7 +196,7 @@ Growth Strategy
         </svg>
       </span>
     </button>
-    <script src="../../static/js/combined.js"></script>
+    <script src="../../static/js/combined.js" defer></script>
     <df-messenger
       project-id="portfolioai-447818"
       agent-id="d0a7ab7b-25b4-4e41-bc38-dfec2409bc38"

@@ -66,7 +66,7 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 bg-white/15 backdrop-blur-lg border-b border-white/50 shdow-md text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 bg-white border-b border-zinc-200 text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
     <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
@@ -82,6 +82,9 @@ function insertNavigation() {
         transition-all
         ease-in-out
         overflow-hidden
+bg-white
+
+ border-b border-t border-zinc-200
         max-h-0
         sm:max-h-full
         sm:flex
@@ -101,22 +104,15 @@ function insertNavigation() {
         w-full
         sm:w-auto
         ease-in-out
-        sm:border-0
-border-b border-white/50
-bg-white/15 backdrop-blur-lg 
         ">
-            <li id=""  class="py-3 px-4" ><a href="/projects/">Projects</a></li>
+            <li id=""  class="pb-3 pt-5 sm:pt-3 px-4" ><a href="/projects/">Projects</a></li>
             <li id=""  class="py-3 px-4" ><a href="/cv/">CV</a></li>
             <li id=""  class="py-3 px-4 pb-6 sm:pb-3 sm:pl-4" ><a href="/writing/">Writing</a></li>
          </ul>
-            <div class="block sm:hidden">
-              <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-              </a>
-           </div>
            <div class="block sm:hidden">
       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-              <img id="icon-closed" src="/static/images/ellipsis.svg" alt="hamburger menu" class="w-6 h-6">
-              <img id="icon-open" src="/static/images/ellipsis-closed.svg" alt="hamburger menu" class="hidden w-6 h-6">
+              <img id="icon-open" src="/static/images/ellipsis.svg" alt="hamburger menu" class="w-6 h-6">
+              <img id="icon-closed" src="/static/images/ellipsis-closed.svg" alt="hamburger menu" class="hidden w-6 h-6">
       </a>
     </div>
       </div>
@@ -219,21 +215,26 @@ let lastScrollPosition = 0;
 
 function onScroll() {
   const currentScrollPosition = window.pageYOffset;
-  const navbar = document.getElementById("navbar");
+  const iconClosed = document.getElementById("icon-closed");
+  const iconOpen = document.getElementById("icon-open");
   const n = document.getElementById("myTopnav");
-
+  const navbar = document.getElementById("navbar");
   if (currentScrollPosition > lastScrollPosition) {
     // Scrolling down
     navbar.style.transform = "translateY(-100%)";
     navbar.style.transition = transition ? "transform 0.3s ease-in-out" : "none";
-  if (n.classList.contains("max-h-screen")) {
+    console.log('down');
     n.classList.add("max-h-0");
     n.classList.remove("max-h-screen");
-    }
   } else {
     // Scrolling up
+    console.log('up');
     navbar.style.transform = "translateY(0)";
     navbar.style.transition = transition ? "transform 0.3s ease-in-out" : "none";
+    iconOpen.classList.remove("hidden");
+    iconClosed.classList.add("hidden");
+    console.log('open ' + iconOpen.classList);
+    console.log('closed ' + iconClosed.classList);
   }
 
   lastScrollPosition = currentScrollPosition;
@@ -246,19 +247,18 @@ function responsiveNav() {
     const iconClosed = document.getElementById("icon-closed");
   const iconOpen = document.getElementById("icon-open");
 
-    console.log("go");
   if (x.classList.contains("max-h-0")) {
     console.log("true");
     x.classList.remove("max-h-0");
     x.classList.add("max-h-screen");
-        iconClosed.classList.add("hidden");
-    iconOpen.classList.remove("hidden");
+        iconClosed.classList.remove("hidden");
+    iconOpen.classList.add("hidden");
   } else {
     console.log("false");
     x.classList.add("max-h-0");
     x.classList.remove("max-h-screen");
-        iconClosed.classList.remove("hidden");
-    iconOpen.classList.add("hidden");
+        iconClosed.classList.add("hidden");
+    iconOpen.classList.remove("hidden");
   }
 }
 
@@ -283,3 +283,4 @@ window.addEventListener("scroll", reveal);
 
 reveal();
 // To check the scroll position on page loa
+

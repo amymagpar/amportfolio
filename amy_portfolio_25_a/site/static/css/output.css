@@ -4318,6 +4318,17 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
+.border-zinc-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
+}
+
+.border-x-zinc-50 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
+  border-right-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
+}
+
 .border-b-white\/50 {
   border-bottom-color: rgb(255 255 255 / 0.5);
 }
@@ -6186,6 +6197,11 @@ details.collapse summary::-webkit-details-marker {
   .sm\:border-zinc-200 {
     --tw-border-opacity: 1;
     border-color: rgb(228 228 231 / var(--tw-border-opacity, 1));
+  }
+
+  .sm\:border-zinc-50 {
+    --tw-border-opacity: 1;
+    border-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
   }
 
   .sm\:p-0 {

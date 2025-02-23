@@ -4197,6 +4197,10 @@ details.collapse summary::-webkit-details-marker {
   border-style: dashed;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-\[\#\#444e86\] {
   border-color: ##444e86;
 }
@@ -6161,6 +6165,27 @@ details.collapse summary::-webkit-details-marker {
   .sm\:border-x {
     border-left-width: 1px;
     border-right-width: 1px;
+  }
+
+  .sm\:border-b {
+    border-bottom-width: 1px;
+  }
+
+  .sm\:border-l {
+    border-left-width: 1px;
+  }
+
+  .sm\:border-r {
+    border-right-width: 1px;
+  }
+
+  .sm\:border-none {
+    border-style: none;
+  }
+
+  .sm\:border-zinc-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(228 228 231 / var(--tw-border-opacity, 1));
   }
 
   .sm\:p-0 {

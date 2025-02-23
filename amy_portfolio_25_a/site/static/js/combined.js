@@ -66,8 +66,8 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 bg-white border-b border-zinc-200 text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
-    <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40  border-b border-zinc-200 text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
+    <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12 bg-white">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
         <li>
@@ -84,7 +84,7 @@ function insertNavigation() {
         overflow-hidden
 bg-white
 
- border-b border-t border-zinc-200
+  border-t border-zinc-200
         max-h-0
         sm:max-h-full
         sm:flex
@@ -229,6 +229,7 @@ function onScroll() {
   } else {
     // Scrolling up
     console.log('up');
+    n.classList.remove("border-b");
     navbar.style.transform = "translateY(0)";
     navbar.style.transition = transition ? "transform 0.3s ease-in-out" : "none";
     iconOpen.classList.remove("hidden");
@@ -251,10 +252,12 @@ function responsiveNav() {
     console.log("true");
     x.classList.remove("max-h-0");
     x.classList.add("max-h-screen");
+    x.classList.add("border-b");
         iconClosed.classList.remove("hidden");
     iconOpen.classList.add("hidden");
   } else {
     console.log("false");
+    x.classList.remove("border-b");
     x.classList.add("max-h-0");
     x.classList.remove("max-h-screen");
         iconClosed.classList.add("hidden");

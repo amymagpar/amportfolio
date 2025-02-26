@@ -1,10 +1,5 @@
 <!doctype html>
 <html data-theme="mytheme" class="h-full">
-  <!-- <html data-theme="emerald"> -->
-  <!-- <html data-theme="cupcake"> -->
-  <!-- <html data-theme="light"> -->
-  <!-- <html data-theme="mytheme"> -->
-
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -17,55 +12,74 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
 
-  <body class="min-h-screen flex flex-col bg-white">
+  <!-- <body class="min-h-screen flex flex-col bg-white"> -->
+  <body
+    style="
+      background-image: linear-gradient(
+        135deg,
+        #ffffff 42%,
+        #fafafa 42%,
+        #fafafa 48%,
+        #ffffff 48%,
+        #ffffff 92%,
+        #fafafa 92%,
+        #fafafa 100%
+      );
+      background-size: 16px 16px;
+      background-attachment: fixed;
+    "
+  >
     <!-- component -->
-
     <div class="flex flex-grow flex-col">
       <div
-        class="container h-screen mx-auto px-4 mb-16 lg:mb-32 flex flex-col justify-center"
+        class="container bg-white sm:border-x border-zinc-50 sm:h-screen mx-auto px-4 pb-16 lg:pb-32 flex flex-col justify-center pt-16"
       >
-        <div class="">
-          <div class="-mb-2 font-light text-4xl m-0">Bokksu</div>
-          <h2
-            class="mb-6 md:mb-8 lg:mb-16 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase"
-          >
-            Growth Strategy
-          </h2>
-          <div class="flex flex-wrap gap-3">
-            <span
-              class="badge badge-neutral bg-[#dd8677] border-[#dd8677] text-white"
-              >subscription</span
-            >
-            <span
-              class="badge badge-neutral bg-[#dd8677] border-[#dd8677] text-white"
-              >e-commerce</span
-            >
-            <span
-              class="badge badge-neutral bg-[#dd8677] border-[#dd8677] text-white"
-              >start-up</span
-            >
-          </div>
-        </div>
-        <div
-          class="mt-2 prose md:prose-lg lg:prose-lg text-left !leading-normal lg:max-w-[50%] text-justify"
+        <div class="font-light text-4xl m-0">Bokksu</div>
+        <h2
+          class="mb-6 md:mb-8 lg:mb-16 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase"
         >
-          <p class="text-xl leading-snug">
-            <em>Bokksu</em> embarked on a journey to enhance customer retention
-            and increase lifetime value amidst a competitive market landscape,
-            aiming to reach a valuation milestone by year-end. As
-            <strong>Senior Consultant for Growth</strong>, I collaborated
-            closely with C-suite executives to prioritize strategic roadmaps
-            grounded in robust data and extensive user research.
-          </p>
+          Growth Strategy
+        </h2>
+        <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
+          <div>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="badge badge-neutral bg-[#dd8677] border-[#dd8677] text-white"
+                >subscription</span
+              >
+              <span
+                class="badge badge-neutral bg-[#dd8677] border-[#dd8677] text-white"
+                >e-commerce</span
+              >
+              <span
+                class="badge badge-neutral bg-[#dd8677] border-[#dd8677] text-white"
+                >start-up</span
+              >
+            </div>
+            <div class="mt-2 prose md:prose-lg lg:prose-lg">
+              <p class="text-lg md:text-xl leading-snug">
+                <em>Bokksu</em> embarked on a journey to enhance customer
+                retention and increase lifetime value amidst a competitive
+                market landscape, aiming to reach a valuation milestone by
+                year-end. As <strong>Senior Consultant for Growth</strong>, I
+                collaborated closely with C-suite executives to prioritize
+                strategic roadmaps grounded in robust data and extensive user
+                research.
+              </p>
+            </div>
+          </div>
+          <div></div>
         </div>
-        <div class="my-24">
-          <div class="grid lg:grid-cols-2">
+        <div class="mt-24">
+          <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
             <div class="prose">
               <div class="font-light text-3xl mb-0">Impact</div>
-              <h2 class="mb-2 mt-0 text-5xl font-black uppercase text-pretty">
+              <h2
+                class="mb-2 mt-0 text-4xl md:text-5xl 2xl:text-6xl font-black uppercase text-pretty"
+              >
                 10X year-over-year growth
               </h2>
-              <p class="text-xl leading-snug">
+              <p class="text-lg md:text-xl leading-snug">
                 Between 2022 and 2023 <em>Bokksu</em> grew more than any of its
                 competitors as a result of their increased focus on gifting and
                 craft.
@@ -73,10 +87,12 @@
             </div>
             <div class="prose">
               <div class="font-light text-3xl mb-0">Impact</div>
-              <h2 class="mb-2 mt-0 text-5xl font-black uppercase text-pretty">
+              <h2
+                class="mb-2 mt-0 text-4xl md:text-5xl 2xl:text-6xl font-black uppercase text-pretty"
+              >
                 2023 <em>Bokksu</em> aquires <em>Japan Crate</em>
               </h2>
-              <p class="text-xl leading-snug">
+              <p class="text-lg sm:text-xl leading-snug">
                 The success of <em>Bokksu’s</em> international e-commerce, now
                 paired with the addition of retail locations across the U.S.
                 will grow <em>Bokksu’s</em> reach exponentially.
@@ -86,29 +102,31 @@
         </div>
       </div>
 
-      <div class="2xl:container mx-auto">
+      <div
+        class="sm:container bg-white sm:border-x border-zinc-50 mx-auto mt-24"
+      >
         <img class="w-full 2xl:rounded-md shadow-xl" src="hero.png" />
       </div>
 
-      <div class="bg-white mt-24 pb-48 lg:pb-64">
-        <div class="container mx-auto px-4">
-          <div class="prose">
-            <h3 class="font-light text-base uppercase">The Process</h3>
-            <!-- <h4 class="mb-12 font-bold text-5xl sm:leading-tight ">What is a best in class portal?</h4> -->
-            <h1 class="">Finding opportunities in data</h1>
-            <p class="mb-12">
-              Bokksu needed to reach a valuation of 100M by the end of the year.
-              In addition to needing an increase in new customers, Bokksu needed
-              to greatly increase customer retention. I led the product team
-              research and worked with C-suite managers to ruthlessly prioritize
-              a roadmap to achieve their goal.
-            </p>
-          </div>
+      <div
+        class="container bg-white sm:border-x border-zinc-50 mx-auto px-4 pt-24 pb-48 lg:pb-64"
+      >
+        <div class="prose">
+          <h3 class="font-light text-base uppercase">The Process</h3>
+          <!-- <h4 class="mb-12 font-bold text-5xl sm:leading-tight ">What is a best in class portal?</h4> -->
+          <h1 class="">Finding opportunities in data</h1>
+          <p class="mb-12">
+            Bokksu needed to reach a valuation of 100M by the end of the year.
+            In addition to needing an increase in new customers, Bokksu needed
+            to greatly increase customer retention. I led the product team
+            research and worked with C-suite managers to ruthlessly prioritize a
+            roadmap to achieve their goal.
+          </p>
         </div>
       </div>
       <div class="">
         <div
-          class="container mx-auto px-4 py-48 lg:py-64 bg-transparent border-y-2"
+          class="container bg-white sm:border-x border-zinc-50 mx-auto px-4 pb-48 lg:pb-64"
           data-theme="drcula"
         >
           <div class="prose mb-24">
@@ -203,8 +221,10 @@
         </div>
       </div>
 
-      <div class="my-48 lg:my-64">
-        <div class="container mx-auto px-4 mb-12">
+      <div class="">
+        <div
+          class="container bg-white sm:border-x border-zinc-50 mx-auto px-4 pb-48 lg:pb-64"
+        >
           <div class="grid lg:grid-cols-2 gap-6">
             <div class="prose">
               <h1>Creating Three New Personas</h1>
@@ -238,7 +258,9 @@
       </div>
 
       <div class="">
-        <div class="container mx-auto px-4 py-48 lg:py-64 border-t-2">
+        <div
+          class="container bg-white sm:border-x border-zinc-50 mx-auto px-4 pb-48 lg:pb-64"
+        >
           <div class="grid lg:grid-cols-2 gap-6 mb-12">
             <div class="prose">
               <span class="text-sm font-regular uppercase">Opportunity 1</span>
@@ -310,7 +332,7 @@
       </div>
       <!--
 <div class="bg-red-700  py-48 lg:py-64">
-  <div class="container mx-auto px-4  mb-12">
+  <div class="container bg-white sm:border-x border-zinc-50 mx-auto px-4  mb-12">
     <div class="mb-12 prose !prose-invert">
       <h1 class="">Enhancing User Experience</h1>
       <p>
@@ -319,7 +341,7 @@
       </div>
     <img src="dedicateddad.png" class="rounded-md shadow-lg"/>
   </div>
-  <div class="2xl:container 2xl:mx-auto">
+  <div class="2xl:container bg-white sm:border-x border-zinc-50 2xl:mx-auto">
     <a href="peter.png">
     <img src="peter.png" class="2xl:rounded-md shadow-lg"/>
     </a>
@@ -329,7 +351,7 @@
 
       <!--
 <div class="bg-[#dd8677] py-48 lg:py-64">
-  <div class="container mx-auto px-4">
+  <div class="container bg-white sm:border-x border-zinc-50 mx-auto px-4">
     <div class="prose mb-12">
       <h1 class="">Insights + Prioritization</h1>
       <p>
@@ -366,7 +388,9 @@
 </div>
 -->
 
-      <div class="container mx-auto px-4 text-center py-24">
+      <div
+        class="container bg-white sm:border-x border-zinc-50 mx-auto px-4 text-center py-24"
+      >
         <a
           href="../ecommerce-expertise/"
           class="font-light text-lg hover:text-primary underline decoration-dotted"

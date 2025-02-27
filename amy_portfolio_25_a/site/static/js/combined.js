@@ -67,7 +67,7 @@ function insertHead() {
 // Navigation component
 function insertNavigation() {
   const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 border-b sm:border-none  text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
-    <div class="container px-4 mx-auto navbar p-0 h-10 sm:h-12 bg-white sm:border-b sm:border-l sm:border-r sm:border-zinc-50 overflow-hidden">
+    <div class="container sm:backdrop-blur-md bg-white sm:bg-white/20 sm:border-b sm:border-l sm:border-r sm:border-zinc-50/20 shadow overflow-hidden px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
         <li>
@@ -79,12 +79,14 @@ function insertNavigation() {
       </div>
       <div class="navbar-end">
       <ul id="myTopnav" class="
+        sm:bg-opacity-0
+        shadow
+        sm:shadow-none
         transition-all
         ease-in-out
         overflow-hidden
-bg-white
-
-  border-t border-zinc-50
+        bg-white
+        border-t border-zinc-50
         max-h-0
         sm:max-h-full
         sm:flex
@@ -287,3 +289,11 @@ window.addEventListener("scroll", reveal);
 reveal();
 // To check the scroll position on page loa
 
+// button show hide div
+document.querySelectorAll(".toggle-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+    const targetDiv = document.getElementById(targetId);
+    targetDiv.classList.toggle("hidden"); // Toggle visibility
+  });
+}); 

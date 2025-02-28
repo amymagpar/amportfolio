@@ -291,9 +291,34 @@ reveal();
 
 // button show hide div
 document.querySelectorAll(".toggle-btn").forEach(button => {
+    console.log("hello");
   button.addEventListener("click", () => {
     const targetId = button.getAttribute("data-target");
     const targetDiv = document.getElementById(targetId);
-    targetDiv.classList.toggle("hidden"); // Toggle visibility
+
+    if (targetDiv.classList.contains("opacity-0")) {
+
+    targetDiv.classList.remove("opacity-0"); 
+    targetDiv.classList.remove("h-0"); 
+    } else {
+    targetDiv.classList.add("opacity-0"); 
+    targetDiv.classList.add("h-0"); 
+    }
   });
 }); 
+
+
+// document.querySelectorAll(".toggle-btn").forEach(button => {
+//   button.addEventListener("click", () => {
+//     const targetId = button.getAttribute("data-target");
+//     const targetDiv = document.getElementById(targetId);
+
+//     if (targetDiv.classList.contains("opacity-0")) {
+//       targetDiv.classList.remove("opacity-0", "scale-95", "h-0", "overflow-hidden");
+//       targetDiv.classList.add("opacity-100", "scale-100", "h-auto");
+//     } else {
+//       targetDiv.classList.add("opacity-0", "scale-95", "h-0", "overflow-hidden");
+//       targetDiv.classList.remove("opacity-100", "scale-100", "h-auto");
+//     }
+//   });
+// });

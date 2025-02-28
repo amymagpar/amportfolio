@@ -7,6 +7,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>    
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <link rel="stylesheet" href="/static/css/output.css" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
@@ -40,19 +42,19 @@
         </h2>
         <div class="flex flex-wrap gap-3 mb-3">
           <span
-            class="badge badge-neutral bg-emerald-700 border-emerald-700 text-white"
+            class="badge badge-neutral bg-emerald-600 border-emerald-600 text-white"
             >sustainability</span
           >
           <span
-            class="badge badge-neutral bg-emerald-700 border-emerald-700 text-nowrap text-white"
+            class="badge badge-neutral bg-emerald-600 border-emerald-600 text-nowrap text-white"
             >user journeys</span
           >
           <span
-            class="badge badge-neutral bg-emerald-700 border-emerald-700 text-white"
+            class="badge badge-neutral bg-emerald-600 border-emerald-600 text-white"
             >design</span
           >
           <span
-            class="badge badge-neutral bg-emerald-700 border-emerald-700 text-white"
+            class="badge badge-neutral bg-emerald-600 border-emerald-600 text-white"
             >collaboration</span
           >
         </div>
@@ -73,12 +75,12 @@
         <!--button-->
         <button
           data-target="tldr"
-          class="toggle-btn btn btn-outline btn-sm w-min border-zinc-400 font-light text-zinc-500 mb-4"
+          class="toggle-btn btn btn-outline btn-sm w-min border-zinc-400 font-light text-zinc-500 mb-4 z-40"
         >
           TLDR
         </button>
 
-        <div id="tldr" class="hidden grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
+        <div id="tldr" class="opacity-0 h-0 transition-all duration-300 grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
           <div>
             <p class="prose leading-snug">
               At <em>Cisco</em>, fragmented sustainability data and poor
@@ -118,13 +120,13 @@
           </div>
           <div></div>
         </div>
-
+<div id="chart" class="relative -top-8"></div>
         <!-- Impact -->
         <div
-          class="container mx-auto px-4 bg-white pt-32 lg:pt-52 pb-40 lg:pb-60"
+          class="container mx-auto px-4 bg-white pt-12 lg:pt-24 pb-40 lg:pb-60"
         >
 
-              <h1 class="font-extralight text-7xl text-right uppercase mb-0">Impact</h1>
+              <h1 class="font-black text-6xl text-right uppercase mb-0">Impact</h1>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-6 xl:gap-8">
           <div class="prose prose-lg leading-tight 2xl:col-start-2 border-t xl:border-t-2 border-black lg:col-start-1 pt-2 mt-4 mb-4">
                <div class="font-extrabold text-3xl leading-none">Reduced RFP Response Times</div>
@@ -191,26 +193,26 @@
         </div>
       </div>
       <div class="container mx-auto  px-4 pt-80 pb-40">
-        <div class="grid lg:grid-cols-12 gap-6 lg:gap-10">
-          <div class="prose mx-auto !text-emerald-700 col-start-4 col-end-10 text-xl mb-12">
+        <div class="lg:grid lg:grid-cols-12 gap-6 lg:gap-10">
+          <div class="prose mx-auto !text-emerald-700 lg:col-start-4 lg:col-end-10 font-bold text-2xl lg:text-3xl mb-12">
             <p class="">
-              During stakeholder interviews, a Product engineering sustainability manager shared a story that crystallized our challenge:
+              During stakeholder interviews, a product engineering sustainability manager shared a story that crystallized our challenge:
             </p>
           </div>
-          <div class="chat chat-start col-start-3 col-end-11 relative">
+          <div class="chat chat-start lg:col-start-3 lg:col-end-11 relative">
             <div class="chat-bubble mx-auto bg-emerald-600 text-white p-12 -left-4">
-              <span class="text-3xl font-light italic leading-relaxed">
+              <span class="text-2xl lg:text-3xl font-light italic lg:leading-relaxed">
                 &quot;I have two RFPs from sales due in 48 hours requiring power usage metrics for our networking solutions. I spent a day just trying to find if we have this data, only to discover it would take weeks to compile. We will lose the bids.&rdquo;
             </span>
           </div>
         </div>
-        <div class="prose mx-auto col-start-4 col-end-10 !text-emerald-700 text-xl  col-start-1 col-span-5 mt-12">
+        <div class="prose mx-auto lg:col-start-4 lg:col-end-10 !text-emerald-700 text-lg lg:text-xl  col-start-1 col-span-5 mt-12">
           <p class="">
             This wasn't an isolated incident. I directed the analysis of UX research data, including interviews, surveys, and usability testing, to gain deep insights into user preferences and behavior. Our research revealed:
           </p>
           <ul>
             <li class="">
-              Marketing teams were surfacing generic sustainability content lecause they did not have product-specific data
+              Marketing teams were surfacing generic sustainability content because they did not have product-specific data
             </li>
             <li class="">
               Engineers had some of the data in a hard-to-use dashboard.
@@ -226,48 +228,59 @@
       </div>
     </div>
         <div class="container mx-auto bg-white sm:border-t sm:border-x border-zinc-50 px-4 py-40">
-        <div class="prose">
-              <h1 class="mb-0">
-                <span class="uppercase">Using Metrics to Drive Design</span>
+          <div class="prose mb-6">
+              <h1 class="uppercase mb-0">
+              Using Metrics to Drive Design
               </h1>
-              <h2 class="uppercase">
+              <h2 class="uppercase mb-2">
                 Mapping the disconnect:<br/> A cross-functional journey
               </h2>
               <p class="">
                 I created a sustainability segment from our data and mapped their user journeys using several data tools. I created a sustainability dashboard to track our team's progress.
               </p>
-              <h2 class="uppercase mb-2">Key Insights</h2>
+              <h2 class="uppercase mb-6">Key Insights</h2>
+              </div>
+        <div class="columns-2">
+<section class="prose break-inside-avoid-column mt-0">
                 <h3>Information Architecture Issues</h3>
                   <p>Our sustainabipty data was trapped in silos, buried in engineering dashboards, and scattered across different assets. Fragmented information placements and the absence of apppcable energy information hindered user engagement.</p>
 
                   <h3>Streamline Process Bottlenecks</h3>
                   <p>Manual data extraction takes 2-3 weeks, had multiple approval layers slowing response time and a lack of standardized sustainabipty metrics</p>
-
+                  </section>
+<section class="prose break-inside-avoid-column mt-6">
                 <h3>Address Gaps in Content</h3>
                 <p>
                     We lacked top-of-funnel sustainability content like Thought Leadership and infographics to educate customers.
                     Middle-of-funnel content like Cisco-verified design guides needed to be created, and bottom-of-funnel content like energy use product-specific information and comparisons between products and competitors was not easily accessible.
                   </p>
-
+</section>
+<section class="prose breakinside-avoid-column mt-6">
                 <h3>Surface Sustainability Information</h3>
                 <p>on purpose pages, while engaging Press and people researching Cisco, failed to drive users to product and solution pages, necessitating a strategic overhaul.</p>
 
+</section>
+<section class="prose breakinside-avoid-column mt-6">
                 <h3>Show, Don't Tell</h3>
                   <p>Instead of treating sustainability as a separate initiative, we needed to integrate it into every product story.</p>
 
+</section>
+<section class="prose breakinside-avoid-column mt-6">
                 <h3>Empower Sales, Marketing, and Customers</h3>
                 <p>with the information they need to choose more sustainable products and solutions. Give customers, partners, and other teams the information on proper disposal of End of Life products.</p>
+</section>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
         <div class="container mx-auto bg-white sm:border-x border-zinc-50 px-4 py-80">
         <div class="prose">
           <h1 class="uppercase mb-6">Opportunities</h1>
         </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
           <div class="prose">
-              <h1 class="font-extralight text-7xl uppercase mb-0">1</h1>
-            <div class="prose-lg leading-snug border-t md:border-t-2 border-black py-4">
+              <h1 class="font-extralight text-6xl lg:text-7xl uppercase mb-0">1</h1>
+            <div class="prose-lg leading-snug border-t border-t-2 border-black py-4">
 
                 <div class="font-bold text-2xl leading-none">Campaigns and sales tools focused on sustainability.</div>
               <p class="mt-4">
@@ -277,8 +290,8 @@
             </div>
           </div>
           <div class="prose">
-              <h1 class="font-extralight text-7xl uppercase mb-0">2</h1>
-            <div class="prose-lg leading-snug border-t md:border-t-2 border-black py-4">
+              <h1 class="font-extralight text-6xl lg:text-7xl uppercase mb-0">2</h1>
+            <div class="prose-lg leading-snug border-t border-black py-4">
                 <div class="font-bold text-2xl leading-none">Consistency</div>
               <p class="mt-4">
                 Energy certifications and data points were integrated into product pages, marketing materials, and user interfaces to reinforce this information throughout the user journey.
@@ -287,8 +300,8 @@
             </div>
           </div>
           <div class="prose">
-              <h1 class="font-extralight text-7xl uppercase mb-0">3</h1>
-            <div class="prose-lg leading-snug border-t md:border-t-2 border-black py-4">
+              <h1 class="font-extralight text-6xl lg:text-7xl uppercase mb-0">3</h1>
+            <div class="prose-lg leading-snug border-t border-t-2 border-black py-4">
                 <div class="font-bold text-2xl leading-none">Design Guides for customers</div>
               <p class="mt-4">
                 Cisco can create data center design guides and best practice guides can empower Cisco's customers to make informed decisions and take actionable steps toward building more sustainable data centers and network infrastructures.
@@ -296,8 +309,8 @@
             </div>
           </div>
           <div class="prose">
-              <h1 class="font-extralight text-7xl uppercase mb-0">4</h1>
-            <div class="prose-lg leading-snug border-t md:border-t-2 border-black py-4">
+              <h1 class="font-extralight text-6xl lg:text-7xl uppercase mb-0">4</h1>
+            <div class="prose-lg leading-snug border-t border-t-2 border-black py-4">
                 <div class="font-bold text-2xl leading-none">Headline</div>
               <p class="mt-4">
                 Use Ai to save time extracting data from product dashboard
@@ -356,6 +369,50 @@
         </div>
         </div>
       </div>
+
+
+      <div class="container mx-auto bg-white sm:border-x border-zinc-50 px-4 py-40">
+      <div class="prose">
+The Lesson
+The key insight wasn't just about making data accessible—it was about making sustainability visible at every touchpoint where it mattered. By integrating environmental impact information into existing workflows and user journeys, we turned sustainability from an afterthought into a competitive differentiator.
+This project taught us that sometimes the most impactful UX solutions aren't about creating new features—they're about surfacing hidden value in ways that naturally align with user needs.
+Impact & Results
+Quantitative Improvements
+Reduced RFP response time from 3 weeks to hours or days.
+Increased sustainability-related content usage by 200%
+Improved cross-team collaboration efficiency by 60%
+Qualitative Outcomes
+Strengthened Cisco's position as sustainability leader
+Improved team alignment and collaboration
+Enhanced customer satisfaction with sustainability data
+Established a scalable framework for future growth
+Lessons Learned
+Early stakeholder alignment is crucial for cross-functional success
+AI integration should focus on specific pain points
+Design system integration accelerates adoption
+Regular feedback loops ensure continuous improvement
+
+Implementation & Rollout
+Phase 1: Design System Components
+Released sustainability patterns
+Trained design team on new components
+Updated documentation
+Created standardized templates
+Phase 2: Dashboard Enhancement
+Launched centralized metrics dashboard
+Integrated AI assistant prototype
+Train engineering teams
+Phase 3: Cross-functional Workflow Optimization
+Streamlined approval processes
+Implemented clear data ownership
+Established update protocols
+Phase 3: Cross-team Integration
+Rolled out to sales and marketing
+Established feedback loops
+Created training materials
+</div>
+</div>
+      
         
       <div class="2xl:container mx-auto my-16 lg:my-24">
         <img
@@ -570,6 +627,55 @@
       </span>
     </button>
     <script src="../../static/js/combined.js"></script>
+
+      <script>
+        var options = {
+          series: [{
+          name: 'Catalyst 9200L',
+          data: [80, 50, 30, 40, 100],
+        }, {
+          name: 'Catalyst 9300X',
+          data: [20, 30, 40, 80, 20],
+        }, {
+          name: 'Catalyst 9500',
+          data: [44, 76, 78, 13, 43],
+        }],
+          chart: {
+          height: 750,
+          type: 'radar',
+          dropShadow: {
+            enabled: true,
+            blur: 9,
+            left: 9,
+            top: 9
+          }
+        },
+        title: {
+          text: ''
+        },
+        stroke: {
+          width: 2
+        },
+        colors: ['#eab308', '#22c55e', '#0ea5e9'],        
+        fill: {
+          opacity: 0.1
+        },
+        markers: {
+          size: 5
+        },
+        yaxis: {
+          stepSize: 20
+        },
+        xaxis: {
+          categories: ['Manufacturing', 'Energy', 'EOL', 'Packaging', 'Source']
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+     </script> 
+      
+    
     <df-messenger
       project-id="portfolioai-447818"
       agent-id="d0a7ab7b-25b4-4e41-bc38-dfec2409bc38"

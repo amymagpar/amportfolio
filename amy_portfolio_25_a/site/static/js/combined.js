@@ -16,9 +16,9 @@ df-messenger {
   --df-messenger-font-family: Inter Var;
   --df-messenger-chat-background: #f3f6fc;
   --df-messenger-message-user-background: #d3e3fd;
-  --df-messenger-message-bot-background: #fff;
-  --df-messenger-chat-bubble-icon-color: #fff;
-  --df-messenger-chat-bubble-background: #88bfcf;
+  --df-messenger-message-bot-background: #fafafa;
+  --df-messenger-chat-bubble-icon-color: #fafafa;
+  --df-messenger-chat-bubble-background: #3f3f46;
   bottom: 16px;
   right: 16px;
 }
@@ -67,7 +67,7 @@ function insertHead() {
 // Navigation component
 function insertNavigation() {
   const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 border-b sm:border-none  text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
-    <div class="container sm:backdrop-blur-md bg-white sm:bg-white/20 sm:border-b sm:border-l sm:border-r sm:border-zinc-50/20 shadow overflow-hidden px-4 mx-auto navbar p-0 h-10 sm:h-12">
+    <div class="container sm:backdrop-blur-md bg-white sm:bg-white/20 sm:border-b sm:border-l sm:border-r sm:border-zinc-50/20  overflow-hidden px-4 mx-auto navbar p-0 h-10 sm:h-12">
       <div class="navbar-start uppercase left-0">
         <ul class="list-none">
         <li>

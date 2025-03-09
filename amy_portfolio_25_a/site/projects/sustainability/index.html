@@ -41,7 +41,7 @@
       <span class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50">design</span>
       <span class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50">collaboration</span>
     </div>
-    <div id="" class="grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
+    <div id="" class="grid lg:grid-cols-2 gap-6 xl:gap-8 mb-2 sm:mb-4">
       <div>
         <div class="    ">
           <p class="text-xl lg:text-2xl ">
@@ -51,7 +51,6 @@
           </p>
         </div>
       </div>
-      <div></div>
     </div>
     <!--button-->
     <button data-target="tldr"
@@ -96,8 +95,8 @@
       </div>
       <div></div>
     </div>
-    <div class="w-full flex justify-end">
-      <div id="chart" class="pr-32 relative -top-20"></div>
+    <div class="w-full flex justify-center xl:justify-end">
+      <div id="chart" class="pr-0 2xl:pr-32 relative -top-10 sm:-top-20 lg:-top-30 xl:-top-40"></div>
     </div>
   </div>
   <!-- Impact -->
@@ -176,10 +175,10 @@
             <strong>sustainability-focused data center products</strong>. Our
             tiger team was tasked to add customer-facing information about
             their sustainability and benefits but were given only
-            marketing-focused copy. 
-            </p>
-            <p>
-              Digging into user research revealed a
+            marketing-focused copy.
+          </p>
+          <p>
+            Digging into user research revealed a
             troubling gap:
             <strong>only 20% of customers and internal teams knew where to find
               sustainability data or were aware of Cisco’s end-of-life
@@ -196,11 +195,18 @@
           </p>
         </div>
         <div class="">
-          <img src="solutions.jpg" class="mb-4 shadow-lg rounded-md" />
-          <img src="pages-2.jpg" class="mb-4 shadow-lg rounded-md" />
         </div>
       </div>
     </div>
+    <div class="3xl:container mx-auto mt-48">
+      <!--     <img class="w-full 2xl:rounded-md shadow-xl sm:border-t border-zinc-100 mix-blend-multiply" src="yoursmartspace.jpg" /> -->
+      <img class="w-full  mix-blend-multiply" src="yoursmartspace_light.jpg" />
+    </div>
+    <div class="container mx-auto px-4 mt-4 mb-96">
+      <caption class="">The Cisco Smart Space</caption>
+    </div>
+
+
   </div>
   <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-96">
     <div class="lg:grid lg:grid-cols-12 gap-6 lg:gap-10">
@@ -531,9 +537,11 @@
       </ul>
     </div>
   </div>
-  <div class="2xl:container mx-auto my-16 lg:my-24">
-    <img class="w-full 2xl:rounded-md shadow-xl sm:border-t border-zinc-100" src="yoursmartspace-s.jpg" />
-  </div>
+
+  <img src="solutions.jpg" class="mb-4 shadow-lg rounded-md" />
+  <img src="pages-2.jpg" class="mb-4 shadow-lg rounded-md" />
+
+
   <div class="container mx-auto bg-zinc-50 border-y sm:border border-zinc-100 px-4 py-16 lg:py-24 mb-16 lg:mb-24">
     <div class="mx-auto sm:grid sm:grid-cols-6 gap-6 xl:gap-8">
       <div class="col-start-1 xl:col-start-2 col-end-4    ">
@@ -734,8 +742,6 @@
       ],
       chart: {
         toolbar: { show: false },
-        width: 750,
-        height: 750,
         type: "radar",
         dropShadow: {
           enabled: true,
@@ -763,7 +769,54 @@
       xaxis: {
         categories: ["Manufacturing", "Energy", "EOL", "Packaging", "Source"],
       },
-    };
+       responsive: [
+        {
+          breakpoint: 640,
+          options: {
+            chart: {
+              width: 400,
+              height: 500,
+            },
+          },
+        },
+        {
+          breakpoint: 768,
+          options: {
+            chart: {
+              width: 500,
+              height: 600
+            },
+          },
+        },
+        {
+          breakpoint: 1024,
+          options: {
+            chart: {
+              width: 600,
+              height: 700,
+            },
+          },
+        },
+        {
+          breakpoint: 1280,
+          options: {
+            chart: {
+              width: 800,
+              height: 900,
+            },
+          },
+        },
+        {
+          breakpoint: 8536,
+          options: {
+            chart: {
+              width: 800,
+              height: 900
+            },
+          },
+        },
+      ]
+   };
 
     var chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();

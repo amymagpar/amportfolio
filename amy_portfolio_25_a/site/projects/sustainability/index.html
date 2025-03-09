@@ -1,27 +1,21 @@
 <!doctype html>
 <html data-theme="mytheme" class="h-full">
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=yes"
-  />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Scaling Sustainability</title>
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
-  />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <head>
-    <link rel="stylesheet" href="/static/css/output.css" />
-    <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css" /> -->
-    <link rel="stylesheet" href="/static/fonts/inter.css" />
-  </head>
-  <body
-    class="text-zinc-900"
-    style="
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>Scaling Sustainability</title>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<head>
+  <link rel="stylesheet" href="/static/css/output.css" />
+  <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css" /> -->
+  <link rel="stylesheet" href="/static/fonts/inter.css" />
+</head>
+
+<body class="text-zinc-900" style="
       background-image: linear-gradient(
         135deg,
         #fafafa 42%,
@@ -34,103 +28,80 @@
       );
       background-size: 16px 16px;
       background-attachment: fixed;
-    "
-  >
-    <div
-      class="container bg-zinc-50 sm:border-x border-zinc-100 mx-auto px-4 py-32 lg:py-52 flex flex-col justify-center"
-    >
-      <div class="font-light text-2xl sm:text-4xl m-0">Cisco Systems</div>
-      <h1
-        class="mb-6 md:mb-8 lg:mb-16 text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase"
-      >
-        Scaling Sustainability
-      </h1>
-      <div class="flex flex-wrap gap-3 mb-3">
-        <span
-          class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50"
-          >sustainability</span
-        >
-        <span
-          class="badge badge-neutral bg-emerald-600 border-emerald-600 text-nowrap text-zinc-50"
-          >user journeys</span
-        >
-        <span
-          class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50"
-          >design</span
-        >
-        <span
-          class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50"
-          >collaboration</span
-        >
-      </div>
-      <div id="" class="grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
-        <div>
-          <div class="prose prose-zinc md:prose-lg lg:prose-lg">
-            <p class="text-lg md:text-xl leading-snug">
-              As the <em>UX Lead</em> of the
-              <strong>Global Sustainability Messaging Tiger Team</strong> at
-              <em>Cisco Meraki</em>, I spearheaded the development of a
-            </p>
-          </div>
-        </div>
-        <div></div>
-      </div>
-      <!--button-->
-      <button
-        data-target="tldr"
-        class="toggle-btn btn btn-outline btn-sm w-min border-zinc-400 font-light text-zinc-500 mb-4 z-40"
-      >
-        TLDR
-      </button>
-      <div
-        id="tldr"
-        class="opacity-0 h-0 transition-all duration-300 grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4"
-      >
-        <div>
-          <p class="prose prose-zinc leading-snug">
-            At <em>Cisco</em>, fragmented sustainability data and poor
-            information architecture were causing lost sales opportunities, with
-            only 20% of customers aware of <strong>end-of-life</strong> programs
-            and <strong>climate-focused</strong> RFP response times stretching
-            to 3+ weeks.
-          </p>
-          <p class="prose prose-zinc leading-snug">
-            Leading a cross-functional UX initiative across six departments, My
-            team and I transformed how and what kind of
-            <strong>sustainability</strong> data surfaced throughout the product
-            lifecycle. Using an <strong>AI POC</strong>, I could decrease RFP
-            response times from weeks to days or hours, customer awareness of
-            end-of-life programs rose from 20% to 75%, and
-            <strong>sustainability content engagement</strong> increased by
-            200%.
-          </p>
-          <p class="prose prose-zinc leading-snug">
-            The initiative demonstrated how strategic UX leadership could turn
-            sustainability from a compliance requirement into a competitive
-            advantage by making
-            <strong>environmental impact data</strong> visible and accessible at
-            every key decision point.
-          </p>
-          <h4>Users & Stakeholders</h4>
-          <ul class="list-inside">
-            <li>Sales teams responding to RFPs</li>
-            <li>Product Marketing creating product collateral</li>
-            <li>Engineering teams managing sustainability data</li>
-            <li>Customers evaluating sustainable solutions</li>
-            <li>Product teams defining roadmaps</li>
-            <li>Compliance teams ensuring regulatory adherence</li>
-          </ul>
-        </div>
-        <div></div>
-      </div>
-      <div class="w-full flex justify-end">
-        <div id="chart" class="pr-32 relative -top-20"></div>
-      </div>
+    ">
+  <div
+    class="container bg-zinc-50 sm:border-x border-zinc-100 mx-auto px-4 py-32 lg:py-52 flex flex-col justify-center">
+    <div class="font-light text-2xl sm:text-4xl m-0">Cisco Systems</div>
+    <h1 class="mt-0 mb-6 md:mb-8 lg:mb-12 text-4xl sm:text-6xl md:text-7xl lg:text-8xl ">
+      Scaling Sustainability
+    </h1>
+    <div class="flex flex-wrap gap-3 mb-3">
+      <span class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50">sustainability</span>
+      <span class="badge badge-neutral bg-emerald-600 border-emerald-600 text-nowrap text-zinc-50">user journeys</span>
+      <span class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50">design</span>
+      <span class="badge badge-neutral bg-emerald-600 border-emerald-600 text-zinc-50">collaboration</span>
     </div>
-    <!-- Impact -->
-    <div
-      class="bg-zinc-900 shadow-sm text-zinc-50 py-96"
-      style="
+    <div id="" class="grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
+      <div>
+        <div class="    ">
+          <p class="text-xl lg:text-2xl ">
+            As the <em>UX Lead</em> of the
+            <strong>Global Sustainability Messaging Tiger Team</strong> at
+            <em>Cisco Meraki</em>, I spearheaded the development of a
+          </p>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <!--button-->
+    <button data-target="tldr"
+      class="toggle-btn btn btn-outline btn-sm w-min border-zinc-400 font-light text-zinc-500 mb-4 z-40">
+      TLDR
+    </button>
+    <div id="tldr" class="opacity-0 h-0 transition-all duration-300 grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
+      <div>
+        <p class="   ">
+          At <em>Cisco</em>, fragmented sustainability data and poor
+          information architecture were causing lost sales opportunities, with
+          only 20% of customers aware of <strong>end-of-life</strong> programs
+          and <strong>climate-focused</strong> RFP response times stretching
+          to 3+ weeks.
+        </p>
+        <p class="   ">
+          Leading a cross-functional UX initiative across six departments, My
+          team and I transformed how and what kind of
+          <strong>sustainability</strong> data surfaced throughout the product
+          lifecycle. Using an <strong>AI POC</strong>, I could decrease RFP
+          response times from weeks to days or hours, customer awareness of
+          end-of-life programs rose from 20% to 75%, and
+          <strong>sustainability content engagement</strong> increased by
+          200%.
+        </p>
+        <p class="   ">
+          The initiative demonstrated how strategic UX leadership could turn
+          sustainability from a compliance requirement into a competitive
+          advantage by making
+          <strong>environmental impact data</strong> visible and accessible at
+          every key decision point.
+        </p>
+        <h4>Users & Stakeholders</h4>
+        <ul class="list-inside">
+          <li>Sales teams responding to RFPs</li>
+          <li>Product Marketing creating product collateral</li>
+          <li>Engineering teams managing sustainability data</li>
+          <li>Customers evaluating sustainable solutions</li>
+          <li>Product teams defining roadmaps</li>
+          <li>Compliance teams ensuring regulatory adherence</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+    <div class="w-full flex justify-end">
+      <div id="chart" class="pr-32 relative -top-20"></div>
+    </div>
+  </div>
+  <!-- Impact -->
+  <div class="bg-zinc-900 shadow-sm text-zinc-50 py-96" style="
         background-image: linear-gradient(
           135deg,
           #18181b 42%,
@@ -143,124 +114,111 @@
         );
         background-size: 16px 16px;
         background-attachment: fixed;
-      "
-    >
-      <div class="container mx-auto px-4">
-        <h1 class="text-8xl font-black text-right mb-5 uppercase">Impact</h1>
-        <div
-          class="grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-6 xl:gap-8"
-        >
-          <div
-            class="prose prose-zinc prose-lg !prose-invert leading-tight 2xl:col-start-2 border-t xl:border-t-2 border-zinc-50 lg:col-start-1 pt-2 mt-4 mb-4"
-          >
-            <div class="font-extrabold text-2xl leading-none">
-              Reduced RFP Response Times
-            </div>
-            <p class="leading-snug mt-2">
-              Response times dropped from weeks to days or hours.
-            </p>
+      ">
+    <div class="container mx-auto px-4">
+      <h1 class=" text-right">Impact</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-6 xl:gap-8">
+        <div class="     2xl:col-start-2 border-t xl:border-t-2 border-zinc-50 lg:col-start-1 pt-2 mt-4 mb-4">
+          <div class="font-extrabold text-2xl ">
+            Reduced RFP Response Times
           </div>
-          <div
-            class="prose prose-zinc prose-lg !prose-invert leading-snug border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4"
-          >
-            <div class="font-extrabold text-2xl leading-none">
-              Surfacing Sustainability
-            </div>
-            <p class="leading-snug mt-2">
-              Product page engagement increased as applicable sustainability
-              features became more visible.
-            </p>
-          </div>
-          <div
-            class="prose prose-zinc prose-lg !prose-invert leading-snug border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4"
-          >
-            <div class="font-extrabold text-2xl leading-none">
-              Environmental Education
-            </div>
-            <p class="leading-snug mt-2">
-              Sales teams reported higher confidence in discussing
-              sustainability data.
-            </p>
-          </div>
-          <div
-            class="prose prose-zinc prose-lg !prose-invert leading-snug border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4"
-          >
-            <div class="font-extrabold text-2xl leading-none">
-              Customer Awareness
-            </div>
-            <p class="leading-snug mt-2">
-              Awareness of end-of-life programs rose from 20% to 75%
-            </p>
-          </div>
-          <div
-            class="prose prose-zinc prose-lg !prose-invert leading-snug border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4"
-          >
-            <div class="font-extrabold text-2xl leading-none">6 teams</div>
-            <p class="leading-snug mt-2">
-              Cross-functional alignment between engineering sustainability,
-              product marketing, product, UXR, design, and sales.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-gradient-to-br from-yellow-100 to-green-200 py-96">
-      <div class="container mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
-          <h1 class="mb-0 text-7xl font-black uppercase">The problem</h1>
-          <div class="prose prose-zinc lg:prose-lg row-span-2">
-            <h3 class="text-pretty my-0">
-              A blind spot in awareness and a sales
-              <span class="text-nowrap">team in crisis</span>
-            </h3>
-            <p class="leading-tight">
-              It started with the introduction of several new
-              <strong>sustainability-focused data center products</strong>. Our
-              tiger team was tasked to add customer-facing information about
-              their sustainability and benefits but were given only
-              marketing-focused copy. Digging into user research revealed a
-              troubling gap:
-              <strong
-                >only 20% of customers and internal teams knew where to find
-                sustainability data or were aware of Cisco’s end-of-life
-                programs.</strong
-              >
-              For a company committed to environmental responsibility, this
-              wasn’t just an information gap—it was a missed opportunity for
-              impact.
-            </p>
-            <h3 class="text-pretty my-0">My Goals</h3>
-            <p class="prose prose-zinc lg:prose-lg leading-snug">
-              Make Cisco a leader in power <strong
-                >reporting & sustainable networking</strong
-              >. Help the team visualize how sustainability becomes a core
-              strategy.
-            </p>
-          </div>
-          <div class="">
-            <img src="solutions.jpg" class="mb-4 shadow-lg rounded-md" />
-            <img src="pages-2.jpg" class="mb-4 shadow-lg rounded-md" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mx-auto px-4 py-96">
-      <div class="lg:grid lg:grid-cols-12 gap-6 lg:gap-10">
-        <div
-          class="prose prose-zinc mx-auto !text-emerald-800 lg:col-start-4 lg:col-end-10 prose-lg lg:prose-xl leading-snug mb-12"
-        >
-          <p class="">
-            During stakeholder interviews, a product engineering sustainability
-            manager shared a story that crystallized our challenge:
+          <p class=" mt-2">
+            Response times dropped from weeks to days or hours.
           </p>
         </div>
-        <div class="chat chat-start lg:col-start-3 lg:col-end-11 relative">
-          <div
-            class="before:bg-[#16a76e] chat-bubble mx-auto bg-gradient-to-br from-green-600 to-teal-600 text-zinc-50 p-12 -left-4"
-          >
-            <span
-              class="text-2xl lg:text-3xl font-light italic lg:leading-relaxed"
-            >
+        <div class="     border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+          <div class="font-extrabold text-2xl ">
+            Surfacing Sustainability
+          </div>
+          <p class=" mt-2">
+            Product page engagement increased as applicable sustainability
+            features became more visible.
+          </p>
+        </div>
+        <div class="     border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+          <div class="font-extrabold text-2xl ">
+            Environmental Education
+          </div>
+          <p class=" mt-2">
+            Sales teams reported higher confidence in discussing
+            sustainability data.
+          </p>
+        </div>
+        <div class="     border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+          <div class="font-extrabold text-2xl ">
+            Customer Awareness
+          </div>
+          <p class=" mt-2">
+            Awareness of end-of-life programs rose from 20% to 75%
+          </p>
+        </div>
+        <div class="     border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+          <div class="font-extrabold text-2xl ">6 teams</div>
+          <p class=" mt-2">
+            Cross-functional alignment between engineering sustainability,
+            product marketing, product, UXR, design, and sales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gradient-to-br from-yellow-100 to-green-200 py-96">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
+        <h1 class=" ">The problem</h1>
+        <div class="  row-span-2">
+          <h2 class="text-pretty">
+            A blind spot in awareness and a sales
+            <span class="text-nowrap">team in crisis</span>
+          </h2>
+          <p class="">
+            It started with the introduction of several new
+            <strong>sustainability-focused data center products</strong>. Our
+            tiger team was tasked to add customer-facing information about
+            their sustainability and benefits but were given only
+            marketing-focused copy. 
+            </p>
+            <p>
+              Digging into user research revealed a
+            troubling gap:
+            <strong>only 20% of customers and internal teams knew where to find
+              sustainability data or were aware of Cisco’s end-of-life
+              programs.</strong>
+            For a company committed to environmental responsibility, this
+            wasn’t just an information gap—it was a missed opportunity for
+            impact.
+          </p>
+          <h2 class="text-pretty">My Goals</h2>
+          <p class="">
+            Make Cisco a leader in power <strong>reporting & sustainable networking</strong>. Help the team visualize
+            how sustainability becomes a core
+            strategy.
+          </p>
+        </div>
+        <div class="">
+          <img src="solutions.jpg" class="mb-4 shadow-lg rounded-md" />
+          <img src="pages-2.jpg" class="mb-4 shadow-lg rounded-md" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-96">
+    <div class="lg:grid lg:grid-cols-12 gap-6 lg:gap-10">
+      <div class="lg:col-start-1 lg:col-end-13">
+        <h1 class=" text-7xl font-black uppercase">
+          Using Metrics to Drive Design
+        </h1>
+      </div>
+      <div class=" col-start-1 col-end-7">
+        <p class="text-lg lg:text-2xl">
+          During stakeholder interviews, a product engineering sustainability
+          manager shared a story that crystallized our challenge:
+        </p>
+      </div>
+      <div class=" lg:col-start-1 lg:col-end-7 mb-16">
+        <div class="chat chat-end ">
+          <div class="before:bg-zinc-800 chat-bubble mx-auto text-zinc-50 bg-zinc-800 p-10 ">
+            <span class="text-xl lg:text-2xl font-light italic">
               &quot;I have two RFPs from sales due in 48 hours requiring power
               usage metrics for our networking solutions. I spent a day just
               trying to find if we have this data, only to discover it would
@@ -268,125 +226,99 @@
             </span>
           </div>
         </div>
-        <div
-          class="prose prose-zinc mx-auto lg:col-start-4 lg:col-end-10 !text-emerald-800 prose-lg lg:prose-xl leading-snug col-start-1 col-span-5 mt-12"
-        >
-          <p class="">
-            This wasn't an isolated incident. I directed the analysis of UX
-            research data, including interviews, surveys, and usability testing,
-            to gain deep insights into user preferences and behavior. Our
-            research revealed:
-          </p>
-          <ul>
-            <li class="">
-              Marketing teams were surfacing generic sustainability content
-              because they did not have product-specific data
-            </li>
-            <li class="">
-              Engineers had some of the data in a hard-to-use dashboard.
-            </li>
-            <li class="">
-              Sales teams were missing opportunities because they couldn't
-              quickly lccess energy or manufacturing information.
-            </li>
-            <li class="">
-              Customers were making purchasing decisions without awareness of
-              more lustainable options.
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div class="col-start-1 col-end-7">
+        <p class="">
+          This wasn't an isolated incident. I directed the analysis of UX
+          research data, including interviews, surveys, and usability testing,
+          to gain deep insights into user preferences and behavior. Our
+          research revealed:
+        </p>
+        <ul class="">
+          <li class="">
+            Marketing teams were surfacing generic sustainability content
+            because they did not have product-specific data
+          </li>
+          <li class="">
+            Engineers had some of the data in a hard-to-use dashboard.
+          </li>
+          <li class="">
+            Sales teams were missing opportunities because they couldn't
+            quickly access energy or manufacturing information.
+          </li>
+          <li class="">
+            Customers were making purchasing decisions without awareness of
+            more lustainable options.
+          </li>
+        </ul>
+      </div>
+      <div class="col-start-1 col-end-7">
+        <h2 class=" ">Mapping the disconnect</h2>
+        <p class="text-bold">A cross-functional journey</p>
+        <p class="">
+          I created a sustainability segment from our data and mapped
+          their user journeys using several data tools. I created a
+          sustainability dashboard to track our team's progress.
+        </p>
+      </div>
+      <div class="col-start-1 col-end-7">
+        <h2 class="  ">Key Insights</h2>
+        <ol>
+          <li class="">
+            <p class="font-bold">Information Architecture Issues</p>
+            <p class="">
+              Our sustainabipty data was trapped in silos, buried in
+              engineering dashboards, and scattered across different assets.
+              Fragmented information placements and the absence of apppcable
+              energy information hindered user engagement.
+            </p>
+          </li>
+          <li class="">
+            <p class="font-bold">Streamline Process Bottlenecks</p>
+            <p class="">
+              Manual data extraction takes 2-3 weeks,had multiple approval
+              layers slowing response time and a lack of standardized
+              sustainabipty metrics
+            </p>
+          </li>
+          <li class="">
+            <p class="font-bold">Address Gaps in Content</p>
+            <p class="">
+              We lacked top-of-funnel sustainability content like Thought
+              Leadership and infographics to educate customers.
+              Middle-of-funnel content like Cisco-verified design guides
+              needed to be created, and bottom-of-funnel content like energy
+              use product-specific information and comparisons between
+              products and competitors was not easily accessible.
+            </p>
+          </li>
+          <li class="">
+            <p class="font-bold">Surface Sustainability Information</p>
+            <p class="">
+              on purpose pages, while engaging Press and people researching
+              Cisco, failed to drive users to product and solution pages,
+              necessitating a strategic overhaul.
+            </p>
+          </li>
+          <li class="">
+            <p class="font-bold">Show, Don't Tell</p>
+            <p class="">
+              Instead of treating sustainability as a separate initiative, we
+              needed to integrate it into every product story.
+            </p>
+          </li>
+          <li class="">
+            <p class="font-bold">Empower Sales, Marketing and customers</p>
+            <p class="">
+              with the information they need to choose more sustainable products and solutions. Give customers,
+              partners, and other teams the information on proper disposal of End of Life products
+            </p>
+          </li>
+        </ol>
       </div>
     </div>
-    <div class="bg-gradient-to-br from-lime-100 to-teal-200 py-96">
-      <div class="container mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
-          <h1 class="order-2 col-start-2 mb-0 text-7xl font-black uppercase">
-            Using Metrics to Drive Design
-          </h1>
-          <div class="order-1 col-start-1">
-            <h2 class="font-extrabold mb-0">Mapping the disconnect</h2>
-            <div class="prose">
-              <h3 class="mb-0">A cross-functional journey</h3>
-              <p class="prose prose-zinc leading-snug mt-0">
-                I created a sustainability segment from our data and mapped
-                their user journeys using several data tools. I created a
-                sustainability dashboard to track our team's progress.
-              </p>
-            </div>
-          </div>
-          <div class="order-3">
-            <h2 class="font-extrabold my-0 mb-0">Key Insights</h2>
-            <section
-              class="prose prose-zinc leading-snug break-inside-avoid-column mt-0 mb-4"
-            >
-              <h3 class="my-0">Information Architecture Issues</h3>
-              <p class="my-0">
-                Our sustainabipty data was trapped in silos, buried in
-                engineering dashboards, and scattered across different assets.
-                Fragmented information placements and the absence of apppcable
-                energy information hindered user engagement.
-              </p>
-            </section>
-            <section
-              class="prose prose-zinc leading-snug break-inside-avoid-column mt-0 mb-4"
-            >
-              <h3 class="my-0">Streamline Process Bottlenecks</h3>
-              <p class="my-0">
-                Manual data extraction takes 2-3 weeks, had multiple approval
-                layers slowing response time and a lack of standardized
-                sustainabipty metrics
-              </p>
-            </section>
-            <section
-              class="prose prose-zinc leading-snug break-inside-avoid-column mt-0 mb-4"
-            >
-              <h3 class="my-0">Address Gaps in Content</h3>
-              <p class="my-0">
-                We lacked top-of-funnel sustainability content like Thought
-                Leadership and infographics to educate customers.
-                Middle-of-funnel content like Cisco-verified design guides
-                needed to be created, and bottom-of-funnel content like energy
-                use product-specific information and comparisons between
-                products and competitors was not easily accessible.
-              </p>
-            </section>
-            <section
-              class="prose prose-zinc leading-snug breakinside-avoid-column mt-0 mb-4"
-            >
-              <h3 class="my-0">Surface Sustainability Information</h3>
-              <p class="my-0">
-                on purpose pages, while engaging Press and people researching
-                Cisco, failed to drive users to product and solution pages,
-                necessitating a strategic overhaul.
-              </p>
-            </section>
-            <section
-              class="prose prose-zinc leading-snug breakinside-avoid-column mt-0 mb-4"
-            >
-              <h3 class="my-0">Show, Don't Tell</h3>
-              <p class="my-0">
-                Instead of treating sustainability as a separate initiative, we
-                needed to integrate it into every product story.
-              </p>
-            </section>
-            <section
-              class="prose prose-zinc leading-snug breakinside-avoid-column mt-0 mb-4"
-            >
-              <h3 class="my-0">Empower Sales, Marketing, and Customers</h3>
-              <p class="my-0">
-                with the information they need to choose more sustainable
-                products and solutions. Give customers, partners, and other
-                teams the information on proper disposal of End of Life
-                products.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="bg-zinc-900 text-zinc-50"
-      style="
+  </div>
+  <div class="bg-zinc-900 text-zinc-50" style="
         background-image: linear-gradient(
           135deg,
           #18181b 42%,
@@ -399,453 +331,447 @@
         );
         background-size: 16px 16px;
         background-attachment: fixed;
-      "
-    >
-      <div class="container mx-auto px-4 py-96">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
-          <h1 class="col-span-4 text-7xl font-black uppercase m-0">
-            Opportunities
+      ">
+    <div class="container mx-auto px-4 py-96">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
+        <h1 class="col-span-4 ">
+          Opportunities
+        </h1>
+        <div class="   ">
+          <h1 class="font-extralight text-5xl lg:text-6xl uppercase ">
+            1
           </h1>
-          <div class="prose prose-zinc !prose-invert">
-            <h1 class="font-extralight text-5xl lg:text-6xl uppercase mb-0">
-              1
-            </h1>
-            <div
-              class="leading-snug border-t border-t-2 border-zinc-50 py-4 pt-4"
-            >
-              <div class="font-bold text-2xl leading-snug mt-1">
-                Campaigns and sales tools focused on sustainability.
-              </div>
-              <p class="mt-4">
-                Sustainable solutions were transformed into key features in the
-                sales funnel. The visibility of product and solutions' energy
-                certifications and power management capabilities were
-                highlighted.
-              </p>
+          <div class=" border-t border-t-2 border-zinc-50 py-4 pt-4">
+            <div class="font-bold text-2xl  mt-1">
+              Campaigns and sales tools focused on sustainability.
             </div>
+            <p class="mt-4">
+              Sustainable solutions were transformed into key features in the
+              sales funnel. The visibility of product and solutions' energy
+              certifications and power management capabilities were
+              highlighted.
+            </p>
           </div>
-          <div class="prose prose-zinc !prose-invert">
-            <h1 class="font-extralight text-5xl lg:text-6xl uppercase mb-0">
-              2
-            </h1>
-            <div
-              class="leading-snug border-t border-t-2 border-zinc-50 py-4 pt-4"
-            >
-              <div class="font-bold text-2xl leading-snug mt-1">
-                Consistency
-              </div>
-              <p class="mt-4">
-                Energy certifications and data points were integrated into
-                product pages, marketing materials, and user interfaces to
-                reinforce this information throughout the user journey. Critical
-                sustainability information was transformed from being buried to
-                prominent and easily accessible.
-              </p>
+        </div>
+        <div class="   ">
+          <h1 class="font-extralight text-5xl lg:text-6xl uppercase ">
+            2
+          </h1>
+          <div class=" border-t border-t-2 border-zinc-50 py-4 pt-4">
+            <div class="font-bold text-2xl  mt-1">
+              Consistency
             </div>
+            <p class="mt-4">
+              Energy certifications and data points were integrated into
+              product pages, marketing materials, and user interfaces to
+              reinforce this information throughout the user journey. Critical
+              sustainability information was transformed from being buried to
+              prominent and easily accessible.
+            </p>
           </div>
-          <div class="prose prose-zinc !prose-invert">
-            <h1 class="font-extralight text-5xl lg:text-6xl uppercase mb-0">
-              3
-            </h1>
-            <div
-              class="leading-snug border-t border-t-2 border-zinc-50 py-4 pt-4"
-            >
-              <div class="font-bold text-2xl leading-snug mt-1">
-                Design Guides for customers
-              </div>
-              <p class="mt-4">
-                Cisco can create data center design guides and best practice
-                guides can empower Cisco's customers to make informed decisions
-                and take actionable steps toward building more sustainable data
-                centers and network infrastructures.
-              </p>
+        </div>
+        <div class="   ">
+          <h1 class="font-extralight text-5xl lg:text-6xl uppercase ">
+            3
+          </h1>
+          <div class=" border-t border-t-2 border-zinc-50 py-4 pt-4">
+            <div class="font-bold text-2xl  mt-1">
+              Design Guides for customers
             </div>
+            <p class="mt-4">
+              Cisco can create data center design guides and best practice
+              guides can empower Cisco's customers to make informed decisions
+              and take actionable steps toward building more sustainable data
+              centers and network infrastructures.
+            </p>
           </div>
-          <div class="prose prose-zinc !prose-invert">
-            <h1 class="font-extralight text-5xl lg:text-6xl uppercase mb-0">
-              4
-            </h1>
-            <div
-              class="leading-snug border-t border-t-2 border-zinc-50 py-4 pt-4"
-            >
-              <div class="font-bold text-2xl leading-snug mt-1">Headline</div>
-              <p class="mt-4">
-                Use Ai to save time extracting data from product dashboard A
-                redesign of the product dashboard was not 
-              </p>
-            </div>
+        </div>
+        <div class="   ">
+          <h1 class="font-extralight lg:text-6xl text-5xl uppercase ">
+            4
+          </h1>
+          <div class=" border-t  border-t-2 border-zinc-50 py-4 pt-4">
+            <div class="font-bold text-2xl  mt-1">Headline</div>
+            <p class="mt-4">
+              Use Ai to save time extracting data from product dashboard A
+              redesign of the product dashboard was not 
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-40"
-    >
-      <div class="grid lg:grid-cols-2 items-start gap-6 sm:gap-10">
-        <div class="prose prose-zinc lg:col-start-2">
-          <h1 class="uppercase mb-8">The power of visibility</h1>
-          <p class="mt-0 mb-4">
-            I designed interactive elements, and clickable infographics to
-            create an engaging and immersive experience. Insert meraki graphic
-          </p>
-          <p class="mt-0 mb-4">
-            Working with the design systems team, I developed scalable patterns
-            that could showcase sustainability information within existing user
-            journeys.
-          </p>
-        </div>
-        <div class="prose prose-zinc lg:col-start-2">
-          <h2 class="my-0">My approach</h2>
-          <p class="mt-0 mb-4">
-            Prominent placement of energy certifications Clear visibility of
-            power management capabilities Easy access to end-of-life program
-            information
-          </p>
-           
-          <h2 class="my-0">My role</h2>
-          <p class="mt-0 mb-4">
-            Created scalable sustainability components Developed flexible
-            patterns for 1-6 key metrics Standardized certification and
-            compliance badges Integrated with existing Cisco design language
-          </p>
-        </div>
+  </div>
+  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-96">
+    <div class="grid lg:grid-cols-2 gap-6 sm:gap-10">
+      <h1 class="">The power of visibility</h1>
+      <div class="  ">
+        <p class="">
+          I designed interactive elements, and clickable infographics to
+          create an engaging and immersive experience. Insert meraki graphic
+        </p>
+        <p class="">
+          Working with the design systems team, I developed scalable patterns
+          that could showcase sustainability information within existing user
+          journeys.
+        </p>
+        <h2 class="text-pretty ">My approach</h2>
+        <p class="">
+          Prominent placement of energy certifications Clear visibility of
+          power management capabilities Easy access to end-of-life program
+          information
+        </p>
+        <h2 class="text-pretty ">My role</h2>
+        <p class="">
+          Created scalable sustainability components Developed flexible
+          patterns for 1-6 key metrics Standardized certification and
+          compliance badges Integrated with existing Cisco design language
+        </p>
       </div>
     </div>
-    <div
-      class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-40"
-    >
-      <div class="grid lg:grid-cols-2 items-start gap-6 sm:gap-10">
-        <div class="prose">
-          <h1 class="uppercase mb-0">New Content Creation</h1>
-        </div>
-        <div class="prose">
-          <h2 class="mb-2">Thought Leadership</h2>
-          <p>
-            To measure power accurately, standardization is key. Several white
-            papers were released to support our efforts to accurately measure
-            product power. Cisco is leading these standardization efforts across
-            the information and communications technology (ICT) industry.
-          </p>
-           
-          <h2 class="mt-0 mb-2">AI for Pain Point Reduction</h2>
-          <p>
-            The product dashboard needed to be overhauled to be used by other
-            teams to extract power and material information. In lieu of a
-            redesign, I created an AI assistant proof of concept to help teams
-            quickly extract and format sustainability data from the complex
-            product database. As one product manager noted, "What used to take
-            weeks now could take minutes."
-          </p>
-        </div>
+  </div>
+  </div>
+  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-40">
+    <div class="grid lg:grid-cols-2 items-start gap-6 sm:gap-10">
+      <div class="">
+        <h1 class="uppercase ">New Content Creation</h1>
+      </div>
+      <div class="">
+        <h2 class="mb-2">Thought Leadership</h2>
+        <p>
+          To measure power accurately, standardization is key. Several white
+          papers were released to support our efforts to accurately measure
+          product power. Cisco is leading these standardization efforts across
+          the information and communications technology (ICT) industry.
+        </p>
+
+        <h2 class="mt-0 mb-2">AI for Pain Point Reduction</h2>
+        <p>
+          The product dashboard needed to be overhauled to be used by other
+          teams to extract power and material information. In lieu of a
+          redesign, I created an AI assistant proof of concept to help teams
+          quickly extract and format sustainability data from the complex
+          product database. As one product manager noted, "What used to take
+          weeks now could take minutes."
+        </p>
       </div>
     </div>
-    <div
-      class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-40"
-    >
-      <div class="prose">
-        The Lesson The key insight wasn't just about making data accessible—it
+  </div>
+  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-40">
+    <div class="">
+      <h1>The Lesson</h1>
+      <p>
+        The key insight wasn't just about making data accessible—it
         was about making sustainability visible at every touchpoint where it
         mattered. By integrating environmental impact information into existing
         workflows and user journeys, we turned sustainability from an
-        afterthought into a competitive differentiator. This project taught us
-        that sometimes the most impactful UX solutions aren't about creating new
+        afterthought into a competitive differentiator.
+      </p>
+      <p>
+        This project taught us that sometimes the most impactful UX solutions aren't about creating new
         features—they're about surfacing hidden value in ways that naturally
-        align with user needs. Impact & Results Quantitative Improvements
-        Reduced RFP response time from 3 weeks to hours or days. Increased
-        sustainability-related content usage by 200% Improved cross-team
-        collaboration efficiency by 60% Qualitative Outcomes Strengthened
-        Cisco's position as sustainability leader Improved team alignment and
-        collaboration Enhanced customer satisfaction with sustainability data
-        Established a scalable framework for future growth Lessons Learned Early
-        stakeholder alignment is crucial for cross-functional success AI
-        integration should focus on specific pain points Design system
-        integration accelerates adoption Regular feedback loops ensure
-        continuous improvement Implementation & Rollout Phase 1: Design System
-        Components Released sustainability patterns Trained design team on new
-        components Updated documentation Created standardized templates Phase 2:
-        Dashboard Enhancement Launched centralized metrics dashboard Integrated
-        AI assistant prototype Train engineering teams Phase 3: Cross-functional
-        Workflow Optimization Streamlined approval processes Implemented clear
-        data ownership Established update protocols Phase 3: Cross-team
-        Integration Rolled out to sales and marketing Established feedback loops
-        Created training materials
-      </div>
-    </div>
-    <div class="2xl:container mx-auto my-16 lg:my-24">
-      <img
-        class="w-full 2xl:rounded-md shadow-xl sm:border-t border-zinc-100"
-        src="yoursmartspace-s.jpg"
-      />
-    </div>
-    <div
-      class="container mx-auto bg-zinc-50 border-y sm:border border-zinc-100 px-4 py-16 lg:py-24 mb-16 lg:mb-24"
-    >
-      <div class="mx-auto sm:grid sm:grid-cols-6 gap-6 xl:gap-8">
-        <div
-          class="col-start-1 xl:col-start-2 col-end-4 prose prose-zinc leading-snug"
-        >
-          <h3 class="font-extrabold uppercase whitespace-nowrap mb-0">
-            Business Goals
-          </h3>
-          <p>
-            Improve sustainability messaging and program awareness. Many RFPs to
-            sales were requiring power and other information in order to choose
-            products to meet government requirements and company commitments.
-          </p>
-          <p class="mb-0"><strong>My goals</strong></p>
-          <p class="mt-0 mb-8">
-            Give customers the information they need to chose more sustainable
-            products and solutions to build energy efficient data centers and
-            inform them on proper disposal of End of Life products.
-          </p>
-        </div>
-        <div
-          class="col-start-4 col-end-7 xl:col-end-6 prose prose-zinc leading-snug"
-        >
-          <h3 class="font-extrabold uppercase whitespace-nowrap mb-0">
-            Challenges
-          </h3>
-          <p>
-            Multiple departments and legal were required to approve all
-            messaging.
-          </p>
-          <h3 class="font-extrabold uppercase whitespace-nowrap mb-0">Role</h3>
-          <p>
-            As <strong>UX Lead on the Global Sustainability Tiger team</strong>.
-            Represent UX in sustainability efforts across Cisco's diverse
-            product range. Led cross-functional teams in redesigning the content
-            strategy based on actionable insights from data analysis. 
-          </p>
-          <h3 class="font-extrabold uppercase whitespace-nowrap mb-0">
-            Solutions
-          </h3>
-          <p>
-            Show, don’t tell approach. Focus on what customers care about like
-            energy management and power consumption. Place this information
-            within different user journeys to tell a story.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="py-48">
-      <div class="container mx-auto px-4">
-        <div class="lg:grid lg:grid-cols-3 gap-6">
-          <div class="my-12 card bg-accent shadow-xl">
-            <div class="card-body">
-              <span class="text-sm font-regular uppercase">Opportunity 1</span>
-              <h2 class="card-title font-bold">Show, Don't Tell</h2>
-              <div>
-                <p class="">
-                  Sustainable solutions were transformed into key features in
-                  the sales funnel.
-                </p>
-                <p class="">
-                  The visibility of product and solutions' energy certifications
-                  and power management capabilities were highlighted.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="my-12 card bg-accent shadow-xl">
-            <div class="card-body">
-              <span class="text-sm font-regular uppercase">Opportunity 2</span>
-              <h2 class="card-title font-bold">Consistency</h2>
-              <div>
-                <p class="">
-                  Energy certifications and data points were integrated into
-                  product pages, marketing materials, and user interfaces to
-                  reinforce this information throughout the user journey.
-                </p>
-                <p class="">
-                  Critical sustainability information was transformed from being
-                  buried to prominent and easily accessible.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="my-12 card bg-accent shadow-xl">
-            <div class="card-body">
-              <span class="text-sm font-regular uppercase">Opportunity 3</span>
-              <h2 class="card-title font-bold">Design & Best Practices</h2>
-              <div>
-                <p class="">
-                  Cisco can create data center design guides and best practice
-                  guides can empower Cisco's customers to make informed
-                  decisions and take actionable steps toward building more
-                  sustainable data centers and network infrastructures.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-accent py-48 lg:py-48">
-      <div class="container mx-auto lg:columns-2 gap-12 px-4">
-        <div class="mb-12 prose">
-          <h1>Elevating sustainability through design system innovation</h1>
-          <p>
-            To support Cisco's environmental commitments, RFPs, and advance the
-            circular economy model, I developed two scalable patterns that
-            seamlessly integrated sustainability messaging across multiple user
-            touchpoints.
-          </p>
-          <p>
-            These enhancements accommodate varying content levels, from one to
-            six key sustainability facts, ensuring flexibility for product
-            pages, end-of-life notices, and marketing collateral. By aligning
-            with the broader design system framework and working with the design
-            system team, the patterns maintain consistency within the system
-            while amplifying environmental storytelling.
-          </p>
-        </div>
-        <div class="">
-          <img src="scalable_pattern.jpg" class="mb-12 shadow-lg rounded-md" />
-          <img src="lifecycleprograms.PNG" class="shadow-lg rounded-md" />
-        </div>
-      </div>
-    </div>
-    <div class="bg-gray-200 py-48 lg:py-48">
-      <div class="container mx-auto lg:columns-2 gap-12 px-4">
-        <div class="mb-12 prose">
-          <h1>Thought Leadership</h1>
-          <p>
-            In order to measure power accurately, standardization is key.
-            Several
-            <a href="talking-same-power-language.pdf">white papers</a> were
-            released to support the our efforts to accurately measure product
-            power. Cisco is leading these standardization efforts across the
-            information and communications technology (ICT) industry.
-          </p>
-        </div>
-        <div class="">
-          <img src="preview.png" class="mb-12 shadow-lg rounded-md" />
-        </div>
-      </div>
-    </div>
-    <div class="container mx-auto px-4 pb-48 lg:pb-64">
-      <div class="lg:grid lg:grid-cols-3 lg:gap-12">
-        <div class="lg:order-1">
-          <h3 class="m-2">
-            Product page with certifications and power management information.
-          </h3>
-        </div>
-        <div class="lg:order-4">
-          <img
-            src="UCSXSeriesEcoCertsMix.jpg"
-            class="shadow-lg rounded-md mb-12"
-          />
-        </div>
-        <div class="lg:order-2">
-          <h3 class="m-2">
-            Detailed product sustainability information on datasheets.
-          </h3>
-        </div>
-        <div class="lg:order-5">
-          <img
-            src="SustainabilityProfiles.jpg"
-            class="shadow-lg rounded-md mb-12"
-          />
-        </div>
-        <div class="lg:order-3">
-          <h3 class="m-2">Circular economy information on End-of-Life page.</h3>
-        </div>
-        <div class="lg:order-6">
-          <img src="eolmigration.jpg" class="shadow-lg rounded-md mb-12" />
-        </div>
-      </div>
-    </div>
-    <div class="container mx-auto px-4 text-center py-24">
-      <a
-        href="../real-customers/"
-        class="font-light text-lg hover:text-primary underline decoration-dotted"
-        >Next project</a
-      >
-      &#8594;
-    </div>
-    <!-- Back  to top button -->
-    <button
-      class="!fixed bottom-5 start-5 hidden rounded-full bg-base-300 p-3 text-xs font-medium uppercase leading-tight text-zinc-50 shadow-md hover:bg-gray-500 hover:shadow-lg focus:bg-primary-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg animate-fade-up animate-once animate-duration-[250ms] animate-ease-in mix-blend-multiply"
-      id="btn-back-to-top"
-    >
-      <span class="[&>svg]:w-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="3"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-          />
-        </svg>
-      </span>
-    </button>
-    <script src="../../static/js/combined.js"></script>
-    <script>
-      var options = {
-        series: [
-          {
-            name: "Catalyst 9200L",
-            data: [80, 50, 30, 40, 100],
-          },
-          {
-            name: "Catalyst 9300X",
-            data: [20, 30, 40, 80, 20],
-          },
-          {
-            name: "Catalyst 9500",
-            data: [44, 76, 78, 13, 43],
-          },
-        ],
-        chart: {
-          toolbar: { show: false },
-          width: 750,
-          height: 750,
-          type: "radar",
-          dropShadow: {
-            enabled: true,
-            blur: 9,
-            left: 9,
-            top: 9,
-          },
-        },
-        title: {
-          text: "",
-        },
-        stroke: {
-          width: 2,
-        },
-        colors: ["#a3e365", "#22c55e", "#2dd4bf"],
-        fill: {
-          opacity: 0.1,
-        },
-        markers: {
-          size: 5,
-        },
-        yaxis: {
-          stepSize: 20,
-        },
-        xaxis: {
-          categories: ["Manufacturing", "Energy", "EOL", "Packaging", "Source"],
-        },
-      };
+        align with user needs.
+      </p>
+      <h2>
+        Impact & Results
+      </h2>
+      <h3>
+        Quantitative Improvements
+      </h3>
+      <ul>
+        <li>Reduced RFP response time from 3 weeks to hours or days.</li>
+        <li>Increased sustainability-related content usage by 200%</li>
+        <li>Improved cross-team collaboration efficiency by 60%</li>
+      </ul>
+      <h3>
+        Qualitative Outcomes
+      </h3>
+      <ul>
+        <li>Strengthened Cisco's position as sustainability leader</li>
+        <li>Improved team alignment and collaboration</li>
+        <li>Enhanced customer satisfaction with sustainability data</li>
+        <li>Established a scalable framework for future growth</li>
+      </ul>
+      <h3>
+        Lessons Learned
+      </h3>
+      <ul>
+        <li>Early stakeholder alignment is crucial for cross-functional success</li>
+        <li>AI integration should focus on specific pain points</li>
+        <li>Design system integration accelerates adoption</li>
+        <li>Regular feedback loops ensure continuous improvement</li>
+      </ul>
+      <h2>
+        Implementation & Rollout
+      </h2>
+      <h3>Phase 1: Design System Components</h3>
+      <ul>
+        <li>Released sustainability patterns</li>
+        <li>Trained design team on new components</li>
+        <li>Updated documentation</li>
+        <li>Created standardized templates</li>
+      </ul>
+      <h3>Phase 2: Dashboard Enhancement</h3>
+      <ul>
+        <li>Launched centralized metrics dashboard</li>
+        <li>Integrated AI assistant prototype</li>
+        <li>Train engineering teams</li>
+      </ul>
+      <h3>Phase 3: Cross-functional Workflow Optimization</h3>
+      <ul>
+        <li>Streamlined approval processes</li>
+        <li>Implemented clear data ownership</li>
+        <li>Established update protocols</li>
+      </ul>
 
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-      chart.render();
-    </script>
-    <df-messenger
-      project-id="portfolioai-447818"
-      agent-id="d0a7ab7b-25b4-4e41-bc38-dfec2409bc38"
-      language-code="en"
-      max-query-length="-1"
-    >
-      <df-messenger-chat-bubble
-        chat-title="Ask me about Amy"
-      ></df-messenger-chat-bubble>
-    </df-messenger>
-  </body>
+      <h3>Phase 4: Cross-team Integration</h3>
+      <ul>
+        <li>Rolled out to sales and marketing</li>
+        <li>Established feedback loops</li>
+        <li>Created training materials</li>
+      </ul>
+    </div>
+  </div>
+  <div class="2xl:container mx-auto my-16 lg:my-24">
+    <img class="w-full 2xl:rounded-md shadow-xl sm:border-t border-zinc-100" src="yoursmartspace-s.jpg" />
+  </div>
+  <div class="container mx-auto bg-zinc-50 border-y sm:border border-zinc-100 px-4 py-16 lg:py-24 mb-16 lg:mb-24">
+    <div class="mx-auto sm:grid sm:grid-cols-6 gap-6 xl:gap-8">
+      <div class="col-start-1 xl:col-start-2 col-end-4    ">
+        <h2 class="font-extrabold uppercase whitespace-nowrap ">
+          Business Goals
+        </h2>
+        <p>
+          Improve sustainability messaging and program awareness. Many RFPs to
+          sales were requiring power and other information in order to choose
+          products to meet government requirements and company commitments.
+        </p>
+        <p class=""><strong>My goals</strong></p>
+        <p class="mt-0 mb-8">
+          Give customers the information they need to chose more sustainable
+          products and solutions to build energy efficient data centers and
+          inform them on proper disposal of End of Life products.
+        </p>
+      </div>
+      <div class="col-start-4 col-end-7 xl:col-end-6    ">
+        <h2 class="font-extrabold uppercase whitespace-nowrap ">
+          Challenges
+        </h2>
+        <p>
+          Multiple departments and legal were required to approve all
+          messaging.
+        </p>
+        <h2 class="font-extrabold uppercase whitespace-nowrap ">Role</h2>
+        <p>
+          As <strong>UX Lead on the Global Sustainability Tiger team</strong>.
+          Represent UX in sustainability efforts across Cisco's diverse
+          product range. Led cross-functional teams in redesigning the content
+          strategy based on actionable insights from data analysis. 
+        </p>
+        <h2 class="font-extrabold uppercase whitespace-nowrap ">
+          Solutions
+        </h2>
+        <p>
+          Show, don’t tell approach. Focus on what customers care about like
+          energy management and power consumption. Place this information
+          within different user journeys to tell a story.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="py-48">
+    <div class="container mx-auto px-4">
+      <div class="lg:grid lg:grid-cols-3 gap-6">
+        <div class="my-12 card bg-accent shadow-xl">
+          <div class="card-body">
+            <span class="text-sm font-regular uppercase">Opportunity 1</span>
+            <h2 class="card-title font-bold">Show, Don't Tell</h2>
+            <div>
+              <p class="">
+                Sustainable solutions were transformed into key features in
+                the sales funnel.
+              </p>
+              <p class="">
+                The visibility of product and solutions' energy certifications
+                and power management capabilities were highlighted.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="my-12 card bg-accent shadow-xl">
+          <div class="card-body">
+            <span class="text-sm font-regular uppercase">Opportunity 2</span>
+            <h2 class="card-title font-bold">Consistency</h2>
+            <div>
+              <p class="">
+                Energy certifications and data points were integrated into
+                product pages, marketing materials, and user interfaces to
+                reinforce this information throughout the user journey.
+              </p>
+              <p class="">
+                Critical sustainability information was transformed from being
+                buried to prominent and easily accessible.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="my-12 card bg-accent shadow-xl">
+          <div class="card-body">
+            <span class="text-sm font-regular uppercase">Opportunity 3</span>
+            <h2 class="card-title font-bold">Design & Best Practices</h2>
+            <div>
+              <p class="">
+                Cisco can create data center design guides and best practice
+                guides can empower Cisco's customers to make informed
+                decisions and take actionable steps toward building more
+                sustainable data centers and network infrastructures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-accent py-48 lg:py-48">
+    <div class="container mx-auto lg:columns-2 gap-12 px-4">
+      <div class="mb-12 ">
+        <h1>Elevating sustainability through design system innovation</h1>
+        <p>
+          To support Cisco's environmental commitments, RFPs, and advance the
+          circular economy model, I developed two scalable patterns that
+          seamlessly integrated sustainability messaging across multiple user
+          touchpoints.
+        </p>
+        <p>
+          These enhancements accommodate varying content levels, from one to
+          six key sustainability facts, ensuring flexibility for product
+          pages, end-of-life notices, and marketing collateral. By aligning
+          with the broader design system framework and working with the design
+          system team, the patterns maintain consistency within the system
+          while amplifying environmental storytelling.
+        </p>
+      </div>
+      <div class="">
+        <img src="scalable_pattern.jpg" class="mb-12 shadow-lg rounded-md" />
+        <img src="lifecycleprograms.PNG" class="shadow-lg rounded-md" />
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-200 py-48 lg:py-48">
+    <div class="container mx-auto lg:columns-2 gap-12 px-4">
+      <div class="mb-12 ">
+        <h1>Thought Leadership</h1>
+        <p>
+          In order to measure power accurately, standardization is key.
+          Several
+          <a href="talking-same-power-language.pdf">white papers</a> were
+          released to support the our efforts to accurately measure product
+          power. Cisco is leading these standardization efforts across the
+          information and communications technology (ICT) industry.
+        </p>
+      </div>
+      <div class="">
+        <img src="preview.png" class="mb-12 shadow-lg rounded-md" />
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-4 pb-48 lg:pb-64">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+      <div class="lg:order-1">
+        <h2 class="m-2">
+          Product page with certifications and power management information.
+        </h2>
+      </div>
+      <div class="lg:order-4">
+        <img src="UCSXSeriesEcoCertsMix.jpg" class="shadow-lg rounded-md mb-12" />
+      </div>
+      <div class="lg:order-2">
+        <h2 class="m-2">
+          Detailed product sustainability information on datasheets.
+        </h2>
+      </div>
+      <div class="lg:order-5">
+        <img src="SustainabilityProfiles.jpg" class="shadow-lg rounded-md mb-12" />
+      </div>
+      <div class="lg:order-3">
+        <h2 class="m-2">Circular economy information on End-of-Life page.</h2>
+      </div>
+      <div class="lg:order-6">
+        <img src="eolmigration.jpg" class="shadow-lg rounded-md mb-12" />
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-4 text-center py-24">
+    <a href="../real-customers/" class="font-light text-lg hover:text-primary underline decoration-dotted">Next
+      project</a>
+    &#8594;
+  </div>
+  <!-- Back  to top button -->
+  <button
+    class="!fixed bottom-5 start-5 hidden rounded-full bg-base-300 p-3 text-xs font-medium uppercase  text-zinc-50 shadow-md hover:bg-gray-500 hover:shadow-lg focus:bg-primary-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg animate-fade-up animate-once animate-duration-[250ms] animate-ease-in mix-blend-multiply"
+    id="btn-back-to-top">
+    <span class="[&>svg]:w-4">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+      </svg>
+    </span>
+  </button>
+  <script src="../../static/js/combined.js"></script>
+  <script>
+    var options = {
+      series: [
+        {
+          name: "Catalyst 9200L",
+          data: [80, 50, 30, 40, 100],
+        },
+        {
+          name: "Catalyst 9300X",
+          data: [20, 30, 40, 80, 20],
+        },
+        {
+          name: "Catalyst 9500",
+          data: [44, 76, 78, 13, 43],
+        },
+      ],
+      chart: {
+        toolbar: { show: false },
+        width: 750,
+        height: 750,
+        type: "radar",
+        dropShadow: {
+          enabled: true,
+          blur: 9,
+          left: 9,
+          top: 9,
+        },
+      },
+      title: {
+        text: "",
+      },
+      stroke: {
+        width: 2,
+      },
+      colors: ["#a3e365", "#22c55e", "#2dd4bf"],
+      fill: {
+        opacity: 0.1,
+      },
+      markers: {
+        size: 5,
+      },
+      yaxis: {
+        stepSize: 20,
+      },
+      xaxis: {
+        categories: ["Manufacturing", "Energy", "EOL", "Packaging", "Source"],
+      },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  </script>
+  <df-messenger project-id="portfolioai-447818" agent-id="d0a7ab7b-25b4-4e41-bc38-dfec2409bc38" language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="Ask me about Amy"></df-messenger-chat-bubble>
+  </df-messenger>
+</body>
+
 </html>

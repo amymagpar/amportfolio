@@ -4,25 +4,59 @@
 @tailwind utilities;
 
 @layer components {
-    .navbar {
-        min-height: unset;
-    }
+  .navbar {
+    min-height: unset;
+  }
 }
 
 @layer base {
-    h2 {
-        @apply text-3xl;
-    }
-    h3 {
-        @apply text-2xl;
-    }
-    h4 {
-        @apply font-bold;
-    }
-    p {
-        @apply mb-2;
-    }
-    ul {
-        @apply list-disc;
-    }
+  body {
+    @apply lg:text-lg;
+  }
+  h2:not(:first-child) {
+    @apply mt-12;
+  }
+  h3:not(:first-child) {
+    @apply mt-6;
+  }
+  h4:not(:first-child) {
+    @apply mt-4;
+  }
+  ul:not(:first-child),
+  ol:not(:first-child) {
+    @apply mt-2;
+  }
+  p:not(:first-child) {
+    @apply mt-2;
+  }
+  h1 {
+    @apply text-6xl font-black uppercase lg:text-7xl;
+  }
+  h2 {
+    @apply text-2xl lg:text-3xl;
+  }
+  h3 {
+    @apply text-lg font-bold lg:text-xl;
+  }
+  h4 {
+    @apply font-bold;
+  }
+  p {
+    @apply mb-4;
+  }
+  ul {
+    @apply list-disc pl-5;
+  }
+  ol {
+    @apply list-decimal pl-5;
+  }
+  li {
+    @apply mb-2;
+  }
+  li p:first-child {
+    @apply mb-0;
+  }
+  li p:not(:first-child) {
+    @apply mt-0;
+  }
 }

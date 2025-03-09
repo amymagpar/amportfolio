@@ -13,9 +13,8 @@
     "taos": "^1.0.5"
   },
   "devDependencies": {
+    "prettier": "3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss-animate": "^1.0.7"
-  },
-  {
-  "plugins": {"prettier-plugin-tailwindcss"}
-}
   }
+}

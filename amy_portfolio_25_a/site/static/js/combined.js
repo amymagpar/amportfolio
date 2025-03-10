@@ -52,7 +52,7 @@ html{scroll-behavior: smooth;}
 
 </style>
 `;
-  document.head.insertAdjacentHTML('beforeend', headContent);
+  document.head.insertAdjacentHTML("beforeend", headContent);
 });
 
 // Components (from components.js)
@@ -61,17 +61,17 @@ function insertHead() {
   const nav = `<script>console.log("head");</script>`;
 
   // Insert the navigation at the start of the body
-  document.body.insertAdjacentHTML('afterbegin', head);
+  document.body.insertAdjacentHTML("afterbegin", head);
 }
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 border-b sm:border-none  text-sm lg:text-base 2xl:text-lg tracking-wide text-black">
-    <div class="container sm:backdrop-blur-md bg-white sm:bg-white/20 sm:border-b sm:border-l sm:border-r sm:border-zinc-50/20  overflow-hidden px-4 mx-auto navbar p-0 h-10 sm:h-12">
-      <div class="navbar-start uppercase left-0">
-        <ul class="list-none">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 sm:backdrop-blur-md bg-white sm:bg-white/20">
+    <div class="container  overflow-hidden px-4 mx-auto navbar p-0 h-10 sm:h-12">
+      <div class="navbar-start left-0">
+        <ul class="list-none pl-0">
         <li>
-        <a class="font-light" href="/">Amy Parness</a>
+        <a class="" href="/">Amy Parness</a>
         </li>
         </ul>
       </div>
@@ -86,14 +86,10 @@ function insertNavigation() {
         ease-in-out
         overflow-hidden
         bg-white
-        border-t border-zinc-50
         max-h-0
         sm:max-h-full
         sm:flex
-        text-sm
         pb-0
-        sm:text-base
-        font-light
         list-none
         flex-col
         sm:flex-row
@@ -109,7 +105,7 @@ function insertNavigation() {
         ">
             <li id=""  class="pb-3 pt-5 sm:pt-3 px-4" ><a href="/projects/">Projects</a></li>
             <li id=""  class="py-3 px-4" ><a href="/cv/">CV</a></li>
-            <li id=""  class="py-3 px-4 pb-6 sm:pb-3 sm:pl-4" ><a href="/writing/">Writing</a></li>
+            <li id=""  class="py-3 px-4 pb-6 sm:pb-3 sm:pl-4 pr-0" ><a href="/writing/">Writing</a></li>
          </ul>
            <div class="block sm:hidden">
       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
@@ -122,14 +118,14 @@ function insertNavigation() {
   </header>`;
 
   // Insert the navigation at the start of the body
-  document.body.insertAdjacentHTML('afterbegin', nav);
+  document.body.insertAdjacentHTML("afterbegin", nav);
 }
 
 function insertFooter() {
   const footer = `<footer class="bg-white w-full text-center text-sm lg:text-base 2xl:text-lg">
     <div class="container mx-auto flex px-4 py-2 flex-col sm:flex-row justify-between items-center">
       <div class="text-center sm:text-left ">
-        <p class="font-light text-xs text-primary mb-0">&copy; 2025 Amy Parness</p>
+        <p class="text-xs text-primary mb-0">&copy; 2025 Amy Parness</p>
       </div>
       <!--
       <div class="flex space-x-4">
@@ -145,12 +141,12 @@ function insertFooter() {
   </footer>`;
 
   // Insert the footer at the end of the body
-  document.body.insertAdjacentHTML('beforeend', footer);
+  document.body.insertAdjacentHTML("beforeend", footer);
 }
 
 // Execute when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', insertNavigation);
-document.addEventListener('DOMContentLoaded', insertFooter);
+document.addEventListener("DOMContentLoaded", insertNavigation);
+document.addEventListener("DOMContentLoaded", insertFooter);
 
 // Scroll and Navigation Script (from script.js)
 // Get the button
@@ -224,20 +220,24 @@ function onScroll() {
   if (currentScrollPosition > lastScrollPosition) {
     // Scrolling down
     navbar.style.transform = "translateY(-100%)";
-    navbar.style.transition = transition ? "transform 0.3s ease-in-out" : "none";
-    console.log('down');
+    navbar.style.transition = transition
+      ? "transform 0.3s ease-in-out"
+      : "none";
+    console.log("down");
     n.classList.add("max-h-0");
     n.classList.remove("max-h-screen");
   } else {
     // Scrolling up
-    console.log('up');
+    console.log("up");
     n.classList.remove("border-b");
     navbar.style.transform = "translateY(0)";
-    navbar.style.transition = transition ? "transform 0.3s ease-in-out" : "none";
+    navbar.style.transition = transition
+      ? "transform 0.3s ease-in-out"
+      : "none";
     iconOpen.classList.remove("hidden");
     iconClosed.classList.add("hidden");
-    console.log('open ' + iconOpen.classList);
-    console.log('closed ' + iconClosed.classList);
+    console.log("open " + iconOpen.classList);
+    console.log("closed " + iconClosed.classList);
   }
 
   lastScrollPosition = currentScrollPosition;
@@ -247,7 +247,7 @@ window.addEventListener("scroll", onScrollThrottled, { passive: true });
 
 function responsiveNav() {
   const x = document.getElementById("myTopnav");
-    const iconClosed = document.getElementById("icon-closed");
+  const iconClosed = document.getElementById("icon-closed");
   const iconOpen = document.getElementById("icon-open");
 
   if (x.classList.contains("max-h-0")) {
@@ -255,14 +255,14 @@ function responsiveNav() {
     x.classList.remove("max-h-0");
     x.classList.add("max-h-screen");
     x.classList.add("border-b");
-        iconClosed.classList.remove("hidden");
+    iconClosed.classList.remove("hidden");
     iconOpen.classList.add("hidden");
   } else {
     console.log("false");
     x.classList.remove("border-b");
     x.classList.add("max-h-0");
     x.classList.remove("max-h-screen");
-        iconClosed.classList.add("hidden");
+    iconClosed.classList.add("hidden");
     iconOpen.classList.remove("hidden");
   }
 }
@@ -290,23 +290,21 @@ reveal();
 // To check the scroll position on page loa
 
 // button show hide div
-document.querySelectorAll(".toggle-btn").forEach(button => {
-    console.log("hello");
+document.querySelectorAll(".toggle-btn").forEach((button) => {
+  console.log("hello");
   button.addEventListener("click", () => {
     const targetId = button.getAttribute("data-target");
     const targetDiv = document.getElementById(targetId);
 
     if (targetDiv.classList.contains("opacity-0")) {
-
-    targetDiv.classList.remove("opacity-0"); 
-    targetDiv.classList.remove("h-0"); 
+      targetDiv.classList.remove("opacity-0");
+      targetDiv.classList.remove("h-0");
     } else {
-    targetDiv.classList.add("opacity-0"); 
-    targetDiv.classList.add("h-0"); 
+      targetDiv.classList.add("opacity-0");
+      targetDiv.classList.add("h-0");
     }
   });
-}); 
-
+});
 
 // document.querySelectorAll(".toggle-btn").forEach(button => {
 //   button.addEventListener("click", () => {

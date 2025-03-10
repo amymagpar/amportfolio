@@ -100,7 +100,7 @@
     </div>
   </div>
   <!-- Impact -->
-  <div class="bg-zinc-900 shadow-sm text-zinc-50 py-96" style="
+  <div class="bg-zinc-900 shadow-sm text-zinc-50 py-48 lg:py-64 2xl:py-96" style="
         background-image: linear-gradient(
           135deg,
           #18181b 42%,
@@ -161,7 +161,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-gradient-to-br from-yellow-100 to-green-200 py-96">
+  <div class="bg-gradient-to-br from-yellow-100 to-green-200 py-48 lg:py-64 2xl:py-96">
     <div class="container mx-auto px-4">
       <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
         <h1 class=" ">The problem</h1>
@@ -198,17 +198,19 @@
         </div>
       </div>
     </div>
-    <div class="3xl:container mx-auto mt-48">
+    <div class="3xl:container mx-auto mt-16 lg:mt-24 2xl:mt-48">
       <!--     <img class="w-full 2xl:rounded-md shadow-xl sm:border-t border-zinc-100 mix-blend-multiply" src="yoursmartspace.jpg" /> -->
-      <img class="w-full  mix-blend-multiply" src="yoursmartspace_light.jpg" />
+      <img class="w-full  mix-blend-multiply sm:hidden" src="yoursmartspace_light_crop_s.jpg" />
+      <img class="w-full  mix-blend-multiply hidden sm:block lg:hidden" src="yoursmartspace_light_crop_m.jpg" />
+      <img class="w-full  mix-blend-multiply hidden lg:block 2xl:hidden " src="yoursmartspace_light_l.jpg" />
+      <img class="w-full  mix-blend-multiply hidden 2xl:block " src="yoursmartspace_light.jpg" />
     </div>
-    <div class="container mx-auto px-4 mt-4 mb-96">
-      <caption class="">The Cisco Smart Space</caption>
+    <div class="container mx-auto flex justify-left px-4 mt-4">
+      <p class=" text-sm font-medium border-l border-zinc-900 px-2 py-0"><span class="font-bold italic">The Cisco Smart Space</span><br />Interactive module
+      </p>
     </div>
-
-
   </div>
-  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-96">
+  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-48 lg:py-64 2xl:py-96">
     <div class="lg:grid lg:grid-cols-12 gap-6 lg:gap-10">
       <div class="lg:col-start-1 lg:col-end-13">
         <h1 class=" text-7xl font-black uppercase">
@@ -338,7 +340,7 @@
         background-size: 16px 16px;
         background-attachment: fixed;
       ">
-    <div class="container mx-auto px-4 py-96">
+    <div class="container mx-auto px-4 py:-48 lg:py-64 2xl:py-96">
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
         <h1 class="col-span-4 ">
           Opportunities
@@ -407,7 +409,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-96">
+  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-48 lg:py-64 2xl:py-96">
     <div class="grid lg:grid-cols-2 gap-6 sm:gap-10">
       <h1 class="">The power of visibility</h1>
       <div class="  ">
@@ -769,7 +771,7 @@
       xaxis: {
         categories: ["Manufacturing", "Energy", "EOL", "Packaging", "Source"],
       },
-       responsive: [
+      responsive: [
         {
           breakpoint: 640,
           options: {
@@ -816,7 +818,7 @@
           },
         },
       ]
-   };
+    };
 
     var chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();

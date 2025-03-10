@@ -11,7 +11,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-black md:text-lg leading-snug;
+    @apply bg-white text-black xl:text-lg leading-snug;
   }
   h2:not(:first-child) {
     @apply mt-12;
@@ -41,6 +41,9 @@
   h4 {
     @apply font-bold;
   }
+  a {
+    @apply italic underline decoration-dotted text-zinc-500;
+  }
   p {
     @apply text-pretty leading-tight tracking-tight mb-4;
   }
@@ -58,5 +61,11 @@
   }
   li p:not(:first-child) {
     @apply mt-0;
+  }
+  strong {
+    @apply font-semibold;
+  }
+  em {
+    @apply italic;
   }
 }

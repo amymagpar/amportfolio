@@ -67,11 +67,12 @@ function insertHead() {
 // Navigation component
 function insertNavigation() {
   const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 sm:backdrop-blur-md bg-white sm:bg-white/20">
-    <div class="container  overflow-hidden px-4 mx-auto navbar p-0 h-10 sm:h-12">
+    <div class="container">
+    <div class="overflow-hidden  navbar p-0 h-10 sm:h-12">
       <div class="navbar-start left-0">
         <ul class="list-none pl-0">
         <li>
-        <a class="" href="/">Amy Parness</a>
+        <a class="no-underline not-italic text-zinc-900" href="/">Amy Parness</a>
         </li>
         </ul>
       </div>
@@ -103,9 +104,9 @@ function insertNavigation() {
         sm:w-auto
         ease-in-out
         ">
-            <li id=""  class="pb-3 pt-5 sm:pt-3 px-4" ><a href="/projects/">Projects</a></li>
-            <li id=""  class="py-3 px-4" ><a href="/cv/">CV</a></li>
-            <li id=""  class="py-3 px-4 pb-6 sm:pb-3 sm:pl-4 pr-0" ><a href="/writing/">Writing</a></li>
+            <li id=""  class="pb-3 pt-5 sm:pt-3 " ><a class="no-underline not-italic text-zinc-900" href="/projects/">Projects</a></li>
+            <li id=""  class="py-3 sm:px-4" ><a class="no-underline not-italic text-zinc-900" href="/cv/">CV</a></li>
+            <li id=""  class="py-3  pb-6 sm:pb-3  pr-0" ><a class="no-underline not-italic text-zinc-900" href="/writing/">Writing</a></li>
          </ul>
            <div class="block sm:hidden">
       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
@@ -115,6 +116,7 @@ function insertNavigation() {
     </div>
       </div>
     </div>
+    </div>
   </header>`;
 
   // Insert the navigation at the start of the body
@@ -123,7 +125,7 @@ function insertNavigation() {
 
 function insertFooter() {
   const footer = `<footer class="bg-white w-full text-center text-sm lg:text-base 2xl:text-lg">
-    <div class="container mx-auto flex px-4 py-2 flex-col sm:flex-row justify-between items-center">
+    <div class="container mx-auto flex  py-2 flex-col sm:flex-row justify-between items-center">
       <div class="text-center sm:text-left ">
         <p class="text-xs text-primary mb-0">&copy; 2025 Amy Parness</p>
       </div>

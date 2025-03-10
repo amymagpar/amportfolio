@@ -20,80 +20,81 @@
 </head>
 
 <!-- <body class="text-zinc-900" style=" background-image: linear-gradient( 135deg, #fafafa 42%, #f4f4f5 42%, #f4f4f5 48%, #fafafa 48%, #fafafa 92%, #f4f4f5 92%, #f4f4f5 100% ); background-size: 16px 16px; background-attachment: fixed; "> -->
-<body>
-
+<body class="">
   <div
-    class="container mx-auto px-4 py-32 lg:py-52 flex flex-col justify-center">
-    <div class="font-display font-light text-2xl sm:text-3xl m-0">Cisco Systems</div>
-    <h1 class="text-8xl mt-0">
+    class="container h-screen flex items-center justify-center">
+    <div id="" class="aspectTarget grid lg:grid-cols-2 gap-6 xl:gap-8 mb-2 sm:mb-4 place-items-center">
+    <div>
+    <div class="font-display font-light text-2xl 2xl:text-3xl m-0">Cisco Systems</div>
+    <h1 class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl 3xl:text-7xl 4xl:text-8xl mt-0">
       Scaling Sustainability
     </h1>
-    <div class="flex flex-wrap gap-3 mb-3">
-      <span class="badge bg-black border-black text-white">sustainability</span>
-      <span class="badge bg-black border-black text-white">user journeys</span>
-      <span class="badge bg-black border-black text-white">design</span>
-      <span class="badge bg-black border-black text-white">collaboration</span>
+    <div class="flex flex-wrap gap-1 mb-3">
+      <span class="badge badge-xs sm:badge-sm lg:badge-sm bg-zinc-400 border-zinc-400 text-white">sustainability</span>
+        <span class="badge badge-xs sm:badge-sm lg:badge-sm bg-zinc-400 border-zinc-400 text-white">user journeys</span>
+      <span class="badge badge-xs sm:badge-sm lg:badge-sm bg-zinc-400 border-zinc-400 text-white">design</span>
+      <span class="badge badge-xs sm:badge-sm lg:badge-sm bg-zinc-400 border-zinc-400 text-white">collaboration</span>
     </div>
-    <div id="" class="grid lg:grid-cols-2 gap-6 xl:gap-8 mb-2 sm:mb-4">
       <div>
         <div class="">
           <p class="">
             As the <em>UX Lead</em> of the
             <strong>Global Sustainability Messaging Tiger Team</strong> at
             <em>Cisco Meraki</em>, I spearheaded the development of a
+            <br/>
+          <!--button-->
+            <span data-target="tldr"
+              class="toggle-btn italic font-light m-0 text-zinc-500 hover:text-zinc-900 z-40">
+              read more...
+            </span>
           </p>
         </div>
       </div>
-    </div>
-    <!--button-->
-    <button data-target="tldr"
-      class="toggle-btn btn btn-outline btn-sm w-min font-light mb-4 z-40">
-      TLDR
-    </button>
-    <div id="tldr" class="opacity-0 h-0 transition-all duration-300 grid lg:grid-cols-2 gap-6 xl:gap-8 mb-4">
-      <div>
-        <p class="   ">
-          At <em>Cisco</em>, fragmented sustainability data and poor
-          information architecture were causing lost sales opportunities, with
-          only 20% of customers aware of <strong>end-of-life</strong> programs
-          and <strong>climate-focused</strong> RFP response times stretching
-          to 3+ weeks.
-        </p>
-        <p class="   ">
-          Leading a cross-functional UX initiative across six departments, My
-          team and I transformed how and what kind of
-          <strong>sustainability</strong> data surfaced throughout the product
-          lifecycle. Using an <strong>AI POC</strong>, I could decrease RFP
-          response times from weeks to days or hours, customer awareness of
-          end-of-life programs rose from 20% to 75%, and
-          <strong>sustainability content engagement</strong> increased by
-          200%.
-        </p>
-        <p class="   ">
-          The initiative demonstrated how strategic UX leadership could turn
-          sustainability from a compliance requirement into a competitive
-          advantage by making
-          <strong>environmental impact data</strong> visible and accessible at
-          every key decision point.
-        </p>
-        <h4>Users & Stakeholders</h4>
-        <ul class="list-inside">
-          <li>Sales teams responding to RFPs</li>
-          <li>Product Marketing creating product collateral</li>
-          <li>Engineering teams managing sustainability data</li>
-          <li>Customers evaluating sustainable solutions</li>
-          <li>Product teams defining roadmaps</li>
-          <li>Compliance teams ensuring regulatory adherence</li>
-        </ul>
+      <div id="tldr" class="opacity-0 h-0 transition-all duration-300  mb-4">
+        <div>
+          <p class="   ">
+            At <em>Cisco</em>, fragmented sustainability data and poor
+            information architecture were causing lost sales opportunities, with
+            only 20% of customers aware of <strong>end-of-life</strong> programs
+            and <strong>climate-focused</strong> RFP response times stretching
+            to 3+ weeks.
+          </p>
+          <p class="   ">
+            Leading a cross-functional UX initiative across six departments, My
+            team and I transformed how and what kind of
+            <strong>sustainability</strong> data surfaced throughout the product
+            lifecycle. Using an <strong>AI POC</strong>, I could decrease RFP
+            response times from weeks to days or hours, customer awareness of
+            end-of-life programs rose from 20% to 75%, and
+            <strong>sustainability content engagement</strong> increased by
+            200%.
+          </p>
+          <p class="   ">
+            The initiative demonstrated how strategic UX leadership could turn
+            sustainability from a compliance requirement into a competitive
+            advantage by making
+            <strong>environmental impact data</strong> visible and accessible at
+            every key decision point.
+          </p>
+          <h4>Users & Stakeholders</h4>
+          <ul class="list-inside">
+            <li>Sales teams responding to RFPs</li>
+            <li>Product Marketing creating product collateral</li>
+            <li>Engineering teams managing sustainability data</li>
+            <li>Customers evaluating sustainable solutions</li>
+            <li>Product teams defining roadmaps</li>
+            <li>Compliance teams ensuring regulatory adherence</li>
+          </ul>
+        </div>
       </div>
-      <div></div>
     </div>
-    <div class="w-full flex justify-center xl:justify-end">
-      <div id="chart" class="pr-0 2xl:pr-32 relative -top-10 sm:-top-20 lg:-top-30 xl:-top-40"></div>
+    <div  class="w-full landscape:max-h-[50vh] landscape:max-w-[50vh] flex justify-center xl:justify-end bg-zinc-200 aspect-square p-8">
+      <div id="chart" class=""></div>
     </div>
   </div>
+</div>
   <!-- Impact -->
-  <div class="bg-zinc-900 shadow-sm text-zinc-50 py-48 lg:py-64 2xl:py-96" style="
+  <div class="h-screen bg-zinc-900 shadow-sm text-zinc-50 py-48 lg:py-64 2xl:py-96" style="
         background-image: linear-gradient(
           135deg,
           #18181b 42%,
@@ -107,7 +108,7 @@
         background-size: 16px 16px;
         background-attachment: fixed;
       ">
-    <div class="container mx-auto px-4">
+    <div class="container  ">
       <h1 class=" text-right">Impact</h1>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-6 xl:gap-8">
         <div class="     2xl:col-start-2 border-t xl:border-t-2 border-zinc-50 lg:col-start-1 pt-2 mt-4 mb-4">
@@ -154,15 +155,17 @@
       </div>
     </div>
   </div>
-  <div class="bg-gradient-to-br from-yellow-100 to-green-200 py-48 lg:py-64 2xl:py-96">
-    <div class="container mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
-        <h1 class="col-span-2">Start to Finish Development</h1>
-        <div class="  row-span-2">
-          <h2 class="text-pretty">
+  <div class="h-screen bg-gradient-to-br from-yellow-100 to-green-200 py-48 lg:py-64 2xl:py-96">
+    <div class="container  ">
+      <div class="grid lg:grid-cols-2 gap-6 xl:gap-8">
+        <h1 class="col-span-2">
+
+
             A blind spot in awareness and a sales
             <span class="text-nowrap">team in crisis</span>
-          </h2>
+
+        </h1>
+        <div class="  row-span-2">
           <p class="">
             It started with the introduction of several new
             <strong>sustainability-focused data center products</strong>. Our
@@ -182,30 +185,48 @@
           </p>
           <h2 class="text-pretty">My Goals</h2>
           <p class="">
-            Make Cisco a leader in power <strong>reporting & sustainable networking</strong>. Help the team visualize
+            <strong>Make Cisco a leader in power reporting & sustainable networking</strong>. Help the team visualize
             how sustainability becomes a core
             strategy.
           </p>
         </div>
-        <div class="">
-        </div>
       </div>
     </div>
-    <div class="3xl:container mx-auto mt-16 lg:mt-24 2xl:mt-48">
-      <!--     <img class="w-full 2xl:rounded-md shadow-xl sm:border-t border-zinc-100 mix-blend-multiply" src="yoursmartspace.jpg" /> -->
-      <img class="w-full  mix-blend-multiply sm:hidden" src="yoursmartspace_light_crop_s.jpg" />
-      <img class="w-full  mix-blend-multiply hidden sm:block lg:hidden" src="yoursmartspace_light_crop_m.jpg" />
-      <img class="w-full  mix-blend-multiply hidden lg:block 2xl:hidden " src="yoursmartspace_light_l.jpg" />
-      <img class="w-full  mix-blend-multiply hidden 2xl:block " src="yoursmartspace_light.jpg" />
-    </div>
-    <div class="container mx-auto flex justify-left px-4 mt-4">
-      <p class=" text-sm font-medium border-l border-zinc-900 px-2 py-0"><span class="font-bold italic">The Cisco Smart
-          Space</span><br />Interactive module
-      </p>
+  </div>
+  <div class="container  bg-zinc-200  py-48 lg:py-64 2xl:py-96">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-12 gap-6 md:gap-10">
+      <div class="md:col-span-2 xl:col-span-4">
+        <h1 class="uppercase ">AI for Pain Point Reduction</h1>
+      </div>
+      <div class="xl:col-start-5 xl:col-span-4">
+        <p>
+          The product dashboard needed to be overhauled to be used by other
+          teams to extract power and material information. In lieu of a
+          redesign, I created an AI assistant proof of concept to help teams
+          quickly extract and format sustainability data from the complex
+          product database. As one product manager noted, "What used to take
+          weeks now could take minutes."
+        </p>
+      </div>
+      <div class="col-start-1 col-span-6">
+        <img src="Product_dashboard.jpg" />
+      </div>
+      <div class="col-start-1 col-span-4">
+        <img src="AI_sustain.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+        <img src="PE_Score.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+        <img src="PE_Score.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+        <img src="intentmodel_sustainability.jpeg" />
+      </div>
     </div>
   </div>
-  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-48 lg:py-64 2xl:py-96">
-    <div class="grid lg:grid-cols-12 gap-6 lg:gap-10">
+  <div class="container  bg-zinc-50 sm:border-x border-zinc-100  py-48 lg:py-64 2xl:py-96">
+    <div class="grid lg:grid-cols-12 gap-6 xl:gap-8">
       <div class="col-start-1 lg:col-end-13">
         <h1 class="">
           Using Metrics to Drive Design
@@ -318,6 +339,15 @@
           </li>
         </ol>
       </div>
+        <div class="col-start-7 col-end-13">
+        <img src="pages-2.jpg">
+        </div>
+        <div class="col-start-7 col-end-13">
+        <img src="pages-1.jpg">
+        </div>
+        <div class="col-start-7 col-end-13">
+        <img src="solutions.jpg">
+        </div>
     </div>
   </div>
   <div class="bg-zinc-900 text-zinc-50" style="
@@ -334,7 +364,7 @@
         background-size: 16px 16px;
         background-attachment: fixed;
       ">
-    <div class="container mx-auto px-4 py-48 lg:py-64 2xl:py-96">
+    <div class="container   py-48 lg:py-64 2xl:py-96">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
         <h1 class="sm:col-span-2 lg:col-span-4 ">
           Opportunities
@@ -393,17 +423,23 @@
             4
           </h1>
           <div class=" border-t  border-t-2 border-zinc-50 py-4 pt-4">
-            <div class="font-bold text-2xl  mt-1">Headline</div>
+            <div class="font-bold text-2xl  mt-1">Value-driven AI</div>
             <p class="mt-4">
               Use Ai to save time extracting data from product dashboard A
               redesign of the product dashboard was not 
             </p>
           </div>
+      </div>
+    <div class="container  flex justify-left  mt-4">
+      <p class=" text-sm font-medium border-l border-zinc-900 px-2 py-0"><span class="font-bold italic">The Cisco Smart
+          Space</span><br />Interactive module
+      </p>
+    </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-48 lg:py-64 2xl:py-96">
+  <div class="container  bg-zinc-50 sm:border-x border-zinc-100  py-48 lg:py-64 2xl:py-96">
     <div class="grid  sm:grid-cols-2 xl:grid-cols-12 gap-6 md:gap-10">
       <div class="sm:col-span-2 xl:col-span-12">
         <h1 class="">The power of visibility</h1>
@@ -435,26 +471,33 @@
           compliance badges Integrated with existing Cisco design language
         </p>
       </div>
+      <div class="col-start-1 col-span-6">
+      <img src="yoursmartspace_light.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+      <img src="scalable_pattern.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+      <img src="eolmigration.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+      <img src="SustainabilityProfiles.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+      <img src="UCSXSeriesEcoCertsMix.jpg" />
+      </div>
+      <div class="col-start-1 col-span-6">
+      <img src="lifecycleprograms.PNG" />
+      </div>
     </div>
   </div>
-  </div>
-  <div class="container mx-auto bg-zic-50 sm:border-x border-zinc-100 px-4 py-48 lg:py-64 2xl:py-96 bg-zinc-200">
+  <div class="container  bg-zinc-50 sm:border-x border-zinc-100  py-48 lg:py-64 2xl:py-96">
     <div class="grid sm:grid-cols-2 xl:grid-cols-12 gap-6 md:gap-10">
       <div class="md:col-span-2 xl:col-span-4">
         <h1 class="uppercase ">New Content Creation</h1>
       </div>
-      <div class="sm:col-start-1 xl:col-start-5 xl:col-span-4">
-        <h2 class="">Thought Leadership</h2>
-        <p>
-          To measure power accurately, standardization is key. Several white
-          papers were released to support our efforts to accurately measure
-          product power. Cisco is leading these standardization efforts across
-          the information and communications technology (ICT) industry.
-        </p>
-      </div>
-      <div class="xl:col-star-5 xl:col-span-4">
-
-        <h2 class="">AI for Pain Point Reduction</h2>
+      <div class="xl:col-start-5 xl:col-span-4">
+        <h2 class="">Mapping the Content</h2>
         <p>
           The product dashboard needed to be overhauled to be used by other
           teams to extract power and material information. In lieu of a
@@ -464,9 +507,24 @@
           weeks now could take minutes."
         </p>
       </div>
+      <div class="col-start-1 col-span-6">
+      <img src="mapping_sustainability.png" />
+      </div>
+      <div class="sm:col-start-1 xl:col-start-5 xl:col-span-4">
+        <h2 class="">Thought Leadership</h2>
+        <p>
+          To measure power accurately, standardization is key. Several <a href="talking-same-power-language.pdf">white
+          papers</a> were released to support our efforts to accurately measure
+          product power. Cisco is leading these standardization efforts across
+          the information and communications technology (ICT) industry.
+        </p>
+      </div>
+      <div class="col-start-1 col-span-6">
+      <img src="Sustainability_lead.png" />
+      </div>
     </div>
-  </div>
-  <div class="container mx-auto bg-zinc-50 sm:border-x border-zinc-100 px-4 py-48 lg:py-64 2xl:py-96">
+    </div>
+  <div class="container  bg-zinc-50 sm:border-x border-zinc-100  py-48 lg:py-64 2xl:py-96">
     <div class="grid md:grid-cols-2 xl:grid-cols-12 gap-6 md:gap-10">
       <div class="md:col-span-2 lg:col-span-1 xl:col-span-6">
         <h1 class="">The Lesson</h1>
@@ -486,7 +544,7 @@
 
       <div class="lg:col-start-1 xl:col-start-1 xl:col-span-6">
         <h2>
-          Impact & Results
+          Results
         </h2>
         <h3>
           Quantitative Improvements
@@ -553,7 +611,7 @@
   <img src="pages-2.jpg" class="mb-4 shadow-lg rounded-md" />
 
 
-  <div class="container mx-auto bg-zinc-50 border-y sm:border border-zinc-100 px-4 py-16 lg:py-24 mb-16 lg:mb-24">
+  <div class="container  bg-zinc-50 border-y sm:border border-zinc-100  py-16 lg:py-24 mb-16 lg:mb-24">
     <div class="mx-auto sm:grid sm:grid-cols-6 gap-6 xl:gap-8">
       <div class="col-start-1 xl:col-start-2 col-end-4    ">
         <h2 class="font-extrabold uppercase whitespace-nowrap ">
@@ -598,7 +656,7 @@
     </div>
   </div>
   <div class="py-48">
-    <div class="container mx-auto px-4">
+    <div class="container  ">
       <div class="lg:grid lg:grid-cols-3 gap-6">
         <div class="my-12 card bg-accent shadow-xl">
           <div class="card-body">
@@ -651,7 +709,7 @@
     </div>
   </div>
   <div class="bg-accent py-48 lg:py-48">
-    <div class="container mx-auto lg:columns-2 gap-12 px-4">
+    <div class="container  lg:columns-2 gap-12 ">
       <div class="mb-12 ">
         <h1>Elevating sustainability through design system innovation</h1>
         <p>
@@ -676,13 +734,12 @@
     </div>
   </div>
   <div class="bg-gray-200 py-48 lg:py-48">
-    <div class="container mx-auto lg:columns-2 gap-12 px-4">
+    <div class="container  lg:columns-2 gap-12 ">
       <div class="mb-12 ">
         <h1>Thought Leadership</h1>
         <p>
           In order to measure power accurately, standardization is key.
-          Several
-          <a href="talking-same-power-language.pdf">white papers</a> were
+          Several <a href="talking-same-power-language.pdf">white papers</a> were
           released to support the our efforts to accurately measure product
           power. Cisco is leading these standardization efforts across the
           information and communications technology (ICT) industry.
@@ -693,7 +750,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto px-4 pb-48 lg:pb-64">
+  <div class="container   pb-48 lg:pb-64">
     <div class="lg:grid lg:grid-cols-3 lg:gap-12">
       <div class="lg:order-1">
         <h2 class="m-2">
@@ -719,7 +776,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto px-4 text-center py-24">
+  <div class="container   text-center py-24">
     <a href="../real-customers/" class="font-light text-lg hover:text-primary underline decoration-dotted">Next
       project</a>
     &#8594;
@@ -739,15 +796,15 @@
     var options = {
       series: [
         {
-          name: "Catalyst 9200L",
+          name: "Catalyst 9300",
           data: [80, 50, 30, 40, 100],
         },
         {
-          name: "Catalyst 9300X",
+          name: "Nexus 9300",
           data: [20, 30, 40, 80, 20],
         },
         {
-          name: "Catalyst 9500",
+          name: "MDS 9710",
           data: [44, 76, 78, 13, 43],
         },
       ],
@@ -778,7 +835,7 @@
         stepSize: 20,
       },
       xaxis: {
-        categories: ["Manufacturing", "Energy", "EOL", "Packaging", "Source"],
+        categories: ["End-of-Life", "Idle State Power Management", "Energy Efficiency", "Longevity", "Thermal Management"],
       },
       responsive: [
         {

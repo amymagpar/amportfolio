@@ -2,11 +2,27 @@
 module.exports = {
   content: ["./site/**/*.{html,js,lr}", "./site/**/*.html"],
   theme: {
-    colors: {
-      black: "#18181b",
-      white: "#fafafa",
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1rem",
+        lg: "2rem",
+        xl: "2rem",
+        "2xl": "3rem",
+        "3xl": "3rem",
+        "3xl": "4rem",
+      },
     },
     extend: {
+      colors: {
+        black: "#18181b",
+        white: "#fafafa",
+      },
+      screens: {
+        "3xl": "1900px",
+        "4xl": "2600px",
+      },
       borderRadius: {
         big: "42px",
         huge: "128px",

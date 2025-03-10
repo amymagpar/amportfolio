@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Center Switch Power Usage</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <div style="text-align: center; margin: 20px;">
+        <label for="timeRange">Select Time Range:</label>
+        <select id="timeRange" onchange="updateChart()">
+            <option value="24h">Last 24 Hrs</option>
+            <option value="week">Past Week</option>
+            <option value="year">This Year</option>
+        </select>
+    </div>
+
+    <div id="power-usage-chart" style="max-width: 400px; margin: auto;"></div>
+
+    <script>
+        // Different datasets for different time ranges
+        const datasets = {
+            "24h": [
+                { time: "00:00", power: 50 },
+                { time: "03:00", power: 250 },
+                { time: "06:00", power: 300 }, 
+                { time: "09:00", power: 280 },
+                { time: "12:00", power: 300 }, 
+                { time: "15:00", power: 50 },
+                { time: "18:00", power: 270 }
+            ],
+            "week": [
+                { time: "Monday", power: 50 },
+                { time: "Tuesday", power: 250 },
+                { time: "Wednesday", power: 270 }, 
+                { time: "Thursday", power: 280 },
+                { time: "Friday", power: 2300 }, 
+                { time: "Saturday", power: 80 },
+                { time: "Sunday", power: 67 }
+            ],
+            "year": [
+                { time: "Jan", power: 150 },
+                { time: "Feb", power: 180 },
+                { time: "Mar", power: 300 },
+                { time: "Apr", power: 250 },
+                { time: "May", power: 300 }, 
+                { time: "Jun", power: 290 },
+                { time: "Jul", power: 280 },
+                { time: "Aug", power: 50 },
+                { time: "Sep", power: 230 }, 
+                { time: "Oct", power: 270 },
+                { time: "Nov", power: 260 },
+                { time: "Dec", power: 220 }
+            ]
+        };
+
+        // Function to get categories and values
+        function getChartData(range) {
+            return {
+                categories: datasets[range].map(item => item.time),
+                values: datasets[range].map(item => item.power)
+            };
+        }
+
+        // Initial chart data
+        let selectedRange = "24h";
+        let chartData = getChartData(selectedRange);
+
+        var options = {
+            chart: {
+                type: "line",
+                height: 400
+            },
+            series: [{
+                name: "Power Usage (W)",
+                data: chartData.values
+            }],
+            xaxis: {
+                categories: chartData.categories
+            },
+            yaxis: {
+                title: { text: "Power (W)" },
+                min: 0,
+                max: 350
+            },
+            markers: {
+                size: 6,
+                colors: ["#9B5FF5"],
+                strokeWidth: 2
+            },
+            stroke: {
+                curve: "straight",
+                width: 3
+            },
+            colors: ["#9CA6FF"],
+            annotations: {
+                yaxis: [
+                    {
+                        y: 300,
+                        borderColor: "#FF4560",
+                        label: {
+                            borderColor: "#FF4560",
+                            style: {
+                                color: "#fff",
+                                background: "#FF4560"
+                            },
+                            text: "Peak Power (300W)"
+                        }
+                    }
+                ]
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#power-usage-chart"), options);
+        chart.render();
+
+        // Function to update chart when dropdown is changed
+        function updateChart() {
+            selectedRange = document.getElementById("timeRange").value;
+            chartData = getChartData(selectedRange);
+            
+            chart.updateOptions({
+                xaxis: { categories: chartData.categories },
+                series: [{ data: chartData.values }]
+            });
+        }
+    </script>
+</body>
+</html>
+

@@ -6983,10 +6983,6 @@ details.collapse summary::-webkit-details-marker {
     grid-column: span 6 / span 6;
   }
 
-  .xl\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
   .xl\:col-start-1 {
     grid-column-start: 1;
   }
@@ -7001,10 +6997,6 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:col-start-7 {
     grid-column-start: 7;
-  }
-
-  .xl\:col-start-auto {
-    grid-column-start: auto;
   }
 
   .xl\:col-end-6 {

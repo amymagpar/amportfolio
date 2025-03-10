@@ -11,7 +11,7 @@
 
 @layer base {
   body {
-    @apply lg:text-lg;
+    @apply md:text-lg leading-snug;
   }
   h2:not(:first-child) {
     @apply mt-12;
@@ -30,10 +30,10 @@
     @apply mt-2;
   }
   h1 {
-    @apply text-6xl font-black uppercase lg:text-7xl;
+    @apply text-4xl lg:text-5xl 2xl:text-6xl font-black uppercase lg:text-7xl;
   }
   h2 {
-    @apply text-2xl lg:text-3xl;
+    @apply text-2xl lg:text-3xl 2xl:text-3xl border-b-2 border-zinc-500 border-dotted pb-1 mb-2 lg:mb-4;
   }
   h3 {
     @apply text-lg font-bold lg:text-xl;

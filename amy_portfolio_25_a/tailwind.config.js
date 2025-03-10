@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./site/**/*.{html,js,lr}", "./site/**/*.html"],
   theme: {
+    colors: {
+      black: "#18181b",
+      white: "#fafafa",
+    },
     extend: {
       borderRadius: {
         big: "42px",

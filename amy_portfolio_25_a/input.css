@@ -30,10 +30,10 @@
     @apply mt-2;
   }
   h1 {
-    @apply text-4xl lg:text-5xl 2xl:text-6xl font-display font-semibold tracking-tighter mb-4;
+    @apply text-4xl  sm:text-5xl 2xl:text-6xl font-display font-bold tracking-tight text-pretty mb-4;
   }
   h2 {
-    @apply text-2xl lg:text-3xl 2xl:text-3xl border-b-2 pb-1 mb-2 lg:mb-4;
+    @apply text-3xl lg:text-4xl 2xl:text-4xl font-extralight mb-2 xl:mb-4;
   }
   h3 {
     @apply text-lg font-bold lg:text-xl;

@@ -66,12 +66,12 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 sm:backdrop-blur-md bg-white sm:bg-white/20">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40 sm:backdrop-blur-md bg-white sm:bg-white/20 ">
     <div class="container">
     <div class="overflow-hidden  navbar p-0 h-10 sm:h-12">
       <div class="navbar-start left-0">
         <ul class="list-none pl-0">
-        <li>
+        <li class=" ">
         <a class="no-underline not-italic text-zinc-900" href="/">Amy Parness</a>
         </li>
         </ul>
@@ -274,7 +274,7 @@ function reveal() {
   for (let i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 150;
+    const elementVisible = 0;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");

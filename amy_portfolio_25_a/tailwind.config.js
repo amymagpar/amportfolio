@@ -10,8 +10,8 @@ module.exports = {
         lg: "2rem",
         xl: "2rem",
         "2xl": "3rem",
-        "3xl": "3rem",
-        "3xl": "4rem",
+        // "3xl": "3rem",
+        // "3xl": "4rem",
       },
     },
     extend: {
@@ -20,8 +20,8 @@ module.exports = {
         white: "#fafafa",
       },
       screens: {
-        "3xl": "1900px",
-        "4xl": "2600px",
+        // "3xl": "1900px",
+        // "4xl": "2600px",
       },
       borderRadius: {
         big: "42px",

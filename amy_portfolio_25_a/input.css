@@ -10,8 +10,11 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply bg-white text-black xl:text-lg leading-snug;
+    @apply bg-white text-black xl:text-lg;
   }
   h2:not(:first-child) {
     @apply mt-12;
@@ -42,7 +45,7 @@
     @apply font-bold;
   }
   a {
-    @apply italic underline decoration-dotted text-zinc-500;
+    @apply italic underline decoration-2 hover:decoration-1 decoration-dotted  hover:decoration-solid visited:decoration-dashed hover:decoration-zinc-600  text-zinc-600 hover:text-zinc-900;
   }
   p {
     @apply text-pretty leading-tight tracking-tight mb-4;

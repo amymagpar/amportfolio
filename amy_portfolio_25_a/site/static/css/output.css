@@ -4390,6 +4390,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 2rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -4697,6 +4701,11 @@ details.collapse summary::-webkit-details-marker {
 
 .list-none {
   list-style-type: none;
+}
+
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
 }
 
 .grid-cols-12 {
@@ -6857,6 +6866,14 @@ details.collapse summary::-webkit-details-marker {
     grid-column-start: 2;
   }
 
+  .sm\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .sm\:row-start-1 {
+    grid-row-start: 1;
+  }
+
   .sm\:mb-24 {
     margin-bottom: 6rem;
   }
@@ -7233,6 +7250,10 @@ details.collapse summary::-webkit-details-marker {
     grid-column: span 8 / span 8;
   }
 
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:col-start-1 {
     grid-column-start: 1;
   }
@@ -7351,6 +7372,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:border-2 {
@@ -7583,6 +7608,10 @@ details.collapse summary::-webkit-details-marker {
     grid-row-start: 12;
   }
 
+  .xl\:row-start-7 {
+    grid-row-start: 7;
+  }
+
   .xl\:mb-32 {
     margin-bottom: 8rem;
   }
@@ -7771,8 +7800,32 @@ details.collapse summary::-webkit-details-marker {
     grid-column: span 4 / span 4;
   }
 
+  .\33xl\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .\33xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .\33xl\:col-start-1 {
     grid-column-start: 1;
+  }
+
+  .\33xl\:col-start-7 {
+    grid-column-start: 7;
+  }
+
+  .\33xl\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .\33xl\:col-end-6 {
+    grid-column-end: 6;
+  }
+
+  .\33xl\:row-start-5 {
+    grid-row-start: 5;
   }
 
   .\33xl\:w-\[300px\] {

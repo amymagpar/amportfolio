@@ -68,4 +68,7 @@
   em {
     @apply italic;
   }
+  .bevel {
+    @apply border border-[#fff] border-b-zinc-200 border-r-zinc-200 ring-1 ring-black/10;
+  }
 }

@@ -16,8 +16,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        black: "#18181b",
+        black: "#27272a",
         white: "#fafafa",
+        tonered: "#e88b8b",
+        toneorange: "#f0a875",
+        toneyellow: "#e8cc70",
+        tonegreen: "#84c49a",
+        toneblue: "#84c4e0",
+        tonepink: "#d685ab",
+        toneviolet: "#b187c4",
       },
       screens: {
         // "3xl": "1900px",
@@ -26,12 +33,29 @@ module.exports = {
       borderRadius: {
         big: "42px",
         huge: "128px",
+        circle: "50%",
       },
       fontFamily: {
-        sans: ['"Red Hat Text"', "sans-serif"],
-        body: ['"Red Hat Text"', "sans-serif"],
-        display: ['"Red Hat Display"', "sans-serif"],
+        sans: ['"Inter"', "sans-serif"],
+        body: ['"Inter"', "sans-serif"],
+        // display: ['"Red Hat Display"', "sans-serif"],
+        display: ['"Inter"', "sans-serif"],
         mono: ["ui-monospace", "monospace"],
+      },
+
+      fontSize: {
+        sm: ["0.875rem", { lineHeight: "1.375" }], // `leading-snug`
+        base: ["1rem", { lineHeight: "1.375" }],
+        lg: ["1.125rem", { lineHeight: "1.375" }],
+        xl: ["1.25rem", { lineHeight: "1.375" }],
+        "2xl": ["1.5rem", { lineHeight: "1.375" }],
+        "3xl": ["1.875rem", { lineHeight: "1.375" }],
+        "4xl": ["2.25rem", { lineHeight: "1.375" }],
+        "5xl": ["3rem", { lineHeight: "1.375" }],
+        "6xl": ["3.75rem", { lineHeight: "1.375" }],
+        "7xl": ["4.5rem", { lineHeight: "1.375" }],
+        "8xl": ["6rem", { lineHeight: "1.375" }],
+        "9xl": ["8rem", { lineHeight: "1.375" }],
       },
     },
   },
@@ -57,6 +81,7 @@ module.exports = {
           error: "#ff6e54",
         },
       },
+      "dark",
       "corporate",
     ],
   },

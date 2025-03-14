@@ -14,7 +14,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-white text-black xl:text-lg;
+    @apply bg-white text-black leading-snug;
   }
   h2:not(:first-child) {
     @apply mt-12;
@@ -32,8 +32,14 @@
   p:not(:first-child) {
     @apply mt-2;
   }
+  .headline {
+    @apply text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-6xl  mt-0 tracking-tight mb-2;
+  }
+  .badgelist {
+    @apply flex flex-wrap gap-1 lg:gap-2 mt-0 mb-8;
+  }
   h1 {
-    @apply text-4xl  sm:text-5xl 2xl:text-6xl font-display font-bold tracking-tight text-pretty mb-4;
+    @apply text-4xl  sm:text-5xl 2xl:text-6xl font-display font-bold text-pretty mb-4;
   }
   h2 {
     @apply text-3xl lg:text-4xl 2xl:text-4xl font-extralight mb-2 xl:mb-4;
@@ -48,7 +54,8 @@
     @apply italic underline decoration-2 hover:decoration-1 decoration-dotted  hover:decoration-solid visited:decoration-dashed hover:decoration-zinc-600  text-zinc-600 hover:text-zinc-900;
   }
   p {
-    @apply text-pretty leading-tight tracking-tight mb-4;
+    @apply text-pretty  mb-4;
+    /* @apply text-pretty leading-tight tracking-tight mb-4; */
   }
   ul {
     @apply list-disc pl-5;

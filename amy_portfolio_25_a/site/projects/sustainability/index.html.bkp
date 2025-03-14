@@ -1,37 +1,39 @@
-<!DOCTYPE HTML>
-<html data-theme="mytheme" class="h-full" lang="en">
-  <head>
-  <meta charset="UTF-8" >
+<!doctype html>
+<html data-theme="mytheme" class="h-full">
+  <meta charset="UTF-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=yes"
-  >
-  <meta http-equiv="x-ua-compatible" content="ie=edge" >
+  />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Scaling Sustainability</title>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
-  >
+  />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
-    <link rel="stylesheet" href="/static/css/output.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <head>
+    <link rel="stylesheet" href="/static/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link -->
       <!-- href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" -->
       <!-- rel="stylesheet" -->
     <!-- /> -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    
+
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   <body class="">
-    <div class=" lg:h-screen  flex flex-col content-stretch">
-      <div class="container h-screen lg:h-full  flex place-content-center py-12">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="container pt-12">
         <div
-          class=" flex flex-col  lg:flex-row w-full md:gap-8 lg:gap-16 xl:gap-24  items-center justify-center "
+          id=""
+          class="flex flex-col md:flex-row w-full gap-8 xl:gap-24 mb-2 sm:mb-4 items-center"
         >
-          <div class="lg:w-[50%] h-min">
+          <div class="basis-4/12">
             <div class="font-display font-light text-xl 2xl:text-2xl m-0">
               Cisco Systems
             </div>
@@ -40,32 +42,32 @@
             </h1>
             <div class="badgelist">
               <span
-                class="badge badge-sm  xl:badge-md bg-zinc-700 border-zinc-700 text-white"
+                class="badge badge-sm sm:badge-md lg:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >sustainability</span
               >
               <span
-                class="badge badge-sm  xl:badge-md bg-zinc-700 border-zinc-700 text-white"
+                class="badge badge-sm sm:badge-md lg:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >strategy</span
               >
               <span
-                class="badge badge-sm  xl:badge-md bg-zinc-700 border-zinc-700 text-white"
+                class="badge badge-sm sm:badge-md lg:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >design</span
               >
               <span
-                class="badge badge-sm  xl:badge-md bg-zinc-700 border-zinc-700 text-white"
+                class="badge badge-sm sm:badge-md lg:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >collaboration</span
               >
             </div>
             <div
               id="tldr"
-              class="md:mb-4 leading-tight"
+              class="text-lg mb-4 leading-tight"
             >
-              <div class="h ">
+              <div class="">
                 <p class="   ">
                   At <em>Cisco</em>, fragmented sustainability data and poor
                   information architecture were causing lost sales
                   opportunities, with only <strong>20% of customers aware of
-                  <span class="whitespace-no-wrap">end-of-life</span> programs and
+                  <nobr>end-of-life</nobr> programs and
                   climate-focused RFP response times stretching
                   to 3+ weeks.</strong>
                 </p>
@@ -73,98 +75,46 @@
                               </div>
             </div>
           </div>
-          <div class="w-full lg:w-[50%] ">
           <div
-            class="aspect-square w-full   bg-zinc-200  flex place-content-center overflow-hidden rounded-sm " >
+            class="basis-8/12 flex place-content-center overflow-hidden xl:jutify-end  aspect-square mb-8   rounded-sm"
+          >
             <div
               id="chart"
-              class="w-full h-full relative -let:15 md:eft-3 -top-0  mix-blend-multiply "
+              class="w-full h-min relative left-3 -top-0 mix-blend-multiply "
             ></div>
-        </div>
-        </div>
-        </div>
-      </div>
-
-    <!-- Impact -->
-<div
-      class="w-full  bg-tonered text-zinc-500 leading-snug  py-8 xl:py-12"
-    >
-      <div class="container mix-blend-multiply mb-8 xl:mb-0">
-        <h1 class="text-right  mb-8">Impact</h1>
-        <div
-          class="grid w-full md:grid-cols-2 lg:grid-cols-5 2xl:grid-cols-6 gap-6 xl:gap-8 border-t border-t-2 border-zinc-500"
-        >
-          <div
-            class="2xl:col-start-2 lg:col-start-1 pt-0 mt-2 "
-          >
-            <div class="font-extrabold text-xl"leading-tighter >
-              Reduced RFP Response Times
-            </div>
-            <p class="mt-2 mb-0">
-              Response times dropped from weeks to days or hours.
-            </p>
-          </div>
-          <div class="pt-0 mt-2 ">
-            <div class="font-extrabold text-xl"leading-tighter >Surfacing Sustainability</div>
-            <p class="mt-2 mb-0">
-              Product page engagement increased as applicable sustainability
-              features became more visible.
-            </p>
-          </div>
-          <div class="pt-0 mt-2 ">
-            <div class="font-extrabold text-xl"leading-tighter >Environmental Education</div>
-            <p class="mt-2 mb-0">
-              Sales teams reported higher confidence in discussing
-              sustainability data.
-            </p>
-          </div>
-          <div class="pt-0 mt-2 ">
-            <div class="font-extrabold text-xl"leading-tighter >Customer Awareness</div>
-            <p class="mt-2 mb-0">
-              Awareness of end-of-life programs rose from 20% to 55%
-            </p>
-          </div>
-          <div class="pt-0 mt-2 ">
-            <div class="font-extrabold text-xl"leading-tighter >6 teams</div>
-            <p class="mt-2 mb-0">
-              Cross-functional alignment between engineering sustainability,
-              product marketing, product, UXR, design, and sales.
-            </p>
           </div>
         </div>
       </div>
     </div>
-          
-      </div>
-    
-    <!-- stuff -->
+    <!-- Impact -->
     <div
-      class="bg-toneviolet shadow-sm text-zinc-500 leading-snug py-24 lg:py-48 2xl:py-64"
-    >
-
-      <!-- style="
+      class="bg-zinc-900 shadow-sm text-zinc-50 py-24 lg:py-48 2xl:py-64"
+      style="
         background-image: linear-gradient(
           135deg,
-          #d0d0d0 42%,
-          #dfdfdf 42%,
-          #dfdfdf 48%,
-          #d0d0d0 48%,
-          #d0d0d0 92%,
-          #dfdfdf 92%,
-          #dfdfdf 100%
+          #18181b 42%,
+          #27272a 42%,
+          #27272a 48%,
+          #18181b 48%,
+          #18181b 92%,
+          #27272a 92%,
+          #27272a 100%
         );
         background-size: 16px 16px;
         background-attachment: fixed;
-      " -->
-      <div class="container mix-blend-multiply">
-          <h1 class=" mb-8">Opportunities</h1>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8 border-t border-t-2 border-zinc-500 ">
+      "
+    >
+      <div class="container">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8">
+          <h1 class="sm:col-span-2 lg:col-span-5 text-right">Opportunities</h1>
           <div class="">
-            <div class="py-4 pt-0">
-              <div class="font-bold text-xl leading-tighter mt-1">
+          </div>
+          <div class="">
+            <div class="border-t border-t-2 border-zinc-50 py-4 pt-4">
+              <div class="font-bold text-2xl mt-1">
                 Campaigns and sales tools.
               </div>
-              <p class="mt-2">
+              <p class="mt-4">
                 Sustainable solutions were transformed into key features in the
                 sales funnel. The visibility of product and solutions' energy
                 certifications and power management capabilities were
@@ -173,9 +123,9 @@
             </div>
           </div>
           <div class="   ">
-            <div class=" py-4 pt-0">
-              <div class="font-bold text-xl leading-tighter mt-1">Consistency</div>
-              <p class="mt-2">
+            <div class="border-t border-t-2 border-zinc-50 py-4 pt-4">
+              <div class="font-bold text-2xl mt-1">Consistency</div>
+              <p class="mt-4">
                 Energy certifications and data points were integrated into
                 product pages, marketing materials, and user interfaces to
                 reinforce this information throughout the user journey. Critical
@@ -185,11 +135,11 @@
             </div>
           </div>
           <div class="   ">
-            <div class=" py-4 pt-0">
-              <div class="font-bold text-xl leading-tighter mt-1">
+            <div class="border-t border-t-2 border-zinc-50 py-4 pt-4">
+              <div class="font-bold text-2xl mt-1">
                 Design Guides for customers
               </div>
-              <p class="mt-2">
+              <p class="mt-4">
                 Cisco can create data center design guides and best practice
                 guides can empower Cisco's customers to make informed decisions
                 and take actionable steps toward building more sustainable data
@@ -198,52 +148,95 @@
             </div>
           </div>
           <div class="   ">
-            <div class=" py-4 pt-0">
-              <div class="font-bold text-xl leading-tighter mt-1">Value-driven AI</div>
-              <p class="mt-2">
+            <div class="border-t border-t-2 border-zinc-50 py-4 pt-4">
+              <div class="font-bold text-2xl mt-1">Value-driven AI</div>
+              <p class="mt-4">
                 Use AI to save time extracting data from product dashboard A
                 redesign of the product dashboard was not 
               </p>
             </div>
           </div>
-          <div class="">
-          </div>
         </div>
-        <h1 class=" mt-36 mb-8">Actions</h1>
+        <h1 class=" mt-36">Actions</h1>
         <div
-          class="grid w-full md:grid-cols-2 xl:grid-cols-5  gap-6 xl:gap-8 border-t border-t-2 border-zinc-500"
+          class="grid w-full md:grid-cols-2 xl:grid-cols-5  gap-6 xl:gap-8"
         >
-          <div class="pt-0 mt-2 mb-4">
-            <div class="font-extrabold text-xl"leading-tighter > Metrics </div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl"> Metrics </div>
+            <div class="border-t border-t-2 border-zinc-50 py-4 pt-4">
             <p class="mt-2">
               Response times dropped from weeks to days or hours.
             </p>
           </div>
-          <div class="pt-0 mt-2 mb-4">
-            <div class="font-extrabold text-xl"leading-tighter >Visibility</div>
+          </div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">Visibility</div>
             <p class="mt-2">
               Product page engagement increased as applicable sustainability
               features became more visible.
             </p>
           </div>
-          <div class="pt-0 mt-2 mb-4">
-            <div class="font-extrabold text-xl"leading-tighter >AI</div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">AI</div>
             <p class="mt-2">
               Sales teams reported higher confidence in discussing
               sustainability data.
             </p>
           </div>
-          <div class="pt-0 mt-2 mb-4">
-            <div class="font-extrabold text-xl"leading-tighter >Content</div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">Content</div>
             <p class="mt-2">
               Awareness of end-of-life programs rose from 20% to 55%
             </p>
           </div>
         </div>
         </div>
+        <h1 class="text-right mt-36">Impact</h1>
+        <div
+          class="grid w-full md:grid-cols-2 xl:grid-cols-5 2xl:grid-cols-6 gap-6 xl:gap-8"
+        >
+          <div
+            class="2xl:col-start-2 border-t xl:border-t-2 border-zinc-50 lg:col-start-1 pt-2 mt-4 mb-4"
+          >
+            <div class="font-extrabold text-2xl">
+              Reduced RFP Response Times
+            </div>
+            <p class="mt-2">
+              Response times dropped from weeks to days or hours.
+            </p>
+          </div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">Surfacing Sustainability</div>
+            <p class="mt-2">
+              Product page engagement increased as applicable sustainability
+              features became more visible.
+            </p>
+          </div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">Environmental Education</div>
+            <p class="mt-2">
+              Sales teams reported higher confidence in discussing
+              sustainability data.
+            </p>
+          </div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">Customer Awareness</div>
+            <p class="mt-2">
+              Awareness of end-of-life programs rose from 20% to 55%
+            </p>
+          </div>
+          <div class="border-t xl:border-t-2 border-zinc-50 pt-2 mt-4 mb-4">
+            <div class="font-extrabold text-2xl">6 teams</div>
+            <p class="mt-2">
+              Cross-functional alignment between engineering sustainability,
+              product marketing, product, UXR, design, and sales.
+            </p>
+          </div>
         </div>
+      </div>
+    </div>
     <div
-      class="bg-zinc-200 text-zinc-50 "
+      class="bg-zinc-300 text-zinc-400 "
     >
       <div class="container">
             <h1 class="text-pretty mb-12">
@@ -274,7 +267,7 @@
             <h2 class="text-pretty">My Goals</h2>
             <p class="">
               <strong
-                >Make Cisco a leader in power reporting &amp; sustainable
+                >Make Cisco a leader in power reporting & sustainable
                 networking</strong
               >. Help the team visualize how sustainability becomes a core
               strategy.
@@ -293,7 +286,7 @@
                   by 200%.
                 </p>
         <div>
-                <h4 class="mb-0">Users &amp; Stakeholders</h4>
+                <h4 class="mb-0">Users & Stakeholders</h4>
                 <ul class="list-inside mb-8">
                   <li class="mb-0">Sales teams responding to RFPs</li>
                   <li class="mb-0">Product Marketing creating product collateral</li>
@@ -308,17 +301,17 @@
         </div>
       </div>
       <div class="container py-24 lg:py-48 2xl:py-64">
-        <div class="">
-          <div class="">
+        <div class="grid sm:grid-cols-6 xl:grid-cols-12 gap-6 xl:gap-8">
+          <div class="sm:col-span-6 xl:col-start-1 xl:col-span-12">
             <h1 class="mb-8 sm:mb-14 xl:mb-16">
               Using Metrics to
               <span class="whitespace-nowrap">Drive Design</span>
             </h1>
           </div>
           <div
-            class="xl:w-1/2 "
+            class="xl:order-1 sm:col-start-2 sm:col-span-4 xl:col-span-6 xl:col-start-1 2xl:col-span-5 xl:row-start-2 xl:row-span-4 mb-12 3xl:col-span-5"
           >
-            <p class="">
+            <p class="text-lg sm:text-xl lg:text-2xl">
               During stakeholder interviews, a product engineering
               sustainability manager shared a story that crystallized our
               challenge:
@@ -327,7 +320,7 @@
               <div
                 class="before:bg-zinc-700 chat-bubble mx-auto text-[#fff] bg-zinc-700 mix-blend-multiply p-6 sm:p-10"
               >
-                <span class="text-xl italic">
+                <span class="text-xl lg:text-2xl font-light italic">
                   &quot;I have two RFPs from sales due in 48 hours requiring
                   power usage metrics for our networking solutions. I spent a
                   day just trying to find if we have this data, only to discover
@@ -335,13 +328,13 @@
                 </span>
               </div>
             </div>
-            <p class="">
+            <p class="text-lg lg:text-2xl">
               This wasn't an isolated incident. I directed the analysis of UX
               research data, including interviews, surveys, and usability
               testing, to gain deep insights into user preferences and behavior.
               Our research revealed:
             </p>
-            <ul class=" mt-12">
+            <ul class="text-lg lg:text-2xl mt-12">
               <li class="">
                 Marketing teams were surfacing generic sustainability content
                 because they did not have product-specific data
@@ -360,7 +353,7 @@
             </ul>
           </div>
           <div
-            class="mt-48"
+            class="xl:order-3 sm:col-span-3 xl:row-start-2 xl:col-start-7 xl:col-span-4"
           >
             <h2 class=" ">Mapping the disconnect</h2>
             <h3 class="">A cross-functional journey</h3>
@@ -373,17 +366,17 @@
           <div
             class="xl:order-4 sm:col-span-6 xl:col-start-7 xl:col-span-6 xl:row-start-3"
           >
-            <img alt="" src="pages-2.jpg" class="rounded shadow-xl" >
+            <img src="pages-2.jpg" class="rounded shadow-xl" />
           </div>
           <div
             class="xl:order-5 sm:col-span-6 xl:col-start-7 xl:col-span-6 xl:row-start-4 xl:row-spn-2"
           >
-            <img alt="" src="pages-1.jpg" class="rounded shadow-xl" >
+            <img src="pages-1.jpg" class="rounded shadow-xl" />
           </div>
           <div
             class="xl:order-6 sm:col-span-6 xl:col-start-7 xl:col-span-6 xl:row-start-6 mb-24"
           >
-            <img alt="" src="solutions.jpg" class="rounded shadow-xl" >
+            <img src="solutions.jpg" class="rounded shadow-xl" />
           </div>
           <div
             class="xl:order-2 sm:col-span-3 xl:col-start-1 lg:col-span-6 xl:col-span-12 xl:row-start-7 mt-48"
@@ -471,15 +464,15 @@ As one product manager noted,<br>
         <div class="xl:col-start-1 xl:col-span-12 relative">
           <div>
             <img
-alt=""               src="Product_dashboard.jpg"
+              src="Product_dashboard.jpg"
               class="bevel reveal rounded shadow-xl active mb-12 xl:mb-36"
-            >
+            />
           </div>
           <div class="absolute -top-24 right-12 z-40">
             <img
-alt=""               src="AI_sustain.jpg"
+              src="AI_sustain.jpg"
               class="border lg:border-2 border-teal-500 rounded-t-2xl reveal rounded drop-shadow-lg shadow-lg active lg:w-64 lg:w-72 xl:w-96 3xl:w-[500px] mb-12 xl:mb-36"
-            >
+            />
           </div>
         </div>
         <div class="xl:col-start-1 xl:col-span-4">
@@ -490,9 +483,9 @@ alt=""               src="AI_sustain.jpg"
         </div>
         <div class="sm:col-span-2 xl:col-start-5 xl:col-span-6">
           <img
-alt=""             src="PE_Score.jpg"
+            src="PE_Score.jpg"
             class="w-full border border-zinc-200 reveal rounded-lg shadow-xl active mb-12 xl:mb-36"
-          >
+          />
         </div>
         <div class="xl:col-start-1 xl:col-span-4">
           <h3>Beginning to map the AI tool for engineering</h3>
@@ -505,9 +498,9 @@ alt=""             src="PE_Score.jpg"
         <div class="sm:col-span-2 xl:col-start-1 xl:col-span-12">
           <a href="intentmodel_sustainability.jpeg" target="_blank">
             <img
-alt=""               src="intentmodel_sustainability.jpeg"
+              src="intentmodel_sustainability.jpeg"
               class="border border-zinc-200 reveal rounded shadow-xl active"
-          ></a>
+          /></a>
         </div>
       </div>
     </div>
@@ -532,9 +525,9 @@ alt=""               src="intentmodel_sustainability.jpeg"
           class="xl:row-strt-1  xl:col-end-13 xl:col-span-12 xl:rw-span-3"
         >
           <img
-alt=""             src="yoursmartspace-s.jpg"
+            src="yoursmartspace-s.jpg"
             class="shadow-lg rounded-lg bevel mb-4"
-          >
+          />
         </div>
         <div class="text-xl sm:col-span-2 md:col-span-1 xl:col-span-5 ">
           <p>
@@ -555,7 +548,7 @@ alt=""             src="yoursmartspace-s.jpg"
           </p>
         </div>
         <div class="sm:col-start-2 xl:col-end-13 xl:col-span-6 ">
-          <img alt="" src="scalable_pattern.jpg" class="rounded-lg shadow-lg border border-zinc-300" >
+          <img src="scalable_pattern.jpg" class="rounded-lg shadow-lg border border-zinc-300" />
         </div>
       </div>
       <div
@@ -571,16 +564,16 @@ alt=""             src="yoursmartspace-s.jpg"
         <!-- BROWSER -->
         <div class=" xl:col-span-4 mb-24 xl:row-span-8">
           <div
-            class="bevel mockup-browser w-full bg-zinc-200 shadow-lg">
+            class="bevel mockup-browser w-full bg-zinc-200 shadow-lg"">
             <div class="mockup-browser-toolbar">
               <div class="input !bg-zinc-100">https://cisco.com</div>
             </div>
             <div class="grid place-content-center w-full" style="">
               <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden">
                 <img
-alt=""                   src="eolmigration.jpg"
+                  src="eolmigration.jpg"
                   class=" mix-blend-multiply  -tp-[1100px]"
-                >
+                />
               </div>
             </div>
           </div>
@@ -593,9 +586,9 @@ alt=""                   src="eolmigration.jpg"
         </div>
         <div class="xl:col-start-5 xl:col-span-5 xl:row-start-5 xl:row-span-2 z-40">
           <img
-alt=""             src="lifecycleprograms.PNG"
+            src="lifecycleprograms.PNG"
             class="rounded-lg shadow-lg z-40 w-full border border-teal-500 "
-          >
+          />
         </div>
       </div>
       <div
@@ -620,9 +613,9 @@ alt=""             src="lifecycleprograms.PNG"
             <div class="grid place-content-center border-4 border-zinc-200 "  style="aspect-ratio:3/6;">
               <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden rounded-xl ">
                 <img
-alt=""                   src="SustainabilityProfiles.jpg"
+                  src="SustainabilityProfiles.jpg"
                   class=""
-                >
+                />
               </div>
             </div>
           </div>
@@ -642,18 +635,18 @@ alt=""                   src="SustainabilityProfiles.jpg"
             <div class="grid place-content-center"   style="aspect-ratio:3/7;">
               <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden">
                 <img
-alt=""                   src="UCSXSeriesEcoCertsMix.jpg"
+                  src="UCSXSeriesEcoCertsMix.jpg"
                   class="mix-blend-multiply relative "
-                >
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="xl:col-start-5 xl:col-span-5 xl:row-span-1 xl:row-start-4">
                 <img
-alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
+                  src="UCSXSeriesEcoCertsMix_breakout.jpg"
                   class="rounded-lg shadow-lg z-40 border border-teal-500 "
-                >
+                />
         </div>
         <div class="xl:col-start-5 xl:col-span-4 xl:row-start-5 xl:row-span-1">
           <h3 class="text-pretty">More meaningful sustainability data in the product datasheets</h3>
@@ -681,9 +674,9 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
           </div>
           <div class="xl:col-span-12">
             <img
-alt=""               src="mapping_sustainability.png"
+              src="mapping_sustainability.png"
               class="rounded-lg shadow-lg border border-sky-500 mb-24"
-            >
+            />
           </div>
           <div class="sm:col-start-1 xl:col-start-1 xl:col-span-4">
             <h2 class="">Thought Leadership</h2>
@@ -696,7 +689,7 @@ alt=""               src="mapping_sustainability.png"
             </p>
           </div>
           <div class="xl:col-start-1 xl:col-end-13 xl:col-start-6">
-            <img alt="" src="Sustainability_lead.png" class="rounded shadow-lg border border-sky-500" >
+            <img src="Sustainability_lead.png" class="rounded shadow-lg border border-sky-500" />
           </div>
         </div>
       </div>
@@ -723,7 +716,7 @@ alt=""               src="mapping_sustainability.png"
       <div class="container py-24 lg:py-48 2xl:py-64">
         <div class="grid md:grid-cols-2 xl:grid-cols-12 gap-6 md:gap-8">
           <div class="md:col-span-2 lg:col-span-1 xl:col-span-6 mb-24">
-            <h1 class="">Outcomes &amp; Learnings</h1>
+            <h1 class="">Outcomes & Learnings</h1>
             <p class="text-xl">
               The key insight wasn't just about making data accessible—it was
               about making sustainability visible at every touchpoint where it
@@ -784,7 +777,7 @@ alt=""               src="mapping_sustainability.png"
             </ul>
           </div>
           <div class="xl:col-start-7 xl:col-span-6">
-            <h2>Implementation &amp; Rollout</h2>
+            <h2>Implementation & Rollout</h2>
             <h3>Phase 1: Design System Components</h3>
             <ul>
               <li class="mb-0">Released sustainability patterns</li>
@@ -817,11 +810,11 @@ alt=""               src="mapping_sustainability.png"
     </div>
 
     <div class="container text-center py-24">
-<form action="../real-customers/">
-  <button type="submit" class="btn btn-outline text-black text-lg font-normal">
+      <a href="../real-customers/" class="">
+        <button class="btn btn-outline text-black text-lg font-normal">
           Next project &#8594;
-  </button>
-</form>    
+        </button>
+      </a>
     </div>
     <!-- Back  to top button -->
     <button
@@ -866,7 +859,7 @@ alt=""               src="mapping_sustainability.png"
             "Idle Power Manage.",
             "Energy Efficiency",
             "Longevity",
-            "Thermal Manage",
+            "Thermal Manage.",
           ],
           fontSize: "24px",
           colors: ["#18181b"],

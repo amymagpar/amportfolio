@@ -3,7 +3,6 @@ console.log("Combined JavaScript file loaded");
 // Head Component (from head.js)
 document.addEventListener("DOMContentLoaded", () => {
   const headContent = `
-  <title>A. Parness | Home</title>
 
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <style>

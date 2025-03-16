@@ -14,6 +14,7 @@ module.exports = {
         // "3xl": "4rem",
       },
     },
+
     extend: {
       colors: {
         black: "#27272a",
@@ -25,6 +26,22 @@ module.exports = {
         toneblue: "#84c4e0",
         tonepink: "#d685ab",
         toneviolet: "#b187c4",
+
+        red: "#e91c2a",
+        orange: "#f4891d",
+        yellow: "#eace29",
+        green: "#09a44f",
+        blue: "#44a0e3",
+        pink: "#d8098e",
+        violet: "#693198",
+
+        tintred: "#f4b6b6",
+        tintorange: "#8c8a0",
+        tintyellow: "#f2e1a3",
+        tintgreen: "#a8d5b8",
+        tintblue: "#add8f0",
+        tintpink: "#e6a6c9",
+        tintviolet: "#c7a6d8",
       },
       screens: {
         // "3xl": "1900px",
@@ -70,7 +87,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#003f5c",
+          primary: "#44a0e3",
           secondary: "#58508d",
           accent: "#bc5090",
           neutral: "#58508d",

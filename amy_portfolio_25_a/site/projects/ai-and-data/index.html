@@ -1,93 +1,127 @@
-<!doctype html>
-<html data-theme="mytheme" class="h-full">
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=yes"
-  />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Scaling Sustainability</title>
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
-  />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
+<!DOCTYPE html>
+<html data-theme="mytheme" class="h-full" lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Scaling Sustainability</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
     <link rel="stylesheet" href="/static/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link -->
+    <!-- href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" -->
+    <!-- rel="stylesheet" -->
+    <!-- /> -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
-  <body class="">
-    <div class="min-h-screen flex items-center justify-center">
-      <div class="container pt-12">
+  <body class="bg-white">
+    <div class="lg:h-screen flex flex-col content-stretch">
+      <div class="container h-screen lg:h-full flex place-content-center py-12">
         <div
-          id=""
-          class="grid lg:grid-cols-2 gap-6 xl:gap-8 mb-2 sm:mb-4 items-center"
+          class="flex flex-col lg:flex-row w-full md:gap-8 lg:gap-16 xl:gap-24 items-center justify-center"
         >
-          <div class="w-4/5">
+          <div class="lg:w-[50%] h-min">
             <div class="font-display font-light text-xl 2xl:text-2xl m-0">
               Cisco Meraki
             </div>
-            <h1
-              class="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl 3xl:text-6xl 4xl:text-7xl mt-0 tracking-tight"
-            >
-              AI and Marketplace
-            </h1>
-            <div class="flex flex-wrap gap-1 lg:gap-2 mb-3">
-              <span class="badge bg-zinc-700 border-zinc-700 text-white"
+            <h1 class="headline">AIp gqand Marketplace</h1>
+            <div class="badgelist">
+              <span
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >AI</span
               >
-              <span class="badge bg-zinc-700 border-zinc-700 text-white"
+              <span
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >conversational</span
               >
-              <span class="badge bg-zinc-700 border-zinc-700 text-white"
+              <span
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >chat</span
               >
-              <span class="badge bg-zinc-700 border-zinc-700 text-white"
+              <span
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >search</span
               >
             </div>
-
-            <div id="tldr" class="opacity-1 transition-all duration-300 mb-4">
-              <div class="">
+            <div id="tldr" class="md:mb-4">
+              <div class="h">
                 <p class="   ">
-                  AI-Powered API Discovery: Enhancing Developer Efficiency at
-                  Cisco Meraki
+                  <strong class="block">AI-Powered API Discovery</strong>
+                  Enhancing Developer Efficiency at Cisco Meraki
                 </p>
               </div>
             </div>
           </div>
-          <div
-            class="w-full flex place-content-center xl:jutify-end bg-gradient-to-br from-red-100 to-amber-100 aspect-square mb-8 bevel shadow-lg rounded-md"
-          >
+          <div class="w-full lg:w-[50%]">
             <div
-              id="chart"
-              class="w-full h-min relative left-3 -top-0 mix-blend-multiply p-8"
+              class="aspect-square w-full bg-zinc-200 flex place-content-center overflow-hidden rounded-sm"
             ></div>
           </div>
         </div>
       </div>
+
+      <!-- Impact -->
+      <div class="w-full bg-tonered text-zinc-600 py-8 xl:py-12">
+        <div class="container mix-blend-multiply mb-8 xl:mb-0">
+          <h1 class="text-right mb-8">Impact</h1>
+          <div
+            class="grid w-full md:grid-cols-2 lg:grid-cols-5 2xl:grid-cols-6 gap-6 xl:gap-8"
+          >
+            <div
+              class="border-t border-t-2 border-zinc-600 2xl:col-start-2 lg:col-start-1 pt-2"
+            >
+              <p class="font-extrabold text-xl">Reduced RFP Response Times</p>
+              <p class="mt-0 mb-0">
+                Response times dropped from weeks to days or hours.
+              </p>
+            </div>
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
+              <p class="font-extrabold text-xl">Surfacing Sustainability</p>
+              <p class="mt-0 mb-0">
+                Product page engagement increased as applicable sustainability
+                features became more visible.
+              </p>
+            </div>
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
+              <p class="font-extrabold text-xl">Environmental Education</p>
+              <p class="mt-0 mb-0">
+                Sales teams reported higher confidence in discussing
+                sustainability data.
+              </p>
+            </div>
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
+              <p class="font-extrabold text-xl">Customer Awareness</p>
+              <p class="mt-0 mb-0">
+                Awareness of end-of-life programs rose from 20% to 55%
+              </p>
+            </div>
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
+              <p class="font-extrabold text-xl">6 teams</p>
+              <p class="mt-0 mb-0">
+                Cross-functional alignment between engineering sustainability,
+                product marketing, product, UXR, design, and sales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="py-24">
-      <div class="container mx-auto mb-24">
-        <div class="grid gap-12">
-          <div class="prose">
-            <h1>AI chat assistant for Meraki Marketplace</h1>
-            <h2>Understanding the Problem</h2>
-            <p>
-              User research revealed that developers had to apply multiple
-              filters before finding an API that met their business needs. Their
-              searches were highly specific, requiring significant effort to
-              identify relevant matches.
-            </p>
-            <!--
+    <!--
       <ul class="list-none">
           <li><strong>Spearheaded</strong> a comprehensive data analysis project to review user journeys of sustainability-focused users.</li>
           <li><strong>Directed</strong> the analysis of UX research data, including interviews, surveys, and usability testing, to gain deep insights into user preferences and behavior.</li>
@@ -99,21 +133,53 @@
           <li><strong>Recognized</strong> that high-level sustainability information, while engaging for Press and people researching Cisco, failed to drive users to product and solution pages, necessitating a strategic overhaul.</li>
       </ul>
       -->
+    <div class="mb-48 pt-48">
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-12 gap-6 md:gap-8">
+          <div class="lg:col-span-12">
+            <h1>
+              AI chat assistant for Meraki Marketplace
+              <span class="block text-2xl font-light uppercase"
+                >Understanding the Problem</span
+              >
+            </h1>
           </div>
-          <div class="">
-            <img src="aichat01.png" class="reveal mb-4" />
-            <img src="aichat02.png" class="reveal mb-4" />
+          <div class="lg:col-span-5 lg:col-start-1">
+            <p>
+              User research revealed that developers had to apply multiple
+              filters before finding an API that met their business needs. Their
+              searches were highly specific, requiring significant effort to
+              identify relevant matches.
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-white pb-24">
-      <div class="container mx-auto mb-24">
-        <div class="mt-24">
-          <div class="prose">
-            <h1 class="mb-8">Meraki Marketplace AI search</h1>
-            <h2>Designing an AI-Powered Solution</h2>
+          <div class="lg:col-span-8">
+            <!-- BROWSER -->
+            <div class="xl:col-span-4 mb-24 xl:row-span-8">
+              <div class="bevel mockup-browser w-full bg-zinc-200 shadow-lg">
+                <div class="mockup-browser-toolbar">
+                  <div class="input !bg-zinc-100" style="width: 75% !important">
+                    https://cisco.com
+                  </div>
+                </div>
+                <div class="grid place-content-center w-full" style="">
+                  <div
+                    class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden"
+                  >
+                    <img src="aichat01.png" class="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-12">
+            <h2 class="">
+              Meraki Marketplace AI search
+              <span class="block text-lg font-normal uppercase"
+                >Designing an AI-Powered Solution</span
+              >
+            </h2>
+          </div>
+          <div class="lg:col-span-5">
             <p>
               To streamline this process, I leveraged <strong
                 ><em>Cisco’s</em> AI assistant</strong
@@ -129,48 +195,72 @@
               provide <strong>relevant, high-quality recommendations</strong>.
             </p>
           </div>
+          <div class="lg:col-span-8 my-16">
+            <!-- BROWSER -->
+            <div class="xl:col-span-4 mb-24 xl:row-span-8">
+              <div class="bevel mockup-browser w-full bg-zinc-200 shadow-lg">
+                <div class="mockup-browser-toolbar">
+                  <div class="input !bg-zinc-100" style="width: 75% !important">
+                    https://cisco.com
+                  </div>
+                </div>
+                <div class="grid place-content-center w-full" style="">
+                  <div
+                    class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden"
+                  >
+                    <a href="merakiaisearch_home.jpg">
+                      <img src="merakiaisearch_home.jpg" class="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 my-16">
+            <!-- BROWSER -->
+            <div class="xl:col-span-4 mb-24 xl:row-span-8">
+              <div class="bevel mockup-browser w-full bg-zinc-200 shadow-lg">
+                <div class="mockup-browser-toolbar">
+                  <div class="input !bg-zinc-100" style="width: 75% !important">
+                    https://cisco.com
+                  </div>
+                </div>
+                <div class="grid place-content-center w-full" style="">
+                  <div
+                    class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden"
+                  >
+                    <a href="merakiai_02.jpg">
+                      <img src="merakiai_02.jpg" class="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="grid gap-12 my-12">
-            <a href="merakiaisearch_home.jpg">
-              <img
-                src="merakiaisearch_home.jpg"
-                class="drop-shadow-lg rounded mb-4"
-              />
-            </a>
-            <div class="prose">&nbsp;</div>
+            <div class="">&nbsp;</div>
           </div>
-          <div class="grid gap-12">
-            <a href="merakiai_01.jpg">
-              <img
-                src="merakiai_01.jpg"
-                class="reveal drop-shadow-lg rounded mb-4"
-              />
-            </a>
-            <a href="merakiai_02.jpg">
-              <img
-                src="merakiai_02.jpg"
-                class="reveal drop-shadow-lg rounded mb-4"
-              />
-            </a>
-          </div>
+          <div class="grid gap-12"></div>
         </div>
       </div>
     </div>
     <!--
 <div class="bg-white py-32">
   <div class="container mx-auto mb-24 px-4">
-    <div class="prose mb-16">
+    <div class=" mb-16">
       <h1>Data Visualization</h1>
     </div>
     <div class="grid sm:grid-cols-2 gap-12 mb-16">
-      <div class="prose">&nbsp;</div>
-      <div class="prose">
+      <div class="">&nbsp;</div>
+      <div class="">
         <h2 class="mb-4">Before:</h2>
         <img src="assurance.jpg" class="reveal mb-4" />
       </div>
     </div>
     <div class="grid gap-12">
       <div class="">
-        <div class="prose">
+        <div class="">
           <h2 class="mb-4">After:</h2>
         </div>
         <img src="bar.jpg" class="reveal mb-4" />
@@ -181,7 +271,7 @@
 
 <div class="bg-secondary py-40">
   <div class="container mx-auto mb-24 px-4">
-    <div class="prose">
+    <div class="">
       <h2 class="mb-4">Before:</h2>
     </div>
     <div class="grid sm:grid-cols-2 gap-12 mb-24">
@@ -194,7 +284,7 @@
     </div>
     <div class="grid gap-12">
       <div class="">
-        <div class="prose">
+        <div class="">
           <h2 class="mb-4">After:</h2>
         </div>
         <img
@@ -211,14 +301,14 @@
     <div class="grid md:grid-cols-2 gap-12 mb-24">
       <div class="">&nbsp;</div>
       <div class="">
-        <div class="prose">
+        <div class="">
           <h2 class="mb-4">Before:</h2>
         </div>
         <img src="beforetechplanning.png" class="reveal mb-4" />
       </div>
     </div>
     <div class="">
-      <div class="prose">
+      <div class="">
         <h2 class="mb-4">After:</h2>
       </div>
       <video class="w-full" width="" height="" autoplay loop>
@@ -232,7 +322,7 @@
     <div class="py-40">
       <div class="container mx-auto">
         <div class="grid md:grid-cols-2 gap-12 mb-24">
-          <div class="prose">
+          <div class="">
             <h1>Educating the Team on AI Implementation</h1>
             <p>
               To align stakeholders across <strong
@@ -264,11 +354,11 @@
     </div>
     <div class="bg-white py-40">
       <div class="container mx-auto mb-24">
-        <div class="prose mb-12">
+        <div class="mb-12">
           <h1>Experimenting with AI for Personalized User Engagement</h1>
         </div>
         <div class="grid md:grid-cols-2 gap-12 mb-24">
-          <div class="prose">
+          <div class="">
             <p>
               Beyond my work at Cisco, I explored AI’s potential by designing
               a <strong>custom chatbot using Google’s Dialogflow CX</strong>. By

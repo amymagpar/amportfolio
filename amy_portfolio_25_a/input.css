@@ -7,6 +7,12 @@
   .navbar {
     min-height: unset;
   }
+  .headline {
+    @apply text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-6xl lg:leading-[3.25rem] my-0;
+  }
+  .badgelist {
+    @apply flex flex-wrap gap-1 lg:gap-2 mt-3 mb-8;
+  }
 }
 
 @layer base {
@@ -31,12 +37,6 @@
   }
   p:not(:first-child) {
     @apply mt-2;
-  }
-  .headline {
-    @apply text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-6xl  mt-0 tracking-tight mb-2;
-  }
-  .badgelist {
-    @apply flex flex-wrap gap-1 lg:gap-2 mt-0 mb-8;
   }
   h1 {
     @apply text-4xl  sm:text-5xl 2xl:text-6xl font-display font-bold text-pretty mb-4;

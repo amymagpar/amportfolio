@@ -4185,13 +4185,13 @@ details.collapse summary::-webkit-details-marker {
   .headline {
     font-size: 3.75rem;
     line-height: 1.375;
-    line-height: 3.25rem;
+    line-height: 3.5rem;
   }
 }
 
 .badgelist {
-  margin-top: 0.75rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
@@ -4317,6 +4317,10 @@ details.collapse summary::-webkit-details-marker {
 
 .z-50 {
   z-index: 50;
+}
+
+.order-last {
+  order: 9999;
 }
 
 .col-span-12 {
@@ -4534,15 +4538,6 @@ details.collapse summary::-webkit-details-marker {
   height: 100%;
 }
 
-.h-min {
-  height: -moz-min-content;
-  height: min-content;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
@@ -4709,10 +4704,6 @@ details.collapse summary::-webkit-details-marker {
   place-content: center;
 }
 
-.content-stretch {
-  align-content: stretch;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -4723,6 +4714,10 @@ details.collapse summary::-webkit-details-marker {
 
 .items-baseline {
   align-items: baseline;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -5049,6 +5044,21 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
 }
 
+.bg-tintblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(173 216 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tintorange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 200 160 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tintyellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 225 163 / var(--tw-bg-opacity, 1));
+}
+
 .bg-toneblue {
   --tw-bg-opacity: 1;
   background-color: rgb(132 196 224 / var(--tw-bg-opacity, 1));
@@ -5146,6 +5156,11 @@ details.collapse summary::-webkit-details-marker {
 .bg-zinc-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tintred {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 182 182 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -5396,6 +5411,10 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 16rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -5513,6 +5532,10 @@ details.collapse summary::-webkit-details-marker {
 
 .leading-10 {
   line-height: 2.5rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .leading-\[6rem\] {
@@ -6422,10 +6445,6 @@ details.collapse summary::-webkit-details-marker {
     height: 3rem;
   }
 
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
   .sm\:max-h-full {
     max-height: 100%;
   }
@@ -6604,10 +6623,6 @@ details.collapse summary::-webkit-details-marker {
     display: grid;
   }
 
-  .md\:h-auto {
-    height: auto;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -6709,6 +6724,10 @@ details.collapse summary::-webkit-details-marker {
     top: 3.5rem;
   }
 
+  .lg\:order-first {
+    order: -9999;
+  }
+
   .lg\:order-last {
     order: 9999;
   }
@@ -6761,6 +6780,10 @@ details.collapse summary::-webkit-details-marker {
     grid-column-start: 6;
   }
 
+  .lg\:col-start-4 {
+    grid-column-start: 4;
+  }
+
   .lg\:col-end-13 {
     grid-column-end: 13;
   }
@@ -6769,12 +6792,17 @@ details.collapse summary::-webkit-details-marker {
     grid-column-end: 6;
   }
 
-  .lg\:col-end-7 {
-    grid-column-end: 7;
-  }
-
   .lg\:row-span-1 {
     grid-row: span 1 / span 1;
+  }
+
+  .lg\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .lg\:my-48 {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
   }
 
   .lg\:mb-10 {
@@ -6805,16 +6833,16 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 2rem;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .lg\:mt-64 {
     margin-top: 16rem;
   }
 
   .lg\:grid {
     display: grid;
-  }
-
-  .lg\:h-full {
-    height: 100%;
   }
 
   .lg\:h-screen {
@@ -6829,12 +6857,20 @@ details.collapse summary::-webkit-details-marker {
     width: 75%;
   }
 
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .lg\:w-5\/6 {
     width: 83.333333%;
   }
 
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .lg\:w-72 {
@@ -6847,10 +6883,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-96 {
     width: 24rem;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 
   .lg\:w-full {
@@ -6933,6 +6965,11 @@ details.collapse summary::-webkit-details-marker {
     border-width: 2px;
   }
 
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -6964,6 +7001,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-48 {
     padding-top: 12rem;
+  }
+
+  .lg\:pb-48 {
+    padding-bottom: 12rem;
   }
 
   .lg\:text-2xl {
@@ -7115,6 +7156,11 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 3rem;
   }
 
+  .xl\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1.375;
@@ -7130,12 +7176,24 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:order-last {
+    order: 9999;
+  }
+
+  .\32xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .\32xl\:col-span-4 {
     grid-column: span 4 / span 4;
   }
 
-  .\32xl\:col-start-2 {
-    grid-column-start: 2;
+  .\32xl\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .\32xl\:col-start-6 {
+    grid-column-start: 6;
   }
 
   .\32xl\:mx-auto {
@@ -7143,8 +7201,29 @@ details.collapse summary::-webkit-details-marker {
     margin-right: auto;
   }
 
+  .\32xl\:my-64 {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+  }
+
+  .\32xl\:mr-48 {
+    margin-right: 12rem;
+  }
+
+  .\32xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .\32xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .\32xl\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .\32xl\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .\32xl\:grid-cols-2 {
@@ -7166,6 +7245,18 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:py-64 {
     padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .\32xl\:pr-48 {
+    padding-right: 12rem;
+  }
+
+  .\32xl\:pt-64 {
+    padding-top: 16rem;
+  }
+
+  .\32xl\:pb-64 {
     padding-bottom: 16rem;
   }
 

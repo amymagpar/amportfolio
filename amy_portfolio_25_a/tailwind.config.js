@@ -36,7 +36,7 @@ module.exports = {
         fullviolet: "#693198",
 
         tintred: "#f4b6b6",
-        tintorange: "#8c8a0",
+        tintorange: "#f8c8a0",
         tintyellow: "#f2e1a3",
         tintgreen: "#a8d5b8",
         tintblue: "#add8f0",

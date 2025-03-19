@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
     />
+    <link href="/static/css/lightbox.min.css" rel="stylesheet" />
   </head>
 
   <body class="flex-col bg-white">
@@ -93,10 +94,10 @@
       </div>
 
       <!-- Impact -->
-      <div class="w-full bg-toneyellow text-zinc-600 py-16 xl:py-12">
+      <div class="w-full bg-toneyellow text-zinc-600 py-16 xl:py-36">
         <div class="container mix-blend-multiply mb-8 xl:mb-0">
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="leading-snug">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
               <h3 class="font-extrabold uppercase whitespace-nowrap">
                 Business Goals
               </h3>
@@ -107,7 +108,7 @@
               </p>
             </div>
 
-            <div class="leading-snug">
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
               <h3 class="font-extrabold uppercase whitespace-nowrap">
                 Challenges
               </h3>
@@ -118,7 +119,7 @@
                 launch?
               </p>
             </div>
-            <div class="leading-snug">
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
               <h3 class="font-extrabold uppercase whitespace-nowrap">
                 Solutions
               </h3>
@@ -130,7 +131,7 @@
                 Created an ADA compliant Design System.
               </p>
             </div>
-            <div class="leading-snug">
+            <div class="border-t border-t-2 border-zinc-600 pt-2">
               <h3 class="font-extrabold uppercase whitespace-nowrap">Role</h3>
               <p>
                 UX Manager- Design management governance. Managed a team of
@@ -147,7 +148,7 @@
 
     <div class="py-24 lg:py-48 2xl:py-64">
       <div class="container mx-auto px-4">
-        <div class="mb-8">
+        <div class="mb-48">
           <h1 class="">Design system and components</h1>
           <p class="">
             A Design System and components had to be created for both sites with
@@ -157,7 +158,7 @@
             quickly throughout all of the pages.
           </p>
         </div>
-        <div class="grid sm:grid-cols-2 gap-8">
+        <div class="grid sm:grid-cols-2 gap-6">
           <div>
             <a href="search.png" target="_blank">
               <img src="search.png" class="responsive shadow-lg rounded" />
@@ -183,7 +184,7 @@
       allowfullscreen
     ></iframe>
 
-    <div class="bg-toneorange text-zinc-600 py-24 xl:py-48 my-0">
+    <div class="bg-toneorange text-zinc-600 py-36 xl:py-64 my-0">
       <div class="container mx-auto px-4">
         <div class="mb-8 mix-blend-multiply">
           <h1>ADA compliance</h1>
@@ -194,7 +195,7 @@
             colors for products were some of the changes we made.
           </p>
         </div>
-        <div class="grid sm:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-3 gap-6">
           <div>
             <img src="outlines.png" class="responsive shadow-md rounded" />
           </div>
@@ -210,21 +211,29 @@
 
     <div class="py-24 my-24">
       <div class="container mx-auto px-4">
-        <div class="mb-8">
+        <div class="mb-24">
           <h1>Final ADA compliant responsive designs</h1>
         </div>
-        <div class="grid sm:grid-cols-4 gap-8">
+        <div class="grid sm:grid-cols-4 gap-6">
           <div>
             <a href="full_hp_at_1.png" target="_blank">
-              <img
-                src="full_hp_at_1.png"
-                class="responsive shadow-lg rounded"
-              />
+              <div
+                class="border-2 border-zinc-500 overflow-auto h-[800px] shadow-lg rounded-2xl"
+              >
+                <img src="full_hp_at_1.png" class="responsive" />
+              </div>
             </a>
           </div>
           <div class="sm:col-span-3">
             <a href="hp_provided.png" target="_blank">
-              <img src="hp_provided.png" class="responsive shadow-lg rounded" />
+              <div
+                class="border-2 border-zinc-500 overflow-auto h-[800px] shadow-lg rounded-2xl"
+              >
+                <img
+                  src="hp_provided.png"
+                  class="responsive shadow-lg rounded"
+                />
+              </div>
             </a>
           </div>
         </div>

@@ -26,7 +26,7 @@ module.exports = {
         toneblue: "#84c4e0",
         tonepink: "#d685ab",
         toneviolet: "#b187c4",
-
+        tonebrown: "#796456",
         fullred: "#e91c2a",
         fullorange: "#f4891d",
         fullyellow: "#eace29",
@@ -34,7 +34,7 @@ module.exports = {
         fullblue: "#44a0e3",
         fullpink: "#d8098e",
         fullviolet: "#693198",
-
+        fullbrown: "#5e2f0f",
         tintred: "#f4b6b6",
         tintorange: "#f8c8a0",
         tintyellow: "#f2e1a3",
@@ -42,6 +42,7 @@ module.exports = {
         tintblue: "#add8f0",
         tintpink: "#e6a6c9",
         tintviolet: "#c7a6d8",
+        tintbrown: "#a7856e",
       },
       screens: {
         // "3xl": "1900px",

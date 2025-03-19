@@ -25,6 +25,7 @@
     <!-- /> -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="/static/css/lightbox.min.css" rel="stylesheet" />
       </head>
   <body class="bg-white">
   <div class=" lg:h-screen  flex flex-col ">
@@ -72,7 +73,7 @@
             </div>
           </div>
           <div class=" flex w-full lg:w-5/12 2xl:w-5/12 aspect-square justify-end">
-            <div class="bg-zinc-200 aspect-square flex place-content-center overflow-hidden rounded-sm " >
+            <div class=" aspect-square flex place-content-center overflow-hidden rounded-sm " >
               <div id="chart" class="w-full h-full relative -left:15 md:left-3 -top-0  mix-blend-multiply " ></div>
             </div>
           </div>
@@ -82,13 +83,13 @@
 
     <!-- Impact -->
 <div
-      class=" bg-tonered  text-zinc-600 py-8 xl:py-12"
+      class=" bg-tonered  text-zinc-600 py-12 xl:py-12"
     >
       <div class="container mix-blend-multiply mb-8 xl:mb-0">
         <div
           class="grid w-full md:grid-cols-2 lg:grid-cols-5 2xl:grid-cols-6  gap-6 "
         >
-          <h1 class="text-right order-last mb-0 leading-7 lg:col-span-5 2xl:col-span-1 lg:col-start-1 2xl:col-start-6 lg:order-first 2xl:order-last lg:mt-4 2xl:mt-0 mb-2">Impact</h1>
+          <h1 class="text-right mb-0 leading-7 md:col-span-2 lg:col-span-5 2xl:col-span-1 lg:col-start-1 2xl:col-start-6 lg:order-first 2xl:order-last lg:mt-4 2xl:mt-0 mb-2">Impact</h1>
           <div class="border-t border-t-2 border-zinc-600 2xl:col-start-1 pt-2">
           <p class="text-xl font-extrabold leading-tight  my-0">Reduced RFP Response Times</p><p class="my-0">
           Response times dropped from weeks to days or hours.<p>
@@ -117,12 +118,12 @@
       </div>
     </div>
   </div>
-    
-      <div class="bg-zinc-300 text-zinc-600 ">
+  <div class="container mt-48 pl-48"><img src='sustainIllo4.png' class="mix-blend-multiply"></div>
+      <div class="bg-toneblue text-zinc-600 ">
         <div class="container mix-blend-multiply py-24 lg:py-48 2xl:py-64">
           <h2 class="font-bold">Set-up:</h2>
-          <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-            <div class="xl:col-span-1">
+          <div class="grid md:grid-cols-2 gap-6 ">
+            <div class="">
               <p>
                 It started with the introduction of several new <strong><nobr>sustainability-focused</nobr> data center products</strong>.
                 Our tiger team was tasked to add customer-facing information about their sustainability and benefits but were given only marketing-focused copy.<br />
@@ -134,7 +135,7 @@
               </p>
             </div>
             <div class="">
-              <h3 id="users-stakeholders">Users &amp; Stakeholders</h3>
+              <h3 id="users-stakeholders ">Users &amp; Stakeholders</h3>
               <ul>
                 <li>Sales teams responding to RFPs<br /></li>
                 <li>Product Marketing creating product collateral<br /></li>
@@ -161,7 +162,7 @@
             Cohort analysis, research, and tracking 
           </h1>
         </div>
-          <div class="lg:col-start-3 lg:col-span-8">
+          <div class="md:col-span-2 lg:col-start-3 lg:col-span-8">
         <div class="bg-tonepink m-auto p-24 rounded-big shadow-xl">
             <p class="mb-0">
             <div
@@ -215,25 +216,25 @@
           <div
             class="grid md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8 my-48"
           >
-          <div class="lg:col-span-5">          
+          <div class="lg:col-span-6 2xl:col-span-12">          
            <p>
             I created a sustainability cohort in our analytics tools to analyze user journeys and opportunities.
             Working with UXR, I analyzed previous user interviews and determined subjects for research at upcoming Cisco Live events.
           </p>
         </div>
-        <div class="lg:col-span-4 lg:col-start-1">          
-        <a href="pages-2.jpg" target="_blank">
-          <img alt="" src="pages-2.jpg" class="rounded shadow-xl" >
+        <div class="lg:col-span-6 2xl:col-span-4 ">          
+        <a href="pages-2.jpg" data-lightbox="graphs">
+          <img alt="" src="pages-2.jpg" class="rounded shadow-sm border border-tintblue bg-[#fff]" >
         </a>
         </div>
-        <div class="xl: lg:col-span-4 " >
-        <a href="pages-1.jpg" target="_blank">
-          <img alt="" src="pages-1.jpg" class="rounded shadow-xl" >
+        <div class="xl: lg:col-span-6 2xl:col-span-4 " >
+        <a href="pages-1.jpg" data-lightbox="graphs">
+          <img alt="" src="pages-1.jpg" class="rounded shadow-sm border border-tintblue bg-[#fff]" >
         </a>
         </div>
-        <div class="lg:col-span-4" >
-        <a href="solutions.jpg" target="_blank">
-          <img alt="" src="solutions.jpg" class="rounded shadow-xl" >
+        <div class="lg:col-span-6 2xl:col-span-4" >
+        <a href="solutions.jpg" data-lightbox="graphs">
+          <img alt="" src="solutions.jpg" class="rounded shadow-sm border border-tintblue bg-[#fff]" >
         </a>
         </div>
       </div>
@@ -288,8 +289,9 @@
             </ol>
           </div>
         </div>
-
-
+        <div class="reltive h-[450px] overflow-hidden">
+        <img src="sustainIllo7.png" class="w-full mix-blend-multiply">
+        </div>
 <!-- opportunities -->
         <div
           class="bg-toneviolet shadow-sm text-zinc-600  py-16 lg:py-24 2xl:py-48"
@@ -347,28 +349,32 @@
             AI for Scalability
           </h1>
         </div>
-        <div class="sm:col-start-1 lg:col-start-1 lg:col-span-5 2xl:col-span-4">
-          <p>
-            During stakeholder interviews, a product engineering sustainability
-            manager shared a story that crystallized our challenge:<br />
-            “I have two RFPs from sales due in 48 hours requiring power usage metrics
-            for our networking solutions. I spent a day trying to find if we have this
-            data, only to discover it would take weeks to compile. We will lose the
-            bids.”
-          </p>
-        </div>
-        <div class=" lg:col-span-5 2xl:col-span-4">
+        <div class=" lg:col-span-5 2xl:col-span-5">
           <p class=" mb-0">
             A product dashboard existed for engineers and industrial designers to
             input attributes from manufacturing and testing while designing products.
             The dashboard has the potential to be leveraged by other teams to surface
             the customer-facing sustainability information needed to make better
-            product decisions and guide purchases. In place of a redesign, I created
+            product decisions and guide purchases.
+            </p>
+            <p>
+            In place of a redesign, I created
             an AI proof of concept to help teams extract and format sustainability
             data from the complex product database.
-            As one product manager noted, <strong>"What used to take weeks now could take minutes."</strong>
-          </p>
+            As one product manager noted,
+            </p>
         </div>
+        <div class=" lg:col-span-4 2xl:col-span-5 2xl:col-start-7 mb-64">
+              <div class="chat chat-end ">
+                <div
+                  class="before:bg-zinc-600 chat-bubble mx-auto text-[#fff] bg-zinc-600 mix-blend-multiply p-6 sm:p-10"
+                >
+                  <span class="text-xl italic">
+            "What used to take weeks now could take minutes."
+                  </span>
+                </div>
+              </div>
+              </div>
         <div class="lg:col-start-1 lg:col-span-12 relative">
           <div>
             <img alt="" src="Product_dashboard.jpg" class="bevel reveal rounded shadow-xl active mb-12 lg:mb-36 mt-24" >
@@ -403,44 +409,36 @@
       </div>
     </div>
 
-<hr class="border-violet border-2">
 <!-- Visibility -->
-    <div
-      class="container  py-24 lg:py-48 2xl:py-64"
-    >
+    <div class="bg-toneorange  py-24 lg:py-48 2xl:py-64" >
+    <div class="container " >
       <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6 mb-48">
-      <div class=" lg:col-span-12 ">
+      <div class=" lg:col-span-12 mix-blend-multiply">
       <h1 class="m-0">Positioning and Visibility</h1>
       </div>
-      <div class=" lg:col-span-6 mb-16 lg:mb-36">
+      <div class=" lg:col-span-5 mb-16 lg:mb-36">
         Customers need energy use, certification, and management information to
         choose the best products. Critical sustainability information was
         transformed from being buried to a prominent competitive advantage.
       </div>
-        <div class="lg:row-start-3 lg:col-end-13 lg:col-span-5">
-          <h2 class="">Focus areas</h2>
+        <div class="lg:col-start-1  lg:col-span-12 " >
+          <img alt=""   src="Meraki_sustain.jpg" class="shadow-lg rounded-lg bevel mb-4" >
+        </div>
+        <div class="  lg:col-span-5">
+          <h3 class="">Interactive components</h3>
     <p>
-      Prominent placement of energy certifications, end-of-life program
-      information, and clear visibility into power management capabilities were
-      my key goals.<br />
       I designed <strong>interactive elements</strong>, and clickable
       infographics to create an engaging and immersive experience.
     </p>
         </div>
-        <div
-          class="lg:col-start-1  lg:col-span-12 "
-        >
-          <img alt=""   src="yoursmartspace-s.jpg" class="shadow-lg rounded-lg bevel mb-4" >
-        </div>
-        <div class="lg:col-span-6 ">
-          <p>
-            I designed <strong> interactive elements </strong>, and clickable infographics to
-            create an engaging and immersive experience.
-          </p>
-        </div>
       </div>
       <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6 mb-48">
-        <div class="lg:col-end-6 lg:col-span-5 ">
+        <div class="  lg:col-span-7 mb-24">
+        <div class="h-[700px] overflow-hidden rounded-lg shadow-lg border border-zinc-300">
+          <img alt="" src="scalable_pattern.jpg" class="" >
+          </div>
+        </div>
+        <div class="lg:col-span-5 ">
           <h3 class="text-pretty">New components</h3>
           <p class="">
               Working with the design systems team, I developed scalable patterns
@@ -448,29 +446,26 @@
               journeys. 
           </p>
         </div>
-        <div class="sm:col-start-2 lg:col-end-13 lg:col-span-7 mb-24">
-          <img alt="" src="scalable_pattern.jpg" class="rounded-lg shadow-lg border border-zinc-300" >
-        </div>
       </div>
       <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6 mb-48">
         <!-- BROWSER -->
-        <div class=" lg:col-span-5 mb-24 lg:row-span-1">
+        <div class=" lg:col-span-5 mb-24 lg:row-span-6">
           <div
             class="bevel mockup-browser w-full bg-zinc-200 shadow-lg">
             <div class="mockup-browser-toolbar">
-              <div class="input !bg-zinc-100">https://cisco.com</div>
+              <div class="input !bg-zinc-100 !w-full !mx-auto" style="width: -moz-auto; width: 100% !important;">https://cisco.com</div>
             </div>
             <div class="grid place-content-center w-full" style="">
-              <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden h-[600px]">
+              <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden h-[1200px]">
                 <img
 alt=""                   src="eolmigration.jpg"
-                  class="relative -top-[300px]"
+                  class="relative -top-[000px]"
                 >
               </div>
             </div>
           </div>
         </div>
-        <div class="lg:col-start-6 lg:col-span-7  ">
+        <div class="lg:col-start-6 lg:col-span-7 lg:row-start-4 ">
           <h3>Highlighting our programs</h3>
           <p>
             Standardized iconography with existing Cisco design language was used to showcase lifecycle programs.
@@ -479,35 +474,16 @@ alt=""                   src="eolmigration.jpg"
         </div>
       </div>
       <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-8 mb-48">
+        <div class=" lg:col-span-12  ">
+        <img class="shadow-lg rounded" src="Sustainability_lead.png">
+        </div>
         <div class=" lg:col-span-5  ">
-          <h3 class="text-pretty">Applicable sustainability data in the product datasheets</h3>
+          <h3 class="text-pretty">Sustainability as a service</h3>
           <p class="">
-      As the UX lead for the datasheet initiative, I gained insights into the
-      data that customers find valuable when researching, upgrading, and
-      installing products. This understanding enabled our team to effectively
-      promote sustainable products and platforms by giving customers applicable
-      information.
+            Raising awareness of new CX services was important for customers. Research showed only 20% of customers knew of these offerings and my goal was to raise awareness. 
           </p>
         </div>
-        <!-- BROWSER -->
-        <div class="lg:col-end-13 lg:col-span-6 ">
-          <div
-            class="mockup-browser bevel w-full bg-zinc-200 shadow-lg mb-24"
-          >
-            <div class="mockup-browser-toolbar">
-              <div class="input !bg-zinc-100">https://cisco.com</div>
-            </div>
-            <div class="grid place-content-center border-4 border-zinc-200 "  style="aspect-ratio:3/6;">
-              <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden rounded-xl ">
-                <img
-alt=""                   src="SustainabilityProfiles.jpg"
-                  class=""
-                >
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
       <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6">
         <div class="lg:col-span-5 ">
         <!-- BROWSER -->
@@ -515,7 +491,7 @@ alt=""                   src="SustainabilityProfiles.jpg"
             class="mockup-browser bevel w-full bg-zinc-200 shadow-lg"
           >
             <div class="mockup-browser-toolbar">
-              <div class="input !bg-zinc-100">https://cisco.com</div>
+              <div class="input !bg-zinc-100" style="width: -moz-auto; width: 100% !important;">https://cisco.com</div>
             </div>
             <div class="grid place-content-center"   style="aspect-ratio:3/7;">
               <div class="lg:col-start-1 lg:col-span-6 bg-[#fff] overflow-hidden absolute">
@@ -534,9 +510,25 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
                 >
         </div>
       </div>
+      <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6 mt-48">
+        <div class="lg:col-end-7 lg:col-span-5 ">
+
+          <h3 class="text-pretty">Meraki Marketplace</h3>
+          <p class="">
+            The Meraki App Marketplace is a key driver of sales. Apss went through a certification process to be accepted to the marketplace as sustainable. These apps were previously not highlighted.          
+          </p>
+        </div>
+    <div class="lg:col-span-6 lg:col-end-13">
+      <img src="Meraki_filter_sustain.png" class="rounded-lg shadow-lg">
+    </div>
+    </div>
+    </div>
     </div>
 
 
+        <div class=" h-[500px] overflow-hidden relative">
+        <img src="sustainIllo3.png" class="w-full mix-blend-multiply absolute top-[65px]">
+        </div>
 <div class="bg-tonegreen shadow-sm text-zinc-600  py-24 lg:py-48 2xl:py-64" >
   <div class="container mix-blend-multiply">
     <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6">
@@ -590,20 +582,48 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
         <div class="grid sm:grid-cols-2 xl:grid-cols-12 gap-6 md:gap-8">
       </div>
         <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6">
-          <div class="md:col-span-2 lg:col-span-12 mb-16">
-            <h1 class="">Content Strategy for Aquisition</h1>
+          <div class="md:col-span-2 lg:col-span-12 ">
+            <h1 class="mb-0">Content Strategy for Aquisition</h1>
           </div>
-            <p class="lg:col-span-6">
+            <p class="lg:col-span-6 mt-0 ">
               After mapping the content we had and working with the SEO team, we saw opportunities to create <strong>TOFU </strong>content. I laid out a content strategy map for the team.
             </p>
           <div class="lg:col-start-1 lg:col-span-12">
             <img alt="" src="mapping_sustainability.png" class="rounded-lg shadow-lg border border-sky-500 mb-24" >
           </div>
-          <div class="lg:col-span-12">
-            <h2 class="">Thought Leadership</h2>
+        <div class=" lg:col-span-5  mt-52">
+          <h3 class="text-pretty">Applicable sustainability data in the product datasheets</h3>
+          <p class="">
+      As the UX lead for the datasheet initiative, I gained insights into the
+      data that customers find valuable when researching, upgrading, and
+      installing products. This understanding enabled our team to effectively
+      promote sustainable products and platforms by giving customers applicable
+      information.
+          </p>
+        </div>
+        <!-- BROWSER -->
+        <div class="lg:col-end-13 lg:col-span-6 ">
+          <div
+            class="mockup-browser bevel w-full bg-zinc-200 shadow-lg mb-24"
+          >
+            <div class="mockup-browser-toolbar">
+              <div class="input !bg-zinc-100" style="width: -moz-auto; width: 100% !important;">https://cisco.com</div>
+            </div>
+            <div class="grid place-content-center border-4 border-zinc-200 "  style="aspect-ratio:3/6;">
+              <div class="xl:col-start-1 xl:col-span-6 bg-[#fff] overflow-hidden rounded-xl ">
+                <img
+alt=""                   src="SustainabilityProfiles.jpg"
+                  class=""
+                >
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+        <div class="sectionA grid sm:grid-cols-2 lg:grid-cols-12 grid-rows-auto gap-6">
           <div class="lg:col-span-6">
-            <p class="">
+            <h3 class="">Thought Leadership</h3>
+            <p class="lg:col-span-6">
               To measure power accurately, standardization is key.
               Several <a href="talking-same-power-language.pdf" >white papers</a > were released to support our efforts to measure product power accurately.
               Cisco is leading these standardization efforts across the information and communications technology (ICT) industry.
@@ -614,13 +634,12 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
               marketplace.
             </p>
           </div>
-          <div class="lg:col-span-12"
+          <div class="lg:col-span-12">
             <img alt="" src="Sustainability_lead.png" class="rounded shadow-lg border border-sky-500" >
           </div>
         </div>
         </div>
-      </div>
-    </div>
+        </div>
 
 
 
@@ -632,14 +651,14 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
             <h1 class="">Outcomes &amp; Learnings</h1>
           </div>
           <div class="lg:col-span-12">
-            <p class="text-xl ">
+            <p class="text-xl lg:w-1/2">
               The key insight wasn't just about making data accessible—it was
               about making sustainability visible at every touchpoint where it
               mattered. By integrating environmental impact information into
               existing workflows and user journeys, we turned sustainability
               from an afterthought into a competitive differentiator.
             </p>
-            <p class="text-xl xl:w-1/2">
+            <p class="text-xl lg:w-1/2 mb-24">
               This project taught us that sometimes the most impactful UX
               solutions aren't about creating new features—they're about
               surfacing hidden value in ways that naturally align with user
@@ -678,25 +697,6 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
               </li>
             </ul>
           </div>
-          <div class="lg:col-span-4">
-            <h3>Lessons Learned</h3>
-            <ul>
-              <li class="mb-0">
-                Early stakeholder alignment is crucial for cross-functional
-                success
-              </li>
-              <li class="mb-0">
-                AI integration should focus on specific pain points
-              </li>
-              <li class="mb-0">
-                Design system integration accelerates adoption
-              </li>
-              <li class="mb-0">
-                Regular feedback loops ensure continuous improvement
-              </li>
-            </ul>
-          </div>
-          
         </div>
       </div>
     </div>
@@ -822,8 +822,8 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
 
       
 
-    <div class="container text-center py-24">
-<form action="../real-customers/">
+  <div class="container text-center py-24">
+<form action="../ascena/">
   <button type="submit" class="btn btn-primary text-lg text-zinc-50 font-normal !hover:bg-tonered">
           Next project &#8594;
   </button>
@@ -934,6 +934,7 @@ alt=""                   src="UCSXSeriesEcoCertsMix_breakout.jpg"
       var chart = new ApexCharts(document.querySelector("#chart"), options);
       chart.render();
     </script>
+    <script src="/static/js/lightbox-plus-jquery.min.js"></script>
     <script src="../../static/js/combined.js"></script>
     <df-messenger
       project-id="portfolioai-447818"

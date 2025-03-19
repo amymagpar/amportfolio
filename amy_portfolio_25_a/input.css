@@ -21,7 +21,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-white text-black leading-snug;
+    @apply bg-white text-black;
   }
   h2:not(:first-child) {
     @apply mt-12;
@@ -55,7 +55,7 @@
     @apply italic underline decoration-2 hover:decoration-1 decoration-dotted  hover:decoration-solid visited:decoration-dashed hover:decoration-zinc-600  text-zinc-600 hover:text-zinc-900;
   }
   p {
-    @apply text-pretty  mb-4;
+    @apply text-pretty  mb-4 max-w-prose;
     /* @apply text-pretty leading-tight tracking-tight mb-4; */
   }
   ul {

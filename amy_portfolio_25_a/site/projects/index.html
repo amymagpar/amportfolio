@@ -33,11 +33,10 @@
       background-attachment: fixed;
     "
   >
-    <div class="flex flex-grow flex-col">
-      <div class="flex w-full flex-grow flex-col justify-center overflow-clip">
-        <div class="container mx-auto my-24 px-4">
-          <div class="grid gap-4 lg:grid-cols-8">
-            <div
+    <div class="sm:h-screen pt-24 sm:pt-0">
+        <div class="container mx-auto px-4 flex justify-center items-center h-full">
+          <div class="grid gap-6 lg:grid-cols-8 2xl:w-3/4">
+            <!-- <div
               class="bg-zinc-200 animate-left animate-ease-in slide-in-to-top relative flex h-64 items-center overflow-hidden rounded-md bg-white p-12 shadow-lg lg:col-span-5"
             >
               <a
@@ -61,60 +60,131 @@
                   >Service Design & Dashboard</span
                 >
               </a>
-            </div>
+            </div> -->
 
-            <div
-              class="animate-right relative flex h-64 items-center overflow-hidden rounded-md bg-white p-12 text-secondary shadow-lg lg:col-span-3"
-            >
-              <a
-                href="ai-and-data"
-                class="not-italic no-underline flex h-full w-full flex-col"
+            <a href="ai-and-data" class="not-italic no-underline lg:col-span-4">
+              <div
+                class="animate-left h-full relative flex flex-col overflow-hidden rounded-md bg-white pl-8 py-8 pr-36 shadow-lg justify-center"
               >
-                <img
-                  src="ai-and-data/ai_symbol.png"
-                  class="absolute -right-12 bottom-0 h-24 rounded-br-3xl rounded-tl-full bg-slate-600 object-right-bottom xl:h-32"
-                />
+                <div
+                  class="absolute  overflow-hidden bg-tintyellow rounded-[100%] w-[280px] h-[280px] -bottom-[150px] -right-[150px]"
+                >
+                  <img
+                    src="ai-and-data/ai_symbol.png"
+                    class="mix-blend-multiply absolute right-[80px]"
+                  />
+                </div>
                 <span
-                  class="badge relative mb-2 mt-0 border-zinc-700 bg-zinc-700 text-white"
+                  class="badge relative mb-2 mt-0 border-tonegreen bg-tonegreen text-white"
                   >Cisco Meraki</span
                 >
                 <h1
-                  class="relative mb-0 text-balance text-3xl font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
+                  class="relative mb-0 text-balance text-3xl text-tonegreen font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
                 >
                   AI Marketplace
                 </h1>
-                <span href="" class="text-base-500 relative"
-                  >Chat and Search</span
-                >
-              </a>
-            </div>
+                <p href="" class="text-tonegreen font-medium relative mb-0">
+                  Using AI chat &amp; search with PLG strategies to increase
+                  leads by 300%.
+                </p>
+              </div>
+            </a>
 
-            <div
-              class="animate-left-1 relative flex h-64 items-center overflow-hidden rounded-md bg-white p-12 text-accent shadow-lg lg:col-span-3"
+            <a
+              href="sustainability"
+              class="not-italic no-underline h-full lg:col-span-4"
             >
-              <a
-                href="sustainability"
-                class="not-italic no-underline flex h-full w-full flex-col"
+              <div
+                class="bg-fixed animate-right-1  flex flex-col justify-center overflow-hidden relative rounded-md bg-white text-fullblue pl-8 py-8 pr-36 justify-center shadow-lg"
               >
-                <img
-                  src="sustainability/Routing_Hero_Product_a.avif"
-                  class="absolute -right-4 bottom-0 h-24 max-w-[128px] rounded-br-3xl rounded-tl-full object-right-bottom xl:h-32"
-                />
-                <span
-                  class="badge relative mb-2 mt-0 border-zinc-700 bg-zinc-700 text-white"
-                  >Cisco Systems</span
+                <div
+                  class="absolute h-48 w-48 overflow-hidden rounded-[100%] w-[280px] h-[280px] -bottom-[150px] -right-[150px]"
                 >
-                <h1
-                  class="relative mb-0 text-balance text-3xl font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
-                >
-                  Scaling Sustainability
-                </h1>
-                <span href="" class="text-base-500 relative"
-                  >Designing awareness</span
-                >
+                  <img
+                    src="sustainability/Routing_Hero_Product_a.avif"
+                    class="absolute right-[80px]"
+                  />
+                </div>
+                <div class="mix-blend-multiply">
+                  <span
+                    class="badge relative mb-2 mt-0 border-fullblue bg-fullblue text-white"
+                    >Cisco Systems</span
+                  >
+                  <h1
+                    class="relative mb-0 text-balance text-3xl font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
+                  >
+                    Scaling Sustainability
+                  </h1>
+                  <p href="" class="relative font-medium mb-0">
+                    Using design, conversational AI, and content strategy to
+                    raise awareness and give Cisco a competative advantage.
+                  </p>
+                </div>
+              </div>
               </a>
-            </div>
-            <div
+              <div
+                class="animate-left-2 animate-ease-in slide-in-to-top relative flex  items-center text-toneviolet overflow-hidden rounded-md bg-white  shadow-lg lg:col-span-4 pl-8 py-8 pr-36 "
+              >
+                <a
+                  href="ascena"
+                  class="not-italic no-underline flex h-full w-full flex-col"
+                >
+                  <div
+                    class="absolute h-48 w-48 overflow-hidden h-full bg-tintviolet rounded-[100%] w-[280px] h-[280px] -bottom-[150px] -right-[150px]"
+                  >
+                    <img
+                      src="ascena/ascena_project.png"
+                      class="absolute right-12 mix-blend-multiply"
+                    />
+                  </div>
+                  <span
+                    class="badge z-10 mb-2 mt-0 border-toneviolet bg-toneviolet text-white"
+                    >AnnTaylor & Loft</span
+                  >
+                  <h1
+                    class="relative text-toneviolet z-10 mb-0 text-balance text-3xl font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
+                  >
+                    Multi-brand Design Systems
+                  </h1>
+                  <p class="text-toneviolet font-medium">
+                    Digital transformation affecting 15+M users and $600M
+                    revenue. Minimal revenue loss and significant increases the
+                    following two years.
+                  </p>
+                </a>
+              </div>
+              <div
+                class="animate-right-3 relative flex items-center overflow-hidden pl-8 py-8 pr-36 rounded-md bg-white  text-tonered shadow-lg lg:col-span-4"
+              >
+                <a
+                  href="calvinklein/"
+                  class="not-italic no-underline flex h-full w-full flex-col"
+                >
+                  <div
+                    class="absolute h-48 w-48 overflow-hidden bg-tintred rounded-[100%] w-[280px] h-[280px] -bottom-[150px] -right-[150px]"
+                  >
+                    <img
+                      src="calvinklein/ckphotos-1.jpg"
+                      class="absolute h-1/2 mix-blend-multiply top-0"
+                    />
+                  </div>
+                  <span
+                    class="badge relative mb-2 mt-0 border-tonered bg-tonered text-white"
+                    >Calvin Klein</span
+                  >
+                  <h1
+                    class="relative mb-0 text-balance text-3xl font-bold text-tonered sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
+                  >
+                    Large Scale Touchscreen
+                  </h1>
+                  <span href="" class="text-tonered font-medium relative"
+                    >Designing POS with human factors &amp; and creating a
+                    delightful in-store experience.</span
+                  >
+                </a>
+              </div>
+            </a>
+            <!-- <div
               class="bg-zinc-200 animate-right-1 relative flex h-64 items-center overflow-hidden rounded-md bg-white p-12 text-[#dd8677] shadow-lg lg:col-span-5"
             >
               <a
@@ -188,55 +258,7 @@
                   >See the program</span
                 >
               </a>
-            </div>
-
-            <div
-              class="animate-left-3 animate-ease-in slide-in-to-top relative flex h-64 items-center overflow-hidden rounded-md bg-white p-12 text-[#ca983c] shadow-lg lg:col-span-3"
-            >
-              <a
-                href="ascena"
-                class="not-italic no-underline flex h-full w-full flex-col"
-              >
-                <img
-                  src="ascena/ascena_project.png"
-                  class="absolute -right-12 bottom-0 h-24 rounded-br-3xl rounded-tl-full object-right-bottom xl:h-32"
-                />
-                <span
-                  class="badge z-10 mb-2 mt-0 border-zinc-700 bg-zinc-700 text-white"
-                  >AnnTaylor & Loft</span
-                >
-                <h1
-                  class="relative z-10 mb-0 text-balance text-3xl font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
-                >
-                  Multi-brand Design Systems
-                </h1>
-              </a>
-            </div>
-            <div
-              class="animate-right-1 relative flex h-64 items-center overflow-hidden rounded-md bg-white p-12 text-[#dd8677] shadow-lg lg:col-span-5"
-            >
-              <a
-                href="calvinklein/"
-                class="not-italic no-underline flex h-full w-full flex-col"
-              >
-                <img
-                  src="calvinklein/ckphotos-1.jpg"
-                  class="absolute -right-12 bottom-0 h-24 rounded-br-3xl rounded-tl-full object-right-bottom xl:h-32"
-                />
-                <span
-                  class="badge relative mb-2 mt-0 border-zinc-700 bg-zinc-700 text-white"
-                  >Calvin Klein</span
-                >
-                <h1
-                  class="relative mb-0 text-balance text-3xl font-bold sm:text-4xl leading-10 sm:leading-10 md:leading-10 lg:leading-10 xl:leading-10 2xl:leading-10"
-                >
-                  Large Scale Touchscreen
-                </h1>
-                <span href="" class="text-base-500 relative"
-                  >Delight & Human Factors</span
-                >
-              </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

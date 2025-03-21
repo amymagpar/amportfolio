@@ -40,22 +40,25 @@
     @apply mt-2;
   }
   h1 {
-    @apply text-4xl  sm:text-5xl 2xl:text-6xl font-display font-bold text-pretty mb-4;
+    @apply text-4xl text-balance sm:text-5xl 2xl:text-6xl font-display font-bold text-pretty !leading-[4rem] mb-4;
   }
   h2 {
-    @apply text-3xl lg:text-4xl 2xl:text-4xl font-extralight mb-2 xl:mb-4;
+    @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl font-extralight mb-4 !leading-[2.5rem] xl:mb-4;
   }
   h3 {
-    @apply text-lg font-bold lg:text-xl;
+    @apply text-lg text-balance font-bold lg:text-xl;
   }
   h4 {
-    @apply font-bold;
+    @apply text-balance font-bold;
+  }
+  h5 {
+    @apply uppercase text-balance font-light text-lg;
   }
   a {
     @apply italic underline decoration-2 hover:decoration-1 decoration-dotted  hover:decoration-solid visited:decoration-dashed hover:decoration-zinc-600  text-zinc-600 hover:text-zinc-900;
   }
   p {
-    @apply text-pretty  mb-4 max-w-prose;
+    @apply text-balance  mb-4 max-w-prose;
     /* @apply text-pretty leading-tight tracking-tight mb-4; */
   }
   ul {

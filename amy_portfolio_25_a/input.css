@@ -40,7 +40,7 @@
     @apply mt-2;
   }
   h1 {
-    @apply text-4xl text-balance sm:text-5xl 2xl:text-6xl font-display font-bold text-pretty !leading-[4rem] mb-4;
+    @apply text-4xl !leading-[4rem] sm:text-5xl lg:!leading-[3.25rem] 2xl:text-6xl !font-display text-balance font-bold text-pretty mb-0;
   }
   h2 {
     @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl font-extralight mb-4 !leading-[2.5rem] xl:mb-4;
@@ -87,5 +87,11 @@
   }
   .mockup-browser .mockup-browser-toolbar .input {
     @apply !w-max;
+  }
+}
+
+@layer extend {
+  giantText {
+    @apply mb-4 text-4xl font-black uppercase sm:text-7xl lg:mb-8 lg:text-8xl leading-[6rem] sm:leading-[6rem] md:leading-[6rem] lg:leading-[6rem] xl:leading-[6rem] 2xl:leading-[6rem];
   }
 }

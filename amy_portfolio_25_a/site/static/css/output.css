@@ -822,10 +822,10 @@ p:not(:first-child) {
 }
 
 h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0px;
   text-wrap: balance;
   text-wrap: pretty;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-size: 2.25rem;
   line-height: 1.375;
   font-weight: 700;
@@ -836,6 +836,12 @@ h1 {
   h1 {
     font-size: 3rem;
     line-height: 1.375;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    line-height: 3.25rem !important;
   }
 }
 
@@ -4981,6 +4987,14 @@ details.collapse summary::-webkit-details-marker {
   flex-basis: 0.25rem;
 }
 
+.table-auto {
+  table-layout: auto;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
 .scale-100 {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -5363,6 +5377,11 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(212 212 216 / var(--tw-border-opacity, 1));
 }
 
+.border-zinc-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 161 170 / var(--tw-border-opacity, 1));
+}
+
 .border-zinc-50 {
   --tw-border-opacity: 1;
   border-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
@@ -5602,6 +5621,16 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
 }
 
+.bg-tintorange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 200 160 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tintgreen {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 213 184 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -5742,6 +5771,11 @@ details.collapse summary::-webkit-details-marker {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -6004,10 +6038,6 @@ details.collapse summary::-webkit-details-marker {
   line-height: 2.5rem !important;
 }
 
-.\!leading-\[1rem\] {
-  line-height: 1rem !important;
-}
-
 .\!leading-tight {
   line-height: 1.25 !important;
 }
@@ -6016,8 +6046,12 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.75rem;
 }
 
-.leading-\[6rem\] {
-  line-height: 6rem;
+.leading-\[2\.2rem\] {
+  line-height: 2.2rem;
+}
+
+.leading-loose {
+  line-height: 2;
 }
 
 .leading-none {
@@ -6167,6 +6201,10 @@ details.collapse summary::-webkit-details-marker {
   opacity: 0.5;
 }
 
+.bg-blend-multiply {
+  background-blend-mode: multiply;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -6253,6 +6291,52 @@ details.collapse summary::-webkit-details-marker {
 
 .running {
   animation-play-state: running;
+}
+
+@layer extend {
+  giantText {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    line-height: 1.375;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 6rem;
+  }
+
+  @media (min-width: 640px) {
+    giantText {
+      font-size: 4.5rem;
+      line-height: 1.375;
+      line-height: 6rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    giantText {
+      line-height: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    giantText {
+      margin-bottom: 2rem;
+      font-size: 6rem;
+      line-height: 1.375;
+      line-height: 6rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    giantText {
+      line-height: 6rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    giantText {
+      line-height: 6rem;
+    }
+  }
 }
 
 @media (min-width: 640px) {
@@ -7150,8 +7234,8 @@ details.collapse summary::-webkit-details-marker {
     font-weight: 200;
   }
 
-  .sm\:leading-\[6rem\] {
-    line-height: 6rem;
+  .sm\:leading-\[4\.5rem\] {
+    line-height: 4.5rem;
   }
 
   .sm\:leading-normal {
@@ -7281,10 +7365,6 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.375;
   }
 
-  .md\:leading-\[6rem\] {
-    line-height: 6rem;
-  }
-
   .md\:leading-relaxed {
     line-height: 1.625;
   }
@@ -7341,10 +7421,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:col-span-12 {
     grid-column: span 12 / span 12;
-  }
-
-  .lg\:col-span-2 {
-    grid-column: span 2 / span 2;
   }
 
   .lg\:col-span-3 {
@@ -7417,6 +7493,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:row-span-6 {
     grid-row: span 6 / span 6;
+  }
+
+  .lg\:row-start-1 {
+    grid-row-start: 1;
   }
 
   .lg\:row-start-2 {
@@ -7528,16 +7608,13 @@ details.collapse summary::-webkit-details-marker {
     width: 24rem;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:max-w-3xl {
-    max-width: 48rem;
-  }
-
-  .lg\:max-w-4xl {
-    max-width: 56rem;
   }
 
   .lg\:max-w-5xl {
@@ -7655,16 +7732,6 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.375;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 1.375;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 1.375;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1.375;
@@ -7700,6 +7767,10 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 1280px) {
+  .xl\:col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -7720,12 +7791,24 @@ details.collapse summary::-webkit-details-marker {
     grid-column: span 6 / span 6;
   }
 
+  .xl\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .xl\:col-start-1 {
     grid-column-start: 1;
   }
 
+  .xl\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .xl\:col-start-7 {
     grid-column-start: 7;
+  }
+
+  .xl\:col-end-11 {
+    grid-column-end: 11;
   }
 
   .xl\:row-span-8 {
@@ -7738,6 +7821,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:mb-32 {
     margin-bottom: 8rem;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
   }
 
   .xl\:flex {
@@ -7813,6 +7900,15 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .xl\:text-right {
+    text-align: right;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 1.375;
   }
 
   .xl\:text-5xl {
@@ -7936,6 +8032,11 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:text-2xl {
     font-size: 1.5rem;
+    line-height: 1.375;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
     line-height: 1.375;
   }
 

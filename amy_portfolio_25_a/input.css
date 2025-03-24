@@ -8,11 +8,11 @@
     min-height: unset;
   }
   .headline {
-    @apply text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-6xl
-    leading-[3.25rem] sm:leading-[3.25rem] md:leading-[3.25rem] lg:leading-[3.25rem] xl:leading-[4.5rem] 2xl:leading-[3.5rem] my-0;
+    @apply text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-7xl
+    !leading-[3.25rem] sm:!leading-[3.25rem] md:!leading-[3.25rem] lg:!leading-[3.25rem] xl:!leading-[4.7rem] 2xl:!leading-[3.8rem] my-0;
   }
   .badgelist {
-    @apply flex flex-wrap gap-1 lg:gap-2 mt-8 mb-3;
+    @apply flex flex-wrap gap-1 lg:gap-2 mt-6 mb-3;
   }
 }
 
@@ -23,22 +23,22 @@
   body {
     @apply bg-white text-black;
   }
-  h2:not(:first-child) {
-    @apply mt-12;
+  /* h2:not(:last-child) {
+    @apply mb-6;
   }
-  h3:not(:first-child) {
-    @apply mt-6;
+  h3:not(:last-child) {
+    @apply mb-6;
   }
-  h4:not(:first-child) {
-    @apply mt-4;
+  h4:not(:last-child) {
+    @apply mb-6;
   }
-  ul:not(:first-child),
-  ol:not(:first-child) {
-    @apply mt-2;
+  ul:not(:last-child),
+  ol:not(:last-child) {
+    @apply mb-6;
   }
-  p:not(:first-child) {
-    @apply mt-2;
-  }
+  p:not(:last-child) {
+    @apply mb-6;
+  } */
   h1 {
     @apply text-4xl !leading-[4rem] sm:text-5xl lg:!leading-[3.25rem] 2xl:text-6xl !font-display text-balance font-bold text-pretty mb-0;
   }
@@ -46,19 +46,19 @@
     @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl font-extralight mb-4 !leading-[2.5rem] xl:mb-4;
   }
   h3 {
-    @apply text-lg text-balance font-bold lg:text-xl;
+    @apply text-lg text-balance font-bold lg:text-xl mb-6;
   }
   h4 {
-    @apply text-balance font-bold;
+    @apply text-balance font-bold mb-6;
   }
   h5 {
-    @apply uppercase text-balance font-light text-lg;
+    @apply uppercase text-balance font-light text-lg mb-6;
   }
   a {
     @apply italic underline decoration-2 hover:decoration-1 decoration-dotted  hover:decoration-solid visited:decoration-dashed hover:decoration-zinc-600  text-zinc-600 hover:text-zinc-900;
   }
   p {
-    @apply text-balance  mb-4 max-w-prose;
+    @apply !text-balance  mb-3 max-w-prose;
     /* @apply text-pretty leading-tight tracking-tight mb-4; */
   }
   ul {
@@ -68,7 +68,7 @@
     @apply list-decimal pl-5;
   }
   li {
-    @apply mb-2;
+    @apply mb-3;
   }
   li p:first-child {
     @apply mb-0;
@@ -92,6 +92,6 @@
 
 @layer extend {
   giantText {
-    @apply mb-4 text-4xl font-black uppercase sm:text-7xl lg:mb-8 lg:text-8xl leading-[6rem] sm:leading-[6rem] md:leading-[6rem] lg:leading-[6rem] xl:leading-[6rem] 2xl:leading-[6rem];
+    @apply mb-6 text-4xl font-black uppercase sm:text-7xl lg:mb-12 lg:text-8xl leading-[6rem] sm:leading-[6rem] md:leading-[6rem] lg:leading-[6rem] xl:leading-[6rem] 2xl:leading-[6rem];
   }
 }

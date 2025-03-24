@@ -800,26 +800,22 @@ body {
   color: rgb(39 39 42 / var(--tw-text-opacity, 1));
 }
 
-h2:not(:first-child) {
-  margin-top: 3rem;
-}
-
-h3:not(:first-child) {
-  margin-top: 1.5rem;
-}
-
-h4:not(:first-child) {
-  margin-top: 1rem;
-}
-
-ul:not(:first-child),
-  ol:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
-p:not(:first-child) {
-  margin-top: 0.5rem;
-}
+/* h2:not(:last-child) {
+    @apply mb-6;
+  }
+  h3:not(:last-child) {
+    @apply mb-6;
+  }
+  h4:not(:last-child) {
+    @apply mb-6;
+  }
+  ul:not(:last-child),
+  ol:not(:last-child) {
+    @apply mb-6;
+  }
+  p:not(:last-child) {
+    @apply mb-6;
+  } */
 
 h1 {
   margin-bottom: 0px;
@@ -882,6 +878,7 @@ h2 {
 }
 
 h3 {
+  margin-bottom: 1.5rem;
   text-wrap: balance;
   font-size: 1.125rem;
   line-height: 1.375;
@@ -896,11 +893,13 @@ h3 {
 }
 
 h4 {
+  margin-bottom: 1.5rem;
   text-wrap: balance;
   font-weight: 700;
 }
 
 h5 {
+  margin-bottom: 1.5rem;
   text-wrap: balance;
   font-size: 1.125rem;
   line-height: 1.375;
@@ -930,9 +929,9 @@ a:hover {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   max-width: 65ch;
-  text-wrap: balance;
+  text-wrap: balance !important;
   /* @apply text-pretty leading-tight tracking-tight mb-4; */
 }
 
@@ -947,7 +946,7 @@ ol {
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 li p:first-child {
@@ -4397,14 +4396,14 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 0px;
   font-size: 2.25rem;
   line-height: 1.375;
-  line-height: 3.25rem;
+  line-height: 3.25rem !important;
 }
 
 @media (min-width: 640px) {
   .headline {
     font-size: 3rem;
     line-height: 1.375;
-    line-height: 3.25rem;
+    line-height: 3.25rem !important;
   }
 }
 
@@ -4412,7 +4411,7 @@ details.collapse summary::-webkit-details-marker {
   .headline {
     font-size: 3rem;
     line-height: 1.375;
-    line-height: 3.25rem;
+    line-height: 3.25rem !important;
   }
 }
 
@@ -4420,7 +4419,7 @@ details.collapse summary::-webkit-details-marker {
   .headline {
     font-size: 3rem;
     line-height: 1.375;
-    line-height: 3.25rem;
+    line-height: 3.25rem !important;
   }
 }
 
@@ -4428,20 +4427,20 @@ details.collapse summary::-webkit-details-marker {
   .headline {
     font-size: 4.5rem;
     line-height: 1.375;
-    line-height: 4.5rem;
+    line-height: 4.7rem !important;
   }
 }
 
 @media (min-width: 1536px) {
   .headline {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
     line-height: 1.375;
-    line-height: 3.5rem;
+    line-height: 3.8rem !important;
   }
 }
 
 .badgelist {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   display: flex;
   flex-wrap: wrap;
@@ -4615,6 +4614,11 @@ details.collapse summary::-webkit-details-marker {
   margin-right: auto !important;
 }
 
+.\!my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -4686,10 +4690,6 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 8rem;
 }
 
-.mb-36 {
-  margin-bottom: 9rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -4756,10 +4756,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-52 {
   margin-top: 13rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .mt-64 {
@@ -5487,11 +5483,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(225 29 72 / var(--tw-bg-opacity, 1));
 }
 
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity, 1)));
-}
-
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
@@ -5500,6 +5491,16 @@ details.collapse summary::-webkit-details-marker {
 .bg-tintblue {
   --tw-bg-opacity: 1;
   background-color: rgb(173 216 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tintgreen {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 213 184 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tintorange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 200 160 / var(--tw-bg-opacity, 1));
 }
 
 .bg-tintpink {
@@ -5619,16 +5620,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-zinc-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
-}
-
-.bg-tintorange {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 200 160 / var(--tw-bg-opacity, 1));
-}
-
-.bg-tintgreen {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 213 184 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -5781,11 +5772,6 @@ details.collapse summary::-webkit-details-marker {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-12 {
@@ -6201,10 +6187,6 @@ details.collapse summary::-webkit-details-marker {
   opacity: 0.5;
 }
 
-.bg-blend-multiply {
-  background-blend-mode: multiply;
-}
-
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -6295,7 +6277,7 @@ details.collapse summary::-webkit-details-marker {
 
 @layer extend {
   giantText {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 2.25rem;
     line-height: 1.375;
     font-weight: 900;
@@ -6319,7 +6301,7 @@ details.collapse summary::-webkit-details-marker {
 
   @media (min-width: 1024px) {
     giantText {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       font-size: 6rem;
       line-height: 1.375;
       line-height: 6rem;
@@ -7483,20 +7465,12 @@ details.collapse summary::-webkit-details-marker {
     grid-row: span 1 / span 1;
   }
 
-  .lg\:row-span-2 {
-    grid-row: span 2 / span 2;
-  }
-
   .lg\:row-span-4 {
     grid-row: span 4 / span 4;
   }
 
   .lg\:row-span-6 {
     grid-row: span 6 / span 6;
-  }
-
-  .lg\:row-start-1 {
-    grid-row-start: 1;
   }
 
   .lg\:row-start-2 {
@@ -7542,10 +7516,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-8 {
     margin-bottom: 2rem;
-  }
-
-  .lg\:mr-16 {
-    margin-right: 4rem;
   }
 
   .lg\:mt-0 {
@@ -7758,12 +7728,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:leading-relaxed {
     line-height: 1.625;
   }
-
-  .lg\:shadow-lg {
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
 }
 
 @media (min-width: 1280px) {
@@ -7799,10 +7763,6 @@ details.collapse summary::-webkit-details-marker {
     grid-column-start: 1;
   }
 
-  .xl\:col-start-2 {
-    grid-column-start: 2;
-  }
-
   .xl\:col-start-7 {
     grid-column-start: 7;
   }
@@ -7821,10 +7781,6 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:mb-32 {
     margin-bottom: 8rem;
-  }
-
-  .xl\:mt-0 {
-    margin-top: 0px;
   }
 
   .xl\:flex {
@@ -7902,10 +7858,6 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 6rem;
   }
 
-  .xl\:text-right {
-    text-align: right;
-  }
-
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 1.375;
@@ -7978,10 +7930,6 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:mt-0 {
     margin-top: 0px;
-  }
-
-  .\32xl\:w-1\/2 {
-    width: 50%;
   }
 
   .\32xl\:w-3\/4 {

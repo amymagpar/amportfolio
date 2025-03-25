@@ -45,19 +45,19 @@
             <h1 class="headline">In-Store Touchscreens</h1>
             <div class="badgelist">
               <span
-                class="badge badge-sm xl:badge-md bg-tintviolet border-tintviolet text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >point-of-sale</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tintviolet border-tintviolet text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >human factors</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tintviolet border-tintviolet text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >prototyping</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tintviolet border-tintviolet text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >touchscreen</span
               >
             </div>
@@ -252,7 +252,7 @@
         </p>
         <h3>Solutions</h3>
         <p class="!mt-0">
-          Large-scale paper prototypes were tested before creating multiple
+          Large-scale paper prototypes were tested before creatiing multiple
           interactive prototypes.
         </p>
       </div>

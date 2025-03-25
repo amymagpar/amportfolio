@@ -5411,6 +5411,26 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(24 24 27 / var(--tw-border-opacity, 1));
 }
 
+.border-tonered {
+  --tw-border-opacity: 1;
+  border-color: rgb(232 139 139 / var(--tw-border-opacity, 1));
+}
+
+.border-toneyellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(232 204 112 / var(--tw-border-opacity, 1));
+}
+
+.border-toneviolet {
+  --tw-border-opacity: 1;
+  border-color: rgb(177 135 196 / var(--tw-border-opacity, 1));
+}
+
+.border-tintviolet {
+  --tw-border-opacity: 1;
+  border-color: rgb(199 166 216 / var(--tw-border-opacity, 1));
+}
+
 .\!bg-accent {
   --tw-bg-opacity: 1 !important;
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity, 1))) !important;

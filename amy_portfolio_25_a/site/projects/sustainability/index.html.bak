@@ -45,23 +45,23 @@
             <h1 class="headline">Scaling Sustainability</h1>
             <div class="badgelist">
               <span
-                class="badge badge-sm xl:badge-md bg-tonered border-tonered text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >sustainability</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tonered border-tonered text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >strategy</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tonered border-tonered text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >design</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tonered border-tonered text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >collaboration</span
               >
               <span
-                class="badge badge-sm xl:badge-md bg-tonered border-tonered text-black"
+                class="badge badge-sm xl:badge-md bg-zinc-700 border-zinc-700 text-white"
                 >leadership</span
               >
             </div>
@@ -339,7 +339,7 @@
             <p class=" ">
               Manual data extraction takes 2-3 weeks,and has multiple approval
               layers that slow response time. There was a lack of standardized
-              sustainability metrics to compare or promote products properly.
+              sustainabiliy metrics to compare or promote products properly.
             </p>
           </li>
           <li class="break-inside-avoid lg:w-5/6">

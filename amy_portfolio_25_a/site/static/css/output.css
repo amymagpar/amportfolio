@@ -849,11 +849,12 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-wrap: balance;
   font-size: 1.875rem;
   line-height: 1.375;
   font-weight: 200;
+  text-transform: uppercase;
   line-height: 2.5rem !important;
 }
 
@@ -861,12 +862,6 @@ h2 {
   h2 {
     font-size: 2.25rem;
     line-height: 1.375;
-  }
-}
-
-@media (min-width: 1280px) {
-  h2 {
-    margin-bottom: 1rem;
   }
 }
 
@@ -878,7 +873,6 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 1.5rem;
   text-wrap: balance;
   font-size: 1.125rem;
   line-height: 1.375;
@@ -946,7 +940,8 @@ ol {
 }
 
 li {
-  margin-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity, 1));
 }
 
 li p:first-child {
@@ -4417,9 +4412,9 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 1024px) {
   .headline {
-    font-size: 3rem;
+    font-size: 3.75rem;
     line-height: 1.375;
-    line-height: 3.25rem !important;
+    line-height: 3.75rem !important;
   }
 }
 
@@ -4589,6 +4584,10 @@ details.collapse summary::-webkit-details-marker {
   grid-column: span 12 / span 12;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -4712,6 +4711,10 @@ details.collapse summary::-webkit-details-marker {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
 }
 
 .mr-4 {
@@ -5398,6 +5401,16 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(63 63 70 / var(--tw-border-opacity, 1));
 }
 
+.border-toneblue {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 196 224 / var(--tw-border-opacity, 1));
+}
+
+.border-zinc-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity, 1));
+}
+
 .\!bg-accent {
   --tw-bg-opacity: 1 !important;
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity, 1))) !important;
@@ -5905,6 +5918,18 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 16rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -6157,6 +6182,21 @@ details.collapse summary::-webkit-details-marker {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity, 1));
+}
+
+.text-zinc-500 {
+  --tw-text-opacity: 1;
+  color: rgb(113 113 122 / var(--tw-text-opacity, 1));
+}
+
+.text-zinc-400 {
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity, 1));
+}
+
+.text-toneblue {
+  --tw-text-opacity: 1;
+  color: rgb(132 196 224 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -7145,6 +7185,10 @@ details.collapse summary::-webkit-details-marker {
     --tw-bg-opacity: 0;
   }
 
+  .sm\:bg-opacity-90 {
+    --tw-bg-opacity: 0.9;
+  }
+
   .sm\:p-0 {
     padding: 0px;
   }
@@ -7233,6 +7277,12 @@ details.collapse summary::-webkit-details-marker {
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+
+  .sm\:backdrop-blur-lg {
+    --tw-backdrop-blur: blur(16px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  }
 }
 
 @media (min-width: 768px) {
@@ -7270,6 +7320,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:row-start-2 {
     grid-row-start: 2;
+  }
+
+  .md\:row-start-3 {
+    grid-row-start: 3;
   }
 
   .md\:mb-4 {
@@ -7449,6 +7503,14 @@ details.collapse summary::-webkit-details-marker {
     grid-column-start: 7;
   }
 
+  .lg\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .lg\:col-start-5 {
+    grid-column-start: 5;
+  }
+
   .lg\:col-end-12 {
     grid-column-end: 12;
   }
@@ -7528,6 +7590,16 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-64 {
     margin-top: 16rem;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:lg\:mt-0 {
+      margin-top: 0px;
+    }
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:grid {
@@ -7912,6 +7984,10 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:col-start-7 {
     grid-column-start: 7;
+  }
+
+  .\32xl\:row-start-2 {
+    grid-row-start: 2;
   }
 
   .\32xl\:mx-auto {

@@ -8,8 +8,8 @@
     min-height: unset;
   }
   .headline {
-    @apply text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-7xl
-    !leading-[3.25rem] sm:!leading-[3.25rem] md:!leading-[3.25rem] lg:!leading-[3.25rem] xl:!leading-[4.7rem] 2xl:!leading-[3.8rem] my-0;
+    @apply text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl
+    !leading-[3.25rem] sm:!leading-[3.25rem] md:!leading-[3.25rem] lg:!leading-[3.75rem] xl:!leading-[4.7rem] 2xl:!leading-[3.8rem] my-0;
   }
   .badgelist {
     @apply flex flex-wrap gap-1 lg:gap-2 mt-6 mb-3;
@@ -43,10 +43,10 @@
     @apply text-4xl !leading-[4rem] sm:text-5xl lg:!leading-[3.25rem] 2xl:text-6xl !font-display text-balance font-bold text-pretty mb-0;
   }
   h2 {
-    @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl font-extralight mb-4 !leading-[2.5rem] xl:mb-4;
+    @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl uppercase font-extralight !leading-[2.5rem] mb-6;
   }
   h3 {
-    @apply text-lg text-balance font-bold lg:text-xl mb-6;
+    @apply text-lg text-balance font-bold lg:text-xl;
   }
   h4 {
     @apply text-balance font-bold mb-6;
@@ -68,7 +68,7 @@
     @apply list-decimal pl-5;
   }
   li {
-    @apply mb-3;
+    @apply text-zinc-900;
   }
   li p:first-child {
     @apply mb-0;

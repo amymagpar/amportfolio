@@ -4891,6 +4891,10 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -4971,6 +4975,10 @@ details.collapse summary::-webkit-details-marker {
   width: 100%;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .min-w-24 {
   min-width: 6rem;
 }
@@ -5039,6 +5047,22 @@ details.collapse summary::-webkit-details-marker {
 
 .\!animate-bounce {
   animation: bounce 1s infinite !important;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .resize {
@@ -6207,6 +6231,16 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(82 82 91 / var(--tw-text-opacity, 1));
 }
 
+.text-accent {
+  --tw-text-opacity: 1;
+  color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity, 1)));
+}
+
+.text-color4 {
+  --tw-text-opacity: 1;
+  color: rgb(255 99 97 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -7055,6 +7089,16 @@ details.collapse summary::-webkit-details-marker {
 .active\:bg-\[\#ca983c\]:active {
   --tw-bg-opacity: 1;
   background-color: rgb(202 152 60 / var(--tw-bg-opacity, 1));
+}
+
+.active\:text-orange-500:active {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity, 1));
+}
+
+.active\:text-color5:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 166 0 / var(--tw-text-opacity, 1));
 }
 
 .active\:shadow-lg:active {

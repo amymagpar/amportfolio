@@ -11,13 +11,13 @@ df-messenger {
   z-index: 999;
   position: fixed;
   --df-messenger-fomt-color: #000;
-  --df-messenger-font-family: Google Sans;
-  --df-messenger-font-family: Inter Var;
+  // --df-messenger-font-family: Google Sans;
+  // --df-messenger-font-family: Inter Var;
   --df-messenger-chat-background: #f3f6fc;
   --df-messenger-message-user-background: #d3e3fd;
   --df-messenger-message-bot-background: #fafafa;
   --df-messenger-chat-bubble-icon-color: #fafafa;
-  --df-messenger-chat-bubble-background: #3f3f46;
+  --df-messenger-chat-bubble-background: #bc5090;
   bottom: 16px;
   right: 16px;
 }
@@ -65,13 +65,13 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40  bg-white sm:bg-opacity-90 sm:backdrop-blur-lg">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40  bg-color1 sm:bg-opacity-90 sm:backdrop-blur-lg">
     <div class="container">
     <div class="overflow-hidden  navbar p-0 h-10 sm:h-12">
       <div class="navbar-start left-0">
         <ul class="list-none pl-0">
         <li class=" ">
-        <a class="no-underline not-italic text-zinc-900" href="/">Amy Parness</a>
+        <a class="text-white no-underline not-italic " href="/">Amy Parness</a>
         </li>
         </ul>
       </div>
@@ -79,6 +79,8 @@ function insertNavigation() {
       </div>
       <div class="navbar-end">
       <ul id="myTopnav" class="
+        pl-0
+        
         sm:bg-opacity-0
         shadow
         sm:shadow-none
@@ -103,9 +105,9 @@ function insertNavigation() {
         sm:w-auto
         ease-in-out
         ">
-            <li id=""  class="pb-3 pt-5 sm:pt-3 " ><a class="no-underline not-italic text-zinc-900" href="/projects/">Projects</a></li>
-            <li id=""  class="py-3 sm:px-4" ><a class="no-underline not-italic text-zinc-900" href="/cv/">CV</a></li>
-            <li id=""  class="py-3  pb-6 sm:pb-3  pr-0" ><a class="no-underline not-italic text-zinc-900" href="/writing/">Writing</a></li>
+            <li id=""  class="bg-color3 pl-4 sm:px-2 h-10 sm:h-12 flex items-center sm:justify-center min-w-24" ><a class="text-white no-underline not-italic " href="/projects/">Projects</a></li>
+            <li id=""  class="bg-color4 pl-4  sm:px-2 h-10 sm:h-12 flex items-center sm:justify-center min-w-24" ><a class="text-white no-underline not-italic " href="/cv/">CV</a></li>
+            <li id=""  class="bg-color5 pl-4  sm:px-2 h-10 sm:h-12 flex items-center sm:justify-center min-w-24" ><a class="text-white no-underline not-italic " href="/writing/">Writing</a></li>
          </ul>
            <div class="block sm:hidden">
       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">

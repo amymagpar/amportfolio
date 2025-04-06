@@ -7005,6 +7005,16 @@ details.collapse summary::-webkit-details-marker {
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
 }
 
+.hover\:text-color2:hover {
+  --tw-text-opacity: 1;
+  color: rgb(88 80 141 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-color5:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 166 0 / var(--tw-text-opacity, 1));
+}
+
 .hover\:decoration-2:hover {
   text-decoration-thickness: 2px;
 }
@@ -7165,6 +7175,18 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:bg-opacity-90 {
     --tw-bg-opacity: 0.9;
+  }
+
+  .sm\:bg-opacity-70 {
+    --tw-bg-opacity: 0.7;
+  }
+
+  .sm\:bg-opacity-80 {
+    --tw-bg-opacity: 0.8;
+  }
+
+  .sm\:bg-opacity-75 {
+    --tw-bg-opacity: 0.75;
   }
 
   .sm\:p-0 {

@@ -65,13 +65,13 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40  bg-color1 sm:bg-opacity-90 sm:backdrop-blur-lg">
+  const nav = `<header id="navbar" class=" w-full fixed top-0 z-40  bg-color1 sm:bg-opacity-80 sm:backdrop-blur-lg">
     <div class="container">
     <div class="overflow-hidden  navbar p-0 h-10 sm:h-12">
       <div class="navbar-start left-0">
         <ul class="list-none pl-0">
         <li class=" ">
-        <a class="text-white no-underline not-italic " href="/">Amy Parness</a>
+        <a class="uppercase text-white hover:text-color5 font-bold no-underline not-italic " href="/">Amy Parness</a>
         </li>
         </ul>
       </div>

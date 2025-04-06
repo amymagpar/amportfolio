@@ -68,13 +68,16 @@
     @apply list-decimal pl-5;
   }
   li {
-    @apply text-zinc-900;
+    @apply text-zinc-900 mb-3;
   }
-  li p:first-child {
+  /* li p:first-child {
+    @apply mb-0;
+  } */
+  li:last-child {
     @apply mb-0;
   }
-  li p:not(:first-child) {
-    @apply mt-0;
+  header li {
+    @apply mb-0;
   }
   strong {
     @apply font-semibold;

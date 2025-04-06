@@ -17,7 +17,7 @@ df-messenger {
   --df-messenger-message-user-background: #d3e3fd;
   --df-messenger-message-bot-background: #fafafa;
   --df-messenger-chat-bubble-icon-color: #fafafa;
-  --df-messenger-chat-bubble-background: #bc5090;
+  --df-messenger-chat-bubble-background: #ffa600;
   bottom: 16px;
   right: 16px;
 }

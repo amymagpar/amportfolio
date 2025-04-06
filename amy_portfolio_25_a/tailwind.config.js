@@ -43,6 +43,11 @@ module.exports = {
         tintpink: "#e6a6c9",
         tintviolet: "#c7a6d8",
         tintbrown: "#a7856e",
+        color1: "#003f5c",
+        color2: "#58508d",
+        color3: "#bc5090",
+        color4: "#ff6361",
+        color5: "#ffa600",
       },
       screens: {
         // "3xl": "1900px",

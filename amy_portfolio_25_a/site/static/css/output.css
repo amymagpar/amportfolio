@@ -7029,6 +7029,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-color4:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 99 97 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity, 1)));
@@ -7069,6 +7074,16 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(68 160 227 / var(--tw-bg-opacity, 1));
 }
 
+.focus\:bg-color5:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 166 0 / var(--tw-bg-opacity, 1));
+}
+
+.focus\:bg-color4:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 99 97 / var(--tw-bg-opacity, 1));
+}
+
 .focus\:shadow-lg:focus {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -7089,6 +7104,11 @@ details.collapse summary::-webkit-details-marker {
 .active\:bg-\[\#ca983c\]:active {
   --tw-bg-opacity: 1;
   background-color: rgb(202 152 60 / var(--tw-bg-opacity, 1));
+}
+
+.active\:bg-color3:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 80 144 / var(--tw-bg-opacity, 1));
 }
 
 .active\:text-orange-500:active {

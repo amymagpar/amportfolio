@@ -169,21 +169,21 @@ const scrollFunction = () => {
     mybutton.classList.add("animate-reverse");
     mybutton.classList.add("hidden");
     mybutton.classList.remove("!animate-bounce");
-    mybutton.classList.remove("!bg-accent");
+    mybutton.classList.remove("!bg-color3");
   }
   // At the bottom
   else if (scrolledToBottom) {
     mybutton.classList.remove("animate-reverse");
     mybutton.classList.remove("hidden");
     mybutton.classList.add("!animate-bounce");
-    mybutton.classList.add("!bg-accent");
+    mybutton.classList.add("!bg-color3");
   }
   // In between
   else {
     mybutton.classList.remove("animate-reverse");
     mybutton.classList.remove("hidden");
     mybutton.classList.remove("!animate-bounce");
-    mybutton.classList.remove("!bg-accent");
+    mybutton.classList.remove("!bg-color3");
   }
 };
 

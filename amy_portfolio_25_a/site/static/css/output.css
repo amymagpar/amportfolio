@@ -4770,6 +4770,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 2rem;
 }
 
+.\!mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
 .block {
   display: block;
 }
@@ -7041,6 +7045,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-stone-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity, 1)));
@@ -7301,6 +7310,16 @@ details.collapse summary::-webkit-details-marker {
     --tw-bg-opacity: 1;
     background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
   }
+
+  .hover\:sm\:bg-stone-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
+  }
+
+  .hover\:sm\:bg-stone-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(231 229 228 / var(--tw-bg-opacity, 1));
+  }
 }
 
 @media (min-width: 768px) {
@@ -7396,6 +7415,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:pt-48 {
+    padding-top: 12rem;
   }
 
   .md\:text-2xl {

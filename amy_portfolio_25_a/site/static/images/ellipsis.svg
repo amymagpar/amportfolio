@@ -3,8 +3,8 @@
    viewBox="0 0 448 512"
    version="1.1"
    id="svg1"
-   sodipodi:docname="ellipsis_w.svg"
-   inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
+   sodipodi:docname="ellipsis.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,22 +21,18 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.4042969"
-     inkscape:cx="224.80585"
+     inkscape:cx="224.59789"
      inkscape:cy="256"
-     inkscape:window-width="3374"
-     inkscape:window-height="1416"
+     inkscape:window-width="3396"
+     inkscape:window-height="1440"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="path1" />
+     inkscape:current-layer="svg1" />
   <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-  <g
+  <path
+     d="m 10.399998,256 c 0,-26.28877 21.311247,-47.59998 47.600001,-47.59998 26.288754,0 47.600001,21.31121 47.600001,47.59998 0,26.28877 -21.311247,47.59998 -47.600001,47.59998 -26.288754,0 -47.600001,-21.31121 -47.600001,-47.59998 z M 176.4,256 c 0,-26.28877 21.31125,-47.59998 47.6,-47.59998 26.28875,0 47.6,21.31121 47.6,47.59998 0,26.28877 -21.31125,47.59998 -47.6,47.59998 -26.28875,0 -47.6,-21.31121 -47.6,-47.59998 z M 390,208.4 c 26.28877,0 47.59998,21.31125 47.59998,47.6 0,26.28875 -21.31121,47.6 -47.59998,47.6 -26.28877,0 -47.59998,-21.31125 -47.59998,-47.6 0,-26.28875 21.31121,-47.6 47.59998,-47.6 z"
      id="path1"
-     style="opacity:1;fill:#ff0000">
-    <path
-       style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#ffffff;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       d="m 58,201.40039 c -30.071828,0 -54.5996094,24.52776 -54.5996094,54.59961 0,30.07185 24.5277814,54.59961 54.5996094,54.59961 30.071828,0 54.59961,-24.52776 54.59961,-54.59961 0,-30.07185 -24.527782,-54.59961 -54.59961,-54.59961 z m 166,0 c -30.07183,0 -54.59961,24.52776 -54.59961,54.59961 0,30.07185 24.52778,54.59961 54.59961,54.59961 30.07183,0 54.59961,-24.52776 54.59961,-54.59961 0,-30.07185 -24.52778,-54.59961 -54.59961,-54.59961 z m 166,0 c -30.07185,0 -54.59961,24.52778 -54.59961,54.59961 0,30.07183 24.52776,54.59961 54.59961,54.59961 30.07185,0 54.59961,-24.52778 54.59961,-54.59961 0,-30.07183 -24.52776,-54.59961 -54.59961,-54.59961 z"
-       id="path3"
-       sodipodi:nodetypes="sssssssssssssss" />
-  </g>
+     style="fill:none;stroke:#000000;stroke-width:14;stroke-dasharray:none;stroke-opacity:1"
+     sodipodi:nodetypes="sssssssssssssss" />
 </svg>

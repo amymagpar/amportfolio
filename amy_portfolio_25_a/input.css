@@ -94,7 +94,13 @@
 }
 
 @layer extend {
-  giantText {
+  .glass-antiqua-regular {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .giantText {
     @apply mb-6 text-4xl font-black uppercase sm:text-7xl lg:mb-12 lg:text-8xl leading-[6rem] sm:leading-[6rem] md:leading-[6rem] lg:leading-[6rem] xl:leading-[6rem] 2xl:leading-[6rem];
   }
 }

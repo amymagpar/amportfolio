@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sustainability of Series switches</title>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="radarChart"></div>
     <script>
-        var options = {
-            chart: {
-                type: 'radar',
-                height: 400
-            },
-            series: [
-                {
-                    name: 'Catalyst 9300',
-                    data: [40, 90, 60, 85, 70],
-                    color: '#ed9f6b'
-                },
-                {
-                    name: 'Nexus 9300',
-                    data: [70, 75, 85, 60, 60],
-                    color: '#E3447C'
-                },
-                {
-                    name: 'MDS 9710',
-                    data: [90, 85, 50, 75, 95],
-                    color: '#97bc86'
-                }
-            ],
-            xaxis: {
-                categories: [
-                    'End-of-Life',
-                    'Idle State Power Management',
-                    'Energy Efficiency',
-                    'Longevity',
-                    'Thermal Management'
-                ]
-            }
-        };
-        
-        var chart = new ApexCharts(document.querySelector("#radarChart"), options);
-        chart.render();
+      var options = {
+        chart: {
+          type: "radar",
+          height: 400,
+        },
+        series: [
+          {
+            name: "Catalyst 9300",
+            data: [40, 90, 60, 85, 70],
+            color: "#ed9f6b",
+          },
+          {
+            name: "Nexus 9300",
+            data: [70, 75, 85, 60, 60],
+            color: "#E3447C",
+          },
+          {
+            name: "MDS 9710",
+            data: [90, 85, 50, 75, 95],
+            color: "#97bc86",
+          },
+        ],
+        xaxis: {
+          categories: [
+            "End-of-Life",
+            "Idle State Power Management",
+            "Energy Efficiency",
+            "Longevity",
+            "Thermal Management",
+          ],
+        },
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector("#radarChart"),
+        options,
+      );
+      chart.render();
     </script>
-</body>
+  </body>
 </html>

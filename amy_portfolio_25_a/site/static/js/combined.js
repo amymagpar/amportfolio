@@ -73,7 +73,7 @@ function insertNavigation() {
       <div class="navbar-center flex-grow">
         <ul class="list-none pl-0">
         <li class=" ">
-        <a class="text-[#000] glass-antiqua-regular hover:text-color5 upperase text-4xl  no-underline not-italic " href="/">AMP</a>
+        <a class="leading-none text-[#000] glass-antiqua-regular hover:text-color5 upperase text-4xl  no-underline not-italic " href="/">AMP</a>
         </li>
         </ul>
       </div>

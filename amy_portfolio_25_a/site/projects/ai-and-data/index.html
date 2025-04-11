@@ -96,7 +96,7 @@
       </div>
 
       <!-- Impact -->
-      <div class=" text-zinc-600 pt-24 pb-36">
+      <div class=" text-zinc-600 pt-24 pb-36 mt-24">
         <div class="container bg-toneblue mix-blend-multiply px-6 md:px-12 pt-16 pb-24 sm:rounded-3xl shadow-xl">
             <h1
               class=" mb-12 leading-7 "
@@ -515,16 +515,16 @@
         
       </div>
       <div class="grid mb-24 lg:grid-cols-12 gap-12">
-      <div class="lg:col-span-6">
-        <h3 class="">
-          Personality: Bold, Reliable, and Forward-Thinking
-        </h3>
-        <p class="">
-          The AI Assistant is like a Cisco-certified expert—it doesn’t hesitate,
-          it makes strong recommendations, and it guides the user with
-          confidence.
-        </p>
-      </div>
+        <div class="lg:col-span-6">
+          <h3 class="">
+            Personality: Bold, Reliable, and Forward-Thinking
+          </h3>
+          <p class="">
+            The AI Assistant is like a Cisco-certified expert—it doesn’t hesitate,
+            it makes strong recommendations, and it guides the user with
+            confidence.
+          </p>
+        </div>
         <div
           class="lg:col-span-6 flex flex-col p-8 px-12 border border-zinc-300 bevel bg-[#fff] shadow-lg rounded-2xl mb-12"
         >
@@ -577,14 +577,15 @@
         </div>
         <!-- chat end -->
       </div>
-      <div class="grid mb-24 lg:grid-cols-12 gap-12 mt-24">
+    </div>
+      <div class="sm:grid mb-24 lg:grid-cols-12 gap-12 mt-24 pb-48 sm:container">
         <div class="lg:col-span-12">
-          <h2>Intent Modeling Examples</h2>
+          <h2 class="px-4 sm:px-0">Intent Modeling Examples</h2>
         </div>
         <div class="md:col-span-2 lg:col-span-12">
-          <h3>Network Security &amp; Threat Detection</h3>
-          <div>
-            <table class="table-auto w-full border-collapse bg-white border-4 border-zinc-500 shadow-lg">
+          <h3 class="mb-2 px-4 sm:px-0">Network Security &amp; Threat Detection</h3>
+          <div class="overflow-x:auto;">
+            <table class="text-sm table-auto w-full border-collapse bg-white border border-zinc-500 ">
               <tr>
                 <th class="py-2 px-2 bg-zinc-200 text-left border border-zinc-400 " >
                   Component
@@ -595,12 +596,12 @@
               </tr>
               <tr>
                 <td class="border border-zinc-400 py-2 px-2"><strong>Intent Name</strong></td>
-                <td class="border border-zinc-400 py-2 px-2"><span class="bg- text-"> Find_Security_App</span></td>
+                <td class="border border-zinc-400 py-2 px-2"><span class=""> Find_Security_App</span></td>
               </tr>
               <tr>
                 <td class="border border-zinc-400 py-2 px-2"><strong>User Query</strong></td>
                 <td class="border border-zinc-400 py-2 px-2 italic text-zinc-600">
-                  "I need an app provides <span class="bg-tintyellow text-black rounded whitespace-nowrap p-1 leading-loose mix-blend-multiply">&nbsp;AI-driven <span class="bg-tintorange text-black rounded whitespace-nowrap p-0 leading-loose mix-blend-multiply">&nbsp;threat&nbsp;</span> detection&nbsp;</span> <span class="bg-tintblue text-black rounded whitespace-nowrap p-1 leading-loose mix-blend-multiply">&nbsp;for Cisco Meraki&nbsp;</span>?"
+                  "I need an app provides <br class="sm:hidden"/><span class="bg-tintyellow text-black rounded whitespace-nowrap p-1 leading-loose mix-blend-multiply">&nbsp;AI-driven <span class="bg-tintorange text-black rounded whitespace-nowrap p-0 leading-loose mix-blend-multiply">&nbsp;threat&nbsp;</span> detection&nbsp;</span> <br class="sm:hidden"/><span class="bg-tintblue text-black rounded whitespace-nowrap p-1 leading-loose mix-blend-multiply">&nbsp;for Cisco Meraki&nbsp;</span>?"
                 </td>
               </tr>
               <tr>
@@ -608,15 +609,12 @@
                   <strong>Entities Extracted</strong>
                 </td>
                 <td class="border border-zinc-400 py-2 px-2">
-                  <span class="bg-tintyellow text-black rounded whitespace-nowrap p-1 leading-loose">
-                    <strong>&nbsp;Feature:</strong> AI-driven threat detection&nbsp;
+                  <span class="bg-tintyellow text-black rounded whitespace-nowrap p-1 leading-loose">&nbsp;<strong>Feature:</strong> AI-driven threat detection&nbsp;
                   </span>,
-                  <span class="bg-tintblue text-black rounded whitespace-nowrap p-1 leading-loose">
-                    <strong>&nbsp;Product:</strong> Cisco Meraki&nbsp;
-                  </span>,
-                  <span class="bg-tintorange text-black rounded whitespace-nowrap p-1 leading-loose">
-                    <strong>&nbsp;Category:</strong> Security&nbsp;
-                  </span>,
+                  <span class="bg-tintblue text-black rounded whitespace-nowrap p-1 leading-loose">&nbsp;<strong>Product:</strong> Cisco Meraki&nbsp;
+                  </span>, <br class="sm:hidden"/>
+                  <span class="bg-tintorange text-black rounded whitespace-nowrap p-1 leading-loose">&nbsp;<strong>Category:</strong> Security&nbsp;
+                  </span>, <br class="sm:hidden"/>
                   <span class="bg-tintgreen text-black rounded whitespace-nowrap p-1 leading-loose">&nbsp;<strong>User_Type:</strong> Developer&nbsp;
                   </span>
                 </td>
@@ -625,11 +623,9 @@
                 <td class="border border-zinc-400 py-2 px-2">
                   <strong>AI Response Example</strong>
                 </td>
-                <td class="border border-zinc-400 py-2 px-2 italic text-zinc-600">
-                  "Here are the top AI-driven threat detection apps compatible
-                  with Cisco Meraki. You can filter results based on machine
-                  learning models, real-time alerts, and compliance standards."
-                </td>
+                <td class="border border-zinc-400 py-2 px-2 italic text-zinc-600 " >
+                  "Here are the top AI-driven threat detection apps compatible with Cisco Meraki. You can filter results based on machine learning models, real-time alerts, and compliance standards."
+                   </td>
               </tr>
             </table>
           </div>
@@ -637,10 +633,10 @@
 
 
         
-      <div class="md:col-span-2 lg:col-span-12">
-          <h3>Network Performance Monitoring</h3>
+      <div class="md:col-span-2 lg:col-span-12 mt-12 sm:mt-0">
+          <h3 class="mb-2 px-4 sm:px-0">Network Performance Monitoring</h3>
           <div>
-            <table class="table-auto w-full border-collapse bg-white border-4 border-zinc-500 shadow-lg">
+            <table class="text-sm table-auto w-full border-collapse bg-white border border-zinc-500 ">
               <tr>
                 <th class="py-2 px-2 bg-zinc-200 text-left border border-zinc-400 " >
                   Component
@@ -667,8 +663,7 @@
                 <td class="border border-zinc-400 py-2 px-2">
                   <span class="bg-tintviolet text-black rounded whitespace-nowrap p-1 leading-loose"> <strong>&nbsp;Feature:</strong> Real-time performance monitoring&nbsp;
                   </span>,
-                  <span class="bg-tintblue text-black rounded whitespace-nowrap p-1 leading-loose">
-                    <strong>&nbsp;Product:</strong> Cisco SD-WAN&nbsp;
+                  <span class="bg-tintblue text-black rounded whitespace-nowrap p-1 leading-loose"><strong>&nbsp;Product:</strong> Cisco SD-WAN&nbsp;
                   </span>,&nbsp; <br> 
                   <span class="bg-tintorange text-black rounded whitespace-nowrap p-1 leading-loose">
                     <strong>&nbsp;Category:</strong> Network Optimization&nbsp;
@@ -690,12 +685,11 @@
         </div>
       </div>
     </div>
-  </div>
 
     <div class="py-48 ">
-      <div class="container grid mb-24 lg:grid-cols-12 gap-12 ">
+      <div class="container sm:grid mb-24 lg:grid-cols-12 gap-12 ">
         <div class="lg:col-span-12 lg:col-start-1">
-          <h1 class="mb-3">
+          <h1 class="mb-3 !leading-tight">
             Meraki Marketplace
             <span class="whitespace-nobreak">AI search &amp; chat</span>
           </h1>
@@ -793,9 +787,9 @@
     </div>    
 
     <div class="py-48 bg-zinc-600 text-white">
-      <div class="container grid mb-24 lg:grid-cols-12 gap-12 ">
+      <div class="container grid mb-24 lg:grid-cols-12 gap-4 sm:gap-12 ">
         <div class="lg:col-span-12 lg:col-start-1">
-          <h1 class="mb-3">
+          <h1 class="mb-3 !leading-tight">
             Integration with the Meraki Dashboard
           </h1>
           <span class="block text-lg font-normal uppercase"
@@ -815,9 +809,9 @@
     </div>
 
     <div class="py-48 bg-white ">
-      <div class="container grid mb-24 lg:grid-cols-12 gap-12 ">
+      <div class="container grid mb-24 lg:grid-cols-12 gap-4 sm:gap-12 ">
         <div class="lg:col-span-12 lg:col-start-1">
-          <h1 class="mb-24">
+          <h1 class="mb-24 !leading-tight">
             Collaboration with Engineering
           </h1>
         </div>
@@ -833,9 +827,9 @@
 
     <div class="py-48 bg-tintpink">
       <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 ">
+        <div class="grid md:grid-cols-2 gap-4 sm:gap-12 ">
           <div class="">
-            <h1 class="mb-12">Educating the Team on AI Implementation</h1>
+            <h1 class="mb-12 !leading-tight">Educating the Team on AI Implementation</h1>
             <p>
               To align stakeholders across <strong
                 >sales, engineering, and product</strong

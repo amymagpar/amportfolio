@@ -104,9 +104,9 @@ function insertNavigation() {
         sm:w-auto
         ease-in-out
         ">
-            <li id=""  class="pl-4 sm:pl-0  h-10 sm:h-12 flex items-center sm:justify-center " ><a class="text-[#000] hover:text-color2 no-underline not-italic " href="/projects/">Projects,&nbsp;</a></li>
-            <li id=""  class=" pl-4 sm:pl-0   h-10 sm:h-12 flex items-center sm:justify-center " ><a class="text-[#000] hover:text-color3 no-underline not-italic " href="/cv/">CV,&nbsp;</a></li>
-            <li id=""  class=" pl-4 sm:pl-0   h-10 sm:h-12 flex items-center sm:justify-center " ><a class="text-[#000] hover:text-color4 no-underline not-italic " href="/writing/">Writing</a></li>
+            <li id=""  class="pl-4 sm:pl-0 h-10 sm:h-12 flex items-center sm:justify-center " ><a class="text-[#000] hover:text-color2 no-underline not-italic " href="/projects/">Projects</a></li>
+            <li id=""  class=" pl-4 sm:pl-4   h-10 sm:h-12 flex items-center sm:justify-center " ><a class="text-[#000] hover:text-color3 no-underline not-italic " href="/cv/">CV</a></li>
+            <li id=""  class=" pl-4 sm:pl-4   h-10 sm:h-12 flex items-center sm:justify-center " ><a class="text-[#000] hover:text-color4 no-underline not-italic " href="/writing/">Writing</a></li>
          </ul>
            <div class="block sm:hidden">
       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">

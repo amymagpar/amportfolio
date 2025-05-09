@@ -4731,6 +4731,10 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 0px;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -4781,6 +4785,10 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-72 {
+  margin-bottom: 18rem;
 }
 
 .block {
@@ -6007,6 +6015,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
 }
 
 .text-left {
@@ -7306,6 +7318,10 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .sm\:pl-8 {
+    padding-left: 2rem;
   }
 
   .sm\:text-left {

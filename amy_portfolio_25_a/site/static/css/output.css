@@ -4585,10 +4585,6 @@ details.collapse summary::-webkit-details-marker {
   grid-column: span 12 / span 12;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -5378,6 +5374,11 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(255 166 0 / var(--tw-border-opacity, 1));
 }
 
+.border-colorgrey {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
@@ -5483,9 +5484,9 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(63 63 70 / var(--tw-border-opacity, 1));
 }
 
-.border-zinc-900 {
+.border-tonegreen {
   --tw-border-opacity: 1;
-  border-color: rgb(24 24 27 / var(--tw-border-opacity, 1));
+  border-color: rgb(79 239 148 / var(--tw-border-opacity, 1));
 }
 
 .\!bg-accent {
@@ -5590,7 +5591,7 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-tintorange {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 200 160 / var(--tw-bg-opacity, 1));
+  background-color: rgb(239 148 79 / var(--tw-bg-opacity, 1));
 }
 
 .bg-tintpink {
@@ -5620,7 +5621,7 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-tonegreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(3 218 197 / var(--tw-bg-opacity, 1));
+  background-color: rgb(79 239 148 / var(--tw-bg-opacity, 1));
 }
 
 .bg-toneorange {
@@ -5630,7 +5631,7 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-tonepink {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 2 163 / var(--tw-bg-opacity, 1));
+  background-color: rgb(239 79 170 / var(--tw-bg-opacity, 1));
 }
 
 .bg-tonered {
@@ -5710,6 +5711,11 @@ details.collapse summary::-webkit-details-marker {
 .bg-zinc-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
+}
+
+.bg-fullred {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 79 90 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -6173,7 +6179,7 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#333333\] {
+.text-\[\#333\] {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity, 1));
 }
@@ -6220,7 +6226,7 @@ details.collapse summary::-webkit-details-marker {
 
 .text-fullred {
   --tw-text-opacity: 1;
-  color: rgb(233 28 42 / var(--tw-text-opacity, 1));
+  color: rgb(239 79 90 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-600 {
@@ -6268,19 +6274,14 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(82 82 91 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#000000\] {
+.text-zinc-800 {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+  color: rgb(39 39 42 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#33ff33\] {
+.text-colorgrey {
   --tw-text-opacity: 1;
-  color: rgb(51 255 51 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#ffffff\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(51 51 51 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -7515,6 +7516,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 3.5rem;
   }
 
+  .md\:gap-24 {
+    gap: 6rem;
+  }
+
   .md\:gap-8 {
     gap: 2rem;
   }
@@ -7630,6 +7635,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .lg\:col-start-1 {
@@ -7839,6 +7848,10 @@ details.collapse summary::-webkit-details-marker {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -7904,6 +7917,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pb-64 {
     padding-bottom: 16rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
   }
 
   .lg\:pt-48 {
@@ -8162,6 +8179,11 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:rounded-md {
     border-radius: 0.375rem;
+  }
+
+  .\32xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .\32xl\:py-48 {

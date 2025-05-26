@@ -1,5 +1,0 @@
-[project]
-name = amyparness
-
-[packages]
-lektor-tailwind = 0.2.0

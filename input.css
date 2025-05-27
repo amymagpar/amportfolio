@@ -40,10 +40,10 @@
     @apply mb-6;
   } */
   h1 {
-    @apply text-4xl !leading-[4rem] sm:text-5xl lg:!leading-[3.25rem] 2xl:text-6xl !font-display text-balance font-bold text-pretty mb-0;
+    @apply text-4xl leading-[4rem] sm:text-5xl lg:leading-[3.25rem] 2xl:text-6xl font-display text-balance font-bold text-pretty mb-0;
   }
   h2 {
-    @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl uppercase font-extralight !leading-[2.5rem] mb-6;
+    @apply text-3xl text-balance lg:text-4xl 2xl:text-4xl uppercase font-extralight leading-[2.5rem] mb-6;
   }
   h3 {
     @apply text-lg text-balance font-bold lg:text-xl;

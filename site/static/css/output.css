@@ -6168,6 +6168,10 @@ details.collapse summary::-webkit-details-marker {
   font-style: normal;
 }
 
+.\!leading-\[4\.5rem\] {
+  line-height: 4.5rem !important;
+}
+
 .\!leading-tight {
   line-height: 1.25 !important;
 }
@@ -6198,26 +6202,6 @@ details.collapse summary::-webkit-details-marker {
 
 .leading-tight {
   line-height: 1.25;
-}
-
-.\!leading-\[1\.5rem\] {
-  line-height: 1.5rem !important;
-}
-
-.\!leading-\[0\.5rem\] {
-  line-height: 0.5rem !important;
-}
-
-.\!leading-\[2\.5rem\] {
-  line-height: 2.5rem !important;
-}
-
-.\!leading-\[3\.5rem\] {
-  line-height: 3.5rem !important;
-}
-
-.\!leading-\[4\.5rem\] {
-  line-height: 4.5rem !important;
 }
 
 .tracking-tight {
@@ -7489,6 +7473,10 @@ details.collapse summary::-webkit-details-marker {
   .md\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .md\:mb-24 {

@@ -9,7 +9,7 @@
   }
   .headline {
     @apply text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl
-    !leading-[3.25rem] sm:!leading-[3.25rem] md:!leading-[3.25rem] lg:!leading-[3.75rem] xl:!leading-[4.7rem] 2xl:!leading-[3.8rem] my-0;
+    !leading-[3.25rem] sm:!leading-[3.25rem] md:!leading-[3.25rem] lg:!leading-[3.75rem] xl:!leading-[4.7rem] 2xl:!leading-[4.75rem] my-0;
   }
   .badgelist {
     @apply flex flex-wrap gap-1 lg:gap-2 mt-6 mb-3;

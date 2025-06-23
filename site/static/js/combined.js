@@ -65,17 +65,18 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class="tracking-wide  w-full fixed top-0 z-40 bg-white  sm:bg-opacity-80 sm:backdrop-blur-lg">
+  const nav = `<header id="navbar" class="tracking-wide  w-full fixed top-0 z-40 bg-white sm:pt-8 sm:bg-opacity-80 sm:backdrop-blur-lg">
     <div class="container">
     <div class="overflow-hidden  navbar p-0 h-10 sm:h-12">
       <div class="navbar-start left-0">
-      </div>
-      <div class="navbar-center flex-grow">
-        <ul class="list-none pl-0">
+       <ul class="list-none pl-0">
         <li class=" ">
         <a class="leading-none text-[#000] glass-antiqua-regular hover:text-color5 upperase text-4xl  no-underline not-italic " href="/">AMP</a>
         </li>
         </ul>
+      </div>
+      <div class="navbar-center flex-grow">
+       
       </div>
       <div class="navbar-end">
       <ul id="myTopnav" class="

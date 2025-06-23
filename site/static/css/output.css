@@ -923,9 +923,8 @@ a:hover {
 }
 
 p, ul, ol {
+  /* @apply !text-balance  mb-3 max-w-prose; */
   margin-bottom: 0.75rem;
-  max-width: 65ch;
-  text-wrap: balance !important;
   /* @apply text-pretty leading-tight tracking-tight mb-4; */
 }
 
@@ -5062,12 +5061,32 @@ details.collapse summary::-webkit-details-marker {
   max-width: none !important;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
 
 .max-w-\[2000px\] {
   max-width: 2000px;
+}
+
+.max-w-\[50ch\] {
+  max-width: 50ch;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .flex-grow {
@@ -5837,6 +5856,10 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -7286,10 +7309,6 @@ details.collapse summary::-webkit-details-marker {
     width: auto;
   }
 
-  .sm\:max-w-lg {
-    max-width: 32rem;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -7367,6 +7386,10 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
   }
 
   .sm\:text-left {
@@ -7528,10 +7551,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:max-w-xl {
-    max-width: 36rem;
   }
 
   .md\:scale-100 {
@@ -7840,17 +7859,8 @@ details.collapse summary::-webkit-details-marker {
     width: 24rem;
   }
 
-  .lg\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:max-w-5xl {
-    max-width: 64rem;
   }
 
   .lg\:columns-2 {
@@ -7965,11 +7975,6 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 12rem;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 1.375;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1.375;
@@ -7987,14 +7992,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:leading-\[6rem\] {
     line-height: 6rem;
-  }
-
-  .lg\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .lg\:leading-relaxed {
-    line-height: 1.625;
   }
 }
 
@@ -8126,11 +8123,6 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 16rem;
   }
 
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 1.375;
-  }
-
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1.375;
@@ -8211,8 +8203,8 @@ details.collapse summary::-webkit-details-marker {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .\32xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\32xl\:grid-cols-5 {
@@ -8265,11 +8257,6 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:text-2xl {
     font-size: 1.5rem;
-    line-height: 1.375;
-  }
-
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
     line-height: 1.375;
   }
 

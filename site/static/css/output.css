@@ -5061,28 +5061,12 @@ details.collapse summary::-webkit-details-marker {
   max-width: none !important;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
 }
 
 .max-w-\[2000px\] {
   max-width: 2000px;
-}
-
-.max-w-\[50ch\] {
-  max-width: 50ch;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-\[600px\] {
-  max-width: 600px;
 }
 
 .max-w-\[800px\] {
@@ -5622,11 +5606,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-color5 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 166 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-cyan-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 145 178 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary {
@@ -6341,6 +6320,11 @@ details.collapse summary::-webkit-details-marker {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity, 1));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -7425,11 +7409,6 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.375;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.375;
-  }
-
   .sm\:font-extralight {
     font-weight: 200;
   }
@@ -7628,6 +7607,16 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:text-7xl {
     font-size: 4.5rem;
+    line-height: 1.375;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.375;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
     line-height: 1.375;
   }
 
@@ -8201,10 +8190,6 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .\32xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\32xl\:grid-cols-5 {

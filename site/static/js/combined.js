@@ -3,26 +3,7 @@ console.log("Combined JavaScript file loaded");
 // Head Component (from head.js)
 document.addEventListener("DOMContentLoaded", () => {
   const headContent = `
-
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <style>
-
-df-messenger {
-  z-index: 999;
-  position: fixed;
-  --df-messenger-fomt-color: #000;
-  // --df-messenger-font-family: Google Sans;
-  // --df-messenger-font-family: Inter Var;
-  --df-messenger-chat-background: #f3f6fc;
-  --df-messenger-message-user-background: #d3e3fd;
-  --df-messenger-message-bot-background: #fafafa;
-  --df-messenger-chat-bubble-icon-color: #fafafa;
-  --df-messenger-chat-bubble-background: #ffa600;
-  bottom: 16px;
-  right: 16px;
-}
-
-
 .animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 .animate-right{position:-300px;opacity: 0;animation:animateright 0.4s forwards;animation-delay: 150ms;}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 .animate-left-1{position:relative;opacity: 0;animation:animateleft-1 0.4s forwards;animation-delay: 300ms;}@keyframes animateleft-1{from{left:-300px;opacity:0} to{left:0;opacity:1}}
@@ -154,6 +135,7 @@ document.addEventListener("DOMContentLoaded", insertFooter);
 // Scroll and Navigation Script (from script.js)
 // Get the button
 const mybutton = document.getElementById("btn-back-to-top");
+mybutton.classList.add("mix-blend-multiply");
 
 // When the user scrolls, handle button visibility and animation
 const scrollFunction = () => {

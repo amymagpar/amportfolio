@@ -61,7 +61,10 @@
           </div>
         </a>
 
-        <a href="" class="no-underline not-italic group relative">
+        <div
+          class="no-underline not-italic group relative cursor-pointer"
+          onclick="showAwsToast()"
+        >
           <div
             class="card bg-base-100 shadow-lg transition-all h-full duration-200"
           >
@@ -97,10 +100,9 @@
             class="opacity-0 group-hover:opacity-100 fixed bg-color4 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap pointer-events-none transition-all duration-200 transform -translate-x-1/2"
             id="tooltip"
           >
-            Proprietary information. Contact me to find out more about this
-            project.
+            CONFIDENTIAL
           </div>
-        </a>
+        </div>
 
         <a href="lucid/" class="no-underline not-italic group relative">
           <div
@@ -254,6 +256,35 @@
       </div>
     </div>
 
+    <!-- Toast notification -->
+    <div
+      class="toast toast-top toast-center z-50"
+      id="awsToast"
+      style="display: none"
+    >
+      <div
+        class="alert bg-color4 text-white shadow-lg w-[calc(100vw-2rem)] sm:w-uto sm:max-w-lg mx-4 md:max-w-2xl"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="stroke-current shrink-0 w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="text-sm text-balance"
+          >This project contains proprietary information. Contact me to learn
+          more.</span
+        >
+      </div>
+    </div>
+
     <!-- Back  to top button -->
     <button
       class="bg-color5 focus:bg-color4 active:bg-color3 animate-fade-up animate-once animate-duration-[250ms] animate-ease-in !fixed bottom-5 start-5 hidden rounded-full p-3 text-xs font-medium uppercase leading-tight text-white hover:bg-color4 focus:outline-none focus:ring-0"
@@ -277,6 +308,14 @@
     </button>
 
     <script>
+      function showAwsToast() {
+        const toast = document.getElementById("awsToast");
+        toast.style.display = "block";
+        setTimeout(() => {
+          toast.style.display = "none";
+        }, 4000); // Hide after 4 seconds
+      }
+
       function toggleReveal() {
         const el = document.getElementById("revealBox");
         el.classList.toggle("max-h-0");

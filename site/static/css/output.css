@@ -5757,6 +5757,16 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
 }
 
+.bg-stone-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity, 1));
+}
+
+.bg-violet-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 214 254 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -5767,6 +5777,18 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(aws\/avatar_scaleup\.png\)\] {
+  background-image: url(aws/avatar_scaleup.png);
+}
+
+.bg-\[url\(\/aws\/avatar_scaleup\.png\)\] {
+  background-image: url(/aws/avatar_scaleup.png);
+}
+
+.bg-\[url\(\'\/aws\/avatar_scaleup\.png\'\)\] {
+  background-image: url('/aws/avatar_scaleup.png');
 }
 
 .from-blue-400 {
@@ -6320,11 +6342,6 @@ details.collapse summary::-webkit-details-marker {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity, 1));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -7590,8 +7607,8 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 12rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
+  .md\:text-3xl {
+    font-size: 1.875rem;
     line-height: 1.375;
   }
 
@@ -7607,16 +7624,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:text-7xl {
     font-size: 4.5rem;
-    line-height: 1.375;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.375;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
     line-height: 1.375;
   }
 

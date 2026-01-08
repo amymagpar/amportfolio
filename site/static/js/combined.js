@@ -65,7 +65,7 @@ function insertHead() {
 
 // Navigation component
 function insertNavigation() {
-  const nav = `<header id="navbar" class="tracking-wide  w-full fixed top-0 z-40 bg-white sm:pt-8 sm:bg-opacity-80 sm:backdrop-blur-lg">
+  const nav = `<header id="navbar" class="tracking-wide  w-full fixed top-0 z-40 bg-white pt-8 sm:bg-opacity-80 sm:backdrop-blur-lg">
     <div class="container">
     <div class="overflow-hidden  navbar p-0 h-10 sm:h-12">
       <div class="navbar-start left-0">

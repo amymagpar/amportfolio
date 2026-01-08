@@ -6322,11 +6322,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(82 82 91 / var(--tw-text-opacity, 1));
 }
 
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -7372,10 +7367,6 @@ details.collapse summary::-webkit-details-marker {
     padding-left: 1rem;
   }
 
-  .sm\:pt-8 {
-    padding-top: 2rem;
-  }
-
   .sm\:text-left {
     text-align: left;
   }
@@ -7590,8 +7581,8 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 12rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
+  .md\:text-3xl {
+    font-size: 1.875rem;
     line-height: 1.375;
   }
 
@@ -7607,16 +7598,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:text-7xl {
     font-size: 4.5rem;
-    line-height: 1.375;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.375;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
     line-height: 1.375;
   }
 

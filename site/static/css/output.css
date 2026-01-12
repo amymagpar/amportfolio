@@ -5490,7 +5490,7 @@ details.collapse summary::-webkit-details-marker {
 
 .border-tonegreen {
   --tw-border-opacity: 1;
-  border-color: rgb(79 239 148 / var(--tw-border-opacity, 1));
+  border-color: rgb(129 191 98 / var(--tw-border-opacity, 1));
 }
 
 .border-toneyellow {
@@ -5660,7 +5660,7 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-tonegreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(79 239 148 / var(--tw-bg-opacity, 1));
+  background-color: rgb(129 191 98 / var(--tw-bg-opacity, 1));
 }
 
 .bg-toneorange {
@@ -5690,6 +5690,11 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-violet-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 214 254 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -5757,16 +5762,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity, 1));
 }
 
-.bg-stone-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 211 209 / var(--tw-bg-opacity, 1));
-}
-
-.bg-violet-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(221 214 254 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -5777,18 +5772,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(aws\/avatar_scaleup\.png\)\] {
-  background-image: url(aws/avatar_scaleup.png);
-}
-
-.bg-\[url\(\/aws\/avatar_scaleup\.png\)\] {
-  background-image: url(/aws/avatar_scaleup.png);
-}
-
-.bg-\[url\(\'\/aws\/avatar_scaleup\.png\'\)\] {
-  background-image: url('/aws/avatar_scaleup.png');
 }
 
 .from-blue-400 {
@@ -5857,10 +5840,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-top {
-  background-position: top;
 }
 
 .bg-no-repeat {

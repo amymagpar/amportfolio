@@ -22,7 +22,7 @@ module.exports = {
         tonered: "#e88b8b",
         toneorange: "#ee4d02",
         toneyellow: "#e8cc70",
-        tonegreen: "#4fef94",
+        tonegreen: "#81bf62",
         toneblue: "#02a2ee",
         tonepink: "#ef4faA",
         toneviolet: "#d602ee",

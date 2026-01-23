@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html data-theme="mytheme" class="h-full" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Scaling Sustainability - Amy Parness</title>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="/static/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/output.css" />
+</head>
+
+<body class="bg-white">
+  <!-- HERO SECTION -->
+  <div class="flex flex-col">
+    <div class="container lg:h-screen grow py-24 lg:py-12">
+      <div class="flex flex-col lg:flex-row w-full h-full gap-12 items-center">
+        <div class="lg:w-6/12 2xl:w-5/12 mt-24">
+          <div class="font-display font-light text-xl 2xl:text-2xl leading-none m-0">
+            Cisco Systems
+          </div>
+          <h1 class="headline">Scaling Sustainability</h1>
+          <div class="badgelist mb-12">
+            <span class="badge badge-sm xl:badge-md bg-tonegreen border-tonegreen text-black">Design Strategy</span>
+            <span class="badge badge-sm xl:badge-md bg-tonegreen border-tonegreen text-black">Revenue Growth</span>
+            <span class="badge badge-sm xl:badge-md bg-tonegreen border-tonegreen text-black">AI Integration</span>
+            <span class="badge badge-sm xl:badge-md bg-tonegreen border-tonegreen text-black">Data-Informed</span>
+            <span class="badge badge-sm xl:badge-md bg-tonegreen border-tonegreen text-black">Cross-Functional Leadership</span>
+          </div>
+          <div id="tldr" class="">
+            <h3 class="text-2xl font-bold mb-4">Transforming Hidden Assets Into Competitive Advantage</h3>
+            <p class="text-lg">
+              Led design strategy to unlock Cisco's sustainability capabilities as revenue driver. Through behavioral analysis and cross-functional research, uncovered critical insight: customers actively seeking sustainability information but unable to discover relevant products—indicating broken information architecture.
+            </p>
+            <p class="text-lg mt-4">
+              Designed integrated content experience, AI-powered dashboard, and self-service discovery tools across 6 departments. Created scalable design system enabling sustainability integration into 200+ product pages.
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full lg:w-6/12 2xl:w-7/12 aspect-square justify-end">
+          <div class="w-full h-full flex place-content-center overflow-hidden rounded-sm">
+            <div id="chart" class="w-full h-full relative -left:15 md:left-3 -top-0 mix-blend-multiply"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMPACT METRICS -->
+    <div class="text-[#333] pt-12 pb-24">
+      <div class="container">
+        <div class="grid w-full md:grid-cols-2 lg:grid-cols-4 gap-6 font-medium">
+          <div class="bg-tonepink mix-blend-multiply px-4 sm:px-12 pt-16 pb-24 sm:rounded-3xl shadow-xl">
+            <p class="mt-4"><strong>Revenue Acceleration</strong></p>
+            <p class="text-xl font-bold leading-tight text-balance border-b border-b1 border-colorgrey pb-2">
+              RFP Response: Weeks → Hours
+            </p>
+            <p class="mt-2">AI-powered dashboard eliminated manual data extraction bottleneck</p>
+          </div>
+
+          <div class="bg-tonepink mix-blend-multiply px-4 sm:px-12 pt-16 pb-24 sm:rounded-3xl shadow-xl">
+            <p class="mt-4"><strong>Customer Engagement</strong></p>
+            <p class="text-xl font-bold leading-tight border-b border-b1 border-colorgrey pb-2">
+              200% Content Usage Increase
+            </p>
+            <p class="mt-2">Redesigned IA connected purpose content to product discovery</p>
+          </div>
+
+          <div class="bg-tonepink mix-blend-multiply px-4 sm:px-12 pt-16 pb-24 sm:rounded-3xl shadow-xl">
+            <p class="mt-4"><strong>Activation Optimization</strong></p>
+            <p class="text-xl font-bold leading-tight border-b border-b1 border-colorgrey pb-2">
+              20% → 55% Program Awareness
+            </p>
+            <p class="mt-2">Self-service discovery tools surfaced hidden lifecycle programs</p>
+          </div>
+
+          <div class="bg-tonepink mix-blend-multiply px-4 sm:px-12 pt-16 pb-24 sm:rounded-3xl shadow-xl">
+            <p class="mt-4"><strong>Market Position</strong></p>
+            <p class="text-xl font-bold leading-tight border-b border-b1 border-colorgrey pb-2">
+              Industry Leadership
+            </p>
+            <p class="mt-2">Positioned Cisco as leader in sustainable networking solutions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT CONTEXT -->
+  <div class="container md:mt-24">
+    <img src="sustainIllo4.png" class="mix-blend-multiply max-w-2xl" alt="Sustainability illustration" />
+  </div>
+
+  <div class="bg-toneblue text-colorgrey py-16 lg:py-24">
+    <div class="container">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-24">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">The Design Challenge</h2>
+          <p class="text-lg mb-6">
+            Cisco launched new sustainability-focused data center products but lacked customer-facing information about their environmental benefits. Marketing copy existed, but actionable technical data remained trapped in engineering silos.
+          </p>
+          <p class="text-lg">
+            User research revealed a critical gap: <strong>only 20% of customers and sales teams knew where to find sustainability data</strong> or were aware of Cisco's circular economy programs. For a company committed to environmental leadership, this wasn't just an information gap—it was a massive missed revenue opportunity.
+          </p>
+        </div>
+        <div>
+          <p class="text-xl font-semibold mb-4">Cross-Functional Scope</p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="bg-white/20 p-4 rounded-lg">
+              <p class="font-semibold">Sales Teams</p>
+              <p class="text-sm">RFP responses</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+              <p class="font-semibold">Product Marketing</p>
+              <p class="text-sm">Product collateral</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+              <p class="font-semibold">Engineering</p>
+              <p class="text-sm">Data management</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+              <p class="font-semibold">Customers</p>
+              <p class="text-sm">Evaluation criteria</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+              <p class="font-semibold">Product Teams</p>
+              <p class="text-sm">Roadmap definition</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+              <p class="font-semibold">Compliance</p>
+              <p class="text-sm">Regulatory adherence</p>
+            </div>
+          </div>
+          <p class="text-lg"><strong>Timeline:</strong> 10 months</p>
+          <p class="text-lg"><strong>Team:</strong> Cross-functional (US, Europe, APJC)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCOVERY & RESEARCH -->
+  <div class="container pt-24 lg:pt-32">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8">Discovery: Uncovering the Hidden Opportunity</h2>
+      
+      <div class="bg-tonepink p-8 lg:p-12 rounded-3xl shadow-xl mb-12">
+        <p class="text-lg font-semibold mb-4">Research Approach</p>
+        <p class="text-lg mb-6">
+          Conducted cross-functional stakeholder interviews across 6 departments to understand internal workflows, customer needs, and data silos. Combined qualitative insights with behavioral analytics to validate hypotheses.
+        </p>
+        
+        <div class="bg-zinc-600 text-white p-8 rounded-2xl">
+          <p class="text-sm font-semibold mb-2">Product Engineering Manager, Sustainability</p>
+          <p class="text-xl italic">
+            "I have two RFPs from sales due in 48 hours requiring power usage metrics. I spent a day just trying to find if we have this data, only to discover it would take weeks to compile. We will lose the bids."
+          </p>
+        </div>
+        
+        <p class="text-lg mt-6">
+          This story crystallized the core problem: not a lack of data, but an <strong>architectural failure</strong> making critical information inaccessible when needed most.
+        </p>
+      </div>
+
+      <h3 class="text-3xl font-bold mb-6">Data Validation: Behavioral Analysis</h3>
+      <p class="text-lg mb-6">
+        Created sustainability-interest cohort in Adobe Analytics (organic search terms, content engagement patterns, B2B segments) to validate the hypothesis with quantitative evidence.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <p class="text-2xl font-bold text-tonegreen mb-2">73%</p>
+          <p class="font-semibold mb-2">Engaged with Thought Leadership</p>
+          <p>High-intent traffic reading ESG reports, sustainability profiles, whitepapers</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <p class="text-2xl font-bold text-tonered mb-2">12%</p>
+          <p class="font-semibold mb-2">Reached Product Pages</p>
+          <p>Critical conversion gap—awareness without discovery pathway</p>
+        </div>
+      </div>
+
+      <a href="userflow.jpg" data-lightbox="journey" data-title="User journey showing broken pathway">
+        <img src="userflow.jpg" alt="User journey analysis" class="rounded-xl shadow-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity" />
+      </a>
+      <p class="text-sm text-gray-600 mb-12">User journey visualization: 73% engagement with purpose content, only 12% progression to products</p>
+
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+        <p class="text-lg font-semibold mb-2">Key Insight</p>
+        <p class="text-lg">
+          Customers weren't ignoring sustainability—they <strong>couldn't find the pathway</strong> from "why sustainability matters" to "which Cisco products enable it." This was an information architecture problem, not a content problem.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STRATEGIC FRAMEWORK -->
+  <div class="bg-gray-50 py-24 mt-24">
+    <div class="container">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12">Strategic Framework: Three-Pillar Solution</h2>
+
+        <div class="space-y-12">
+          <!-- Pillar 1 -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="flex items-start gap-6">
+              <div class="bg-tonegreen text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-xl font-bold">1</div>
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold mb-4">Solve the Architectural Problem</h3>
+                <p class="text-lg mb-4"><strong>Problem:</strong> Sustainability data siloed in engineering dashboards, inaccessible to sales/marketing/customers—costing deals</p>
+                <p class="text-lg mb-4"><strong>Design Decision:</strong> Create AI-powered data extraction system, not just better navigation</p>
+                <p class="text-lg mb-4"><strong>What I Built:</strong> Conversational AI prototype querying complex product database, reducing data retrieval from weeks to minutes</p>
+                <p class="text-lg"><strong>Impact:</strong> RFP response time: 3 weeks → hours</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="flex items-start gap-6">
+              <div class="bg-tonegreen text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-xl font-bold">2</div>
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold mb-4">Create the Content Pathway</h3>
+                <p class="text-lg mb-4"><strong>Problem:</strong> High-intent visitors engaging with thought leadership (TOFU) but no pathway to products (BOFU)</p>
+                <p class="text-lg mb-4"><strong>Design Decision:</strong> Integrate sustainability data into product pages (contextual), not separate sustainability hub (siloed)</p>
+                <p class="text-lg mb-4"><strong>What I Built:</strong> Modular sustainability components (certifications, energy specs, lifecycle info) integrating into 200+ product pages, datasheets, comparison tools</p>
+                <p class="text-lg"><strong>Impact:</strong> 200% increase in sustainability content engagement</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="flex items-start gap-6">
+              <div class="bg-tonegreen text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-xl font-bold">3</div>
+              <div class="flex-grow">
+                <h3 class="text-2xl font-bold mb-4">Enable Self-Service Discovery</h3>
+                <p class="text-lg mb-4"><strong>Problem:</strong> Only 20% awareness of circular economy programs—existing capability, hidden from customers</p>
+                <p class="text-lg mb-4"><strong>Design Decision:</strong> Surface lifecycle programs at point of need (product research, upgrade flows), not separate portal</p>
+                <p class="text-lg mb-4"><strong>What I Built:</strong> Interactive filtering, comparison tools, visual end-of-life program indicators embedded in product discovery</p>
+                <p class="text-lg"><strong>Impact:</strong> Program awareness: 20% → 55%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
+          <p class="text-lg font-semibold mb-2">Strategic Rationale</p>
+          <p class="text-lg">
+            Prioritized #1 (AI dashboard) to solve systemic blocker enabling everything else. #2 captured high-intent traffic already on site (low customer acquisition cost). #3 provided quick win building stakeholder confidence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI SOLUTION DEEP DIVE -->
+  <div class="container py-24">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8">AI-Powered Data Extraction: From Weeks to Minutes</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12 mb-12">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">The Technical Challenge</h3>
+          <p class="text-lg mb-4">
+            Sustainability data existed in complex product database but required manual extraction, multiple legal approvals, and 2-3 weeks to compile for customer-facing use.
+          </p>
+          <p class="text-lg">
+            <strong>Strategic Decision:</strong> Rather than redesigning entire dashboard (expensive, long timeline), I prototyped conversational AI solution to validate technical feasibility before requesting engineering investment.
+          </p>
+        </div>
+        <div class="bg-tonepink p-6 rounded-xl">
+          <p class="font-semibold mb-4">Design Artifacts Created:</p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="text-tonegreen mt-1">→</span>
+              <span>Conversational flow diagrams</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-tonegreen mt-1">→</span>
+              <span>Intent modeling (15+ query types)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-tonegreen mt-1">→</span>
+              <span>Dashboard interface redesign</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-tonegreen mt-1">→</span>
+              <span>Data validation workflow</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-tonegreen mt-1">→</span>
+              <span>Error state handling patterns</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-2xl mb-12">
+        <h4 class="text-xl font-bold mb-6">Architecture & Key Design Decisions</h4>
+        <div class="space-y-6">
+          <div>
+            <p class="font-semibold text-tonegreen mb-2">Multi-turn Dialog for Disambiguation</p>
+            <p>Sales query: "Show me power consumption for Catalyst" → System: "Which series? 9200, 9300, 9400?" → Refined response</p>
+          </div>
+          <div>
+            <p class="font-semibold text-tonegreen mb-2">Embedded Governance Workflow</p>
+            <p>Legal/brand approval built into flow before external sharing—trust signal showing "verified for customer use"</p>
+          </div>
+          <div>
+            <p class="font-semibold text-tonegreen mb-2">Graceful Error Handling</p>
+            <p>When data unavailable: show last known value with timestamp + escalation path to human review</p>
+          </div>
+          <div>
+            <p class="font-semibold text-tonegreen mb-2">Smart Caching Strategy</p>
+            <p>Common queries cached for performance, partner-specific data real-time—balancing speed vs. freshness</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="intentmodel_sustainability_t.jpeg" data-lightbox="ai" data-title="Conversational AI intent model - top section">
+        <img src="intentmodel_sustainability_t.jpeg" alt="Intent modeling diagram" class="rounded-xl shadow-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity" />
+      </a>
+      <p class="text-sm text-gray-600 mb-8">Intent model mapping natural language queries to database schema (click to enlarge)</p>
+
+      <div class="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-xl">
+        <p class="text-lg font-semibold mb-2">Validation & Impact</p>
+        <p class="text-lg mb-2">
+          Two-week prototype demonstrated to stakeholders secured full engineering funding. Product manager quote: <em>"What used to take weeks now takes minutes."</em>
+        </p>
+        <p class="text-lg">
+          <strong>Business Impact:</strong> Sales team won multiple enterprise deals previously lost to slow response times
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESIGN SYSTEM & CONTENT STRATEGY -->
+  <div class="bg-toneblue py-24">
+    <div class="container">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-colorgrey">Design System & Content Strategy</h2>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <div class="bg-white p-8 rounded-2xl">
+            <h3 class="text-2xl font-bold mb-4">Scalable Design Patterns</h3>
+            <p class="text-lg mb-4">Created modular sustainability components integrated across:</p>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-start gap-2">
+                <span class="text-tonegreen mt-1 font-bold">✓</span>
+                <span>Product pages (200+ pages)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-tonegreen mt-1 font-bold">✓</span>
+                <span>Technical datasheets</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-tonegreen mt-1 font-bold">✓</span>
+                <span>Product comparison tools</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-tonegreen mt-1 font-bold">✓</span>
+                <span>Marketplace filters</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-tonegreen mt-1 font-bold">✓</span>
+                <span>Search results</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl">
+            <h3 class="text-2xl font-bold mb-4">Customer Journey Integration</h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-tonegreen">TOFU (Awareness)</p>
+                <p>Whitepapers, infographics, thought leadership</p>
+              </div>
+              <div>
+                <p class="font-semibold text-tonegreen">MOFU (Consideration)</p>
+                <p>Design guides, product comparisons, certifications</p>
+              </div>
+              <div>
+                <p class="font-semibold text-tonegreen">BOFU (Decision)</p>
+                <p>Energy specs, TCO calculators, lifecycle programs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <a href="Product_dashboard.jpg" data-lightbox="designs" data-title="AI-powered product dashboard">
+            <img src="Product_dashboard.jpg" alt="Product dashboard" class="rounded-xl shadow-lg cursor-pointer hover:opacity-90 transition-opacity" />
+          </a>
+          <a href="scalable_pattern.jpg" data-lightbox="designs" data-title="Modular sustainability components">
+            <img src="scalable_pattern.jpg" alt="Design patterns" class="rounded-xl shadow-lg cursor-pointer hover:opacity-90 transition-opacity" />
+          </a>
+          <a href="Meraki_sustain.jpg" data-lightbox="designs" data-title="Meraki sustainability integration">
+            <img src="Meraki_sustain.jpg" alt="Meraki implementation" class="rounded-xl shadow-lg cursor-pointer hover:opacity-90 transition-opacity" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OUTCOMES & LEARNINGS -->
+  <div class="container py-24">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12">Impact & Learnings</h2>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-tonepink p-8 rounded-2xl">
+          <h3 class="text-xl font-bold mb-6">Measurable Business Impact</h3>
+          <div class="space-y-6">
+            <div>
+              <p class="text-3xl font-bold text-tonegreen mb-2">3 weeks → Hours</p>
+              <p class="text-sm font-semibold mb-1">RFP Response Time</p>
+              <p>AI dashboard eliminated manual bottleneck, enabling same-day sustainability RFP responses</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold text-tonegreen mb-2">200%</p>
+              <p class="text-sm font-semibold mb-1">Content Engagement Increase</p>
+              <p>Redesigned IA connected purpose content to product discovery pathways</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold text-tonegreen mb-2">20% → 55%</p>
+              <p class="text-sm font-semibold mb-1">Program Awareness</p>
+              <p>Self-service tools surfaced hidden circular economy value</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold text-tonegreen mb-2">60%</p>
+              <p class="text-sm font-semibold mb-1">Team Efficiency Gain</p>
+              <p>Centralized dashboard became single source of truth, eliminating conflicting data</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-xl font-bold mb-6">Qualitative Outcomes</h3>
+          <div class="space-y-4">
+            <div class="border-l-4 border-tonegreen pl-4">
+              <p class="font-semibold mb-1">Market Position</p>
+              <p>Positioned Cisco as sustainability thought leader in enterprise networking</p>
+            </div>
+            <div class="border-l-4 border-tonegreen pl-4">
+              <p class="font-semibold mb-1">Sales Enablement</p>
+              <p>Sales teams gained confidence discussing sustainability metrics in customer meetings</p>
+            </div>
+            <div class="border-l-4 border-tonegreen pl-4">
+              <p class="font-semibold mb-1">Customer Satisfaction</p>
+              <p>Shifted from negative feedback (data inaccessible) to positive (best-in-class transparency)</p>
+            </div>
+            <div class="border-l-4 border-tonegreen pl-4">
+              <p class="font-semibold mb-1">Scalable Framework</p>
+              <p>Established reusable patterns adopted across other Cisco product lines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-400 p-8 rounded-r-xl">
+        <h3 class="text-xl font-bold mb-4">Key Insight</h3>
+        <p class="text-lg mb-4">
+          The most impactful UX solutions aren't always about creating new features—sometimes they're about <strong>surfacing hidden value in ways that naturally align with user needs</strong>.
+        </p>
+        <p class="text-lg">
+          By integrating sustainability data into existing workflows rather than creating separate destinations, we turned environmental impact from an afterthought into a competitive differentiator that drives measurable business outcomes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEXT PROJECT -->
+  <div class="container text-center py-24">
+    <form action="../lucid/">
+      <button type="submit" class="btn btn-primary text-lg text-zinc-50 font-normal hover:bg-tonered">
+        Next project &#8594;
+      </button>
+    </form>
+  </div>
+
+  <!-- Back to top button -->
+  <button
+    class="bg-color5 focus:bg-color4 active:bg-color3 animate-fade-up animate-once animate-duration-[250ms] animate-ease-in fixed bottom-5 start-5 hidden rounded-full p-3 text-xs font-medium uppercase leading-tight text-white mix-blend-multiply hover:bg-color4 focus:outline-none focus:ring-0"
+    id="btn-back-to-top">
+    <span class="[&>svg]:w-4">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+      </svg>
+    </span>
+  </button>
+
+  <!-- Chart Script -->
+  <script>
+    var options = {
+      series: [
+        {
+          name: "Catalyst 9300",
+          data: [80, 50, 30, 40, 100],
+        },
+        {
+          name: "Nexus 9300",
+          data: [20, 30, 40, 80, 20],
+        },
+        {
+          name: "MDS 9710",
+          data: [44, 76, 78, 13, 43],
+        },
+      ],
+      xaxis: {
+        categories: [
+          "End-of-Life",
+          "Idle Power Manage.",
+          "Energy Efficiency",
+          "Longevity",
+          "Thermal Manage",
+        ],
+        fontSize: "24px",
+        colors: ["#18181b"],
+        opacity: 1,
+      },
+      axisBorder: {
+        show: true,
+        color: "#18181b",
+        opacity: 1,
+      },
+      legend: {
+        show: false,
+        position: "bottom",
+        offsetY: -40,
+        offsetX: -80,
+      },
+      chart: {
+        toolbar: { show: false },
+        type: "radar",
+        width: "100%",
+        height: "100%",
+        dropShadow: {
+          enabled: true,
+          blur: 9,
+          left: 9,
+          top: 9,
+        },
+      },
+      plotOptions: {
+        radar: {
+          polygons: {
+            strokeColor: "#f00",
+          },
+        },
+      },
+      dataLabels: {
+        style: {
+          enabled: true,
+          fontSize: "24px",
+        },
+      },
+      title: {
+        text: "",
+      },
+      stroke: {
+        width: 2,
+      },
+      fill: {
+        opacity: 0.1,
+      },
+      markers: {
+        size: 5,
+      },
+      yaxis: {
+        stepSize: 20,
+      },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  </script>
+  <script src="/static/js/lightbox-plus-jquery.min.js"></script>
+  <script src="../../static/js/combined.js"></script>
+</body>
+
+</html>

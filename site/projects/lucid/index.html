@@ -8,7 +8,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>GTM Strategy</title>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
@@ -89,7 +88,7 @@
 
       <!-- Alternative Layout Option 2: Compact Tabs/Sections -->
       <div class="py-48">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 mb-48">
           <div class="mb-12 text-center">
             <h1>Strategic Approach</h1>
             <p class="text-base-content/60"> Personalized Education, Pre-Delivery Engagement, and Market Expansion.</p>
@@ -98,47 +97,32 @@
   
 
             <!-- Content Area -->
-            <div class="grid md:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-3  gap-6 mb-6">
               <!-- Column 1: Challenge 1 -->
-              <div class="space-y-12">
-                <div class="bg-base-100 p-6 rounded-lg border border-base-300 border-primary mb-6">
+              
+                <div class="bg-base-100 p-6 rounded-lg border border-base-300 border-primary">
                   <div class="text-xs font-bold uppercase text-primary mb-4">Challenge 1</div>
-                  <div class="text-sm space-y-2 mb-8">My research showed overwhelm for first-time EV buyers vs. experienced EV owners.</div>
+                  <div class="text-sm  mb-8">My research showed overwhelm for first-time EV buyers vs. experienced EV owners.</div>
                   <div class="text-xs font-bold uppercase text-primary mb-4">Approach</div>
-                  <div class="text-sm space-y-2"><strong>Design:</strong> Dynamic content strategy based on ownership history and geography.</p>
+                  <div class="text-sm  "><strong>Design:</strong> Dynamic content strategy based on ownership history and geography.</p>
                     <p><strong>Technical:</strong> Integrated Salesforce data to personalize onboarding flows.</p>
                   </div>
-                </div>
-
-                <div class="bg-primary text-white p-6 rounded-lg shadow-lg mb-16">
-                  <div class="text-xs font-bold uppercase mb-4">Impact</div>
-                  <p class="text-3xl font-bold mb-1">30%</p>
-                  <p class="text-sm">Reduction in support calls during first 90 days</p>
-                </div>
-              </div>
-
-              <!-- Column 2: Challenge 2 -->
-              <div class="space-y-6">
-                <div class="bg-base-100 p-6 rounded-lg border border-base-300 border-primary mb-6">
+      </div>
+ <!-- Column 2: Challenge 2 -->
+              
+                <div class="bg-base-100 p-6 rounded-lg border border-base-300 border-primary">
                   <div class="text-xs font-bold uppercase text-primary mb-4">Challenge 2</div>
-                   <div class="text-sm space-y-2 mb-8">Reservation holders had a 6-10 month wait with zero engagement → churn risk.</div>
+                   <div class="text-sm  mb-8">Reservation holders had a 6-10 month wait with zero engagement → churn risk.</div>
                   <div class="text-xs font-bold uppercase text-primary mb-4">Approach</div>
-                  <div class="text-sm space-y-2">
+                  <div class="text-sm ">
                     <p><strong>Design:</strong> Progressive task completion to build anticipation and habit formation.</p>
                     <p><strong>Coordination:</strong> Partnered with finance and delivery ops for real-time data via Salesforce APIs.</p>
                   </div>
                 </div>
 
-                <div class="bg-primary text-white p-6 rounded-lg shadow-lg mb-16">
-                  <div class="text-xs font-bold uppercase mb-4">Impact</div>
-                  <p class="text-3xl font-bold mb-1">46%</p>
-                  <p class="text-sm">Conversion from reservation to purchase</p>
-                </div>
-              </div>
-
-              <!-- Column 3: Challenge 3 -->
-              <div class="space-y-6">
-                <div class="bg-base-100 p-6 rounded-lg border border-base-300 border-primary mb-6">
+                <!-- Column 3: Challenge 3 -->
+             
+                <div class="bg-base-100 p-6 rounded-lg border border-base-300 border-primary">
                   <div class="text-xs font-bold uppercase text-primary mb-4">Challenge 3</div>
                   <div class="text-sm space-y-2 mb-12">EV ownership was 72% male, limiting addressable market.</div>
                   <div class="text-xs font-bold uppercase text-primary mb-4">Approach</div>
@@ -146,18 +130,33 @@
                     <p><strong>Design:</strong> Position value props from performance specs to practical benefits.</p>
                     <p><strong>Content:</strong> Shift imagery and messaging to appeal to diverse buyer segments.</p>
                   </div>
-                </div>
-
-                <div class="bg-primary text-white p-6 rounded-lg shadow-lg mb-16">
+             </div>
+                <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
                   <div class="text-xs font-bold uppercase mb-4">Impact</div>
-                  <p class="text-3xl font-bold mb-1">25%</p>
+                  <p class="text-5xl font-bold mb-4">30%</p>
+                  <p class="text-sm">Reduction in support calls during first 90 days</p>
+                </div>
+              
+
+             
+
+                <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
+                  <div class="text-xs font-bold uppercase mb-4">Impact</div>
+                  <p class="text-5xl font-bold mb-4">46%</p>
+                  <p class="text-sm">Conversion from reservation to purchase</p>
+                </div>
+              
+
+              
+
+                <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
+                  <div class="text-xs font-bold uppercase mb-4">Impact</div>
+                  <p class="text-5xl font-bold mb-4">25%</p>
                   <p class="text-sm">Increase in female interest in ownership.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          
 
       <div class="pb-32">
         <div class="container mx-auto px-4">
@@ -222,13 +221,15 @@ Led comprehensive discovery phase coordinating <b>15+ stakeholder interviews</b>
         <li><strong>Delivery logistics:</strong> Vehicle production milestones and shipping updates</li>
         <li><strong>Vehicle telemetry:</strong> Once the vehicle was delivered, the dashboard changed to show vehicle details.</li>
     </div> 
+    
     </div> 
-    </div>
-        <div class="md:grid md:grid-cols-3 mb-12 gap-12">
+    <div class="md:grid md:grid-cols-3 mb-12 gap-12">
           <img src="Progress2_a.png" class="reveal mx-auto block mb-8" />
           <img src="Progress2_b.png" class="reveal mx-auto block mb-8" />
           <img src="Progress2_c.png" class="reveal mx-auto block mb-8" />
         </div>
+    </div>
+        
       </div>
       <a href="flow_overview.png">
         <img
@@ -243,14 +244,13 @@ Led comprehensive discovery phase coordinating <b>15+ stakeholder interviews</b>
   </div>
   <div class="grid md:grid-cols-2 gap-8 md:gap-12 mb-12">
     <div class="prose">
-<h3></h3>
       <ul>
-        <li><strong>Phased API availability:</strong> Designed graceful empty states and "coming soon" indicators for features launching post-launch.</li>
-        <li><strong>API rate limits:</strong> Implemented smart caching—frequently accessed data refreshed hourly, critical updates real-time.</li>
-        <li><strong>Multi-jurisdictional delivery rules:</strong> Designed adaptive interface handling state-specific requirements. Some states mandated dealership in state causing a need for home delivery.</li>
-        <li><strong>Content creation timeline:</strong> Repurposed owner's manual content into bite-sized learning modules rather than creating new content from scratch</li>
-        <li><strong>Financial data security:</strong> Collaborated with legal to design PII masking (last 4 digits) while maintaining usefulness</li>
-        <li><strong>Mobile-first with offline access:</strong> Designed progressive web app with cached data views for customers without connectivity</li>
+        <li class="mb-4"><strong>Phased API availability:</strong> Designed graceful empty states and "coming soon" indicators for features launching post-launch.</li>
+        <li class="mb-4"><strong>API rate limits:</strong> Implemented smart caching—frequently accessed data refreshed hourly, critical updates real-time.</li>
+        <li class="mb-4"><strong>Multi-jurisdictional delivery rules:</strong> Designed adaptive interface handling state-specific requirements. Some states mandated dealership in state causing a need for home delivery.</li>
+        <li class="mb-4"><strong>Content creation timeline:</strong> Repurposed owner's manual content into bite-sized learning modules rather than creating new content from scratch</li>
+        <li class="mb-4"><strong>Financial data security:</strong> Collaborated with legal to design PII masking (last 4 digits) while maintaining usefulness</li>
+        <li class="mb-4"><strong>Mobile-first with offline access:</strong> Designed progressive web app with cached data views for customers without connectivity</li>
       </ul>
     </div>
     <div class="grid md:grid-cols-2 gap-8 md:gap-12 mb-12">
@@ -269,43 +269,43 @@ Led comprehensive discovery phase coordinating <b>15+ stakeholder interviews</b>
 
        <!-- Measurable Impact Section -->
       <div class="py-48">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto  px-4">
           <div class="mb-12 text-center">
             <h1>Measureable Impact</h1>
           </div>
 
           <!-- Content Area -->
-          <div class="grid md:grid-cols-4 gap-6">
-            <!-- Impact 1 -->
-            <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
-              <p class="text-3xl font-bold mb-1">46%</p>
+            <!-- Impact 1 --><div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="bg-primary text-white p-6 rounded-lg shadow-lg ">
+              <p class="text-5xl font-bold mb-1">46%</p>
               <p class="text-sm">Increase in reservation-to-purchase conversion</p>
             </div>
-
+<!-- Impact 3 -->
+            <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
+              <p class="text-5xl font-bold mb-1">51%</p>
+              <p class="text-sm mb-6">Increase in revenue per session</p>
+              <p class="text-sm mb-6">Driven by upsell opportunities surfaced at optimal moments in customization flow.</p>
+              <p class="text-sm">Data-informed placement of premium care package options based on user behavior patterns.</p>
+            </div>
             <!-- Impact 2 -->
             <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
-              <p class="text-3xl font-bold mb-1">Reduced churn</p>
-              <p class="text-sm">Purchase-to pre-delivery engagement strategy: progressive task completion (financing, insurance, charging infrastructure, delivery scheduling) reduced drop-off by keeping customers engaged during 6-month production wait.</p>
+              <p class="text-3xl font-bold mb-4">Reduced churn</p>
+              <p class="text-sm mb-6">Purchase-to pre-delivery engagement strategy: progressive task completion (financing, insurance, charging infrastructure, delivery scheduling) reduced drop-off by keeping customers engaged during 6-month production wait.</p>
               <p class="text-sm">A/B tested personalized content vs. generic onboarding → personalized version showed 23% higher task completion rate.</p>
             </div>
 
-            <!-- Impact 3 -->
-            <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
-              <p class="text-3xl font-bold mb-1">51%</p>
-              <p class="text-sm">Increase in revenue per session</p>
-              <p class="text-sm">Driven by upsell opportunities surfaced at optimal moments in customization flow.</p>
-              <p class="text-sm">Data-informed placement of premium care package options based on user behavior patterns.</p>
-            </div>
+            
 
             <!-- Impact 4 -->
             <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
-              <p class="text-3xl font-bold mb-1">Shifted customer satisfaction from negative to positive</p>
-              <p class="text-sm">Transparent financing and rebate information (previously opaque) eliminated confusion.</p>
-              <p class="text-sm">Real-time delivery tracking reduced "Where's my car?" support inquiries by 30%.</p>
+              <p class="text-3xl font-bold mb-4 leading-tight">Shifted customer satisfaction from negative to positive</p>
+              <p class="text-sm mb-6">Transparent financing and rebate information (previously opaque) eliminated confusion.</p>
+              <p class="text-sm mb-6">Real-time delivery tracking reduced "Where's my car?" support inquiries by 30%.</p>
               <p class="text-sm">Recognized as top-rated delivery experience in industry.</p>
             </div>
           </div>
         </div>
+      </div>
       </div>
      
 

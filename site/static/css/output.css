@@ -4764,6 +4764,11 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 16rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .\!mb-0 {
   margin-bottom: 0px !important;
 }
@@ -4890,6 +4895,22 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -6075,6 +6096,26 @@ details.collapse summary::-webkit-details-marker {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .pb-0 {
@@ -7704,6 +7745,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:p-24 {
     padding: 6rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:pl-24 {

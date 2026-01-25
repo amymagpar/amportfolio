@@ -6118,6 +6118,16 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 3.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -6359,6 +6369,14 @@ details.collapse summary::-webkit-details-marker {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
 }
 
 .tracking-tight {
@@ -7449,6 +7467,10 @@ details.collapse summary::-webkit-details-marker {
     height: 3rem;
   }
 
+  .sm\:h-\[450px\] {
+    height: 450px;
+  }
+
   .sm\:max-h-full {
     max-height: 100%;
   }
@@ -7683,6 +7705,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-\[450px\] {
+    height: 450px;
   }
 
   .md\:w-1\/2 {
